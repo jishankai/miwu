@@ -280,6 +280,8 @@
 		5321F854179459A700BC1823 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F853179459A700BC1823 /* libwebsockets.a */; };
 		5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F859179459A700BC1823 /* AppDelegate.cpp */; };
 		5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F85C179459A700BC1823 /* HelloWorldScene.cpp */; };
+		533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A417959F9800F46CF6 /* UpdateLayer.cpp */; };
+		533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A817959FA800F46CF6 /* ApiReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -873,6 +875,18 @@
 		5321F859179459A700BC1823 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		5321F85B179459A700BC1823 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		5321F85C179459A700BC1823 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		5331859817959F0900F46CF6 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		5331859917959F0900F46CF6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		5331859A17959F0900F46CF6 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		5331859B17959F0900F46CF6 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		5331859C17959F0900F46CF6 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		5331859D17959F0900F46CF6 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		5331859E17959F0900F46CF6 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		5331859F17959F0900F46CF6 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		533185A417959F9800F46CF6 /* UpdateLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UpdateLayer.cpp; path = Classes/UpdateLayer.cpp; sourceTree = "<group>"; };
+		533185A517959F9800F46CF6 /* UpdateLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateLayer.h; path = Classes/UpdateLayer.h; sourceTree = "<group>"; };
+		533185A817959FA800F46CF6 /* ApiReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiReader.cpp; path = Classes/ApiReader.cpp; sourceTree = "<group>"; };
+		533185A917959FA800F46CF6 /* ApiReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiReader.h; path = Classes/ApiReader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -964,6 +978,7 @@
 		5321F4E81794599F00BC1823 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				5331859517959F0900F46CF6 /* jsoncpp */,
 				5321F4E91794599F00BC1823 /* cocos2dx */,
 				5321F6D9179459A400BC1823 /* CocosDenshion */,
 				5321F6F1179459A400BC1823 /* extensions */,
@@ -2082,6 +2097,11 @@
 		5321F857179459A700BC1823 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				533185A717959F9E00F46CF6 /* extensions */,
+				533185A317959F3C00F46CF6 /* components */,
+				533185A217959F3300F46CF6 /* sprites */,
+				533185A117959F2D00F46CF6 /* layers */,
+				533185A017959F1500F46CF6 /* scenes */,
 				5321F858179459A700BC1823 /* AppDelegate.h */,
 				5321F859179459A700BC1823 /* AppDelegate.cpp */,
 				5321F85B179459A700BC1823 /* HelloWorldScene.h */,
@@ -2107,6 +2127,77 @@
 				5321F4DE1794599E00BC1823 /* Info.plist */,
 			);
 			name = default;
+			sourceTree = "<group>";
+		};
+		5331859517959F0900F46CF6 /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				5331859617959F0900F46CF6 /* include */,
+			);
+			name = jsoncpp;
+			path = libs/jsoncpp;
+			sourceTree = "<group>";
+		};
+		5331859617959F0900F46CF6 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5331859717959F0900F46CF6 /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5331859717959F0900F46CF6 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				5331859817959F0900F46CF6 /* autolink.h */,
+				5331859917959F0900F46CF6 /* config.h */,
+				5331859A17959F0900F46CF6 /* features.h */,
+				5331859B17959F0900F46CF6 /* forwards.h */,
+				5331859C17959F0900F46CF6 /* json.h */,
+				5331859D17959F0900F46CF6 /* reader.h */,
+				5331859E17959F0900F46CF6 /* value.h */,
+				5331859F17959F0900F46CF6 /* writer.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		533185A017959F1500F46CF6 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		533185A117959F2D00F46CF6 /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				533185A417959F9800F46CF6 /* UpdateLayer.cpp */,
+				533185A517959F9800F46CF6 /* UpdateLayer.h */,
+			);
+			name = layers;
+			sourceTree = "<group>";
+		};
+		533185A217959F3300F46CF6 /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sprites;
+			sourceTree = "<group>";
+		};
+		533185A317959F3C00F46CF6 /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = components;
+			sourceTree = "<group>";
+		};
+		533185A717959F9E00F46CF6 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				533185A817959FA800F46CF6 /* ApiReader.cpp */,
+				533185A917959FA800F46CF6 /* ApiReader.h */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2431,6 +2522,8 @@
 				5321F84C179459A700BC1823 /* cpVect.c in Sources */,
 				5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */,
 				5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */,
+				533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */,
+				533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2463,6 +2556,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+					"\"$(PROJECT_NAME)/libs/jsoncpp/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PROVISIONING_PROFILE = "D93EF56D-8313-402E-93F5-0C89956A6371";
@@ -2495,6 +2589,7 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+					"\"$(PROJECT_NAME)/libs/jsoncpp/include",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -2578,6 +2673,7 @@
 				5321F862179459A700BC1823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
