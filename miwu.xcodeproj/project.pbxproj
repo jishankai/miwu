@@ -282,6 +282,35 @@
 		5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F85C179459A700BC1823 /* HelloWorldScene.cpp */; };
 		533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A417959F9800F46CF6 /* UpdateLayer.cpp */; };
 		533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A817959FA800F46CF6 /* ApiReader.cpp */; };
+		53FE4F58179D8E5C00962274 /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F56179D8E5C00962274 /* Sword.cpp */; };
+		53FE4F69179D93AA00962274 /* Arrial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F59179D93AA00962274 /* Arrial.cpp */; };
+		53FE4F6A179D93AA00962274 /* ArrialLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */; };
+		53FE4F6B179D93AA00962274 /* Arrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5D179D93AA00962274 /* Arrow.cpp */; };
+		53FE4F6C179D93AA00962274 /* ArrowLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */; };
+		53FE4F6D179D93AA00962274 /* Dot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F61179D93AA00962274 /* Dot.cpp */; };
+		53FE4F6E179D93AA00962274 /* DotLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F63179D93AA00962274 /* DotLoader.cpp */; };
+		53FE4F6F179D93AA00962274 /* Heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F65179D93AA00962274 /* Heal.cpp */; };
+		53FE4F70179D93AA00962274 /* HealLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F67179D93AA00962274 /* HealLoader.cpp */; };
+		53FE4F7B179D93D500962274 /* Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F71179D93D500962274 /* Range.cpp */; };
+		53FE4F7C179D93D500962274 /* RangeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F73179D93D500962274 /* RangeLoader.cpp */; };
+		53FE4F7D179D93D500962274 /* SwordLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F75179D93D500962274 /* SwordLoader.cpp */; };
+		53FE4F7E179D93D500962274 /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F77179D93D500962274 /* Tank.cpp */; };
+		53FE4F7F179D93D500962274 /* TankLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F79179D93D500962274 /* TankLoader.cpp */; };
+		53FE4F88179D93E400962274 /* Magic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F80179D93E400962274 /* Magic.cpp */; };
+		53FE4F89179D93E400962274 /* MagicLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F82179D93E400962274 /* MagicLoader.cpp */; };
+		53FE4F8A179D93E400962274 /* Strong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F84179D93E400962274 /* Strong.cpp */; };
+		53FE4F8B179D93E400962274 /* StrongLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F86179D93E400962274 /* StrongLoader.cpp */; };
+		53FE4F90179D944900962274 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F8C179D944900962274 /* GameScene.cpp */; };
+		53FE4F91179D944900962274 /* GameSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F8E179D944900962274 /* GameSceneLoader.cpp */; };
+		53FE4F9E179D945600962274 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F92179D945600962274 /* Level.cpp */; };
+		53FE4F9F179D945600962274 /* LevelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F94179D945600962274 /* LevelLoader.cpp */; };
+		53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F96179D945600962274 /* MainMenuScene.cpp */; };
+		53FE4FA1179D945600962274 /* MainMenuSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */; };
+		53FE4FA2179D945600962274 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F9A179D945600962274 /* Menu.cpp */; };
+		53FE4FA3179D945600962274 /* MenuLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F9C179D945600962274 /* MenuLoader.cpp */; };
+		53FE4FAA179D946300962274 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA4179D946300962274 /* Background.cpp */; };
+		53FE4FAB179D946300962274 /* BackgroundLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA6179D946300962274 /* BackgroundLoader.cpp */; };
+		53FE4FAC179D946300962274 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA8179D946300962274 /* GameObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -887,6 +916,64 @@
 		533185A517959F9800F46CF6 /* UpdateLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateLayer.h; path = Classes/UpdateLayer.h; sourceTree = "<group>"; };
 		533185A817959FA800F46CF6 /* ApiReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiReader.cpp; path = Classes/ApiReader.cpp; sourceTree = "<group>"; };
 		533185A917959FA800F46CF6 /* ApiReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiReader.h; path = Classes/ApiReader.h; sourceTree = "<group>"; };
+		53FE4F56179D8E5C00962274 /* Sword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sword.cpp; path = Classes/Sword.cpp; sourceTree = "<group>"; };
+		53FE4F57179D8E5C00962274 /* Sword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sword.h; path = Classes/Sword.h; sourceTree = "<group>"; };
+		53FE4F59179D93AA00962274 /* Arrial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Arrial.cpp; path = Classes/Arrial.cpp; sourceTree = "<group>"; };
+		53FE4F5A179D93AA00962274 /* Arrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arrial.h; path = Classes/Arrial.h; sourceTree = "<group>"; };
+		53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrialLoader.cpp; path = Classes/ArrialLoader.cpp; sourceTree = "<group>"; };
+		53FE4F5C179D93AA00962274 /* ArrialLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrialLoader.h; path = Classes/ArrialLoader.h; sourceTree = "<group>"; };
+		53FE4F5D179D93AA00962274 /* Arrow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Arrow.cpp; path = Classes/Arrow.cpp; sourceTree = "<group>"; };
+		53FE4F5E179D93AA00962274 /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arrow.h; path = Classes/Arrow.h; sourceTree = "<group>"; };
+		53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrowLoader.cpp; path = Classes/ArrowLoader.cpp; sourceTree = "<group>"; };
+		53FE4F60179D93AA00962274 /* ArrowLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowLoader.h; path = Classes/ArrowLoader.h; sourceTree = "<group>"; };
+		53FE4F61179D93AA00962274 /* Dot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dot.cpp; path = Classes/Dot.cpp; sourceTree = "<group>"; };
+		53FE4F62179D93AA00962274 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = Classes/Dot.h; sourceTree = "<group>"; };
+		53FE4F63179D93AA00962274 /* DotLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DotLoader.cpp; path = Classes/DotLoader.cpp; sourceTree = "<group>"; };
+		53FE4F64179D93AA00962274 /* DotLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DotLoader.h; path = Classes/DotLoader.h; sourceTree = "<group>"; };
+		53FE4F65179D93AA00962274 /* Heal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Heal.cpp; path = Classes/Heal.cpp; sourceTree = "<group>"; };
+		53FE4F66179D93AA00962274 /* Heal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heal.h; path = Classes/Heal.h; sourceTree = "<group>"; };
+		53FE4F67179D93AA00962274 /* HealLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HealLoader.cpp; path = Classes/HealLoader.cpp; sourceTree = "<group>"; };
+		53FE4F68179D93AA00962274 /* HealLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealLoader.h; path = Classes/HealLoader.h; sourceTree = "<group>"; };
+		53FE4F71179D93D500962274 /* Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Range.cpp; path = Classes/Range.cpp; sourceTree = "<group>"; };
+		53FE4F72179D93D500962274 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Range.h; path = Classes/Range.h; sourceTree = "<group>"; };
+		53FE4F73179D93D500962274 /* RangeLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RangeLoader.cpp; path = Classes/RangeLoader.cpp; sourceTree = "<group>"; };
+		53FE4F74179D93D500962274 /* RangeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RangeLoader.h; path = Classes/RangeLoader.h; sourceTree = "<group>"; };
+		53FE4F75179D93D500962274 /* SwordLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SwordLoader.cpp; path = Classes/SwordLoader.cpp; sourceTree = "<group>"; };
+		53FE4F76179D93D500962274 /* SwordLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwordLoader.h; path = Classes/SwordLoader.h; sourceTree = "<group>"; };
+		53FE4F77179D93D500962274 /* Tank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tank.cpp; path = Classes/Tank.cpp; sourceTree = "<group>"; };
+		53FE4F78179D93D500962274 /* Tank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tank.h; path = Classes/Tank.h; sourceTree = "<group>"; };
+		53FE4F79179D93D500962274 /* TankLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TankLoader.cpp; path = Classes/TankLoader.cpp; sourceTree = "<group>"; };
+		53FE4F7A179D93D500962274 /* TankLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TankLoader.h; path = Classes/TankLoader.h; sourceTree = "<group>"; };
+		53FE4F80179D93E400962274 /* Magic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Magic.cpp; path = Classes/Magic.cpp; sourceTree = "<group>"; };
+		53FE4F81179D93E400962274 /* Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Magic.h; path = Classes/Magic.h; sourceTree = "<group>"; };
+		53FE4F82179D93E400962274 /* MagicLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MagicLoader.cpp; path = Classes/MagicLoader.cpp; sourceTree = "<group>"; };
+		53FE4F83179D93E400962274 /* MagicLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicLoader.h; path = Classes/MagicLoader.h; sourceTree = "<group>"; };
+		53FE4F84179D93E400962274 /* Strong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Strong.cpp; path = Classes/Strong.cpp; sourceTree = "<group>"; };
+		53FE4F85179D93E400962274 /* Strong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Strong.h; path = Classes/Strong.h; sourceTree = "<group>"; };
+		53FE4F86179D93E400962274 /* StrongLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StrongLoader.cpp; path = Classes/StrongLoader.cpp; sourceTree = "<group>"; };
+		53FE4F87179D93E400962274 /* StrongLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrongLoader.h; path = Classes/StrongLoader.h; sourceTree = "<group>"; };
+		53FE4F8C179D944900962274 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
+		53FE4F8D179D944900962274 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		53FE4F8E179D944900962274 /* GameSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneLoader.cpp; path = Classes/GameSceneLoader.cpp; sourceTree = "<group>"; };
+		53FE4F8F179D944900962274 /* GameSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneLoader.h; path = Classes/GameSceneLoader.h; sourceTree = "<group>"; };
+		53FE4F92179D945600962274 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = Classes/Level.cpp; sourceTree = "<group>"; };
+		53FE4F93179D945600962274 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = Classes/Level.h; sourceTree = "<group>"; };
+		53FE4F94179D945600962274 /* LevelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelLoader.cpp; path = Classes/LevelLoader.cpp; sourceTree = "<group>"; };
+		53FE4F95179D945600962274 /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Classes/LevelLoader.h; sourceTree = "<group>"; };
+		53FE4F96179D945600962274 /* MainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuScene.cpp; path = Classes/MainMenuScene.cpp; sourceTree = "<group>"; };
+		53FE4F97179D945600962274 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuScene.h; path = Classes/MainMenuScene.h; sourceTree = "<group>"; };
+		53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuSceneLoader.cpp; path = Classes/MainMenuSceneLoader.cpp; sourceTree = "<group>"; };
+		53FE4F99179D945600962274 /* MainMenuSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuSceneLoader.h; path = Classes/MainMenuSceneLoader.h; sourceTree = "<group>"; };
+		53FE4F9A179D945600962274 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = Classes/Menu.cpp; sourceTree = "<group>"; };
+		53FE4F9B179D945600962274 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = Classes/Menu.h; sourceTree = "<group>"; };
+		53FE4F9C179D945600962274 /* MenuLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuLoader.cpp; path = Classes/MenuLoader.cpp; sourceTree = "<group>"; };
+		53FE4F9D179D945600962274 /* MenuLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLoader.h; path = Classes/MenuLoader.h; sourceTree = "<group>"; };
+		53FE4FA4179D946300962274 /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = Classes/Background.cpp; sourceTree = "<group>"; };
+		53FE4FA5179D946300962274 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Background.h; path = Classes/Background.h; sourceTree = "<group>"; };
+		53FE4FA6179D946300962274 /* BackgroundLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BackgroundLoader.cpp; path = Classes/BackgroundLoader.cpp; sourceTree = "<group>"; };
+		53FE4FA7179D946300962274 /* BackgroundLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLoader.h; path = Classes/BackgroundLoader.h; sourceTree = "<group>"; };
+		53FE4FA8179D946300962274 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObject.cpp; path = Classes/GameObject.cpp; sourceTree = "<group>"; };
+		53FE4FA9179D946300962274 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Classes/GameObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2164,6 +2251,14 @@
 		533185A017959F1500F46CF6 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				53FE4F96179D945600962274 /* MainMenuScene.cpp */,
+				53FE4F97179D945600962274 /* MainMenuScene.h */,
+				53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */,
+				53FE4F99179D945600962274 /* MainMenuSceneLoader.h */,
+				53FE4F8C179D944900962274 /* GameScene.cpp */,
+				53FE4F8D179D944900962274 /* GameScene.h */,
+				53FE4F8E179D944900962274 /* GameSceneLoader.cpp */,
+				53FE4F8F179D944900962274 /* GameSceneLoader.h */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -2171,6 +2266,18 @@
 		533185A117959F2D00F46CF6 /* layers */ = {
 			isa = PBXGroup;
 			children = (
+				53FE4F9A179D945600962274 /* Menu.cpp */,
+				53FE4F9B179D945600962274 /* Menu.h */,
+				53FE4F9C179D945600962274 /* MenuLoader.cpp */,
+				53FE4F9D179D945600962274 /* MenuLoader.h */,
+				53FE4F92179D945600962274 /* Level.cpp */,
+				53FE4F93179D945600962274 /* Level.h */,
+				53FE4F94179D945600962274 /* LevelLoader.cpp */,
+				53FE4F95179D945600962274 /* LevelLoader.h */,
+				53FE4FA4179D946300962274 /* Background.cpp */,
+				53FE4FA5179D946300962274 /* Background.h */,
+				53FE4FA6179D946300962274 /* BackgroundLoader.cpp */,
+				53FE4FA7179D946300962274 /* BackgroundLoader.h */,
 				533185A417959F9800F46CF6 /* UpdateLayer.cpp */,
 				533185A517959F9800F46CF6 /* UpdateLayer.h */,
 			);
@@ -2180,6 +2287,42 @@
 		533185A217959F3300F46CF6 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				53FE4F80179D93E400962274 /* Magic.cpp */,
+				53FE4F81179D93E400962274 /* Magic.h */,
+				53FE4F82179D93E400962274 /* MagicLoader.cpp */,
+				53FE4F83179D93E400962274 /* MagicLoader.h */,
+				53FE4F84179D93E400962274 /* Strong.cpp */,
+				53FE4F85179D93E400962274 /* Strong.h */,
+				53FE4F86179D93E400962274 /* StrongLoader.cpp */,
+				53FE4F87179D93E400962274 /* StrongLoader.h */,
+				53FE4F71179D93D500962274 /* Range.cpp */,
+				53FE4F72179D93D500962274 /* Range.h */,
+				53FE4F73179D93D500962274 /* RangeLoader.cpp */,
+				53FE4F74179D93D500962274 /* RangeLoader.h */,
+				53FE4F75179D93D500962274 /* SwordLoader.cpp */,
+				53FE4F76179D93D500962274 /* SwordLoader.h */,
+				53FE4F77179D93D500962274 /* Tank.cpp */,
+				53FE4F78179D93D500962274 /* Tank.h */,
+				53FE4F79179D93D500962274 /* TankLoader.cpp */,
+				53FE4F7A179D93D500962274 /* TankLoader.h */,
+				53FE4F59179D93AA00962274 /* Arrial.cpp */,
+				53FE4F5A179D93AA00962274 /* Arrial.h */,
+				53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */,
+				53FE4F5C179D93AA00962274 /* ArrialLoader.h */,
+				53FE4F5D179D93AA00962274 /* Arrow.cpp */,
+				53FE4F5E179D93AA00962274 /* Arrow.h */,
+				53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */,
+				53FE4F60179D93AA00962274 /* ArrowLoader.h */,
+				53FE4F61179D93AA00962274 /* Dot.cpp */,
+				53FE4F62179D93AA00962274 /* Dot.h */,
+				53FE4F63179D93AA00962274 /* DotLoader.cpp */,
+				53FE4F64179D93AA00962274 /* DotLoader.h */,
+				53FE4F65179D93AA00962274 /* Heal.cpp */,
+				53FE4F66179D93AA00962274 /* Heal.h */,
+				53FE4F67179D93AA00962274 /* HealLoader.cpp */,
+				53FE4F68179D93AA00962274 /* HealLoader.h */,
+				53FE4F56179D8E5C00962274 /* Sword.cpp */,
+				53FE4F57179D8E5C00962274 /* Sword.h */,
 			);
 			name = sprites;
 			sourceTree = "<group>";
@@ -2187,6 +2330,8 @@
 		533185A317959F3C00F46CF6 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				53FE4FA8179D946300962274 /* GameObject.cpp */,
+				53FE4FA9179D946300962274 /* GameObject.h */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -2524,6 +2669,35 @@
 				5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */,
 				533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */,
 				533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */,
+				53FE4F58179D8E5C00962274 /* Sword.cpp in Sources */,
+				53FE4F69179D93AA00962274 /* Arrial.cpp in Sources */,
+				53FE4F6A179D93AA00962274 /* ArrialLoader.cpp in Sources */,
+				53FE4F6B179D93AA00962274 /* Arrow.cpp in Sources */,
+				53FE4F6C179D93AA00962274 /* ArrowLoader.cpp in Sources */,
+				53FE4F6D179D93AA00962274 /* Dot.cpp in Sources */,
+				53FE4F6E179D93AA00962274 /* DotLoader.cpp in Sources */,
+				53FE4F6F179D93AA00962274 /* Heal.cpp in Sources */,
+				53FE4F70179D93AA00962274 /* HealLoader.cpp in Sources */,
+				53FE4F7B179D93D500962274 /* Range.cpp in Sources */,
+				53FE4F7C179D93D500962274 /* RangeLoader.cpp in Sources */,
+				53FE4F7D179D93D500962274 /* SwordLoader.cpp in Sources */,
+				53FE4F7E179D93D500962274 /* Tank.cpp in Sources */,
+				53FE4F7F179D93D500962274 /* TankLoader.cpp in Sources */,
+				53FE4F88179D93E400962274 /* Magic.cpp in Sources */,
+				53FE4F89179D93E400962274 /* MagicLoader.cpp in Sources */,
+				53FE4F8A179D93E400962274 /* Strong.cpp in Sources */,
+				53FE4F8B179D93E400962274 /* StrongLoader.cpp in Sources */,
+				53FE4F90179D944900962274 /* GameScene.cpp in Sources */,
+				53FE4F91179D944900962274 /* GameSceneLoader.cpp in Sources */,
+				53FE4F9E179D945600962274 /* Level.cpp in Sources */,
+				53FE4F9F179D945600962274 /* LevelLoader.cpp in Sources */,
+				53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */,
+				53FE4FA1179D945600962274 /* MainMenuSceneLoader.cpp in Sources */,
+				53FE4FA2179D945600962274 /* Menu.cpp in Sources */,
+				53FE4FA3179D945600962274 /* MenuLoader.cpp in Sources */,
+				53FE4FAA179D946300962274 /* Background.cpp in Sources */,
+				53FE4FAB179D946300962274 /* BackgroundLoader.cpp in Sources */,
+				53FE4FAC179D946300962274 /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
