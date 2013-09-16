@@ -9,23 +9,22 @@
 #ifndef __Miwu__Zombie__
 #define __Miwu__Zombie__
 
-#include "GameObject.h"
+#include "Enemy.h"
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
 
-class Zombie : public GameObject
+class Zombie : public Enemy
 {
     
 private:
-    float xSpeed;
     
     bool init();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Zombie, create);
     
     
-    virtual void update();
+    virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual float radius();
     virtual void attack();

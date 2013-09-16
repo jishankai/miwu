@@ -279,37 +279,220 @@
 		5321F84C179459A700BC1823 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F84B179459A700BC1823 /* cpVect.c */; };
 		5321F854179459A700BC1823 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F853179459A700BC1823 /* libwebsockets.a */; };
 		5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F859179459A700BC1823 /* AppDelegate.cpp */; };
-		5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F85C179459A700BC1823 /* HelloWorldScene.cpp */; };
-		533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A417959F9800F46CF6 /* UpdateLayer.cpp */; };
-		533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 533185A817959FA800F46CF6 /* ApiReader.cpp */; };
-		53FE4F58179D8E5C00962274 /* Sword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F56179D8E5C00962274 /* Sword.cpp */; };
-		53FE4F69179D93AA00962274 /* Arrial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F59179D93AA00962274 /* Arrial.cpp */; };
-		53FE4F6A179D93AA00962274 /* ArrialLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */; };
-		53FE4F6B179D93AA00962274 /* Arrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5D179D93AA00962274 /* Arrow.cpp */; };
-		53FE4F6C179D93AA00962274 /* ArrowLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */; };
-		53FE4F6D179D93AA00962274 /* Dot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F61179D93AA00962274 /* Dot.cpp */; };
-		53FE4F6E179D93AA00962274 /* DotLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F63179D93AA00962274 /* DotLoader.cpp */; };
-		53FE4F6F179D93AA00962274 /* Heal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F65179D93AA00962274 /* Heal.cpp */; };
-		53FE4F70179D93AA00962274 /* HealLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F67179D93AA00962274 /* HealLoader.cpp */; };
-		53FE4F7B179D93D500962274 /* Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F71179D93D500962274 /* Range.cpp */; };
-		53FE4F7C179D93D500962274 /* RangeLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F73179D93D500962274 /* RangeLoader.cpp */; };
-		53FE4F7D179D93D500962274 /* SwordLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F75179D93D500962274 /* SwordLoader.cpp */; };
-		53FE4F7E179D93D500962274 /* Tank.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F77179D93D500962274 /* Tank.cpp */; };
-		53FE4F7F179D93D500962274 /* TankLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F79179D93D500962274 /* TankLoader.cpp */; };
-		53FE4F88179D93E400962274 /* Magic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F80179D93E400962274 /* Magic.cpp */; };
-		53FE4F89179D93E400962274 /* MagicLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F82179D93E400962274 /* MagicLoader.cpp */; };
-		53FE4F8A179D93E400962274 /* Strong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F84179D93E400962274 /* Strong.cpp */; };
-		53FE4F8B179D93E400962274 /* StrongLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F86179D93E400962274 /* StrongLoader.cpp */; };
-		53FE4F90179D944900962274 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F8C179D944900962274 /* GameScene.cpp */; };
-		53FE4F91179D944900962274 /* GameSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F8E179D944900962274 /* GameSceneLoader.cpp */; };
-		53FE4F9E179D945600962274 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F92179D945600962274 /* Level.cpp */; };
-		53FE4F9F179D945600962274 /* LevelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F94179D945600962274 /* LevelLoader.cpp */; };
+		5335BBE517A6C01B00B02A13 /* ri.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE117A6C01B00B02A13 /* ri.plist */; };
+		5335BBE617A6C01B00B02A13 /* ri.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */; };
+		5335BBE717A6C01B00B02A13 /* battle_ui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE317A6C01B00B02A13 /* battle_ui.plist */; };
+		5335BBE817A6C01B00B02A13 /* battle_ui.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE417A6C01B00B02A13 /* battle_ui.pvr.ccz */; };
+		5335BBED17A8168200B02A13 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBEC17A8168200B02A13 /* GameScene.cpp */; };
+		5335BBF017A81A0200B02A13 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBEF17A81A0200B02A13 /* Background.cpp */; };
+		5335BBF317A81A0C00B02A13 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBF217A81A0C00B02A13 /* Menu.cpp */; };
+		5335BBF717ABF3C100B02A13 /* GameSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBF617ABF3C100B02A13 /* GameSceneLoader.cpp */; };
+		5335BBFA17ABF3DD00B02A13 /* MenuLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBF917ABF3DD00B02A13 /* MenuLoader.cpp */; };
+		5335BBFD17ABF3ED00B02A13 /* BackgroundLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5335BBFC17ABF3ED00B02A13 /* BackgroundLoader.cpp */; };
+		5335BC0217ABF70300B02A13 /* Menu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBFF17ABF70300B02A13 /* Menu.ccbi */; };
+		5335BC0317ABF70300B02A13 /* GameScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5335BC0017ABF70300B02A13 /* GameScene.ccbi */; };
+		5335BC0417ABF70300B02A13 /* Background.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5335BC0117ABF70300B02A13 /* Background.ccbi */; };
+		534B43A617B615D8001DF7B0 /* s9_a2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439417B615D8001DF7B0 /* s9_a2.wav */; };
+		534B43A717B615D8001DF7B0 /* s9_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439517B615D8001DF7B0 /* s9_a1.wav */; };
+		534B43A817B615D8001DF7B0 /* s8_a2_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439617B615D8001DF7B0 /* s8_a2_2.wav */; };
+		534B43A917B615D8001DF7B0 /* s8_a2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439717B615D8001DF7B0 /* s8_a2_1.wav */; };
+		534B43AA17B615D8001DF7B0 /* s8_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439817B615D8001DF7B0 /* s8_a1.wav */; };
+		534B43AB17B615D8001DF7B0 /* s7_a2_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439917B615D8001DF7B0 /* s7_a2_2.wav */; };
+		534B43AC17B615D8001DF7B0 /* s7_a2_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439A17B615D8001DF7B0 /* s7_a2_1.wav */; };
+		534B43AD17B615D8001DF7B0 /* s7_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439B17B615D8001DF7B0 /* s7_a1.wav */; };
+		534B43AE17B615D8001DF7B0 /* s6_a2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439C17B615D8001DF7B0 /* s6_a2.wav */; };
+		534B43AF17B615D8001DF7B0 /* s6_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439D17B615D8001DF7B0 /* s6_a1.wav */; };
+		534B43B017B615D8001DF7B0 /* s5_a2.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 534B439E17B615D8001DF7B0 /* s5_a2.WAV */; };
+		534B43B117B615D8001DF7B0 /* s5_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B439F17B615D8001DF7B0 /* s5_a1.wav */; };
+		534B43B217B615D8001DF7B0 /* s4_a2.WAV in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A017B615D8001DF7B0 /* s4_a2.WAV */; };
+		534B43B317B615D8001DF7B0 /* s4_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A117B615D8001DF7B0 /* s4_a1.wav */; };
+		534B43B417B615D8001DF7B0 /* s3_a2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A217B615D8001DF7B0 /* s3_a2.wav */; };
+		534B43B517B615D8001DF7B0 /* s3_a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A317B615D8001DF7B0 /* s3_a1.wav */; };
+		534B43B617B615D8001DF7B0 /* s2_a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A417B615D8001DF7B0 /* s2_a.wav */; };
+		534B43B717B615D8001DF7B0 /* s1_a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 534B43A517B615D8001DF7B0 /* s1_a.wav */; };
+		534B43BE17B61E07001DF7B0 /* MiaoLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43BB17B61E07001DF7B0 /* MiaoLoader.cpp */; };
+		534B43BF17B61E07001DF7B0 /* Miao.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43BD17B61E07001DF7B0 /* Miao.cpp */; };
+		534B43C117B61F83001DF7B0 /* Miao.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C017B61F83001DF7B0 /* Miao.ccbi */; };
+		534B43CD17B63BC8001DF7B0 /* RS10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C217B63BC8001DF7B0 /* RS10.ccbi */; };
+		534B43CE17B63BC8001DF7B0 /* RS9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C317B63BC8001DF7B0 /* RS9.ccbi */; };
+		534B43CF17B63BC8001DF7B0 /* RS8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C417B63BC8001DF7B0 /* RS8.ccbi */; };
+		534B43D017B63BC8001DF7B0 /* RS7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C517B63BC8001DF7B0 /* RS7.ccbi */; };
+		534B43D117B63BC8001DF7B0 /* RS6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C617B63BC8001DF7B0 /* RS6.ccbi */; };
+		534B43D217B63BC8001DF7B0 /* RS5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C717B63BC8001DF7B0 /* RS5.ccbi */; };
+		534B43D317B63BC8001DF7B0 /* RS4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C817B63BC8001DF7B0 /* RS4.ccbi */; };
+		534B43D417B63BC8001DF7B0 /* RS3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43C917B63BC8001DF7B0 /* RS3.ccbi */; };
+		534B43D517B63BC8001DF7B0 /* RS2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43CA17B63BC8001DF7B0 /* RS2.ccbi */; };
+		534B43D617B63BC8001DF7B0 /* RS1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43CB17B63BC8001DF7B0 /* RS1.ccbi */; };
+		534B43D717B63BC8001DF7B0 /* RBoss.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 534B43CC17B63BC8001DF7B0 /* RBoss.ccbi */; };
+		534B440417B63EF2001DF7B0 /* RS10Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43D917B63EF0001DF7B0 /* RS10Loader.cpp */; };
+		534B440517B63EF2001DF7B0 /* RS10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43DB17B63EF0001DF7B0 /* RS10.cpp */; };
+		534B440617B63EF2001DF7B0 /* RS9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43DD17B63EF0001DF7B0 /* RS9Loader.cpp */; };
+		534B440717B63EF2001DF7B0 /* RS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43DF17B63EF0001DF7B0 /* RS9.cpp */; };
+		534B440817B63EF2001DF7B0 /* RS8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43E117B63EF0001DF7B0 /* RS8Loader.cpp */; };
+		534B440917B63EF2001DF7B0 /* RS8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43E317B63EF0001DF7B0 /* RS8.cpp */; };
+		534B440A17B63EF2001DF7B0 /* RS7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43E517B63EF0001DF7B0 /* RS7Loader.cpp */; };
+		534B440B17B63EF2001DF7B0 /* RS7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43E717B63EF0001DF7B0 /* RS7.cpp */; };
+		534B440C17B63EF2001DF7B0 /* RS6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43E917B63EF1001DF7B0 /* RS6Loader.cpp */; };
+		534B440D17B63EF2001DF7B0 /* RS6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43EB17B63EF1001DF7B0 /* RS6.cpp */; };
+		534B440E17B63EF2001DF7B0 /* RS5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43ED17B63EF1001DF7B0 /* RS5Loader.cpp */; };
+		534B440F17B63EF2001DF7B0 /* RS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43EF17B63EF1001DF7B0 /* RS5.cpp */; };
+		534B441017B63EF2001DF7B0 /* RS4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43F117B63EF1001DF7B0 /* RS4Loader.cpp */; };
+		534B441117B63EF2001DF7B0 /* RS4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43F317B63EF1001DF7B0 /* RS4.cpp */; };
+		534B441217B63EF2001DF7B0 /* RS3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43F517B63EF2001DF7B0 /* RS3Loader.cpp */; };
+		534B441317B63EF2001DF7B0 /* RS3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43F717B63EF2001DF7B0 /* RS3.cpp */; };
+		534B441417B63EF2001DF7B0 /* RS2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43F917B63EF2001DF7B0 /* RS2Loader.cpp */; };
+		534B441517B63EF2001DF7B0 /* RS2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43FB17B63EF2001DF7B0 /* RS2.cpp */; };
+		534B441617B63EF2001DF7B0 /* RS1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43FD17B63EF2001DF7B0 /* RS1Loader.cpp */; };
+		534B441717B63EF2001DF7B0 /* RS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43FF17B63EF2001DF7B0 /* RS1.cpp */; };
+		534B441817B63EF2001DF7B0 /* RBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B440117B63EF2001DF7B0 /* RBossLoader.cpp */; };
+		534B441917B63EF2001DF7B0 /* RBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B440317B63EF2001DF7B0 /* RBoss.cpp */; };
+		535E8D7017BBD2B000C2A145 /* Soldier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535E8D6E17BBD2B000C2A145 /* Soldier.cpp */; };
+		535E8D7317BBD2C700C2A145 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535E8D7117BBD2C700C2A145 /* Enemy.cpp */; };
+		5383A8B917CE576C00EE4A1A /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8B817CE576C00EE4A1A /* background.mp3 */; };
+		5383A8C417D10C3300EE4A1A /* jap_s10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BA17D10C3300EE4A1A /* jap_s10.wav */; };
+		5383A8C517D10C3300EE4A1A /* jap_s9 .wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BB17D10C3300EE4A1A /* jap_s9 .wav */; };
+		5383A8C617D10C3300EE4A1A /* jap_s8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BC17D10C3300EE4A1A /* jap_s8.wav */; };
+		5383A8C717D10C3300EE4A1A /* jap_s7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BD17D10C3300EE4A1A /* jap_s7.wav */; };
+		5383A8C817D10C3400EE4A1A /* jap_s6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BE17D10C3300EE4A1A /* jap_s6.wav */; };
+		5383A8C917D10C3400EE4A1A /* jap_s5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8BF17D10C3300EE4A1A /* jap_s5.wav */; };
+		5383A8CA17D10C3400EE4A1A /* jap_s4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8C017D10C3300EE4A1A /* jap_s4.wav */; };
+		5383A8CB17D10C3400EE4A1A /* jap_s3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8C117D10C3300EE4A1A /* jap_s3.wav */; };
+		5383A8CC17D10C3400EE4A1A /* jap_s2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8C217D10C3300EE4A1A /* jap_s2.wav */; };
+		5383A8CD17D10C3400EE4A1A /* jap_s1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8C317D10C3300EE4A1A /* jap_s1.wav */; };
+		5383A8D217D10C4200EE4A1A /* boss_2(dead).wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8CE17D10C4200EE4A1A /* boss_2(dead).wav */; };
+		5383A8D317D10C4200EE4A1A /* boss_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8CF17D10C4200EE4A1A /* boss_2.wav */; };
+		5383A8D417D10C4200EE4A1A /* boss_1(dead).wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8D017D10C4200EE4A1A /* boss_1(dead).wav */; };
+		5383A8D517D10C4200EE4A1A /* boss_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8D117D10C4200EE4A1A /* boss_1.wav */; };
+		5383A8D817D1155D00EE4A1A /* storyboard.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8D617D1155D00EE4A1A /* storyboard.pvr.ccz */; };
+		5383A8D917D1155D00EE4A1A /* storyboard.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8D717D1155D00EE4A1A /* storyboard.plist */; };
+		5383A8DC17D1177700EE4A1A /* StoryScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8DB17D1177700EE4A1A /* StoryScene.cpp */; };
+		5383A8DE17D3973B00EE4A1A /* main.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8DD17D3973B00EE4A1A /* main.mp3 */; };
+		5383A8E117D4EFCF00EE4A1A /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */; };
+		53B57B1517B3FA8B0068BD92 /* S9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF217B3FA8B0068BD92 /* S9Loader.cpp */; };
+		53B57B1617B3FA8B0068BD92 /* S9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF417B3FA8B0068BD92 /* S9.cpp */; };
+		53B57B1717B3FA8B0068BD92 /* S8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF617B3FA8B0068BD92 /* S8Loader.cpp */; };
+		53B57B1817B3FA8B0068BD92 /* S8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF817B3FA8B0068BD92 /* S8.cpp */; };
+		53B57B1917B3FA8B0068BD92 /* S7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AFA17B3FA8B0068BD92 /* S7Loader.cpp */; };
+		53B57B1A17B3FA8B0068BD92 /* S7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AFC17B3FA8B0068BD92 /* S7.cpp */; };
+		53B57B1B17B3FA8B0068BD92 /* S6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AFE17B3FA8B0068BD92 /* S6Loader.cpp */; };
+		53B57B1C17B3FA8B0068BD92 /* S6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0017B3FA8B0068BD92 /* S6.cpp */; };
+		53B57B1D17B3FA8B0068BD92 /* S5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0217B3FA8B0068BD92 /* S5Loader.cpp */; };
+		53B57B1E17B3FA8B0068BD92 /* S5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0417B3FA8B0068BD92 /* S5.cpp */; };
+		53B57B1F17B3FA8B0068BD92 /* S4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0617B3FA8B0068BD92 /* S4Loader.cpp */; };
+		53B57B2017B3FA8B0068BD92 /* S4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0817B3FA8B0068BD92 /* S4.cpp */; };
+		53B57B2117B3FA8B0068BD92 /* S3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0A17B3FA8B0068BD92 /* S3Loader.cpp */; };
+		53B57B2217B3FA8B0068BD92 /* S3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0C17B3FA8B0068BD92 /* S3.cpp */; };
+		53B57B2317B3FA8B0068BD92 /* S2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B0E17B3FA8B0068BD92 /* S2Loader.cpp */; };
+		53B57B2417B3FA8B0068BD92 /* S2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B1017B3FA8B0068BD92 /* S2.cpp */; };
+		53B57B2517B3FA8B0068BD92 /* S1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B1217B3FA8B0068BD92 /* S1Loader.cpp */; };
+		53B57B2617B3FA8B0068BD92 /* S1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B1417B3FA8B0068BD92 /* S1.cpp */; };
+		53B57B2B17B3FAA50068BD92 /* LevelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B2817B3FAA50068BD92 /* LevelLoader.cpp */; };
+		53B57B2C17B3FAA50068BD92 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57B2A17B3FAA50068BD92 /* Level.cpp */; };
+		53B57B3617B3FEE20068BD92 /* S9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B2D17B3FEE20068BD92 /* S9.ccbi */; };
+		53B57B3717B3FEE20068BD92 /* S8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B2E17B3FEE20068BD92 /* S8.ccbi */; };
+		53B57B3817B3FEE20068BD92 /* S7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B2F17B3FEE20068BD92 /* S7.ccbi */; };
+		53B57B3917B3FEE20068BD92 /* S6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3017B3FEE20068BD92 /* S6.ccbi */; };
+		53B57B3A17B3FEE20068BD92 /* S5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3117B3FEE20068BD92 /* S5.ccbi */; };
+		53B57B3B17B3FEE20068BD92 /* S4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3217B3FEE20068BD92 /* S4.ccbi */; };
+		53B57B3C17B3FEE20068BD92 /* S3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3317B3FEE20068BD92 /* S3.ccbi */; };
+		53B57B3D17B3FEE20068BD92 /* S2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3417B3FEE20068BD92 /* S2.ccbi */; };
+		53B57B3E17B3FEE20068BD92 /* S1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3517B3FEE20068BD92 /* S1.ccbi */; };
+		53B57B4117B3FEF00068BD92 /* MouseGameScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3F17B3FEF00068BD92 /* MouseGameScene.ccbi */; };
+		53B57B4217B3FEF00068BD92 /* Level.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B4017B3FEF00068BD92 /* Level.ccbi */; };
+		53D2036417D8C4B900BB9875 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D2036317D8C4B900BB9875 /* Default-568h@2x.png */; };
+		53DECBBA17DE3C0A00A1C1BC /* StatusLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */; };
+		53DECBBB17DE3C0A00A1C1BC /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB917DE3C0800A1C1BC /* Status.cpp */; };
+		53DECBBD17E0AFDB00A1C1BC /* Status.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECBBC17E0AFDB00A1C1BC /* Status.ccbi */; };
+		53DECBC317E0BCAA00A1C1BC /* MouseGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBC117E0BCAA00A1C1BC /* MouseGameScene.cpp */; };
+		53DECBC517E0BD1D00A1C1BC /* MouseMenu.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECBC417E0BD1D00A1C1BC /* MouseMenu.ccbi */; };
+		53DECBCA17E0BDE100A1C1BC /* MouseMenuLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBC717E0BDDD00A1C1BC /* MouseMenuLoader.cpp */; };
+		53DECBCB17E0BDE100A1C1BC /* MouseMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBC917E0BDE000A1C1BC /* MouseMenu.cpp */; };
+		53DECBD117E2032000A1C1BC /* NormalGameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBD017E2031F00A1C1BC /* NormalGameScene.cpp */; };
+		53DECC1517E35E9B00A1C1BC /* MainMenuScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC1417E35E9B00A1C1BC /* MainMenuScene.ccbi */; };
+		53DECC1817E35EC500A1C1BC /* MainMenuSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC1617E35EC100A1C1BC /* MainMenuSceneLoader.cpp */; };
+		53DECC1B17E3929A00A1C1BC /* ui.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC1917E3929900A1C1BC /* ui.plist */; };
+		53DECC1C17E3929A00A1C1BC /* ui.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC1A17E3929A00A1C1BC /* ui.pvr.ccz */; };
+		53DECC1E17E4390500A1C1BC /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC1D17E4390400A1C1BC /* home.png */; };
+		53DECC3F17E464DD00A1C1BC /* load.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC1F17E464BC00A1C1BC /* load.png */; };
+		53DECC4017E464DD00A1C1BC /* others.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2017E464BC00A1C1BC /* others.png */; };
+		53DECC4117E464DD00A1C1BC /* reward.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2117E464BE00A1C1BC /* reward.png */; };
+		53DECC4217E464DD00A1C1BC /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2217E464BF00A1C1BC /* setting.png */; };
+		53DECC4317E464DD00A1C1BC /* home_account.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2317E464C200A1C1BC /* home_account.png */; };
+		53DECC4417E464DD00A1C1BC /* home_army_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2417E464C300A1C1BC /* home_army_dialog.png */; };
+		53DECC4517E464DD00A1C1BC /* home_army.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2517E464C300A1C1BC /* home_army.png */; };
+		53DECC4617E464DD00A1C1BC /* home_equipment_dialog_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2617E464C400A1C1BC /* home_equipment_dialog_2.png */; };
+		53DECC4717E464DD00A1C1BC /* home_equipment_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2717E464C500A1C1BC /* home_equipment_dialog.png */; };
+		53DECC4817E464DD00A1C1BC /* home_equipment.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2817E464C500A1C1BC /* home_equipment.png */; };
+		53DECC4917E464DD00A1C1BC /* home_event.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2917E464C600A1C1BC /* home_event.png */; };
+		53DECC4A17E464DD00A1C1BC /* home_gacha_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2A17E464CA00A1C1BC /* home_gacha_dialog.png */; };
+		53DECC4B17E464DD00A1C1BC /* home_gacha.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2B17E464CA00A1C1BC /* home_gacha.png */; };
+		53DECC4C17E464DD00A1C1BC /* home_invite.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2C17E464CB00A1C1BC /* home_invite.png */; };
+		53DECC4D17E464DD00A1C1BC /* home_level.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2D17E464CD00A1C1BC /* home_level.png */; };
+		53DECC4E17E464DD00A1C1BC /* home_medal.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2E17E464CD00A1C1BC /* home_medal.png */; };
+		53DECC4F17E464DD00A1C1BC /* home_share_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC2F17E464CE00A1C1BC /* home_share_dialog.png */; };
+		53DECC5017E464DD00A1C1BC /* home_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3017E464CE00A1C1BC /* home_share.png */; };
+		53DECC5117E464DD00A1C1BC /* battle_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3117E464CF00A1C1BC /* battle_dialog.png */; };
+		53DECC5217E464DD00A1C1BC /* battle_levelup.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3217E464CF00A1C1BC /* battle_levelup.png */; };
+		53DECC5317E464DD00A1C1BC /* battle_miao_ability.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3317E464D000A1C1BC /* battle_miao_ability.png */; };
+		53DECC5417E464DD00A1C1BC /* battle_pause_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3417E464D100A1C1BC /* battle_pause_dialog.png */; };
+		53DECC5517E464DD00A1C1BC /* battle_pause_lose.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3517E464D200A1C1BC /* battle_pause_lose.png */; };
+		53DECC5617E464DD00A1C1BC /* battle_pause_win.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3617E464D300A1C1BC /* battle_pause_win.png */; };
+		53DECC5717E464DD00A1C1BC /* battle_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3717E464D600A1C1BC /* battle_pause.png */; };
+		53DECC5817E464DD00A1C1BC /* battle_shop_dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3817E464D600A1C1BC /* battle_shop_dialog.png */; };
+		53DECC5917E464DD00A1C1BC /* battle_shop_menu_coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3917E464D700A1C1BC /* battle_shop_menu_coin.png */; };
+		53DECC5A17E464DD00A1C1BC /* battle_shop_menu_ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3A17E464D800A1C1BC /* battle_shop_menu_ring.png */; };
+		53DECC5B17E464DD00A1C1BC /* battle_shop_menu_treasure.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3B17E464D900A1C1BC /* battle_shop_menu_treasure.png */; };
+		53DECC5C17E464DD00A1C1BC /* battle_shop_menu_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3C17E464DB00A1C1BC /* battle_shop_menu_vip.png */; };
+		53DECC5D17E464DD00A1C1BC /* battle_shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3D17E464DC00A1C1BC /* battle_shop.png */; };
+		53DECC5E17E464DD00A1C1BC /* castle.png in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC3E17E464DC00A1C1BC /* castle.png */; };
+		53DECC6217E4AB9B00A1C1BC /* Ability.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC5F17E4AB9A00A1C1BC /* Ability.ccbi */; };
+		53DECC6317E4AB9B00A1C1BC /* Account.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6017E4AB9A00A1C1BC /* Account.ccbi */; };
+		53DECC6417E4AB9B00A1C1BC /* Army.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6117E4AB9A00A1C1BC /* Army.ccbi */; };
+		53DECC7217E4ABDE00A1C1BC /* Equip.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6517E4ABDE00A1C1BC /* Equip.ccbi */; };
+		53DECC7317E4ABDE00A1C1BC /* Event.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6617E4ABDE00A1C1BC /* Event.ccbi */; };
+		53DECC7417E4ABDE00A1C1BC /* Gacha.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6717E4ABDE00A1C1BC /* Gacha.ccbi */; };
+		53DECC7517E4ABDE00A1C1BC /* Invite.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6817E4ABDE00A1C1BC /* Invite.ccbi */; };
+		53DECC7617E4ABDE00A1C1BC /* Load.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6917E4ABDE00A1C1BC /* Load.ccbi */; };
+		53DECC7717E4ABDE00A1C1BC /* Medal.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6A17E4ABDE00A1C1BC /* Medal.ccbi */; };
+		53DECC7817E4ABDE00A1C1BC /* Pause.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6B17E4ABDE00A1C1BC /* Pause.ccbi */; };
+		53DECC7917E4ABDE00A1C1BC /* Reward.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6C17E4ABDE00A1C1BC /* Reward.ccbi */; };
+		53DECC7A17E4ABDE00A1C1BC /* Setting.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6D17E4ABDE00A1C1BC /* Setting.ccbi */; };
+		53DECC7B17E4ABDE00A1C1BC /* Share.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6E17E4ABDE00A1C1BC /* Share.ccbi */; };
+		53DECC7C17E4ABDE00A1C1BC /* Shop.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC6F17E4ABDE00A1C1BC /* Shop.ccbi */; };
+		53DECC7E17E4ABDE00A1C1BC /* Process.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC7117E4ABDE00A1C1BC /* Process.ccbi */; };
+		53DECC8117E4BA9900A1C1BC /* LayerWithDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC7F17E4BA9100A1C1BC /* LayerWithDialog.cpp */; };
+		53DECC8617E4BAFB00A1C1BC /* Equip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC8217E4BAF000A1C1BC /* Equip.cpp */; };
+		53DECC8717E4BAFB00A1C1BC /* EquipLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC8417E4BAF400A1C1BC /* EquipLoader.cpp */; };
+		53DECC8C17E4D90700A1C1BC /* Army.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC8817E4D8F000A1C1BC /* Army.cpp */; };
+		53DECC8D17E4D90700A1C1BC /* ArmyLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC8A17E4D8F800A1C1BC /* ArmyLoader.cpp */; };
+		53DECC9217E4DC2800A1C1BC /* Others.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC8E17E4DC1B00A1C1BC /* Others.cpp */; };
+		53DECC9317E4DC2800A1C1BC /* OthersLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC9017E4DC2200A1C1BC /* OthersLoader.cpp */; };
+		53DECC9517E4DD7B00A1C1BC /* Others.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECC9417E4DD7B00A1C1BC /* Others.ccbi */; };
+		53DECC9A17E4DFA100A1C1BC /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC9617E4DF9000A1C1BC /* Event.cpp */; };
+		53DECC9B17E4DFA100A1C1BC /* EventLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC9817E4DF9900A1C1BC /* EventLoader.cpp */; };
+		53DECCA017E4E12F00A1C1BC /* Reward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC9C17E4E11C00A1C1BC /* Reward.cpp */; };
+		53DECCA117E4E12F00A1C1BC /* RewardLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECC9E17E4E12300A1C1BC /* RewardLoader.cpp */; };
+		53DECCA617E4E39C00A1C1BC /* Share.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCA217E4E38A00A1C1BC /* Share.cpp */; };
+		53DECCA717E4E39C00A1C1BC /* ShareLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCA417E4E39400A1C1BC /* ShareLoader.cpp */; };
+		53DECCAC17E4EB6500A1C1BC /* Ability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCA817E4EB4900A1C1BC /* Ability.cpp */; };
+		53DECCAD17E4EB6500A1C1BC /* AbilityLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCAA17E4EB5400A1C1BC /* AbilityLoader.cpp */; };
+		53DECCB217E4F35400A1C1BC /* Process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCAE17E4F33400A1C1BC /* Process.cpp */; };
+		53DECCB317E4F35400A1C1BC /* ProcessLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCB017E4F34200A1C1BC /* ProcessLoader.cpp */; };
+		53DECCB817E4FE9900A1C1BC /* Medal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCB417E4FE4300A1C1BC /* Medal.cpp */; };
+		53DECCB917E4FE9900A1C1BC /* MedalLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCB617E4FE5100A1C1BC /* MedalLoader.cpp */; };
+		53DECCBE17E5005800A1C1BC /* Shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCBA17E4FFDC00A1C1BC /* Shop.cpp */; };
+		53DECCBF17E5005800A1C1BC /* ShopLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCBC17E4FFE900A1C1BC /* ShopLoader.cpp */; };
+		53DECCC417E505D200A1C1BC /* Pause.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCC017E505B000A1C1BC /* Pause.cpp */; };
+		53DECCC517E505D200A1C1BC /* PauseLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCC217E505C200A1C1BC /* PauseLoader.cpp */; };
+		53DECCD617E50CB700A1C1BC /* Gacha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCC617E50A7C00A1C1BC /* Gacha.cpp */; };
+		53DECCD717E50CB800A1C1BC /* GachaLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCC817E50A8F00A1C1BC /* GachaLoader.cpp */; };
+		53DECCD817E50CB800A1C1BC /* Load.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCCA17E50AA800A1C1BC /* Load.cpp */; };
+		53DECCD917E50CB800A1C1BC /* LoadLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCCC17E50B1200A1C1BC /* LoadLoader.cpp */; };
+		53DECCDA17E50CB800A1C1BC /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCCE17E50C7100A1C1BC /* Account.cpp */; };
+		53DECCDB17E50CB800A1C1BC /* AccountLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD017E50C8400A1C1BC /* AccountLoader.cpp */; };
+		53DECCDC17E50CB800A1C1BC /* Invite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD217E50C9700A1C1BC /* Invite.cpp */; };
+		53DECCDD17E50CB800A1C1BC /* InviteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD417E50CA700A1C1BC /* InviteLoader.cpp */; };
 		53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F96179D945600962274 /* MainMenuScene.cpp */; };
-		53FE4FA1179D945600962274 /* MainMenuSceneLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */; };
-		53FE4FA2179D945600962274 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F9A179D945600962274 /* Menu.cpp */; };
-		53FE4FA3179D945600962274 /* MenuLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F9C179D945600962274 /* MenuLoader.cpp */; };
-		53FE4FAA179D946300962274 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA4179D946300962274 /* Background.cpp */; };
-		53FE4FAB179D946300962274 /* BackgroundLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA6179D946300962274 /* BackgroundLoader.cpp */; };
 		53FE4FAC179D946300962274 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA8179D946300962274 /* GameObject.cpp */; };
 /* End PBXBuildFile section */
 
@@ -902,8 +1085,6 @@
 		5321F856179459A700BC1823 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5321F858179459A700BC1823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		5321F859179459A700BC1823 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		5321F85B179459A700BC1823 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		5321F85C179459A700BC1823 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
 		5331859817959F0900F46CF6 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
 		5331859917959F0900F46CF6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		5331859A17959F0900F46CF6 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
@@ -912,66 +1093,313 @@
 		5331859D17959F0900F46CF6 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
 		5331859E17959F0900F46CF6 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
 		5331859F17959F0900F46CF6 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
-		533185A417959F9800F46CF6 /* UpdateLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UpdateLayer.cpp; path = Classes/UpdateLayer.cpp; sourceTree = "<group>"; };
-		533185A517959F9800F46CF6 /* UpdateLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UpdateLayer.h; path = Classes/UpdateLayer.h; sourceTree = "<group>"; };
-		533185A817959FA800F46CF6 /* ApiReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiReader.cpp; path = Classes/ApiReader.cpp; sourceTree = "<group>"; };
-		533185A917959FA800F46CF6 /* ApiReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiReader.h; path = Classes/ApiReader.h; sourceTree = "<group>"; };
-		53FE4F56179D8E5C00962274 /* Sword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sword.cpp; path = Classes/Sword.cpp; sourceTree = "<group>"; };
-		53FE4F57179D8E5C00962274 /* Sword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sword.h; path = Classes/Sword.h; sourceTree = "<group>"; };
-		53FE4F59179D93AA00962274 /* Arrial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Arrial.cpp; path = Classes/Arrial.cpp; sourceTree = "<group>"; };
-		53FE4F5A179D93AA00962274 /* Arrial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arrial.h; path = Classes/Arrial.h; sourceTree = "<group>"; };
-		53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrialLoader.cpp; path = Classes/ArrialLoader.cpp; sourceTree = "<group>"; };
-		53FE4F5C179D93AA00962274 /* ArrialLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrialLoader.h; path = Classes/ArrialLoader.h; sourceTree = "<group>"; };
-		53FE4F5D179D93AA00962274 /* Arrow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Arrow.cpp; path = Classes/Arrow.cpp; sourceTree = "<group>"; };
-		53FE4F5E179D93AA00962274 /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arrow.h; path = Classes/Arrow.h; sourceTree = "<group>"; };
-		53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArrowLoader.cpp; path = Classes/ArrowLoader.cpp; sourceTree = "<group>"; };
-		53FE4F60179D93AA00962274 /* ArrowLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowLoader.h; path = Classes/ArrowLoader.h; sourceTree = "<group>"; };
-		53FE4F61179D93AA00962274 /* Dot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Dot.cpp; path = Classes/Dot.cpp; sourceTree = "<group>"; };
-		53FE4F62179D93AA00962274 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dot.h; path = Classes/Dot.h; sourceTree = "<group>"; };
-		53FE4F63179D93AA00962274 /* DotLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DotLoader.cpp; path = Classes/DotLoader.cpp; sourceTree = "<group>"; };
-		53FE4F64179D93AA00962274 /* DotLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DotLoader.h; path = Classes/DotLoader.h; sourceTree = "<group>"; };
-		53FE4F65179D93AA00962274 /* Heal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Heal.cpp; path = Classes/Heal.cpp; sourceTree = "<group>"; };
-		53FE4F66179D93AA00962274 /* Heal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Heal.h; path = Classes/Heal.h; sourceTree = "<group>"; };
-		53FE4F67179D93AA00962274 /* HealLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HealLoader.cpp; path = Classes/HealLoader.cpp; sourceTree = "<group>"; };
-		53FE4F68179D93AA00962274 /* HealLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealLoader.h; path = Classes/HealLoader.h; sourceTree = "<group>"; };
-		53FE4F71179D93D500962274 /* Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Range.cpp; path = Classes/Range.cpp; sourceTree = "<group>"; };
-		53FE4F72179D93D500962274 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Range.h; path = Classes/Range.h; sourceTree = "<group>"; };
-		53FE4F73179D93D500962274 /* RangeLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RangeLoader.cpp; path = Classes/RangeLoader.cpp; sourceTree = "<group>"; };
-		53FE4F74179D93D500962274 /* RangeLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RangeLoader.h; path = Classes/RangeLoader.h; sourceTree = "<group>"; };
-		53FE4F75179D93D500962274 /* SwordLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SwordLoader.cpp; path = Classes/SwordLoader.cpp; sourceTree = "<group>"; };
-		53FE4F76179D93D500962274 /* SwordLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwordLoader.h; path = Classes/SwordLoader.h; sourceTree = "<group>"; };
-		53FE4F77179D93D500962274 /* Tank.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tank.cpp; path = Classes/Tank.cpp; sourceTree = "<group>"; };
-		53FE4F78179D93D500962274 /* Tank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tank.h; path = Classes/Tank.h; sourceTree = "<group>"; };
-		53FE4F79179D93D500962274 /* TankLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TankLoader.cpp; path = Classes/TankLoader.cpp; sourceTree = "<group>"; };
-		53FE4F7A179D93D500962274 /* TankLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TankLoader.h; path = Classes/TankLoader.h; sourceTree = "<group>"; };
-		53FE4F80179D93E400962274 /* Magic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Magic.cpp; path = Classes/Magic.cpp; sourceTree = "<group>"; };
-		53FE4F81179D93E400962274 /* Magic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Magic.h; path = Classes/Magic.h; sourceTree = "<group>"; };
-		53FE4F82179D93E400962274 /* MagicLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MagicLoader.cpp; path = Classes/MagicLoader.cpp; sourceTree = "<group>"; };
-		53FE4F83179D93E400962274 /* MagicLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicLoader.h; path = Classes/MagicLoader.h; sourceTree = "<group>"; };
-		53FE4F84179D93E400962274 /* Strong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Strong.cpp; path = Classes/Strong.cpp; sourceTree = "<group>"; };
-		53FE4F85179D93E400962274 /* Strong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Strong.h; path = Classes/Strong.h; sourceTree = "<group>"; };
-		53FE4F86179D93E400962274 /* StrongLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StrongLoader.cpp; path = Classes/StrongLoader.cpp; sourceTree = "<group>"; };
-		53FE4F87179D93E400962274 /* StrongLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StrongLoader.h; path = Classes/StrongLoader.h; sourceTree = "<group>"; };
-		53FE4F8C179D944900962274 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
-		53FE4F8D179D944900962274 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
-		53FE4F8E179D944900962274 /* GameSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneLoader.cpp; path = Classes/GameSceneLoader.cpp; sourceTree = "<group>"; };
-		53FE4F8F179D944900962274 /* GameSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneLoader.h; path = Classes/GameSceneLoader.h; sourceTree = "<group>"; };
-		53FE4F92179D945600962274 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = Classes/Level.cpp; sourceTree = "<group>"; };
-		53FE4F93179D945600962274 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = Classes/Level.h; sourceTree = "<group>"; };
-		53FE4F94179D945600962274 /* LevelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelLoader.cpp; path = Classes/LevelLoader.cpp; sourceTree = "<group>"; };
-		53FE4F95179D945600962274 /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Classes/LevelLoader.h; sourceTree = "<group>"; };
+		5335BBE117A6C01B00B02A13 /* ri.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ri.plist; path = Resources/ri.plist; sourceTree = "<group>"; };
+		5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = ri.pvr.ccz; path = Resources/ri.pvr.ccz; sourceTree = "<group>"; };
+		5335BBE317A6C01B00B02A13 /* battle_ui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = battle_ui.plist; path = Resources/battle_ui.plist; sourceTree = "<group>"; };
+		5335BBE417A6C01B00B02A13 /* battle_ui.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = battle_ui.pvr.ccz; path = Resources/battle_ui.pvr.ccz; sourceTree = "<group>"; };
+		5335BBEB17A8168200B02A13 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		5335BBEC17A8168200B02A13 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
+		5335BBEE17A81A0200B02A13 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Background.h; path = Classes/Background.h; sourceTree = "<group>"; };
+		5335BBEF17A81A0200B02A13 /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = Classes/Background.cpp; sourceTree = "<group>"; };
+		5335BBF117A81A0C00B02A13 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = Classes/Menu.h; sourceTree = "<group>"; };
+		5335BBF217A81A0C00B02A13 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = Classes/Menu.cpp; sourceTree = "<group>"; };
+		5335BBF517ABF3C000B02A13 /* GameSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameSceneLoader.h; path = Classes/GameSceneLoader.h; sourceTree = "<group>"; };
+		5335BBF617ABF3C100B02A13 /* GameSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSceneLoader.cpp; path = Classes/GameSceneLoader.cpp; sourceTree = "<group>"; };
+		5335BBF817ABF3DD00B02A13 /* MenuLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLoader.h; path = Classes/MenuLoader.h; sourceTree = "<group>"; };
+		5335BBF917ABF3DD00B02A13 /* MenuLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuLoader.cpp; path = Classes/MenuLoader.cpp; sourceTree = "<group>"; };
+		5335BBFB17ABF3ED00B02A13 /* BackgroundLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLoader.h; path = Classes/BackgroundLoader.h; sourceTree = "<group>"; };
+		5335BBFC17ABF3ED00B02A13 /* BackgroundLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BackgroundLoader.cpp; path = Classes/BackgroundLoader.cpp; sourceTree = "<group>"; };
+		5335BBFF17ABF70300B02A13 /* Menu.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Menu.ccbi; path = Resources/Menu.ccbi; sourceTree = "<group>"; };
+		5335BC0017ABF70300B02A13 /* GameScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = GameScene.ccbi; path = Resources/GameScene.ccbi; sourceTree = "<group>"; };
+		5335BC0117ABF70300B02A13 /* Background.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Background.ccbi; path = Resources/Background.ccbi; sourceTree = "<group>"; };
+		534B439417B615D8001DF7B0 /* s9_a2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s9_a2.wav; path = Resources/s9_a2.wav; sourceTree = "<group>"; };
+		534B439517B615D8001DF7B0 /* s9_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s9_a1.wav; path = Resources/s9_a1.wav; sourceTree = "<group>"; };
+		534B439617B615D8001DF7B0 /* s8_a2_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s8_a2_2.wav; path = Resources/s8_a2_2.wav; sourceTree = "<group>"; };
+		534B439717B615D8001DF7B0 /* s8_a2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s8_a2_1.wav; path = Resources/s8_a2_1.wav; sourceTree = "<group>"; };
+		534B439817B615D8001DF7B0 /* s8_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s8_a1.wav; path = Resources/s8_a1.wav; sourceTree = "<group>"; };
+		534B439917B615D8001DF7B0 /* s7_a2_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s7_a2_2.wav; path = Resources/s7_a2_2.wav; sourceTree = "<group>"; };
+		534B439A17B615D8001DF7B0 /* s7_a2_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s7_a2_1.wav; path = Resources/s7_a2_1.wav; sourceTree = "<group>"; };
+		534B439B17B615D8001DF7B0 /* s7_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s7_a1.wav; path = Resources/s7_a1.wav; sourceTree = "<group>"; };
+		534B439C17B615D8001DF7B0 /* s6_a2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s6_a2.wav; path = Resources/s6_a2.wav; sourceTree = "<group>"; };
+		534B439D17B615D8001DF7B0 /* s6_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s6_a1.wav; path = Resources/s6_a1.wav; sourceTree = "<group>"; };
+		534B439E17B615D8001DF7B0 /* s5_a2.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s5_a2.WAV; path = Resources/s5_a2.WAV; sourceTree = "<group>"; };
+		534B439F17B615D8001DF7B0 /* s5_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s5_a1.wav; path = Resources/s5_a1.wav; sourceTree = "<group>"; };
+		534B43A017B615D8001DF7B0 /* s4_a2.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s4_a2.WAV; path = Resources/s4_a2.WAV; sourceTree = "<group>"; };
+		534B43A117B615D8001DF7B0 /* s4_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s4_a1.wav; path = Resources/s4_a1.wav; sourceTree = "<group>"; };
+		534B43A217B615D8001DF7B0 /* s3_a2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s3_a2.wav; path = Resources/s3_a2.wav; sourceTree = "<group>"; };
+		534B43A317B615D8001DF7B0 /* s3_a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s3_a1.wav; path = Resources/s3_a1.wav; sourceTree = "<group>"; };
+		534B43A417B615D8001DF7B0 /* s2_a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s2_a.wav; path = Resources/s2_a.wav; sourceTree = "<group>"; };
+		534B43A517B615D8001DF7B0 /* s1_a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = s1_a.wav; path = Resources/s1_a.wav; sourceTree = "<group>"; };
+		534B43BA17B61E07001DF7B0 /* MiaoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiaoLoader.h; path = Classes/MiaoLoader.h; sourceTree = "<group>"; };
+		534B43BB17B61E07001DF7B0 /* MiaoLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MiaoLoader.cpp; path = Classes/MiaoLoader.cpp; sourceTree = "<group>"; };
+		534B43BC17B61E07001DF7B0 /* Miao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Miao.h; path = Classes/Miao.h; sourceTree = "<group>"; };
+		534B43BD17B61E07001DF7B0 /* Miao.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Miao.cpp; path = Classes/Miao.cpp; sourceTree = "<group>"; };
+		534B43C017B61F83001DF7B0 /* Miao.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Miao.ccbi; path = Resources/Miao.ccbi; sourceTree = "<group>"; };
+		534B43C217B63BC8001DF7B0 /* RS10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS10.ccbi; path = Resources/RS10.ccbi; sourceTree = "<group>"; };
+		534B43C317B63BC8001DF7B0 /* RS9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS9.ccbi; path = Resources/RS9.ccbi; sourceTree = "<group>"; };
+		534B43C417B63BC8001DF7B0 /* RS8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS8.ccbi; path = Resources/RS8.ccbi; sourceTree = "<group>"; };
+		534B43C517B63BC8001DF7B0 /* RS7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS7.ccbi; path = Resources/RS7.ccbi; sourceTree = "<group>"; };
+		534B43C617B63BC8001DF7B0 /* RS6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS6.ccbi; path = Resources/RS6.ccbi; sourceTree = "<group>"; };
+		534B43C717B63BC8001DF7B0 /* RS5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS5.ccbi; path = Resources/RS5.ccbi; sourceTree = "<group>"; };
+		534B43C817B63BC8001DF7B0 /* RS4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS4.ccbi; path = Resources/RS4.ccbi; sourceTree = "<group>"; };
+		534B43C917B63BC8001DF7B0 /* RS3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS3.ccbi; path = Resources/RS3.ccbi; sourceTree = "<group>"; };
+		534B43CA17B63BC8001DF7B0 /* RS2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS2.ccbi; path = Resources/RS2.ccbi; sourceTree = "<group>"; };
+		534B43CB17B63BC8001DF7B0 /* RS1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RS1.ccbi; path = Resources/RS1.ccbi; sourceTree = "<group>"; };
+		534B43CC17B63BC8001DF7B0 /* RBoss.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RBoss.ccbi; path = Resources/RBoss.ccbi; sourceTree = "<group>"; };
+		534B43D817B63EF0001DF7B0 /* RS10Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS10Loader.h; path = Classes/RS10Loader.h; sourceTree = "<group>"; };
+		534B43D917B63EF0001DF7B0 /* RS10Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS10Loader.cpp; path = Classes/RS10Loader.cpp; sourceTree = "<group>"; };
+		534B43DA17B63EF0001DF7B0 /* RS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS10.h; path = Classes/RS10.h; sourceTree = "<group>"; };
+		534B43DB17B63EF0001DF7B0 /* RS10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS10.cpp; path = Classes/RS10.cpp; sourceTree = "<group>"; };
+		534B43DC17B63EF0001DF7B0 /* RS9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS9Loader.h; path = Classes/RS9Loader.h; sourceTree = "<group>"; };
+		534B43DD17B63EF0001DF7B0 /* RS9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS9Loader.cpp; path = Classes/RS9Loader.cpp; sourceTree = "<group>"; };
+		534B43DE17B63EF0001DF7B0 /* RS9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS9.h; path = Classes/RS9.h; sourceTree = "<group>"; };
+		534B43DF17B63EF0001DF7B0 /* RS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS9.cpp; path = Classes/RS9.cpp; sourceTree = "<group>"; };
+		534B43E017B63EF0001DF7B0 /* RS8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS8Loader.h; path = Classes/RS8Loader.h; sourceTree = "<group>"; };
+		534B43E117B63EF0001DF7B0 /* RS8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS8Loader.cpp; path = Classes/RS8Loader.cpp; sourceTree = "<group>"; };
+		534B43E217B63EF0001DF7B0 /* RS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS8.h; path = Classes/RS8.h; sourceTree = "<group>"; };
+		534B43E317B63EF0001DF7B0 /* RS8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS8.cpp; path = Classes/RS8.cpp; sourceTree = "<group>"; };
+		534B43E417B63EF0001DF7B0 /* RS7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS7Loader.h; path = Classes/RS7Loader.h; sourceTree = "<group>"; };
+		534B43E517B63EF0001DF7B0 /* RS7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS7Loader.cpp; path = Classes/RS7Loader.cpp; sourceTree = "<group>"; };
+		534B43E617B63EF0001DF7B0 /* RS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS7.h; path = Classes/RS7.h; sourceTree = "<group>"; };
+		534B43E717B63EF0001DF7B0 /* RS7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS7.cpp; path = Classes/RS7.cpp; sourceTree = "<group>"; };
+		534B43E817B63EF1001DF7B0 /* RS6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS6Loader.h; path = Classes/RS6Loader.h; sourceTree = "<group>"; };
+		534B43E917B63EF1001DF7B0 /* RS6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS6Loader.cpp; path = Classes/RS6Loader.cpp; sourceTree = "<group>"; };
+		534B43EA17B63EF1001DF7B0 /* RS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS6.h; path = Classes/RS6.h; sourceTree = "<group>"; };
+		534B43EB17B63EF1001DF7B0 /* RS6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS6.cpp; path = Classes/RS6.cpp; sourceTree = "<group>"; };
+		534B43EC17B63EF1001DF7B0 /* RS5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS5Loader.h; path = Classes/RS5Loader.h; sourceTree = "<group>"; };
+		534B43ED17B63EF1001DF7B0 /* RS5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS5Loader.cpp; path = Classes/RS5Loader.cpp; sourceTree = "<group>"; };
+		534B43EE17B63EF1001DF7B0 /* RS5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS5.h; path = Classes/RS5.h; sourceTree = "<group>"; };
+		534B43EF17B63EF1001DF7B0 /* RS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS5.cpp; path = Classes/RS5.cpp; sourceTree = "<group>"; };
+		534B43F017B63EF1001DF7B0 /* RS4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS4Loader.h; path = Classes/RS4Loader.h; sourceTree = "<group>"; };
+		534B43F117B63EF1001DF7B0 /* RS4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS4Loader.cpp; path = Classes/RS4Loader.cpp; sourceTree = "<group>"; };
+		534B43F217B63EF1001DF7B0 /* RS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS4.h; path = Classes/RS4.h; sourceTree = "<group>"; };
+		534B43F317B63EF1001DF7B0 /* RS4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS4.cpp; path = Classes/RS4.cpp; sourceTree = "<group>"; };
+		534B43F417B63EF1001DF7B0 /* RS3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS3Loader.h; path = Classes/RS3Loader.h; sourceTree = "<group>"; };
+		534B43F517B63EF2001DF7B0 /* RS3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS3Loader.cpp; path = Classes/RS3Loader.cpp; sourceTree = "<group>"; };
+		534B43F617B63EF2001DF7B0 /* RS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS3.h; path = Classes/RS3.h; sourceTree = "<group>"; };
+		534B43F717B63EF2001DF7B0 /* RS3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS3.cpp; path = Classes/RS3.cpp; sourceTree = "<group>"; };
+		534B43F817B63EF2001DF7B0 /* RS2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS2Loader.h; path = Classes/RS2Loader.h; sourceTree = "<group>"; };
+		534B43F917B63EF2001DF7B0 /* RS2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS2Loader.cpp; path = Classes/RS2Loader.cpp; sourceTree = "<group>"; };
+		534B43FA17B63EF2001DF7B0 /* RS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS2.h; path = Classes/RS2.h; sourceTree = "<group>"; };
+		534B43FB17B63EF2001DF7B0 /* RS2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS2.cpp; path = Classes/RS2.cpp; sourceTree = "<group>"; };
+		534B43FC17B63EF2001DF7B0 /* RS1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS1Loader.h; path = Classes/RS1Loader.h; sourceTree = "<group>"; };
+		534B43FD17B63EF2001DF7B0 /* RS1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS1Loader.cpp; path = Classes/RS1Loader.cpp; sourceTree = "<group>"; };
+		534B43FE17B63EF2001DF7B0 /* RS1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RS1.h; path = Classes/RS1.h; sourceTree = "<group>"; };
+		534B43FF17B63EF2001DF7B0 /* RS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RS1.cpp; path = Classes/RS1.cpp; sourceTree = "<group>"; };
+		534B440017B63EF2001DF7B0 /* RBossLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBossLoader.h; path = Classes/RBossLoader.h; sourceTree = "<group>"; };
+		534B440117B63EF2001DF7B0 /* RBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBossLoader.cpp; path = Classes/RBossLoader.cpp; sourceTree = "<group>"; };
+		534B440217B63EF2001DF7B0 /* RBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBoss.h; path = Classes/RBoss.h; sourceTree = "<group>"; };
+		534B440317B63EF2001DF7B0 /* RBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBoss.cpp; path = Classes/RBoss.cpp; sourceTree = "<group>"; };
+		535E8D6E17BBD2B000C2A145 /* Soldier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Soldier.cpp; path = Classes/Soldier.cpp; sourceTree = "<group>"; };
+		535E8D6F17BBD2B000C2A145 /* Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Soldier.h; path = Classes/Soldier.h; sourceTree = "<group>"; };
+		535E8D7117BBD2C700C2A145 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
+		535E8D7217BBD2C700C2A145 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Classes/Enemy.h; sourceTree = "<group>"; };
+		5383A8B817CE576C00EE4A1A /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background.mp3; path = Resources/background.mp3; sourceTree = "<group>"; };
+		5383A8BA17D10C3300EE4A1A /* jap_s10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s10.wav; path = Resources/jap_s10.wav; sourceTree = "<group>"; };
+		5383A8BB17D10C3300EE4A1A /* jap_s9 .wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "jap_s9 .wav"; path = "Resources/jap_s9 .wav"; sourceTree = "<group>"; };
+		5383A8BC17D10C3300EE4A1A /* jap_s8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s8.wav; path = Resources/jap_s8.wav; sourceTree = "<group>"; };
+		5383A8BD17D10C3300EE4A1A /* jap_s7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s7.wav; path = Resources/jap_s7.wav; sourceTree = "<group>"; };
+		5383A8BE17D10C3300EE4A1A /* jap_s6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s6.wav; path = Resources/jap_s6.wav; sourceTree = "<group>"; };
+		5383A8BF17D10C3300EE4A1A /* jap_s5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s5.wav; path = Resources/jap_s5.wav; sourceTree = "<group>"; };
+		5383A8C017D10C3300EE4A1A /* jap_s4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s4.wav; path = Resources/jap_s4.wav; sourceTree = "<group>"; };
+		5383A8C117D10C3300EE4A1A /* jap_s3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s3.wav; path = Resources/jap_s3.wav; sourceTree = "<group>"; };
+		5383A8C217D10C3300EE4A1A /* jap_s2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s2.wav; path = Resources/jap_s2.wav; sourceTree = "<group>"; };
+		5383A8C317D10C3300EE4A1A /* jap_s1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = jap_s1.wav; path = Resources/jap_s1.wav; sourceTree = "<group>"; };
+		5383A8CE17D10C4200EE4A1A /* boss_2(dead).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "boss_2(dead).wav"; path = "Resources/boss_2(dead).wav"; sourceTree = "<group>"; };
+		5383A8CF17D10C4200EE4A1A /* boss_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = boss_2.wav; path = Resources/boss_2.wav; sourceTree = "<group>"; };
+		5383A8D017D10C4200EE4A1A /* boss_1(dead).wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "boss_1(dead).wav"; path = "Resources/boss_1(dead).wav"; sourceTree = "<group>"; };
+		5383A8D117D10C4200EE4A1A /* boss_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = boss_1.wav; path = Resources/boss_1.wav; sourceTree = "<group>"; };
+		5383A8D617D1155D00EE4A1A /* storyboard.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = storyboard.pvr.ccz; path = Resources/storyboard.pvr.ccz; sourceTree = "<group>"; };
+		5383A8D717D1155D00EE4A1A /* storyboard.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = storyboard.plist; path = Resources/storyboard.plist; sourceTree = "<group>"; };
+		5383A8DA17D1177700EE4A1A /* StoryScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoryScene.h; path = Classes/StoryScene.h; sourceTree = "<group>"; };
+		5383A8DB17D1177700EE4A1A /* StoryScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StoryScene.cpp; path = Classes/StoryScene.cpp; sourceTree = "<group>"; };
+		5383A8DD17D3973B00EE4A1A /* main.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = main.mp3; path = Resources/main.mp3; sourceTree = "<group>"; };
+		5383A8DF17D4EFCE00EE4A1A /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = Classes/GameOverScene.h; sourceTree = "<group>"; };
+		5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = Classes/GameOverScene.cpp; sourceTree = "<group>"; };
+		53B57AF117B3FA8B0068BD92 /* S9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S9Loader.h; path = Classes/S9Loader.h; sourceTree = "<group>"; };
+		53B57AF217B3FA8B0068BD92 /* S9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S9Loader.cpp; path = Classes/S9Loader.cpp; sourceTree = "<group>"; };
+		53B57AF317B3FA8B0068BD92 /* S9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S9.h; path = Classes/S9.h; sourceTree = "<group>"; };
+		53B57AF417B3FA8B0068BD92 /* S9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S9.cpp; path = Classes/S9.cpp; sourceTree = "<group>"; };
+		53B57AF517B3FA8B0068BD92 /* S8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S8Loader.h; path = Classes/S8Loader.h; sourceTree = "<group>"; };
+		53B57AF617B3FA8B0068BD92 /* S8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S8Loader.cpp; path = Classes/S8Loader.cpp; sourceTree = "<group>"; };
+		53B57AF717B3FA8B0068BD92 /* S8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S8.h; path = Classes/S8.h; sourceTree = "<group>"; };
+		53B57AF817B3FA8B0068BD92 /* S8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S8.cpp; path = Classes/S8.cpp; sourceTree = "<group>"; };
+		53B57AF917B3FA8B0068BD92 /* S7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S7Loader.h; path = Classes/S7Loader.h; sourceTree = "<group>"; };
+		53B57AFA17B3FA8B0068BD92 /* S7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S7Loader.cpp; path = Classes/S7Loader.cpp; sourceTree = "<group>"; };
+		53B57AFB17B3FA8B0068BD92 /* S7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S7.h; path = Classes/S7.h; sourceTree = "<group>"; };
+		53B57AFC17B3FA8B0068BD92 /* S7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S7.cpp; path = Classes/S7.cpp; sourceTree = "<group>"; };
+		53B57AFD17B3FA8B0068BD92 /* S6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S6Loader.h; path = Classes/S6Loader.h; sourceTree = "<group>"; };
+		53B57AFE17B3FA8B0068BD92 /* S6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S6Loader.cpp; path = Classes/S6Loader.cpp; sourceTree = "<group>"; };
+		53B57AFF17B3FA8B0068BD92 /* S6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S6.h; path = Classes/S6.h; sourceTree = "<group>"; };
+		53B57B0017B3FA8B0068BD92 /* S6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S6.cpp; path = Classes/S6.cpp; sourceTree = "<group>"; };
+		53B57B0117B3FA8B0068BD92 /* S5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S5Loader.h; path = Classes/S5Loader.h; sourceTree = "<group>"; };
+		53B57B0217B3FA8B0068BD92 /* S5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S5Loader.cpp; path = Classes/S5Loader.cpp; sourceTree = "<group>"; };
+		53B57B0317B3FA8B0068BD92 /* S5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S5.h; path = Classes/S5.h; sourceTree = "<group>"; };
+		53B57B0417B3FA8B0068BD92 /* S5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S5.cpp; path = Classes/S5.cpp; sourceTree = "<group>"; };
+		53B57B0517B3FA8B0068BD92 /* S4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S4Loader.h; path = Classes/S4Loader.h; sourceTree = "<group>"; };
+		53B57B0617B3FA8B0068BD92 /* S4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S4Loader.cpp; path = Classes/S4Loader.cpp; sourceTree = "<group>"; };
+		53B57B0717B3FA8B0068BD92 /* S4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S4.h; path = Classes/S4.h; sourceTree = "<group>"; };
+		53B57B0817B3FA8B0068BD92 /* S4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S4.cpp; path = Classes/S4.cpp; sourceTree = "<group>"; };
+		53B57B0917B3FA8B0068BD92 /* S3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3Loader.h; path = Classes/S3Loader.h; sourceTree = "<group>"; };
+		53B57B0A17B3FA8B0068BD92 /* S3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S3Loader.cpp; path = Classes/S3Loader.cpp; sourceTree = "<group>"; };
+		53B57B0B17B3FA8B0068BD92 /* S3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S3.h; path = Classes/S3.h; sourceTree = "<group>"; };
+		53B57B0C17B3FA8B0068BD92 /* S3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S3.cpp; path = Classes/S3.cpp; sourceTree = "<group>"; };
+		53B57B0D17B3FA8B0068BD92 /* S2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S2Loader.h; path = Classes/S2Loader.h; sourceTree = "<group>"; };
+		53B57B0E17B3FA8B0068BD92 /* S2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S2Loader.cpp; path = Classes/S2Loader.cpp; sourceTree = "<group>"; };
+		53B57B0F17B3FA8B0068BD92 /* S2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S2.h; path = Classes/S2.h; sourceTree = "<group>"; };
+		53B57B1017B3FA8B0068BD92 /* S2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S2.cpp; path = Classes/S2.cpp; sourceTree = "<group>"; };
+		53B57B1117B3FA8B0068BD92 /* S1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S1Loader.h; path = Classes/S1Loader.h; sourceTree = "<group>"; };
+		53B57B1217B3FA8B0068BD92 /* S1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S1Loader.cpp; path = Classes/S1Loader.cpp; sourceTree = "<group>"; };
+		53B57B1317B3FA8B0068BD92 /* S1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S1.h; path = Classes/S1.h; sourceTree = "<group>"; };
+		53B57B1417B3FA8B0068BD92 /* S1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S1.cpp; path = Classes/S1.cpp; sourceTree = "<group>"; };
+		53B57B2717B3FAA50068BD92 /* LevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelLoader.h; path = Classes/LevelLoader.h; sourceTree = "<group>"; };
+		53B57B2817B3FAA50068BD92 /* LevelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelLoader.cpp; path = Classes/LevelLoader.cpp; sourceTree = "<group>"; };
+		53B57B2917B3FAA50068BD92 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = Classes/Level.h; sourceTree = "<group>"; };
+		53B57B2A17B3FAA50068BD92 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = Classes/Level.cpp; sourceTree = "<group>"; };
+		53B57B2D17B3FEE20068BD92 /* S9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S9.ccbi; path = Resources/S9.ccbi; sourceTree = "<group>"; };
+		53B57B2E17B3FEE20068BD92 /* S8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S8.ccbi; path = Resources/S8.ccbi; sourceTree = "<group>"; };
+		53B57B2F17B3FEE20068BD92 /* S7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S7.ccbi; path = Resources/S7.ccbi; sourceTree = "<group>"; };
+		53B57B3017B3FEE20068BD92 /* S6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S6.ccbi; path = Resources/S6.ccbi; sourceTree = "<group>"; };
+		53B57B3117B3FEE20068BD92 /* S5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S5.ccbi; path = Resources/S5.ccbi; sourceTree = "<group>"; };
+		53B57B3217B3FEE20068BD92 /* S4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S4.ccbi; path = Resources/S4.ccbi; sourceTree = "<group>"; };
+		53B57B3317B3FEE20068BD92 /* S3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S3.ccbi; path = Resources/S3.ccbi; sourceTree = "<group>"; };
+		53B57B3417B3FEE20068BD92 /* S2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S2.ccbi; path = Resources/S2.ccbi; sourceTree = "<group>"; };
+		53B57B3517B3FEE20068BD92 /* S1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S1.ccbi; path = Resources/S1.ccbi; sourceTree = "<group>"; };
+		53B57B3F17B3FEF00068BD92 /* MouseGameScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MouseGameScene.ccbi; path = Resources/MouseGameScene.ccbi; sourceTree = "<group>"; };
+		53B57B4017B3FEF00068BD92 /* Level.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Level.ccbi; path = Resources/Level.ccbi; sourceTree = "<group>"; };
+		53D2036317D8C4B900BB9875 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		53DECBB617DE3C0600A1C1BC /* StatusLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusLoader.h; path = Classes/StatusLoader.h; sourceTree = "<group>"; };
+		53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StatusLoader.cpp; path = Classes/StatusLoader.cpp; sourceTree = "<group>"; };
+		53DECBB817DE3C0800A1C1BC /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Status.h; path = Classes/Status.h; sourceTree = "<group>"; };
+		53DECBB917DE3C0800A1C1BC /* Status.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Status.cpp; path = Classes/Status.cpp; sourceTree = "<group>"; };
+		53DECBBC17E0AFDB00A1C1BC /* Status.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Status.ccbi; path = Resources/Status.ccbi; sourceTree = "<group>"; };
+		53DECBC017E0BCA900A1C1BC /* MouseGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseGameScene.h; path = Classes/MouseGameScene.h; sourceTree = "<group>"; };
+		53DECBC117E0BCAA00A1C1BC /* MouseGameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseGameScene.cpp; path = Classes/MouseGameScene.cpp; sourceTree = "<group>"; };
+		53DECBC417E0BD1D00A1C1BC /* MouseMenu.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MouseMenu.ccbi; path = Resources/MouseMenu.ccbi; sourceTree = "<group>"; };
+		53DECBC617E0BDDC00A1C1BC /* MouseMenuLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseMenuLoader.h; path = Classes/MouseMenuLoader.h; sourceTree = "<group>"; };
+		53DECBC717E0BDDD00A1C1BC /* MouseMenuLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseMenuLoader.cpp; path = Classes/MouseMenuLoader.cpp; sourceTree = "<group>"; };
+		53DECBC817E0BDDE00A1C1BC /* MouseMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseMenu.h; path = Classes/MouseMenu.h; sourceTree = "<group>"; };
+		53DECBC917E0BDE000A1C1BC /* MouseMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseMenu.cpp; path = Classes/MouseMenu.cpp; sourceTree = "<group>"; };
+		53DECBCF17E2031E00A1C1BC /* NormalGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NormalGameScene.h; path = Classes/NormalGameScene.h; sourceTree = "<group>"; };
+		53DECBD017E2031F00A1C1BC /* NormalGameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NormalGameScene.cpp; path = Classes/NormalGameScene.cpp; sourceTree = "<group>"; };
+		53DECC1417E35E9B00A1C1BC /* MainMenuScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MainMenuScene.ccbi; path = Resources/MainMenuScene.ccbi; sourceTree = "<group>"; };
+		53DECC1617E35EC100A1C1BC /* MainMenuSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuSceneLoader.cpp; path = Classes/MainMenuSceneLoader.cpp; sourceTree = "<group>"; };
+		53DECC1717E35EC300A1C1BC /* MainMenuSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuSceneLoader.h; path = Classes/MainMenuSceneLoader.h; sourceTree = "<group>"; };
+		53DECC1917E3929900A1C1BC /* ui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ui.plist; path = Resources/ui.plist; sourceTree = "<group>"; };
+		53DECC1A17E3929A00A1C1BC /* ui.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = ui.pvr.ccz; path = Resources/ui.pvr.ccz; sourceTree = "<group>"; };
+		53DECC1D17E4390400A1C1BC /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Resources/home.png; sourceTree = "<group>"; };
+		53DECC1F17E464BC00A1C1BC /* load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = load.png; path = Resources/load.png; sourceTree = "<group>"; };
+		53DECC2017E464BC00A1C1BC /* others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = others.png; path = Resources/others.png; sourceTree = "<group>"; };
+		53DECC2117E464BE00A1C1BC /* reward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reward.png; path = Resources/reward.png; sourceTree = "<group>"; };
+		53DECC2217E464BF00A1C1BC /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = setting.png; path = Resources/setting.png; sourceTree = "<group>"; };
+		53DECC2317E464C200A1C1BC /* home_account.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_account.png; path = Resources/home_account.png; sourceTree = "<group>"; };
+		53DECC2417E464C300A1C1BC /* home_army_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_army_dialog.png; path = Resources/home_army_dialog.png; sourceTree = "<group>"; };
+		53DECC2517E464C300A1C1BC /* home_army.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_army.png; path = Resources/home_army.png; sourceTree = "<group>"; };
+		53DECC2617E464C400A1C1BC /* home_equipment_dialog_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_equipment_dialog_2.png; path = Resources/home_equipment_dialog_2.png; sourceTree = "<group>"; };
+		53DECC2717E464C500A1C1BC /* home_equipment_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_equipment_dialog.png; path = Resources/home_equipment_dialog.png; sourceTree = "<group>"; };
+		53DECC2817E464C500A1C1BC /* home_equipment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_equipment.png; path = Resources/home_equipment.png; sourceTree = "<group>"; };
+		53DECC2917E464C600A1C1BC /* home_event.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_event.png; path = Resources/home_event.png; sourceTree = "<group>"; };
+		53DECC2A17E464CA00A1C1BC /* home_gacha_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_gacha_dialog.png; path = Resources/home_gacha_dialog.png; sourceTree = "<group>"; };
+		53DECC2B17E464CA00A1C1BC /* home_gacha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_gacha.png; path = Resources/home_gacha.png; sourceTree = "<group>"; };
+		53DECC2C17E464CB00A1C1BC /* home_invite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_invite.png; path = Resources/home_invite.png; sourceTree = "<group>"; };
+		53DECC2D17E464CD00A1C1BC /* home_level.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_level.png; path = Resources/home_level.png; sourceTree = "<group>"; };
+		53DECC2E17E464CD00A1C1BC /* home_medal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_medal.png; path = Resources/home_medal.png; sourceTree = "<group>"; };
+		53DECC2F17E464CE00A1C1BC /* home_share_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_share_dialog.png; path = Resources/home_share_dialog.png; sourceTree = "<group>"; };
+		53DECC3017E464CE00A1C1BC /* home_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home_share.png; path = Resources/home_share.png; sourceTree = "<group>"; };
+		53DECC3117E464CF00A1C1BC /* battle_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_dialog.png; path = Resources/battle_dialog.png; sourceTree = "<group>"; };
+		53DECC3217E464CF00A1C1BC /* battle_levelup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_levelup.png; path = Resources/battle_levelup.png; sourceTree = "<group>"; };
+		53DECC3317E464D000A1C1BC /* battle_miao_ability.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_miao_ability.png; path = Resources/battle_miao_ability.png; sourceTree = "<group>"; };
+		53DECC3417E464D100A1C1BC /* battle_pause_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_pause_dialog.png; path = Resources/battle_pause_dialog.png; sourceTree = "<group>"; };
+		53DECC3517E464D200A1C1BC /* battle_pause_lose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_pause_lose.png; path = Resources/battle_pause_lose.png; sourceTree = "<group>"; };
+		53DECC3617E464D300A1C1BC /* battle_pause_win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_pause_win.png; path = Resources/battle_pause_win.png; sourceTree = "<group>"; };
+		53DECC3717E464D600A1C1BC /* battle_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_pause.png; path = Resources/battle_pause.png; sourceTree = "<group>"; };
+		53DECC3817E464D600A1C1BC /* battle_shop_dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop_dialog.png; path = Resources/battle_shop_dialog.png; sourceTree = "<group>"; };
+		53DECC3917E464D700A1C1BC /* battle_shop_menu_coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop_menu_coin.png; path = Resources/battle_shop_menu_coin.png; sourceTree = "<group>"; };
+		53DECC3A17E464D800A1C1BC /* battle_shop_menu_ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop_menu_ring.png; path = Resources/battle_shop_menu_ring.png; sourceTree = "<group>"; };
+		53DECC3B17E464D900A1C1BC /* battle_shop_menu_treasure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop_menu_treasure.png; path = Resources/battle_shop_menu_treasure.png; sourceTree = "<group>"; };
+		53DECC3C17E464DB00A1C1BC /* battle_shop_menu_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop_menu_vip.png; path = Resources/battle_shop_menu_vip.png; sourceTree = "<group>"; };
+		53DECC3D17E464DC00A1C1BC /* battle_shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = battle_shop.png; path = Resources/battle_shop.png; sourceTree = "<group>"; };
+		53DECC3E17E464DC00A1C1BC /* castle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = castle.png; path = Resources/castle.png; sourceTree = "<group>"; };
+		53DECC5F17E4AB9A00A1C1BC /* Ability.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ability.ccbi; path = Resources/Ability.ccbi; sourceTree = "<group>"; };
+		53DECC6017E4AB9A00A1C1BC /* Account.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Account.ccbi; path = Resources/Account.ccbi; sourceTree = "<group>"; };
+		53DECC6117E4AB9A00A1C1BC /* Army.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Army.ccbi; path = Resources/Army.ccbi; sourceTree = "<group>"; };
+		53DECC6517E4ABDE00A1C1BC /* Equip.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Equip.ccbi; path = Resources/Equip.ccbi; sourceTree = "<group>"; };
+		53DECC6617E4ABDE00A1C1BC /* Event.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Event.ccbi; path = Resources/Event.ccbi; sourceTree = "<group>"; };
+		53DECC6717E4ABDE00A1C1BC /* Gacha.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Gacha.ccbi; path = Resources/Gacha.ccbi; sourceTree = "<group>"; };
+		53DECC6817E4ABDE00A1C1BC /* Invite.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Invite.ccbi; path = Resources/Invite.ccbi; sourceTree = "<group>"; };
+		53DECC6917E4ABDE00A1C1BC /* Load.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Load.ccbi; path = Resources/Load.ccbi; sourceTree = "<group>"; };
+		53DECC6A17E4ABDE00A1C1BC /* Medal.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Medal.ccbi; path = Resources/Medal.ccbi; sourceTree = "<group>"; };
+		53DECC6B17E4ABDE00A1C1BC /* Pause.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pause.ccbi; path = Resources/Pause.ccbi; sourceTree = "<group>"; };
+		53DECC6C17E4ABDE00A1C1BC /* Reward.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Reward.ccbi; path = Resources/Reward.ccbi; sourceTree = "<group>"; };
+		53DECC6D17E4ABDE00A1C1BC /* Setting.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Setting.ccbi; path = Resources/Setting.ccbi; sourceTree = "<group>"; };
+		53DECC6E17E4ABDE00A1C1BC /* Share.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Share.ccbi; path = Resources/Share.ccbi; sourceTree = "<group>"; };
+		53DECC6F17E4ABDE00A1C1BC /* Shop.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Shop.ccbi; path = Resources/Shop.ccbi; sourceTree = "<group>"; };
+		53DECC7117E4ABDE00A1C1BC /* Process.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Process.ccbi; path = Resources/Process.ccbi; sourceTree = "<group>"; };
+		53DECC7F17E4BA9100A1C1BC /* LayerWithDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LayerWithDialog.cpp; path = Classes/LayerWithDialog.cpp; sourceTree = "<group>"; };
+		53DECC8017E4BA9400A1C1BC /* LayerWithDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerWithDialog.h; path = Classes/LayerWithDialog.h; sourceTree = "<group>"; };
+		53DECC8217E4BAF000A1C1BC /* Equip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Equip.cpp; path = Classes/Equip.cpp; sourceTree = "<group>"; };
+		53DECC8317E4BAF200A1C1BC /* Equip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Equip.h; path = Classes/Equip.h; sourceTree = "<group>"; };
+		53DECC8417E4BAF400A1C1BC /* EquipLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EquipLoader.cpp; path = Classes/EquipLoader.cpp; sourceTree = "<group>"; };
+		53DECC8517E4BAFA00A1C1BC /* EquipLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EquipLoader.h; path = Classes/EquipLoader.h; sourceTree = "<group>"; };
+		53DECC8817E4D8F000A1C1BC /* Army.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Army.cpp; path = Classes/Army.cpp; sourceTree = "<group>"; };
+		53DECC8917E4D8F300A1C1BC /* Army.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Army.h; path = Classes/Army.h; sourceTree = "<group>"; };
+		53DECC8A17E4D8F800A1C1BC /* ArmyLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ArmyLoader.cpp; path = Classes/ArmyLoader.cpp; sourceTree = "<group>"; };
+		53DECC8B17E4D8FB00A1C1BC /* ArmyLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArmyLoader.h; path = Classes/ArmyLoader.h; sourceTree = "<group>"; };
+		53DECC8E17E4DC1B00A1C1BC /* Others.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Others.cpp; path = Classes/Others.cpp; sourceTree = "<group>"; };
+		53DECC8F17E4DC1F00A1C1BC /* Others.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Others.h; path = Classes/Others.h; sourceTree = "<group>"; };
+		53DECC9017E4DC2200A1C1BC /* OthersLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OthersLoader.cpp; path = Classes/OthersLoader.cpp; sourceTree = "<group>"; };
+		53DECC9117E4DC2500A1C1BC /* OthersLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OthersLoader.h; path = Classes/OthersLoader.h; sourceTree = "<group>"; };
+		53DECC9417E4DD7B00A1C1BC /* Others.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Others.ccbi; path = Resources/Others.ccbi; sourceTree = "<group>"; };
+		53DECC9617E4DF9000A1C1BC /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = Classes/Event.cpp; sourceTree = "<group>"; };
+		53DECC9717E4DF9500A1C1BC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Classes/Event.h; sourceTree = "<group>"; };
+		53DECC9817E4DF9900A1C1BC /* EventLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EventLoader.cpp; path = Classes/EventLoader.cpp; sourceTree = "<group>"; };
+		53DECC9917E4DF9D00A1C1BC /* EventLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventLoader.h; path = Classes/EventLoader.h; sourceTree = "<group>"; };
+		53DECC9C17E4E11C00A1C1BC /* Reward.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Reward.cpp; path = Classes/Reward.cpp; sourceTree = "<group>"; };
+		53DECC9D17E4E11F00A1C1BC /* Reward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reward.h; path = Classes/Reward.h; sourceTree = "<group>"; };
+		53DECC9E17E4E12300A1C1BC /* RewardLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RewardLoader.cpp; path = Classes/RewardLoader.cpp; sourceTree = "<group>"; };
+		53DECC9F17E4E12500A1C1BC /* RewardLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RewardLoader.h; path = Classes/RewardLoader.h; sourceTree = "<group>"; };
+		53DECCA217E4E38A00A1C1BC /* Share.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Share.cpp; path = Classes/Share.cpp; sourceTree = "<group>"; };
+		53DECCA317E4E39000A1C1BC /* Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Share.h; path = Classes/Share.h; sourceTree = "<group>"; };
+		53DECCA417E4E39400A1C1BC /* ShareLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShareLoader.cpp; path = Classes/ShareLoader.cpp; sourceTree = "<group>"; };
+		53DECCA517E4E39800A1C1BC /* ShareLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareLoader.h; path = Classes/ShareLoader.h; sourceTree = "<group>"; };
+		53DECCA817E4EB4900A1C1BC /* Ability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ability.cpp; path = Classes/Ability.cpp; sourceTree = "<group>"; };
+		53DECCA917E4EB4E00A1C1BC /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ability.h; path = Classes/Ability.h; sourceTree = "<group>"; };
+		53DECCAA17E4EB5400A1C1BC /* AbilityLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AbilityLoader.cpp; path = Classes/AbilityLoader.cpp; sourceTree = "<group>"; };
+		53DECCAB17E4EB5E00A1C1BC /* AbilityLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbilityLoader.h; path = Classes/AbilityLoader.h; sourceTree = "<group>"; };
+		53DECCAE17E4F33400A1C1BC /* Process.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Process.cpp; path = Classes/Process.cpp; sourceTree = "<group>"; };
+		53DECCAF17E4F33B00A1C1BC /* Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Process.h; path = Classes/Process.h; sourceTree = "<group>"; };
+		53DECCB017E4F34200A1C1BC /* ProcessLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProcessLoader.cpp; path = Classes/ProcessLoader.cpp; sourceTree = "<group>"; };
+		53DECCB117E4F34B00A1C1BC /* ProcessLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessLoader.h; path = Classes/ProcessLoader.h; sourceTree = "<group>"; };
+		53DECCB417E4FE4300A1C1BC /* Medal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Medal.cpp; path = Classes/Medal.cpp; sourceTree = "<group>"; };
+		53DECCB517E4FE4900A1C1BC /* Medal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Medal.h; path = Classes/Medal.h; sourceTree = "<group>"; };
+		53DECCB617E4FE5100A1C1BC /* MedalLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MedalLoader.cpp; path = Classes/MedalLoader.cpp; sourceTree = "<group>"; };
+		53DECCB717E4FE7100A1C1BC /* MedalLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MedalLoader.h; path = Classes/MedalLoader.h; sourceTree = "<group>"; };
+		53DECCBA17E4FFDC00A1C1BC /* Shop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shop.cpp; path = Classes/Shop.cpp; sourceTree = "<group>"; };
+		53DECCBB17E4FFE100A1C1BC /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shop.h; path = Classes/Shop.h; sourceTree = "<group>"; };
+		53DECCBC17E4FFE900A1C1BC /* ShopLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShopLoader.cpp; path = Classes/ShopLoader.cpp; sourceTree = "<group>"; };
+		53DECCBD17E4FFF000A1C1BC /* ShopLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopLoader.h; path = Classes/ShopLoader.h; sourceTree = "<group>"; };
+		53DECCC017E505B000A1C1BC /* Pause.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pause.cpp; path = Classes/Pause.cpp; sourceTree = "<group>"; };
+		53DECCC117E505BA00A1C1BC /* Pause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pause.h; path = Classes/Pause.h; sourceTree = "<group>"; };
+		53DECCC217E505C200A1C1BC /* PauseLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PauseLoader.cpp; path = Classes/PauseLoader.cpp; sourceTree = "<group>"; };
+		53DECCC317E505CA00A1C1BC /* PauseLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PauseLoader.h; path = Classes/PauseLoader.h; sourceTree = "<group>"; };
+		53DECCC617E50A7C00A1C1BC /* Gacha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Gacha.cpp; path = Classes/Gacha.cpp; sourceTree = "<group>"; };
+		53DECCC717E50A8600A1C1BC /* Gacha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Gacha.h; path = Classes/Gacha.h; sourceTree = "<group>"; };
+		53DECCC817E50A8F00A1C1BC /* GachaLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GachaLoader.cpp; path = Classes/GachaLoader.cpp; sourceTree = "<group>"; };
+		53DECCC917E50A9900A1C1BC /* GachaLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GachaLoader.h; path = Classes/GachaLoader.h; sourceTree = "<group>"; };
+		53DECCCA17E50AA800A1C1BC /* Load.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Load.cpp; path = Classes/Load.cpp; sourceTree = "<group>"; };
+		53DECCCB17E50ACB00A1C1BC /* Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Load.h; path = Classes/Load.h; sourceTree = "<group>"; };
+		53DECCCC17E50B1200A1C1BC /* LoadLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadLoader.cpp; path = Classes/LoadLoader.cpp; sourceTree = "<group>"; };
+		53DECCCD17E50C6600A1C1BC /* LoadLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadLoader.h; path = Classes/LoadLoader.h; sourceTree = "<group>"; };
+		53DECCCE17E50C7100A1C1BC /* Account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Account.cpp; path = Classes/Account.cpp; sourceTree = "<group>"; };
+		53DECCCF17E50C7C00A1C1BC /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Account.h; path = Classes/Account.h; sourceTree = "<group>"; };
+		53DECCD017E50C8400A1C1BC /* AccountLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AccountLoader.cpp; path = Classes/AccountLoader.cpp; sourceTree = "<group>"; };
+		53DECCD117E50C8D00A1C1BC /* AccountLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountLoader.h; path = Classes/AccountLoader.h; sourceTree = "<group>"; };
+		53DECCD217E50C9700A1C1BC /* Invite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Invite.cpp; path = Classes/Invite.cpp; sourceTree = "<group>"; };
+		53DECCD317E50C9E00A1C1BC /* Invite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Invite.h; path = Classes/Invite.h; sourceTree = "<group>"; };
+		53DECCD417E50CA700A1C1BC /* InviteLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InviteLoader.cpp; path = Classes/InviteLoader.cpp; sourceTree = "<group>"; };
+		53DECCD517E50CB000A1C1BC /* InviteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteLoader.h; path = Classes/InviteLoader.h; sourceTree = "<group>"; };
 		53FE4F96179D945600962274 /* MainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuScene.cpp; path = Classes/MainMenuScene.cpp; sourceTree = "<group>"; };
 		53FE4F97179D945600962274 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuScene.h; path = Classes/MainMenuScene.h; sourceTree = "<group>"; };
-		53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuSceneLoader.cpp; path = Classes/MainMenuSceneLoader.cpp; sourceTree = "<group>"; };
-		53FE4F99179D945600962274 /* MainMenuSceneLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuSceneLoader.h; path = Classes/MainMenuSceneLoader.h; sourceTree = "<group>"; };
-		53FE4F9A179D945600962274 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = Classes/Menu.cpp; sourceTree = "<group>"; };
-		53FE4F9B179D945600962274 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = Classes/Menu.h; sourceTree = "<group>"; };
-		53FE4F9C179D945600962274 /* MenuLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MenuLoader.cpp; path = Classes/MenuLoader.cpp; sourceTree = "<group>"; };
-		53FE4F9D179D945600962274 /* MenuLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuLoader.h; path = Classes/MenuLoader.h; sourceTree = "<group>"; };
-		53FE4FA4179D946300962274 /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = Classes/Background.cpp; sourceTree = "<group>"; };
-		53FE4FA5179D946300962274 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Background.h; path = Classes/Background.h; sourceTree = "<group>"; };
-		53FE4FA6179D946300962274 /* BackgroundLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BackgroundLoader.cpp; path = Classes/BackgroundLoader.cpp; sourceTree = "<group>"; };
-		53FE4FA7179D946300962274 /* BackgroundLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundLoader.h; path = Classes/BackgroundLoader.h; sourceTree = "<group>"; };
 		53FE4FA8179D946300962274 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObject.cpp; path = Classes/GameObject.cpp; sourceTree = "<group>"; };
 		53FE4FA9179D946300962274 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = Classes/GameObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1045,6 +1473,42 @@
 		5321F4C71794599E00BC1823 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53DECC1F17E464BC00A1C1BC /* load.png */,
+				53DECC2017E464BC00A1C1BC /* others.png */,
+				53DECC2117E464BE00A1C1BC /* reward.png */,
+				53DECC2217E464BF00A1C1BC /* setting.png */,
+				53DECC2317E464C200A1C1BC /* home_account.png */,
+				53DECC2417E464C300A1C1BC /* home_army_dialog.png */,
+				53DECC2517E464C300A1C1BC /* home_army.png */,
+				53DECC2617E464C400A1C1BC /* home_equipment_dialog_2.png */,
+				53DECC2717E464C500A1C1BC /* home_equipment_dialog.png */,
+				53DECC2817E464C500A1C1BC /* home_equipment.png */,
+				53DECC2917E464C600A1C1BC /* home_event.png */,
+				53DECC2A17E464CA00A1C1BC /* home_gacha_dialog.png */,
+				53DECC2B17E464CA00A1C1BC /* home_gacha.png */,
+				53DECC2C17E464CB00A1C1BC /* home_invite.png */,
+				53DECC2D17E464CD00A1C1BC /* home_level.png */,
+				53DECC2E17E464CD00A1C1BC /* home_medal.png */,
+				53DECC2F17E464CE00A1C1BC /* home_share_dialog.png */,
+				53DECC3017E464CE00A1C1BC /* home_share.png */,
+				53DECC3117E464CF00A1C1BC /* battle_dialog.png */,
+				53DECC3217E464CF00A1C1BC /* battle_levelup.png */,
+				53DECC3317E464D000A1C1BC /* battle_miao_ability.png */,
+				53DECC3417E464D100A1C1BC /* battle_pause_dialog.png */,
+				53DECC3517E464D200A1C1BC /* battle_pause_lose.png */,
+				53DECC3617E464D300A1C1BC /* battle_pause_win.png */,
+				53DECC3717E464D600A1C1BC /* battle_pause.png */,
+				53DECC3817E464D600A1C1BC /* battle_shop_dialog.png */,
+				53DECC3917E464D700A1C1BC /* battle_shop_menu_coin.png */,
+				53DECC3A17E464D800A1C1BC /* battle_shop_menu_ring.png */,
+				53DECC3B17E464D900A1C1BC /* battle_shop_menu_treasure.png */,
+				53DECC3C17E464DB00A1C1BC /* battle_shop_menu_vip.png */,
+				53DECC3D17E464DC00A1C1BC /* battle_shop.png */,
+				53DECC3E17E464DC00A1C1BC /* castle.png */,
+				53DECC1D17E4390400A1C1BC /* home.png */,
+				534B439317B61484001DF7B0 /* sound */,
+				5335BBFE17ABF6C400B02A13 /* ccb */,
+				53EC1FA517A2EA2D00156252 /* pvr */,
 				5321F863179459B300BC1823 /* default */,
 			);
 			name = Resources;
@@ -2191,8 +2655,6 @@
 				533185A017959F1500F46CF6 /* scenes */,
 				5321F858179459A700BC1823 /* AppDelegate.h */,
 				5321F859179459A700BC1823 /* AppDelegate.cpp */,
-				5321F85B179459A700BC1823 /* HelloWorldScene.h */,
-				5321F85C179459A700BC1823 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2200,6 +2662,7 @@
 		5321F863179459B300BC1823 /* default */ = {
 			isa = PBXGroup;
 			children = (
+				53D2036317D8C4B900BB9875 /* Default-568h@2x.png */,
 				5321F4C81794599E00BC1823 /* CloseNormal.png */,
 				5321F4CA1794599E00BC1823 /* CloseSelected.png */,
 				5321F4CC1794599E00BC1823 /* Default.png */,
@@ -2251,14 +2714,22 @@
 		533185A017959F1500F46CF6 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				53DECC1617E35EC100A1C1BC /* MainMenuSceneLoader.cpp */,
+				53DECC1717E35EC300A1C1BC /* MainMenuSceneLoader.h */,
+				53DECBCF17E2031E00A1C1BC /* NormalGameScene.h */,
+				53DECBD017E2031F00A1C1BC /* NormalGameScene.cpp */,
+				53DECBC017E0BCA900A1C1BC /* MouseGameScene.h */,
+				53DECBC117E0BCAA00A1C1BC /* MouseGameScene.cpp */,
+				5383A8DF17D4EFCE00EE4A1A /* GameOverScene.h */,
+				5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */,
+				5383A8DA17D1177700EE4A1A /* StoryScene.h */,
+				5383A8DB17D1177700EE4A1A /* StoryScene.cpp */,
+				5335BBF517ABF3C000B02A13 /* GameSceneLoader.h */,
+				5335BBF617ABF3C100B02A13 /* GameSceneLoader.cpp */,
+				5335BBEB17A8168200B02A13 /* GameScene.h */,
+				5335BBEC17A8168200B02A13 /* GameScene.cpp */,
 				53FE4F96179D945600962274 /* MainMenuScene.cpp */,
 				53FE4F97179D945600962274 /* MainMenuScene.h */,
-				53FE4F98179D945600962274 /* MainMenuSceneLoader.cpp */,
-				53FE4F99179D945600962274 /* MainMenuSceneLoader.h */,
-				53FE4F8C179D944900962274 /* GameScene.cpp */,
-				53FE4F8D179D944900962274 /* GameScene.h */,
-				53FE4F8E179D944900962274 /* GameSceneLoader.cpp */,
-				53FE4F8F179D944900962274 /* GameSceneLoader.h */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -2266,20 +2737,86 @@
 		533185A117959F2D00F46CF6 /* layers */ = {
 			isa = PBXGroup;
 			children = (
-				53FE4F9A179D945600962274 /* Menu.cpp */,
-				53FE4F9B179D945600962274 /* Menu.h */,
-				53FE4F9C179D945600962274 /* MenuLoader.cpp */,
-				53FE4F9D179D945600962274 /* MenuLoader.h */,
-				53FE4F92179D945600962274 /* Level.cpp */,
-				53FE4F93179D945600962274 /* Level.h */,
-				53FE4F94179D945600962274 /* LevelLoader.cpp */,
-				53FE4F95179D945600962274 /* LevelLoader.h */,
-				53FE4FA4179D946300962274 /* Background.cpp */,
-				53FE4FA5179D946300962274 /* Background.h */,
-				53FE4FA6179D946300962274 /* BackgroundLoader.cpp */,
-				53FE4FA7179D946300962274 /* BackgroundLoader.h */,
-				533185A417959F9800F46CF6 /* UpdateLayer.cpp */,
-				533185A517959F9800F46CF6 /* UpdateLayer.h */,
+				53DECCC617E50A7C00A1C1BC /* Gacha.cpp */,
+				53DECCC717E50A8600A1C1BC /* Gacha.h */,
+				53DECCC817E50A8F00A1C1BC /* GachaLoader.cpp */,
+				53DECCC917E50A9900A1C1BC /* GachaLoader.h */,
+				53DECCCA17E50AA800A1C1BC /* Load.cpp */,
+				53DECCCB17E50ACB00A1C1BC /* Load.h */,
+				53DECCCC17E50B1200A1C1BC /* LoadLoader.cpp */,
+				53DECCCD17E50C6600A1C1BC /* LoadLoader.h */,
+				53DECCCE17E50C7100A1C1BC /* Account.cpp */,
+				53DECCCF17E50C7C00A1C1BC /* Account.h */,
+				53DECCD017E50C8400A1C1BC /* AccountLoader.cpp */,
+				53DECCD117E50C8D00A1C1BC /* AccountLoader.h */,
+				53DECCD217E50C9700A1C1BC /* Invite.cpp */,
+				53DECCD317E50C9E00A1C1BC /* Invite.h */,
+				53DECCD417E50CA700A1C1BC /* InviteLoader.cpp */,
+				53DECCD517E50CB000A1C1BC /* InviteLoader.h */,
+				53DECCC017E505B000A1C1BC /* Pause.cpp */,
+				53DECCC117E505BA00A1C1BC /* Pause.h */,
+				53DECCC217E505C200A1C1BC /* PauseLoader.cpp */,
+				53DECCC317E505CA00A1C1BC /* PauseLoader.h */,
+				53DECCBA17E4FFDC00A1C1BC /* Shop.cpp */,
+				53DECCBB17E4FFE100A1C1BC /* Shop.h */,
+				53DECCBC17E4FFE900A1C1BC /* ShopLoader.cpp */,
+				53DECCBD17E4FFF000A1C1BC /* ShopLoader.h */,
+				53DECCB417E4FE4300A1C1BC /* Medal.cpp */,
+				53DECCB517E4FE4900A1C1BC /* Medal.h */,
+				53DECCB617E4FE5100A1C1BC /* MedalLoader.cpp */,
+				53DECCB717E4FE7100A1C1BC /* MedalLoader.h */,
+				53DECCAE17E4F33400A1C1BC /* Process.cpp */,
+				53DECCAF17E4F33B00A1C1BC /* Process.h */,
+				53DECCB017E4F34200A1C1BC /* ProcessLoader.cpp */,
+				53DECCB117E4F34B00A1C1BC /* ProcessLoader.h */,
+				53DECCA817E4EB4900A1C1BC /* Ability.cpp */,
+				53DECCA917E4EB4E00A1C1BC /* Ability.h */,
+				53DECCAA17E4EB5400A1C1BC /* AbilityLoader.cpp */,
+				53DECCAB17E4EB5E00A1C1BC /* AbilityLoader.h */,
+				53DECCA217E4E38A00A1C1BC /* Share.cpp */,
+				53DECCA317E4E39000A1C1BC /* Share.h */,
+				53DECCA417E4E39400A1C1BC /* ShareLoader.cpp */,
+				53DECCA517E4E39800A1C1BC /* ShareLoader.h */,
+				53DECC9C17E4E11C00A1C1BC /* Reward.cpp */,
+				53DECC9D17E4E11F00A1C1BC /* Reward.h */,
+				53DECC9E17E4E12300A1C1BC /* RewardLoader.cpp */,
+				53DECC9F17E4E12500A1C1BC /* RewardLoader.h */,
+				53DECC9617E4DF9000A1C1BC /* Event.cpp */,
+				53DECC9717E4DF9500A1C1BC /* Event.h */,
+				53DECC9817E4DF9900A1C1BC /* EventLoader.cpp */,
+				53DECC9917E4DF9D00A1C1BC /* EventLoader.h */,
+				53DECC8E17E4DC1B00A1C1BC /* Others.cpp */,
+				53DECC8F17E4DC1F00A1C1BC /* Others.h */,
+				53DECC9017E4DC2200A1C1BC /* OthersLoader.cpp */,
+				53DECC9117E4DC2500A1C1BC /* OthersLoader.h */,
+				53DECC8817E4D8F000A1C1BC /* Army.cpp */,
+				53DECC8917E4D8F300A1C1BC /* Army.h */,
+				53DECC8A17E4D8F800A1C1BC /* ArmyLoader.cpp */,
+				53DECC8B17E4D8FB00A1C1BC /* ArmyLoader.h */,
+				53DECC8217E4BAF000A1C1BC /* Equip.cpp */,
+				53DECC8317E4BAF200A1C1BC /* Equip.h */,
+				53DECC8417E4BAF400A1C1BC /* EquipLoader.cpp */,
+				53DECC8517E4BAFA00A1C1BC /* EquipLoader.h */,
+				53DECBC617E0BDDC00A1C1BC /* MouseMenuLoader.h */,
+				53DECBC717E0BDDD00A1C1BC /* MouseMenuLoader.cpp */,
+				53DECBC817E0BDDE00A1C1BC /* MouseMenu.h */,
+				53DECBC917E0BDE000A1C1BC /* MouseMenu.cpp */,
+				53DECBB617DE3C0600A1C1BC /* StatusLoader.h */,
+				53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */,
+				53DECBB817DE3C0800A1C1BC /* Status.h */,
+				53DECBB917DE3C0800A1C1BC /* Status.cpp */,
+				53B57B2717B3FAA50068BD92 /* LevelLoader.h */,
+				53B57B2817B3FAA50068BD92 /* LevelLoader.cpp */,
+				53B57B2917B3FAA50068BD92 /* Level.h */,
+				53B57B2A17B3FAA50068BD92 /* Level.cpp */,
+				5335BBFB17ABF3ED00B02A13 /* BackgroundLoader.h */,
+				5335BBFC17ABF3ED00B02A13 /* BackgroundLoader.cpp */,
+				5335BBF817ABF3DD00B02A13 /* MenuLoader.h */,
+				5335BBF917ABF3DD00B02A13 /* MenuLoader.cpp */,
+				5335BBF117A81A0C00B02A13 /* Menu.h */,
+				5335BBF217A81A0C00B02A13 /* Menu.cpp */,
+				5335BBEE17A81A0200B02A13 /* Background.h */,
+				5335BBEF17A81A0200B02A13 /* Background.cpp */,
 			);
 			name = layers;
 			sourceTree = "<group>";
@@ -2287,42 +2824,8 @@
 		533185A217959F3300F46CF6 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
-				53FE4F80179D93E400962274 /* Magic.cpp */,
-				53FE4F81179D93E400962274 /* Magic.h */,
-				53FE4F82179D93E400962274 /* MagicLoader.cpp */,
-				53FE4F83179D93E400962274 /* MagicLoader.h */,
-				53FE4F84179D93E400962274 /* Strong.cpp */,
-				53FE4F85179D93E400962274 /* Strong.h */,
-				53FE4F86179D93E400962274 /* StrongLoader.cpp */,
-				53FE4F87179D93E400962274 /* StrongLoader.h */,
-				53FE4F71179D93D500962274 /* Range.cpp */,
-				53FE4F72179D93D500962274 /* Range.h */,
-				53FE4F73179D93D500962274 /* RangeLoader.cpp */,
-				53FE4F74179D93D500962274 /* RangeLoader.h */,
-				53FE4F75179D93D500962274 /* SwordLoader.cpp */,
-				53FE4F76179D93D500962274 /* SwordLoader.h */,
-				53FE4F77179D93D500962274 /* Tank.cpp */,
-				53FE4F78179D93D500962274 /* Tank.h */,
-				53FE4F79179D93D500962274 /* TankLoader.cpp */,
-				53FE4F7A179D93D500962274 /* TankLoader.h */,
-				53FE4F59179D93AA00962274 /* Arrial.cpp */,
-				53FE4F5A179D93AA00962274 /* Arrial.h */,
-				53FE4F5B179D93AA00962274 /* ArrialLoader.cpp */,
-				53FE4F5C179D93AA00962274 /* ArrialLoader.h */,
-				53FE4F5D179D93AA00962274 /* Arrow.cpp */,
-				53FE4F5E179D93AA00962274 /* Arrow.h */,
-				53FE4F5F179D93AA00962274 /* ArrowLoader.cpp */,
-				53FE4F60179D93AA00962274 /* ArrowLoader.h */,
-				53FE4F61179D93AA00962274 /* Dot.cpp */,
-				53FE4F62179D93AA00962274 /* Dot.h */,
-				53FE4F63179D93AA00962274 /* DotLoader.cpp */,
-				53FE4F64179D93AA00962274 /* DotLoader.h */,
-				53FE4F65179D93AA00962274 /* Heal.cpp */,
-				53FE4F66179D93AA00962274 /* Heal.h */,
-				53FE4F67179D93AA00962274 /* HealLoader.cpp */,
-				53FE4F68179D93AA00962274 /* HealLoader.h */,
-				53FE4F56179D8E5C00962274 /* Sword.cpp */,
-				53FE4F57179D8E5C00962274 /* Sword.h */,
+				534B441B17B63F18001DF7B0 /* miao */,
+				534B441A17B63EF8001DF7B0 /* ri */,
 			);
 			name = sprites;
 			sourceTree = "<group>";
@@ -2330,8 +2833,14 @@
 		533185A317959F3C00F46CF6 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				53DECC7F17E4BA9100A1C1BC /* LayerWithDialog.cpp */,
+				53DECC8017E4BA9400A1C1BC /* LayerWithDialog.h */,
 				53FE4FA8179D946300962274 /* GameObject.cpp */,
 				53FE4FA9179D946300962274 /* GameObject.h */,
+				535E8D6E17BBD2B000C2A145 /* Soldier.cpp */,
+				535E8D6F17BBD2B000C2A145 /* Soldier.h */,
+				535E8D7117BBD2C700C2A145 /* Enemy.cpp */,
+				535E8D7217BBD2C700C2A145 /* Enemy.h */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -2339,10 +2848,214 @@
 		533185A717959F9E00F46CF6 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				533185A817959FA800F46CF6 /* ApiReader.cpp */,
-				533185A917959FA800F46CF6 /* ApiReader.h */,
 			);
 			name = extensions;
+			sourceTree = "<group>";
+		};
+		5335BBFE17ABF6C400B02A13 /* ccb */ = {
+			isa = PBXGroup;
+			children = (
+				53DECC9417E4DD7B00A1C1BC /* Others.ccbi */,
+				53DECC6517E4ABDE00A1C1BC /* Equip.ccbi */,
+				53DECC6617E4ABDE00A1C1BC /* Event.ccbi */,
+				53DECC6717E4ABDE00A1C1BC /* Gacha.ccbi */,
+				53DECC6817E4ABDE00A1C1BC /* Invite.ccbi */,
+				53DECC6917E4ABDE00A1C1BC /* Load.ccbi */,
+				53DECC6A17E4ABDE00A1C1BC /* Medal.ccbi */,
+				53DECC6B17E4ABDE00A1C1BC /* Pause.ccbi */,
+				53DECC6C17E4ABDE00A1C1BC /* Reward.ccbi */,
+				53DECC6D17E4ABDE00A1C1BC /* Setting.ccbi */,
+				53DECC6E17E4ABDE00A1C1BC /* Share.ccbi */,
+				53DECC6F17E4ABDE00A1C1BC /* Shop.ccbi */,
+				53DECC7117E4ABDE00A1C1BC /* Process.ccbi */,
+				53DECC5F17E4AB9A00A1C1BC /* Ability.ccbi */,
+				53DECC6017E4AB9A00A1C1BC /* Account.ccbi */,
+				53DECC6117E4AB9A00A1C1BC /* Army.ccbi */,
+				53DECC1417E35E9B00A1C1BC /* MainMenuScene.ccbi */,
+				53DECBC417E0BD1D00A1C1BC /* MouseMenu.ccbi */,
+				53DECBBC17E0AFDB00A1C1BC /* Status.ccbi */,
+				534B43C217B63BC8001DF7B0 /* RS10.ccbi */,
+				534B43C317B63BC8001DF7B0 /* RS9.ccbi */,
+				534B43C417B63BC8001DF7B0 /* RS8.ccbi */,
+				534B43C517B63BC8001DF7B0 /* RS7.ccbi */,
+				534B43C617B63BC8001DF7B0 /* RS6.ccbi */,
+				534B43C717B63BC8001DF7B0 /* RS5.ccbi */,
+				534B43C817B63BC8001DF7B0 /* RS4.ccbi */,
+				534B43C917B63BC8001DF7B0 /* RS3.ccbi */,
+				534B43CA17B63BC8001DF7B0 /* RS2.ccbi */,
+				534B43CB17B63BC8001DF7B0 /* RS1.ccbi */,
+				534B43CC17B63BC8001DF7B0 /* RBoss.ccbi */,
+				534B43C017B61F83001DF7B0 /* Miao.ccbi */,
+				53B57B3F17B3FEF00068BD92 /* MouseGameScene.ccbi */,
+				53B57B4017B3FEF00068BD92 /* Level.ccbi */,
+				53B57B2D17B3FEE20068BD92 /* S9.ccbi */,
+				53B57B2E17B3FEE20068BD92 /* S8.ccbi */,
+				53B57B2F17B3FEE20068BD92 /* S7.ccbi */,
+				53B57B3017B3FEE20068BD92 /* S6.ccbi */,
+				53B57B3117B3FEE20068BD92 /* S5.ccbi */,
+				53B57B3217B3FEE20068BD92 /* S4.ccbi */,
+				53B57B3317B3FEE20068BD92 /* S3.ccbi */,
+				53B57B3417B3FEE20068BD92 /* S2.ccbi */,
+				53B57B3517B3FEE20068BD92 /* S1.ccbi */,
+				5335BBFF17ABF70300B02A13 /* Menu.ccbi */,
+				5335BC0017ABF70300B02A13 /* GameScene.ccbi */,
+				5335BC0117ABF70300B02A13 /* Background.ccbi */,
+			);
+			name = ccb;
+			sourceTree = "<group>";
+		};
+		534B439317B61484001DF7B0 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				5383A8DD17D3973B00EE4A1A /* main.mp3 */,
+				5383A8CE17D10C4200EE4A1A /* boss_2(dead).wav */,
+				5383A8CF17D10C4200EE4A1A /* boss_2.wav */,
+				5383A8D017D10C4200EE4A1A /* boss_1(dead).wav */,
+				5383A8D117D10C4200EE4A1A /* boss_1.wav */,
+				5383A8BA17D10C3300EE4A1A /* jap_s10.wav */,
+				5383A8BB17D10C3300EE4A1A /* jap_s9 .wav */,
+				5383A8BC17D10C3300EE4A1A /* jap_s8.wav */,
+				5383A8BD17D10C3300EE4A1A /* jap_s7.wav */,
+				5383A8BE17D10C3300EE4A1A /* jap_s6.wav */,
+				5383A8BF17D10C3300EE4A1A /* jap_s5.wav */,
+				5383A8C017D10C3300EE4A1A /* jap_s4.wav */,
+				5383A8C117D10C3300EE4A1A /* jap_s3.wav */,
+				5383A8C217D10C3300EE4A1A /* jap_s2.wav */,
+				5383A8C317D10C3300EE4A1A /* jap_s1.wav */,
+				5383A8B817CE576C00EE4A1A /* background.mp3 */,
+				534B439417B615D8001DF7B0 /* s9_a2.wav */,
+				534B439517B615D8001DF7B0 /* s9_a1.wav */,
+				534B439617B615D8001DF7B0 /* s8_a2_2.wav */,
+				534B439717B615D8001DF7B0 /* s8_a2_1.wav */,
+				534B439817B615D8001DF7B0 /* s8_a1.wav */,
+				534B439917B615D8001DF7B0 /* s7_a2_2.wav */,
+				534B439A17B615D8001DF7B0 /* s7_a2_1.wav */,
+				534B439B17B615D8001DF7B0 /* s7_a1.wav */,
+				534B439C17B615D8001DF7B0 /* s6_a2.wav */,
+				534B439D17B615D8001DF7B0 /* s6_a1.wav */,
+				534B439E17B615D8001DF7B0 /* s5_a2.WAV */,
+				534B439F17B615D8001DF7B0 /* s5_a1.wav */,
+				534B43A017B615D8001DF7B0 /* s4_a2.WAV */,
+				534B43A117B615D8001DF7B0 /* s4_a1.wav */,
+				534B43A217B615D8001DF7B0 /* s3_a2.wav */,
+				534B43A317B615D8001DF7B0 /* s3_a1.wav */,
+				534B43A417B615D8001DF7B0 /* s2_a.wav */,
+				534B43A517B615D8001DF7B0 /* s1_a.wav */,
+			);
+			name = sound;
+			sourceTree = "<group>";
+		};
+		534B441A17B63EF8001DF7B0 /* ri */ = {
+			isa = PBXGroup;
+			children = (
+				534B440017B63EF2001DF7B0 /* RBossLoader.h */,
+				534B440117B63EF2001DF7B0 /* RBossLoader.cpp */,
+				534B440217B63EF2001DF7B0 /* RBoss.h */,
+				534B440317B63EF2001DF7B0 /* RBoss.cpp */,
+				534B43D817B63EF0001DF7B0 /* RS10Loader.h */,
+				534B43D917B63EF0001DF7B0 /* RS10Loader.cpp */,
+				534B43DA17B63EF0001DF7B0 /* RS10.h */,
+				534B43DB17B63EF0001DF7B0 /* RS10.cpp */,
+				534B43DC17B63EF0001DF7B0 /* RS9Loader.h */,
+				534B43DD17B63EF0001DF7B0 /* RS9Loader.cpp */,
+				534B43DE17B63EF0001DF7B0 /* RS9.h */,
+				534B43DF17B63EF0001DF7B0 /* RS9.cpp */,
+				534B43E017B63EF0001DF7B0 /* RS8Loader.h */,
+				534B43E117B63EF0001DF7B0 /* RS8Loader.cpp */,
+				534B43E217B63EF0001DF7B0 /* RS8.h */,
+				534B43E317B63EF0001DF7B0 /* RS8.cpp */,
+				534B43E417B63EF0001DF7B0 /* RS7Loader.h */,
+				534B43E517B63EF0001DF7B0 /* RS7Loader.cpp */,
+				534B43E617B63EF0001DF7B0 /* RS7.h */,
+				534B43E717B63EF0001DF7B0 /* RS7.cpp */,
+				534B43E817B63EF1001DF7B0 /* RS6Loader.h */,
+				534B43E917B63EF1001DF7B0 /* RS6Loader.cpp */,
+				534B43EA17B63EF1001DF7B0 /* RS6.h */,
+				534B43EB17B63EF1001DF7B0 /* RS6.cpp */,
+				534B43EC17B63EF1001DF7B0 /* RS5Loader.h */,
+				534B43ED17B63EF1001DF7B0 /* RS5Loader.cpp */,
+				534B43EE17B63EF1001DF7B0 /* RS5.h */,
+				534B43EF17B63EF1001DF7B0 /* RS5.cpp */,
+				534B43F017B63EF1001DF7B0 /* RS4Loader.h */,
+				534B43F117B63EF1001DF7B0 /* RS4Loader.cpp */,
+				534B43F217B63EF1001DF7B0 /* RS4.h */,
+				534B43F317B63EF1001DF7B0 /* RS4.cpp */,
+				534B43F417B63EF1001DF7B0 /* RS3Loader.h */,
+				534B43F517B63EF2001DF7B0 /* RS3Loader.cpp */,
+				534B43F617B63EF2001DF7B0 /* RS3.h */,
+				534B43F717B63EF2001DF7B0 /* RS3.cpp */,
+				534B43F817B63EF2001DF7B0 /* RS2Loader.h */,
+				534B43F917B63EF2001DF7B0 /* RS2Loader.cpp */,
+				534B43FA17B63EF2001DF7B0 /* RS2.h */,
+				534B43FB17B63EF2001DF7B0 /* RS2.cpp */,
+				534B43FC17B63EF2001DF7B0 /* RS1Loader.h */,
+				534B43FD17B63EF2001DF7B0 /* RS1Loader.cpp */,
+				534B43FE17B63EF2001DF7B0 /* RS1.h */,
+				534B43FF17B63EF2001DF7B0 /* RS1.cpp */,
+			);
+			name = ri;
+			sourceTree = "<group>";
+		};
+		534B441B17B63F18001DF7B0 /* miao */ = {
+			isa = PBXGroup;
+			children = (
+				534B43BA17B61E07001DF7B0 /* MiaoLoader.h */,
+				534B43BB17B61E07001DF7B0 /* MiaoLoader.cpp */,
+				534B43BC17B61E07001DF7B0 /* Miao.h */,
+				534B43BD17B61E07001DF7B0 /* Miao.cpp */,
+				53B57AF117B3FA8B0068BD92 /* S9Loader.h */,
+				53B57AF217B3FA8B0068BD92 /* S9Loader.cpp */,
+				53B57AF317B3FA8B0068BD92 /* S9.h */,
+				53B57AF417B3FA8B0068BD92 /* S9.cpp */,
+				53B57AF517B3FA8B0068BD92 /* S8Loader.h */,
+				53B57AF617B3FA8B0068BD92 /* S8Loader.cpp */,
+				53B57AF717B3FA8B0068BD92 /* S8.h */,
+				53B57AF817B3FA8B0068BD92 /* S8.cpp */,
+				53B57AF917B3FA8B0068BD92 /* S7Loader.h */,
+				53B57AFA17B3FA8B0068BD92 /* S7Loader.cpp */,
+				53B57AFB17B3FA8B0068BD92 /* S7.h */,
+				53B57AFC17B3FA8B0068BD92 /* S7.cpp */,
+				53B57AFD17B3FA8B0068BD92 /* S6Loader.h */,
+				53B57AFE17B3FA8B0068BD92 /* S6Loader.cpp */,
+				53B57AFF17B3FA8B0068BD92 /* S6.h */,
+				53B57B0017B3FA8B0068BD92 /* S6.cpp */,
+				53B57B0117B3FA8B0068BD92 /* S5Loader.h */,
+				53B57B0217B3FA8B0068BD92 /* S5Loader.cpp */,
+				53B57B0317B3FA8B0068BD92 /* S5.h */,
+				53B57B0417B3FA8B0068BD92 /* S5.cpp */,
+				53B57B0517B3FA8B0068BD92 /* S4Loader.h */,
+				53B57B0617B3FA8B0068BD92 /* S4Loader.cpp */,
+				53B57B0717B3FA8B0068BD92 /* S4.h */,
+				53B57B0817B3FA8B0068BD92 /* S4.cpp */,
+				53B57B0917B3FA8B0068BD92 /* S3Loader.h */,
+				53B57B0A17B3FA8B0068BD92 /* S3Loader.cpp */,
+				53B57B0B17B3FA8B0068BD92 /* S3.h */,
+				53B57B0C17B3FA8B0068BD92 /* S3.cpp */,
+				53B57B0D17B3FA8B0068BD92 /* S2Loader.h */,
+				53B57B0E17B3FA8B0068BD92 /* S2Loader.cpp */,
+				53B57B0F17B3FA8B0068BD92 /* S2.h */,
+				53B57B1017B3FA8B0068BD92 /* S2.cpp */,
+				53B57B1117B3FA8B0068BD92 /* S1Loader.h */,
+				53B57B1217B3FA8B0068BD92 /* S1Loader.cpp */,
+				53B57B1317B3FA8B0068BD92 /* S1.h */,
+				53B57B1417B3FA8B0068BD92 /* S1.cpp */,
+			);
+			name = miao;
+			sourceTree = "<group>";
+		};
+		53EC1FA517A2EA2D00156252 /* pvr */ = {
+			isa = PBXGroup;
+			children = (
+				53DECC1917E3929900A1C1BC /* ui.plist */,
+				53DECC1A17E3929A00A1C1BC /* ui.pvr.ccz */,
+				5383A8D617D1155D00EE4A1A /* storyboard.pvr.ccz */,
+				5383A8D717D1155D00EE4A1A /* storyboard.plist */,
+				5335BBE117A6C01B00B02A13 /* ri.plist */,
+				5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */,
+				5335BBE317A6C01B00B02A13 /* battle_ui.plist */,
+				5335BBE417A6C01B00B02A13 /* battle_ui.pvr.ccz */,
+			);
+			name = pvr;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2408,6 +3121,127 @@
 				5321F4DD1794599E00BC1823 /* iTunesArtwork in Resources */,
 				5321F57C179459A000BC1823 /* ChangeLog in Resources */,
 				5321F6F0179459A400BC1823 /* project.pbxproj in Resources */,
+				5335BBE517A6C01B00B02A13 /* ri.plist in Resources */,
+				5335BBE617A6C01B00B02A13 /* ri.pvr.ccz in Resources */,
+				5335BBE717A6C01B00B02A13 /* battle_ui.plist in Resources */,
+				5335BBE817A6C01B00B02A13 /* battle_ui.pvr.ccz in Resources */,
+				5335BC0217ABF70300B02A13 /* Menu.ccbi in Resources */,
+				5335BC0317ABF70300B02A13 /* GameScene.ccbi in Resources */,
+				5335BC0417ABF70300B02A13 /* Background.ccbi in Resources */,
+				53B57B3617B3FEE20068BD92 /* S9.ccbi in Resources */,
+				53B57B3717B3FEE20068BD92 /* S8.ccbi in Resources */,
+				53B57B3817B3FEE20068BD92 /* S7.ccbi in Resources */,
+				53B57B3917B3FEE20068BD92 /* S6.ccbi in Resources */,
+				53B57B3A17B3FEE20068BD92 /* S5.ccbi in Resources */,
+				53B57B3B17B3FEE20068BD92 /* S4.ccbi in Resources */,
+				53B57B3C17B3FEE20068BD92 /* S3.ccbi in Resources */,
+				53B57B3D17B3FEE20068BD92 /* S2.ccbi in Resources */,
+				53B57B3E17B3FEE20068BD92 /* S1.ccbi in Resources */,
+				53B57B4117B3FEF00068BD92 /* MouseGameScene.ccbi in Resources */,
+				53B57B4217B3FEF00068BD92 /* Level.ccbi in Resources */,
+				534B43A617B615D8001DF7B0 /* s9_a2.wav in Resources */,
+				534B43A717B615D8001DF7B0 /* s9_a1.wav in Resources */,
+				534B43A817B615D8001DF7B0 /* s8_a2_2.wav in Resources */,
+				534B43A917B615D8001DF7B0 /* s8_a2_1.wav in Resources */,
+				534B43AA17B615D8001DF7B0 /* s8_a1.wav in Resources */,
+				534B43AB17B615D8001DF7B0 /* s7_a2_2.wav in Resources */,
+				534B43AC17B615D8001DF7B0 /* s7_a2_1.wav in Resources */,
+				534B43AD17B615D8001DF7B0 /* s7_a1.wav in Resources */,
+				534B43AE17B615D8001DF7B0 /* s6_a2.wav in Resources */,
+				534B43AF17B615D8001DF7B0 /* s6_a1.wav in Resources */,
+				534B43B017B615D8001DF7B0 /* s5_a2.WAV in Resources */,
+				534B43B117B615D8001DF7B0 /* s5_a1.wav in Resources */,
+				534B43B217B615D8001DF7B0 /* s4_a2.WAV in Resources */,
+				534B43B317B615D8001DF7B0 /* s4_a1.wav in Resources */,
+				534B43B417B615D8001DF7B0 /* s3_a2.wav in Resources */,
+				534B43B517B615D8001DF7B0 /* s3_a1.wav in Resources */,
+				534B43B617B615D8001DF7B0 /* s2_a.wav in Resources */,
+				534B43B717B615D8001DF7B0 /* s1_a.wav in Resources */,
+				534B43C117B61F83001DF7B0 /* Miao.ccbi in Resources */,
+				534B43CD17B63BC8001DF7B0 /* RS10.ccbi in Resources */,
+				534B43CE17B63BC8001DF7B0 /* RS9.ccbi in Resources */,
+				534B43CF17B63BC8001DF7B0 /* RS8.ccbi in Resources */,
+				534B43D017B63BC8001DF7B0 /* RS7.ccbi in Resources */,
+				534B43D117B63BC8001DF7B0 /* RS6.ccbi in Resources */,
+				534B43D217B63BC8001DF7B0 /* RS5.ccbi in Resources */,
+				534B43D317B63BC8001DF7B0 /* RS4.ccbi in Resources */,
+				534B43D417B63BC8001DF7B0 /* RS3.ccbi in Resources */,
+				534B43D517B63BC8001DF7B0 /* RS2.ccbi in Resources */,
+				534B43D617B63BC8001DF7B0 /* RS1.ccbi in Resources */,
+				534B43D717B63BC8001DF7B0 /* RBoss.ccbi in Resources */,
+				5383A8B917CE576C00EE4A1A /* background.mp3 in Resources */,
+				5383A8C417D10C3300EE4A1A /* jap_s10.wav in Resources */,
+				5383A8C517D10C3300EE4A1A /* jap_s9 .wav in Resources */,
+				5383A8C617D10C3300EE4A1A /* jap_s8.wav in Resources */,
+				5383A8C717D10C3300EE4A1A /* jap_s7.wav in Resources */,
+				5383A8C817D10C3400EE4A1A /* jap_s6.wav in Resources */,
+				5383A8C917D10C3400EE4A1A /* jap_s5.wav in Resources */,
+				5383A8CA17D10C3400EE4A1A /* jap_s4.wav in Resources */,
+				5383A8CB17D10C3400EE4A1A /* jap_s3.wav in Resources */,
+				5383A8CC17D10C3400EE4A1A /* jap_s2.wav in Resources */,
+				5383A8CD17D10C3400EE4A1A /* jap_s1.wav in Resources */,
+				5383A8D217D10C4200EE4A1A /* boss_2(dead).wav in Resources */,
+				5383A8D317D10C4200EE4A1A /* boss_2.wav in Resources */,
+				5383A8D417D10C4200EE4A1A /* boss_1(dead).wav in Resources */,
+				5383A8D517D10C4200EE4A1A /* boss_1.wav in Resources */,
+				5383A8D817D1155D00EE4A1A /* storyboard.pvr.ccz in Resources */,
+				5383A8D917D1155D00EE4A1A /* storyboard.plist in Resources */,
+				5383A8DE17D3973B00EE4A1A /* main.mp3 in Resources */,
+				53D2036417D8C4B900BB9875 /* Default-568h@2x.png in Resources */,
+				53DECBBD17E0AFDB00A1C1BC /* Status.ccbi in Resources */,
+				53DECBC517E0BD1D00A1C1BC /* MouseMenu.ccbi in Resources */,
+				53DECC1517E35E9B00A1C1BC /* MainMenuScene.ccbi in Resources */,
+				53DECC1B17E3929A00A1C1BC /* ui.plist in Resources */,
+				53DECC1C17E3929A00A1C1BC /* ui.pvr.ccz in Resources */,
+				53DECC1E17E4390500A1C1BC /* home.png in Resources */,
+				53DECC3F17E464DD00A1C1BC /* load.png in Resources */,
+				53DECC4017E464DD00A1C1BC /* others.png in Resources */,
+				53DECC4117E464DD00A1C1BC /* reward.png in Resources */,
+				53DECC4217E464DD00A1C1BC /* setting.png in Resources */,
+				53DECC4317E464DD00A1C1BC /* home_account.png in Resources */,
+				53DECC4417E464DD00A1C1BC /* home_army_dialog.png in Resources */,
+				53DECC4517E464DD00A1C1BC /* home_army.png in Resources */,
+				53DECC4617E464DD00A1C1BC /* home_equipment_dialog_2.png in Resources */,
+				53DECC4717E464DD00A1C1BC /* home_equipment_dialog.png in Resources */,
+				53DECC4817E464DD00A1C1BC /* home_equipment.png in Resources */,
+				53DECC4917E464DD00A1C1BC /* home_event.png in Resources */,
+				53DECC4A17E464DD00A1C1BC /* home_gacha_dialog.png in Resources */,
+				53DECC4B17E464DD00A1C1BC /* home_gacha.png in Resources */,
+				53DECC4C17E464DD00A1C1BC /* home_invite.png in Resources */,
+				53DECC4D17E464DD00A1C1BC /* home_level.png in Resources */,
+				53DECC4E17E464DD00A1C1BC /* home_medal.png in Resources */,
+				53DECC4F17E464DD00A1C1BC /* home_share_dialog.png in Resources */,
+				53DECC5017E464DD00A1C1BC /* home_share.png in Resources */,
+				53DECC5117E464DD00A1C1BC /* battle_dialog.png in Resources */,
+				53DECC5217E464DD00A1C1BC /* battle_levelup.png in Resources */,
+				53DECC5317E464DD00A1C1BC /* battle_miao_ability.png in Resources */,
+				53DECC5417E464DD00A1C1BC /* battle_pause_dialog.png in Resources */,
+				53DECC5517E464DD00A1C1BC /* battle_pause_lose.png in Resources */,
+				53DECC5617E464DD00A1C1BC /* battle_pause_win.png in Resources */,
+				53DECC5717E464DD00A1C1BC /* battle_pause.png in Resources */,
+				53DECC5817E464DD00A1C1BC /* battle_shop_dialog.png in Resources */,
+				53DECC5917E464DD00A1C1BC /* battle_shop_menu_coin.png in Resources */,
+				53DECC5A17E464DD00A1C1BC /* battle_shop_menu_ring.png in Resources */,
+				53DECC5B17E464DD00A1C1BC /* battle_shop_menu_treasure.png in Resources */,
+				53DECC5C17E464DD00A1C1BC /* battle_shop_menu_vip.png in Resources */,
+				53DECC5D17E464DD00A1C1BC /* battle_shop.png in Resources */,
+				53DECC5E17E464DD00A1C1BC /* castle.png in Resources */,
+				53DECC6217E4AB9B00A1C1BC /* Ability.ccbi in Resources */,
+				53DECC6317E4AB9B00A1C1BC /* Account.ccbi in Resources */,
+				53DECC6417E4AB9B00A1C1BC /* Army.ccbi in Resources */,
+				53DECC7217E4ABDE00A1C1BC /* Equip.ccbi in Resources */,
+				53DECC7317E4ABDE00A1C1BC /* Event.ccbi in Resources */,
+				53DECC7417E4ABDE00A1C1BC /* Gacha.ccbi in Resources */,
+				53DECC7517E4ABDE00A1C1BC /* Invite.ccbi in Resources */,
+				53DECC7617E4ABDE00A1C1BC /* Load.ccbi in Resources */,
+				53DECC7717E4ABDE00A1C1BC /* Medal.ccbi in Resources */,
+				53DECC7817E4ABDE00A1C1BC /* Pause.ccbi in Resources */,
+				53DECC7917E4ABDE00A1C1BC /* Reward.ccbi in Resources */,
+				53DECC7A17E4ABDE00A1C1BC /* Setting.ccbi in Resources */,
+				53DECC7B17E4ABDE00A1C1BC /* Share.ccbi in Resources */,
+				53DECC7C17E4ABDE00A1C1BC /* Shop.ccbi in Resources */,
+				53DECC7E17E4ABDE00A1C1BC /* Process.ccbi in Resources */,
+				53DECC9517E4DD7B00A1C1BC /* Others.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2666,38 +3500,100 @@
 				5321F84A179459A700BC1823 /* cpSweep1D.c in Sources */,
 				5321F84C179459A700BC1823 /* cpVect.c in Sources */,
 				5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */,
-				5321F85D179459A700BC1823 /* HelloWorldScene.cpp in Sources */,
-				533185A617959F9800F46CF6 /* UpdateLayer.cpp in Sources */,
-				533185AA17959FA800F46CF6 /* ApiReader.cpp in Sources */,
-				53FE4F58179D8E5C00962274 /* Sword.cpp in Sources */,
-				53FE4F69179D93AA00962274 /* Arrial.cpp in Sources */,
-				53FE4F6A179D93AA00962274 /* ArrialLoader.cpp in Sources */,
-				53FE4F6B179D93AA00962274 /* Arrow.cpp in Sources */,
-				53FE4F6C179D93AA00962274 /* ArrowLoader.cpp in Sources */,
-				53FE4F6D179D93AA00962274 /* Dot.cpp in Sources */,
-				53FE4F6E179D93AA00962274 /* DotLoader.cpp in Sources */,
-				53FE4F6F179D93AA00962274 /* Heal.cpp in Sources */,
-				53FE4F70179D93AA00962274 /* HealLoader.cpp in Sources */,
-				53FE4F7B179D93D500962274 /* Range.cpp in Sources */,
-				53FE4F7C179D93D500962274 /* RangeLoader.cpp in Sources */,
-				53FE4F7D179D93D500962274 /* SwordLoader.cpp in Sources */,
-				53FE4F7E179D93D500962274 /* Tank.cpp in Sources */,
-				53FE4F7F179D93D500962274 /* TankLoader.cpp in Sources */,
-				53FE4F88179D93E400962274 /* Magic.cpp in Sources */,
-				53FE4F89179D93E400962274 /* MagicLoader.cpp in Sources */,
-				53FE4F8A179D93E400962274 /* Strong.cpp in Sources */,
-				53FE4F8B179D93E400962274 /* StrongLoader.cpp in Sources */,
-				53FE4F90179D944900962274 /* GameScene.cpp in Sources */,
-				53FE4F91179D944900962274 /* GameSceneLoader.cpp in Sources */,
-				53FE4F9E179D945600962274 /* Level.cpp in Sources */,
-				53FE4F9F179D945600962274 /* LevelLoader.cpp in Sources */,
 				53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */,
-				53FE4FA1179D945600962274 /* MainMenuSceneLoader.cpp in Sources */,
-				53FE4FA2179D945600962274 /* Menu.cpp in Sources */,
-				53FE4FA3179D945600962274 /* MenuLoader.cpp in Sources */,
-				53FE4FAA179D946300962274 /* Background.cpp in Sources */,
-				53FE4FAB179D946300962274 /* BackgroundLoader.cpp in Sources */,
 				53FE4FAC179D946300962274 /* GameObject.cpp in Sources */,
+				5335BBED17A8168200B02A13 /* GameScene.cpp in Sources */,
+				5335BBF017A81A0200B02A13 /* Background.cpp in Sources */,
+				5335BBF317A81A0C00B02A13 /* Menu.cpp in Sources */,
+				5335BBF717ABF3C100B02A13 /* GameSceneLoader.cpp in Sources */,
+				5335BBFA17ABF3DD00B02A13 /* MenuLoader.cpp in Sources */,
+				5335BBFD17ABF3ED00B02A13 /* BackgroundLoader.cpp in Sources */,
+				53B57B1517B3FA8B0068BD92 /* S9Loader.cpp in Sources */,
+				53B57B1617B3FA8B0068BD92 /* S9.cpp in Sources */,
+				53B57B1717B3FA8B0068BD92 /* S8Loader.cpp in Sources */,
+				53B57B1817B3FA8B0068BD92 /* S8.cpp in Sources */,
+				53B57B1917B3FA8B0068BD92 /* S7Loader.cpp in Sources */,
+				53B57B1A17B3FA8B0068BD92 /* S7.cpp in Sources */,
+				53B57B1B17B3FA8B0068BD92 /* S6Loader.cpp in Sources */,
+				53B57B1C17B3FA8B0068BD92 /* S6.cpp in Sources */,
+				53B57B1D17B3FA8B0068BD92 /* S5Loader.cpp in Sources */,
+				53B57B1E17B3FA8B0068BD92 /* S5.cpp in Sources */,
+				53B57B1F17B3FA8B0068BD92 /* S4Loader.cpp in Sources */,
+				53B57B2017B3FA8B0068BD92 /* S4.cpp in Sources */,
+				53B57B2117B3FA8B0068BD92 /* S3Loader.cpp in Sources */,
+				53B57B2217B3FA8B0068BD92 /* S3.cpp in Sources */,
+				53B57B2317B3FA8B0068BD92 /* S2Loader.cpp in Sources */,
+				53B57B2417B3FA8B0068BD92 /* S2.cpp in Sources */,
+				53B57B2517B3FA8B0068BD92 /* S1Loader.cpp in Sources */,
+				53B57B2617B3FA8B0068BD92 /* S1.cpp in Sources */,
+				53B57B2B17B3FAA50068BD92 /* LevelLoader.cpp in Sources */,
+				53B57B2C17B3FAA50068BD92 /* Level.cpp in Sources */,
+				534B43BE17B61E07001DF7B0 /* MiaoLoader.cpp in Sources */,
+				534B43BF17B61E07001DF7B0 /* Miao.cpp in Sources */,
+				534B440417B63EF2001DF7B0 /* RS10Loader.cpp in Sources */,
+				534B440517B63EF2001DF7B0 /* RS10.cpp in Sources */,
+				534B440617B63EF2001DF7B0 /* RS9Loader.cpp in Sources */,
+				534B440717B63EF2001DF7B0 /* RS9.cpp in Sources */,
+				534B440817B63EF2001DF7B0 /* RS8Loader.cpp in Sources */,
+				534B440917B63EF2001DF7B0 /* RS8.cpp in Sources */,
+				534B440A17B63EF2001DF7B0 /* RS7Loader.cpp in Sources */,
+				534B440B17B63EF2001DF7B0 /* RS7.cpp in Sources */,
+				534B440C17B63EF2001DF7B0 /* RS6Loader.cpp in Sources */,
+				534B440D17B63EF2001DF7B0 /* RS6.cpp in Sources */,
+				534B440E17B63EF2001DF7B0 /* RS5Loader.cpp in Sources */,
+				534B440F17B63EF2001DF7B0 /* RS5.cpp in Sources */,
+				534B441017B63EF2001DF7B0 /* RS4Loader.cpp in Sources */,
+				534B441117B63EF2001DF7B0 /* RS4.cpp in Sources */,
+				534B441217B63EF2001DF7B0 /* RS3Loader.cpp in Sources */,
+				534B441317B63EF2001DF7B0 /* RS3.cpp in Sources */,
+				534B441417B63EF2001DF7B0 /* RS2Loader.cpp in Sources */,
+				534B441517B63EF2001DF7B0 /* RS2.cpp in Sources */,
+				534B441617B63EF2001DF7B0 /* RS1Loader.cpp in Sources */,
+				534B441717B63EF2001DF7B0 /* RS1.cpp in Sources */,
+				534B441817B63EF2001DF7B0 /* RBossLoader.cpp in Sources */,
+				534B441917B63EF2001DF7B0 /* RBoss.cpp in Sources */,
+				535E8D7017BBD2B000C2A145 /* Soldier.cpp in Sources */,
+				535E8D7317BBD2C700C2A145 /* Enemy.cpp in Sources */,
+				5383A8DC17D1177700EE4A1A /* StoryScene.cpp in Sources */,
+				5383A8E117D4EFCF00EE4A1A /* GameOverScene.cpp in Sources */,
+				53DECBBA17DE3C0A00A1C1BC /* StatusLoader.cpp in Sources */,
+				53DECBBB17DE3C0A00A1C1BC /* Status.cpp in Sources */,
+				53DECBC317E0BCAA00A1C1BC /* MouseGameScene.cpp in Sources */,
+				53DECBCA17E0BDE100A1C1BC /* MouseMenuLoader.cpp in Sources */,
+				53DECBCB17E0BDE100A1C1BC /* MouseMenu.cpp in Sources */,
+				53DECBD117E2032000A1C1BC /* NormalGameScene.cpp in Sources */,
+				53DECC1817E35EC500A1C1BC /* MainMenuSceneLoader.cpp in Sources */,
+				53DECC8117E4BA9900A1C1BC /* LayerWithDialog.cpp in Sources */,
+				53DECC8617E4BAFB00A1C1BC /* Equip.cpp in Sources */,
+				53DECC8717E4BAFB00A1C1BC /* EquipLoader.cpp in Sources */,
+				53DECC8C17E4D90700A1C1BC /* Army.cpp in Sources */,
+				53DECC8D17E4D90700A1C1BC /* ArmyLoader.cpp in Sources */,
+				53DECC9217E4DC2800A1C1BC /* Others.cpp in Sources */,
+				53DECC9317E4DC2800A1C1BC /* OthersLoader.cpp in Sources */,
+				53DECC9A17E4DFA100A1C1BC /* Event.cpp in Sources */,
+				53DECC9B17E4DFA100A1C1BC /* EventLoader.cpp in Sources */,
+				53DECCA017E4E12F00A1C1BC /* Reward.cpp in Sources */,
+				53DECCA117E4E12F00A1C1BC /* RewardLoader.cpp in Sources */,
+				53DECCA617E4E39C00A1C1BC /* Share.cpp in Sources */,
+				53DECCA717E4E39C00A1C1BC /* ShareLoader.cpp in Sources */,
+				53DECCAC17E4EB6500A1C1BC /* Ability.cpp in Sources */,
+				53DECCAD17E4EB6500A1C1BC /* AbilityLoader.cpp in Sources */,
+				53DECCB217E4F35400A1C1BC /* Process.cpp in Sources */,
+				53DECCB317E4F35400A1C1BC /* ProcessLoader.cpp in Sources */,
+				53DECCB817E4FE9900A1C1BC /* Medal.cpp in Sources */,
+				53DECCB917E4FE9900A1C1BC /* MedalLoader.cpp in Sources */,
+				53DECCBE17E5005800A1C1BC /* Shop.cpp in Sources */,
+				53DECCBF17E5005800A1C1BC /* ShopLoader.cpp in Sources */,
+				53DECCC417E505D200A1C1BC /* Pause.cpp in Sources */,
+				53DECCC517E505D200A1C1BC /* PauseLoader.cpp in Sources */,
+				53DECCD617E50CB700A1C1BC /* Gacha.cpp in Sources */,
+				53DECCD717E50CB800A1C1BC /* GachaLoader.cpp in Sources */,
+				53DECCD817E50CB800A1C1BC /* Load.cpp in Sources */,
+				53DECCD917E50CB800A1C1BC /* LoadLoader.cpp in Sources */,
+				53DECCDA17E50CB800A1C1BC /* Account.cpp in Sources */,
+				53DECCDB17E50CB800A1C1BC /* AccountLoader.cpp in Sources */,
+				53DECCDC17E50CB800A1C1BC /* Invite.cpp in Sources */,
+				53DECCDD17E50CB800A1C1BC /* InviteLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2784,6 +3680,7 @@
 				GCC_PREFIX_HEADER = miwu/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = miwu/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2810,6 +3707,7 @@
 				GCC_PREFIX_HEADER = miwu/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = miwu/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\"",

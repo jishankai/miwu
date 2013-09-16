@@ -1,13 +1,13 @@
 //
 //  BackgroundLoader.h
-//  Miwu
+//  miwu
 //
 //  Created by Ji Shankai on 13-6-8.
 //
 //
 
-#ifndef __Miwu__BackgroundLoader__
-#define __Miwu__BackgroundLoader__
+#ifndef __miwu__BackgroundLoader__
+#define __miwu__BackgroundLoader__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
@@ -26,4 +26,4 @@ protected:
 };
 
 
-#endif /* defined(__Miwu__BackgroundLoader__) */
+#endif /* defined(__miwu__BackgroundLoader__) */

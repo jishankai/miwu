@@ -1,13 +1,13 @@
 //
 //  Background.h
-//  Miwu
+//  miwu
 //
 //  Created by Ji Shankai on 13-6-8.
 //
 //
 
-#ifndef __Miwu__Background__
-#define __Miwu__Background__
+#ifndef __miwu__Background__
+#define __miwu__Background__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
@@ -16,6 +16,7 @@ class Background : public cocos2d::CCLayer, public cocos2d::extension::CCBMember
 {
 private:
     cocos2d::CCNode* level;
+    CC_SYNTHESIZE(float, xSpeed, XSpeed);
     
 public:
     cocos2d::CCLayer* levelLayer;
@@ -27,6 +28,10 @@ public:
     virtual bool onAssignCCBMemberVariable(CCObject* pTarget, const char* pMemberVariableName, CCNode* pNode);
     virtual bool onAssignCCBCustomProperty(CCObject* pTarget, const char* pMemberVariableName, cocos2d::extension::CCBValue* pCCBValue);
     
+    virtual void ccTouchesMoved(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchesEnded(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
+    
+    virtual void update(float delta);
 };
 
-#endif /* defined(__Miwu__Background__) */
+#endif /* defined(__miwu__Background__) */

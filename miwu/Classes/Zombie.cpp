@@ -8,7 +8,7 @@
 
 #include "Zombie.h"
 
-#include "Rabit.h"
+#include "S1.h"
 #include "GameScene.h"
 
 
@@ -31,12 +31,12 @@ bool Zombie::init()
     return true;
 }
 
-void Zombie::update()
+void Zombie::update(float delta)
 {
     // Calculate new position
     CCPoint oldPosition = this->getPosition();
     
-    float xNew = oldPosition.x + xSpeed;
+    float xNew = oldPosition.x + xSpeed*delta;
     this->setPosition(ccp(xNew, oldPosition.y));
 }
 
@@ -45,7 +45,7 @@ void Zombie::handleCollisionWith(GameObject* gameObject)
     if (this->hp<=0) {
         this->isScheduledForRemove = true;
     }
-    Rabit* rabit = dynamic_cast<Rabit*>(gameObject);
+    S1* rabit = dynamic_cast<S1*>(gameObject);
     
     
     if (rabit != NULL) {

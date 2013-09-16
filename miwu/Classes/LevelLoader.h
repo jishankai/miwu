@@ -1,13 +1,13 @@
 //
 //  LevelLoader.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef __CocosDragon_x__LevelLoader__
-#define __CocosDragon_x__LevelLoader__
+#ifndef __miwu__LevelLoader__
+#define __miwu__LevelLoader__
 
 #include "Level.h"
 
@@ -25,4 +25,4 @@ protected:
     
 };
 
-#endif /* defined(__CocosDragon_x__LevelLoader__) */
+#endif /* defined(__miwu__LevelLoader__) */

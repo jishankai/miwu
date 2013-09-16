@@ -1,13 +1,13 @@
 //
 //  GameSceneLoader.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef __CocosDragon_x__GameSceneLoader__
-#define __CocosDragon_x__GameSceneLoader__
+#ifndef __miwu__GameSceneLoader__
+#define __miwu__GameSceneLoader__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
@@ -25,4 +25,4 @@ protected:
     
 };
 
-#endif /* defined(__CocosDragon_x__GameSceneLoader__) */
+#endif /* defined(__miwu__GameSceneLoader__) */

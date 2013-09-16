@@ -19,6 +19,7 @@ bool ApiReader::init()
 
 bool ApiReader::read(const char* url)
 {
+    /*
     CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
     request->setUrl(url);
     request->setRequestType(CCHttpRequest::kHttpGet);
@@ -26,12 +27,15 @@ bool ApiReader::read(const char* url)
     request->setTag("api");//tag
     CCHttpClient::getInstance()->send(request);
     request->release();
+     */
 }
 
 void ApiReader::onHttpRequestCompleted(CCHttpClient* client, CCHttpResponse* response)
 {
+    /*
     if (response->isSucceed()) {
         std::vector<char> *buffer = response->getResponseData();
         
     }
+     */
 }

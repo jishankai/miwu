@@ -1,13 +1,13 @@
 //
 //  GameScene.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef __CocosDragon_x__GameScene__
-#define __CocosDragon_x__GameScene__
+#ifndef __miwu__GameScene__
+#define __miwu__GameScene__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
@@ -15,18 +15,20 @@
 class GameScene : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
 {
 private:
-    cocos2d::CCNode* background;
-    cocos2d::CCNode* menu;
     
 public:
+    cocos2d::CCNode* background;
+    cocos2d::CCNode* menu;
+    cocos2d::CCNode* status;
     cocos2d::CCLayer* backgroundLayer;
+    cocos2d::CCLayer* statusLayer;
     cocos2d::CCLayer* menuLayer;
     
     static GameScene* sharedInstance;
     
     static GameScene* sharedScene();
     
-    static cocos2d::CCScene* scene();
+    //virtual static cocos2d::CCScene* scene();
     
     virtual void onEnter();
     
@@ -41,4 +43,4 @@ public:
 
 };
 
-#endif /* defined(__CocosDragon_x__GameScene__) */
+#endif /* defined(__miwu__GameScene__) */

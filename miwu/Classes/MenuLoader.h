@@ -1,13 +1,13 @@
 //
 //  MenuLoader.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef __CocosDragon_x__MenuLoader__
-#define __CocosDragon_x__MenuLoader__
+#ifndef __miwu__MenuLoader__
+#define __miwu__MenuLoader__
 
 #include "Menu.h"
 
@@ -25,4 +25,4 @@ protected:
     
 };
 
-#endif /* defined(__CocosDragon_x__MenuLoader__) */
+#endif /* defined(__miwu__MenuLoader__) */

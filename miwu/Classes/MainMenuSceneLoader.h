@@ -1,13 +1,13 @@
 //
 //  MainMenuSceneLoader.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef CocosDragon_x_MainMenuSceneLoader_h
-#define CocosDragon_x_MainMenuSceneLoader_h
+#ifndef miwu_MainMenuSceneLoader_h
+#define miwu_MainMenuSceneLoader_h
 
 #include "cocos2d.h"
 #include "cocos-ext.h"

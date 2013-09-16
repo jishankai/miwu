@@ -1,6 +1,6 @@
 //
 //  MenuLoader.cpp
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //

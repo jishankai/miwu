@@ -1,6 +1,6 @@
 //
 //  GameObject.cpp
-//  Miwu
+//  miwu
 //
 //  Created by Ji Shankai on 13-5-28.
 //

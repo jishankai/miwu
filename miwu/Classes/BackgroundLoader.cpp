@@ -1,6 +1,6 @@
 //
 //  BackgroundLoader.cpp
-//  Miwu
+//  miwu
 //
 //  Created by Ji Shankai on 13-6-8.
 //

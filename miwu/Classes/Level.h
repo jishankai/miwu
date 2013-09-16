@@ -1,32 +1,31 @@
 //
 //  Level.h
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
-#ifndef __CocosDragon_x__Level__
-#define __CocosDragon_x__Level__
+#ifndef __miwu__Level__
+#define __miwu__Level__
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
 
-// forward declarations
-class Rabit;
-class Zombie;
-class Bear;
+#include "Miao.h"
+#include "RBoss.h"
 
 class Level : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
 {
-  
 private:
-    Rabit* rabit;
-    Zombie* zombie;
-    Bear* bear;
     
 public:
-    
+    Miao* miao;
+    RBoss* boss;
+    float randTime = 0;
+    cocos2d::CCArray *_soldiers;
+	cocos2d::CCArray *_enimies;
+
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Level, create);
     
     virtual void onEnter();
@@ -43,4 +42,4 @@ public:
     void update(float delta);
 };
 
-#endif /* defined(__CocosDragon_x__Level__) */
+#endif /* defined(__miwu__Level__) */

@@ -1,16 +1,16 @@
 //
 //  LevelLoader.cpp
-//  CocosDragon-x
+//  miwu
 //
 //  Created by long on 2013-03-01.
 //
 //
 
 #include "LevelLoader.h"
-
-#include "RabitLoader.h"
+/*
+#include "S1Loader.h"
 #include "ZombieLoader.h"
-
+*/
 USING_NS_CC;
 USING_NS_CC_EXT;
 
@@ -18,9 +18,9 @@ CCNode* LevelLoader::load()
 {
     cocos2d::extension::CCNodeLoaderLibrary * ccNodeLoaderLibrary = cocos2d::extension::CCNodeLoaderLibrary::newDefaultCCNodeLoaderLibrary();
     
-    ccNodeLoaderLibrary->registerCCNodeLoader("Level", LevelLoader::loader());
-    ccNodeLoaderLibrary->registerCCNodeLoader("Rabit", RabitLoader::loader());
-    ccNodeLoaderLibrary->registerCCNodeLoader("Zombie", ZombieLoader::loader());
+    ccNodeLoaderLibrary->registerCCNodeLoader("Level", LevelLoader::loader());/*
+    ccNodeLoaderLibrary->registerCCNodeLoader("S1", S1Loader::loader());
+    ccNodeLoaderLibrary->registerCCNodeLoader("Zombie", ZombieLoader::loader());*/
     
     
     /* Create an autorelease CCBReader. */
