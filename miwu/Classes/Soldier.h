@@ -22,6 +22,7 @@ public:
     const char* effectSoundFileName;
     virtual bool init();
     virtual void onEnter();
+    virtual void update(float delta, float width);
     virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual void resetSpeed();

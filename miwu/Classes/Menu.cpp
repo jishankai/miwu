@@ -110,6 +110,7 @@ bool Menu::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, const char *pMe
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "manaValue", CCLabelTTF*, this->manaValue);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "leftArrow", CCSprite*, this->leftArrow);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "rightArrow", CCSprite*, this->rightArrow);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "pauseSprite", CCSprite*, this->pauseSprite);
     
     return false;
 }
@@ -370,9 +371,12 @@ void Menu::ccTouchesBegan(CCSet* pTouches, CCEvent* pEvent)
     CCPoint location = pTouch->getLocation();
     CCRect* pLeftTextureRect = new CCRect(leftArrow->getPositionX(), leftArrow->getPositionY(), leftArrow->getContentSize().width, leftArrow->getContentSize().height);
     CCRect* pRightTextureRect = new CCRect(rightArrow->getPositionX(), rightArrow->getPositionY(), rightArrow->getContentSize().width, rightArrow->getContentSize().height);
+    CCRect* pPauseTextureRect = new CCRect(pauseSprite->getPositionX(), pauseSprite->getPositionY(), pauseSprite->getContentSize().width, pauseSprite->getContentSize().height);
     GameObject* miao = dynamic_cast<GameObject*>(level->miao);
     Background* bgLayer = (Background*)backgroundLayer->getChildByTag(101);
-    if (pLeftTextureRect->containsPoint(location) && miao->getPositionX()>0) {
+    if (pPauseTextureRect->containsPoint(location)) {
+        pressedPause(this);
+    } else if (pLeftTextureRect->containsPoint(location) && miao->getPositionX()>0) {
         //if (bgLayer->getPositionX()<-100 and bgLayer->getPositionX()>-480) {
         if (bgLayer->getPositionX()+miao->getPositionX()<=0 or bgLayer->getPositionX()+miao->getPositionX()>320) {
             bgLayer->setPosition(ccp(100-miao->getPositionX()>-480?100-miao->getPositionX():-480, 0));

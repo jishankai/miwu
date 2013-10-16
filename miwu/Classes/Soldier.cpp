@@ -41,15 +41,17 @@ void Soldier::onEnter()
     bloodBar->setPosition(ccp(0, this->getChildByTag(0)->getContentSize().height));
     //bloodBar->setVisible(false);
     this->addChild(bloodBar);
-    
 }
 
 void Soldier::update(float delta)
+{}
+
+void Soldier::update(float delta, float width)
 {
     // Calculate new position
     CCPoint oldPosition = this->getPosition();
     
-    if (oldPosition.x<960) {
+    if (oldPosition.x<width) {
         float xNew = oldPosition.x + xSpeed*delta;
         this->setPosition(ccp(xNew, oldPosition.y));
     }

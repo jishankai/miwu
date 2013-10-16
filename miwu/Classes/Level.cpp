@@ -172,7 +172,7 @@ void Level::update(float delta)
     CCARRAY_FOREACH(_soldiers, st)
     {
         Soldier* soldier = dynamic_cast<Soldier*>(st);
-        soldier->update(delta);
+        soldier->update(delta, 960);
         
         if (soldier->isS6) {
             CCObject* ct = NULL;

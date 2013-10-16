@@ -8,7 +8,7 @@
 
 #include "InviteInviteer.h"
 
-#include "LevelInviteer.h"
+#include "MouseLevelInviteer.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;

@@ -28,6 +28,7 @@ private:
     cocos2d::CCProgressTimer* blueProcessBar;
     cocos2d::CCSprite* leftArrow;
     cocos2d::CCSprite* rightArrow;
+    cocos2d::CCSprite* pauseSprite;
     
     float food;
     float mana;

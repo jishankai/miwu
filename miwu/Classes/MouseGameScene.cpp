@@ -9,7 +9,7 @@
 #include "MouseGameScene.h"
 #include "MouseMenuLoader.h"
 #include "GameSceneLoader.h"
-#include "BackgroundLoader.h"
+#include "MouseBackgroundLoader.h"
 #include "StatusLoader.h"
 
 USING_NS_CC;
@@ -20,7 +20,7 @@ CCScene* MouseGameScene::scene()
     CCScene* scene = CCScene::create();
     sharedInstance = GameSceneLoader::load();
 
-    sharedInstance->background = BackgroundLoader::load();
+    sharedInstance->background = MouseBackgroundLoader::load();
     sharedInstance->status = StatusLoader::load();
     sharedInstance->backgroundLayer->addChild(sharedInstance->background, 0, 101);
     sharedInstance->statusLayer->addChild(sharedInstance->status, 2, 102);

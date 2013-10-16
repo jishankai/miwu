@@ -399,6 +399,14 @@
 		53B57B3E17B3FEE20068BD92 /* S1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3517B3FEE20068BD92 /* S1.ccbi */; };
 		53B57B4117B3FEF00068BD92 /* MouseGameScene.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B3F17B3FEF00068BD92 /* MouseGameScene.ccbi */; };
 		53B57B4217B3FEF00068BD92 /* Level.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53B57B4017B3FEF00068BD92 /* Level.ccbi */; };
+		53C2554917F1E056000AE6E8 /* MouseBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C2554117F1E055000AE6E8 /* MouseBackground.cpp */; };
+		53C2554A17F1E056000AE6E8 /* MouseBackgroundLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C2554317F1E056000AE6E8 /* MouseBackgroundLoader.cpp */; };
+		53C2554B17F1E056000AE6E8 /* MouseLevel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C2554517F1E056000AE6E8 /* MouseLevel.cpp */; };
+		53C2554C17F1E056000AE6E8 /* MouseLevelLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53C2554717F1E056000AE6E8 /* MouseLevelLoader.cpp */; };
+		53C2554F17F1E07B000AE6E8 /* MouseBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53C2554D17F1E07B000AE6E8 /* MouseBackground.ccbi */; };
+		53C2555017F1E07B000AE6E8 /* MouseLevel.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53C2554E17F1E07B000AE6E8 /* MouseLevel.ccbi */; };
+		53C2555417F49427000AE6E8 /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C2555217F49427000AE6E8 /* base.png */; };
+		53C2555517F49427000AE6E8 /* cn_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C2555317F49427000AE6E8 /* cn_background.png */; };
 		53D2036417D8C4B900BB9875 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D2036317D8C4B900BB9875 /* Default-568h@2x.png */; };
 		53DECBBA17DE3C0A00A1C1BC /* StatusLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */; };
 		53DECBBB17DE3C0A00A1C1BC /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB917DE3C0800A1C1BC /* Status.cpp */; };
@@ -1267,6 +1275,18 @@
 		53B57B3517B3FEE20068BD92 /* S1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = S1.ccbi; path = Resources/S1.ccbi; sourceTree = "<group>"; };
 		53B57B3F17B3FEF00068BD92 /* MouseGameScene.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MouseGameScene.ccbi; path = Resources/MouseGameScene.ccbi; sourceTree = "<group>"; };
 		53B57B4017B3FEF00068BD92 /* Level.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = Level.ccbi; path = Resources/Level.ccbi; sourceTree = "<group>"; };
+		53C2554117F1E055000AE6E8 /* MouseBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseBackground.cpp; path = Classes/MouseBackground.cpp; sourceTree = "<group>"; };
+		53C2554217F1E056000AE6E8 /* MouseBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseBackground.h; path = Classes/MouseBackground.h; sourceTree = "<group>"; };
+		53C2554317F1E056000AE6E8 /* MouseBackgroundLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseBackgroundLoader.cpp; path = Classes/MouseBackgroundLoader.cpp; sourceTree = "<group>"; };
+		53C2554417F1E056000AE6E8 /* MouseBackgroundLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseBackgroundLoader.h; path = Classes/MouseBackgroundLoader.h; sourceTree = "<group>"; };
+		53C2554517F1E056000AE6E8 /* MouseLevel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseLevel.cpp; path = Classes/MouseLevel.cpp; sourceTree = "<group>"; };
+		53C2554617F1E056000AE6E8 /* MouseLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseLevel.h; path = Classes/MouseLevel.h; sourceTree = "<group>"; };
+		53C2554717F1E056000AE6E8 /* MouseLevelLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MouseLevelLoader.cpp; path = Classes/MouseLevelLoader.cpp; sourceTree = "<group>"; };
+		53C2554817F1E056000AE6E8 /* MouseLevelLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MouseLevelLoader.h; path = Classes/MouseLevelLoader.h; sourceTree = "<group>"; };
+		53C2554D17F1E07B000AE6E8 /* MouseBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MouseBackground.ccbi; path = Resources/MouseBackground.ccbi; sourceTree = "<group>"; };
+		53C2554E17F1E07B000AE6E8 /* MouseLevel.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = MouseLevel.ccbi; path = Resources/MouseLevel.ccbi; sourceTree = "<group>"; };
+		53C2555217F49427000AE6E8 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = base.png; path = Resources/base.png; sourceTree = "<group>"; };
+		53C2555317F49427000AE6E8 /* cn_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cn_background.png; path = Resources/cn_background.png; sourceTree = "<group>"; };
 		53D2036317D8C4B900BB9875 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		53DECBB617DE3C0600A1C1BC /* StatusLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusLoader.h; path = Classes/StatusLoader.h; sourceTree = "<group>"; };
 		53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StatusLoader.cpp; path = Classes/StatusLoader.cpp; sourceTree = "<group>"; };
@@ -1473,6 +1493,8 @@
 		5321F4C71794599E00BC1823 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53C2555217F49427000AE6E8 /* base.png */,
+				53C2555317F49427000AE6E8 /* cn_background.png */,
 				53DECC1F17E464BC00A1C1BC /* load.png */,
 				53DECC2017E464BC00A1C1BC /* others.png */,
 				53DECC2117E464BE00A1C1BC /* reward.png */,
@@ -2737,6 +2759,14 @@
 		533185A117959F2D00F46CF6 /* layers */ = {
 			isa = PBXGroup;
 			children = (
+				53C2554117F1E055000AE6E8 /* MouseBackground.cpp */,
+				53C2554217F1E056000AE6E8 /* MouseBackground.h */,
+				53C2554317F1E056000AE6E8 /* MouseBackgroundLoader.cpp */,
+				53C2554417F1E056000AE6E8 /* MouseBackgroundLoader.h */,
+				53C2554517F1E056000AE6E8 /* MouseLevel.cpp */,
+				53C2554617F1E056000AE6E8 /* MouseLevel.h */,
+				53C2554717F1E056000AE6E8 /* MouseLevelLoader.cpp */,
+				53C2554817F1E056000AE6E8 /* MouseLevelLoader.h */,
 				53DECCC617E50A7C00A1C1BC /* Gacha.cpp */,
 				53DECCC717E50A8600A1C1BC /* Gacha.h */,
 				53DECCC817E50A8F00A1C1BC /* GachaLoader.cpp */,
@@ -2855,6 +2885,8 @@
 		5335BBFE17ABF6C400B02A13 /* ccb */ = {
 			isa = PBXGroup;
 			children = (
+				53C2554D17F1E07B000AE6E8 /* MouseBackground.ccbi */,
+				53C2554E17F1E07B000AE6E8 /* MouseLevel.ccbi */,
 				53DECC9417E4DD7B00A1C1BC /* Others.ccbi */,
 				53DECC6517E4ABDE00A1C1BC /* Equip.ccbi */,
 				53DECC6617E4ABDE00A1C1BC /* Event.ccbi */,
@@ -3242,6 +3274,10 @@
 				53DECC7C17E4ABDE00A1C1BC /* Shop.ccbi in Resources */,
 				53DECC7E17E4ABDE00A1C1BC /* Process.ccbi in Resources */,
 				53DECC9517E4DD7B00A1C1BC /* Others.ccbi in Resources */,
+				53C2554F17F1E07B000AE6E8 /* MouseBackground.ccbi in Resources */,
+				53C2555017F1E07B000AE6E8 /* MouseLevel.ccbi in Resources */,
+				53C2555417F49427000AE6E8 /* base.png in Resources */,
+				53C2555517F49427000AE6E8 /* cn_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3594,6 +3630,10 @@
 				53DECCDB17E50CB800A1C1BC /* AccountLoader.cpp in Sources */,
 				53DECCDC17E50CB800A1C1BC /* Invite.cpp in Sources */,
 				53DECCDD17E50CB800A1C1BC /* InviteLoader.cpp in Sources */,
+				53C2554917F1E056000AE6E8 /* MouseBackground.cpp in Sources */,
+				53C2554A17F1E056000AE6E8 /* MouseBackgroundLoader.cpp in Sources */,
+				53C2554B17F1E056000AE6E8 /* MouseLevel.cpp in Sources */,
+				53C2554C17F1E056000AE6E8 /* MouseLevelLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
