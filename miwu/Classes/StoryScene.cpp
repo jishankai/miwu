@@ -10,6 +10,7 @@
 
 #include "MainMenuScene.h"
 #include "SimpleAudioEngine.h"
+#include "StaticData.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -42,29 +43,15 @@ bool StoryScene::init()
     storyCount = 1;
     story1 = CCSprite::createWithSpriteFrameName("1.png");
     story1->setAnchorPoint(CCPointZero);
-    CCLabelTTF* pLabelBMFont = CCLabelTTF::create();
-    pLabelBMFont->setPosition(ccp(20,20));
-    pString = CCString::createWithFormat("很久很久以前，这是一片被邪恶控制的大陆");
-    int stringLength = pString->length();
-    CCDelayTime* sleep = CCDelayTime::create(0.5f);
-    CCCallFuncND* type = CCCallFuncND::create(this, callfuncND_selector(StoryScene::type), pLabelBMFont);
-    CCSequence *seq = CCSequence::create(sleep, type, NULL);
-    CCRepeat* repeat = CCRepeat::create(seq, stringLength);
     
     CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("main.mp3", true);
     this->addChild(story1);
-    this->addChild(pLabelBMFont,100);
-    //this->runAction(repeat);
-    return true;
-}
 
-void StoryScene::type(cocos2d::CCNode *sender, CCLabelBMFont *label)
-{
-    CCString* sFormat = CCString::createWithFormat("%%ds", i);
-    CCString* pLabelString = CCString::createWithFormat(sFormat->getCString(), pString->getCString());
-    
-    label->setString(pLabelString->getCString());
-    i++;
+    std::string type("story_0");
+    firstLineLabel = PrintingLabel::create(type, "Arial", 1.0f);
+    this->addChild(firstLineLabel, 100);
+    firstLineLabel->setPosition(ccp(50, 30));
+    return true;
 }
 
 void StoryScene::ccTouchesEnded(CCSet* pTouches, CCEvent* pEvent)
@@ -72,43 +59,113 @@ void StoryScene::ccTouchesEnded(CCSet* pTouches, CCEvent* pEvent)
     switch (storyCount) {
         case 1:
         {
-            CCSprite* story = CCSprite::createWithSpriteFrameName("2.png");
-            story->setAnchorPoint(CCPointZero);
-            this->removeChild(story1);
-            this->addChild(story);
-            story2 = story;
+            onTounchHandler("2.png", story1, story2, "story_1", "story_2");
             break;
         }
         case 2:
         {
-            CCSprite* story = CCSprite::createWithSpriteFrameName("3.png");
-            story->setAnchorPoint(CCPointZero);
-            this->removeChild(story2);
-            this->addChild(story);
-            story3 = story;
+            onTounchHandler("3.png", story2, story3, "story_3", NULL);
             break;
         }
         case 3:
         {
-            CCSprite* story = CCSprite::createWithSpriteFrameName("4.png");
-            story->setAnchorPoint(CCPointZero);
-            this->removeChild(story3);
-            this->addChild(story);
-            story4 = story;
+            onTounchHandler("4.png", story3, story4, "story_4", "story_5");
             break;
         }
         case 4:
         {
-            this->removeChild(story4);
-            //CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
-            CCScene* pMainMenuScene = MainMenuScene::scene();
-            CCDirector::sharedDirector()->replaceScene(pMainMenuScene);
+            if (firstLineLabel->getComplete() == false)
+            {
+                firstLineLabel->displayComplete();
+                if (secondLineLabel && secondLineLabel->getComplete() == false)
+                {
+                    secondLineLabel->displayComplete();
+                }
+                else if (secondLineLabel && secondLineLabel->getComplete() == true)
+                {
+                    endStory();
+                }
+            }
+            else
+            {
+                if (secondLineLabel && secondLineLabel->getComplete() == false)
+                {
+                    secondLineLabel->displayComplete();
+                }
+                else
+                {
+                    endStory();
+                }
+            }
             break;
         }
         default:
             break;
     }
-    if(storyCount<=3) {
+}
+
+void StoryScene::onTounchHandler(const char *storyName, CCSprite *prevStory, CCSprite *curStory, const char *firstLine, const char *secondLine)
+{
+    if (firstLineLabel->getComplete() == false){
+        firstLineLabel->displayComplete();
+        if (secondLineLabel && secondLineLabel->getComplete() == false)
+        {
+            secondLineLabel->displayComplete();
+        }
+        else if (secondLineLabel && secondLineLabel->getComplete() == true)
+        {
+            changeStory(storyName, prevStory, curStory, firstLine, secondLine);
+        }
+    }
+    else{
+        if (secondLineLabel && secondLineLabel->getComplete() == false)
+        {
+            secondLineLabel->displayComplete();
+        }
+        else
+        {
+            changeStory(storyName, prevStory, curStory, firstLine, secondLine);
+        }
+    }
+}
+
+void StoryScene::changeStory(const char* storyName, CCSprite* prevStory, CCSprite* curStory,
+                             const char* firstLine, const char* secondLine)
+{
+    CCSprite* story = CCSprite::createWithSpriteFrameName(storyName);
+    story->setAnchorPoint(CCPointZero);
+    this->removeChild(prevStory);
+    this->addChild(story);
+    story2 = curStory;
+    
+    this->removeChild(firstLineLabel);
+    std::string firstLineType(firstLine);
+    firstLineLabel = PrintingLabel::create(firstLineType, "Arial", 1.0f);
+    this->addChild(firstLineLabel, 100);
+    firstLineLabel->setPosition(ccp(30, 35));
+    
+    if (secondLine != NULL)
+    {
+        std::string secondLineType(secondLine);
+        secondLineLabel = PrintingLabel::create(secondLineType, "Arial", 1.0f);
+        this->addChild(secondLineLabel, 200);
+        secondLineLabel->setPosition(ccp(100, 16));
+    }
+    else
+    {
+        this->removeChild(secondLineLabel);
+        secondLineLabel = NULL;
+    }
+    
+    if(storyCount <= 3) {
         storyCount++;
     }
+}
+
+void StoryScene::endStory()
+{
+    this->removeChild(story4);
+    //CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+    CCScene* pMainMenuScene = MainMenuScene::scene();
+    CCDirector::sharedDirector()->replaceScene(pMainMenuScene);
 }
