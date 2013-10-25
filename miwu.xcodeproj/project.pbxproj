@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530DD5A91811B65D00A6F87B /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62B179459A200BC1823 /* libcurl.a */; };
+		530DD5AA1811B72A00A6F87B /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62D179459A200BC1823 /* libwebp.a */; };
+		530DD5AB1811B75B00A6F87B /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F853179459A700BC1823 /* libwebsockets.a */; };
 		5321F4B71794599E00BC1823 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4B61794599E00BC1823 /* QuartzCore.framework */; };
 		5321F4B91794599E00BC1823 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4B81794599E00BC1823 /* OpenGLES.framework */; };
 		5321F4BB1794599E00BC1823 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4BA1794599E00BC1823 /* OpenAL.framework */; };
@@ -118,8 +121,6 @@
 		5321F615179459A200BC1823 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5321F614179459A200BC1823 /* EAGLView.mm */; };
 		5321F61A179459A200BC1823 /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5321F619179459A200BC1823 /* AccelerometerSimulation.m */; };
 		5321F61C179459A200BC1823 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F61B179459A200BC1823 /* platform.cpp */; };
-		5321F62C179459A200BC1823 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62B179459A200BC1823 /* libcurl.a */; };
-		5321F62E179459A200BC1823 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62D179459A200BC1823 /* libwebp.a */; };
 		5321F635179459A200BC1823 /* CCScriptSupport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F634179459A200BC1823 /* CCScriptSupport.cpp */; };
 		5321F639179459A200BC1823 /* CCGLProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F638179459A200BC1823 /* CCGLProgram.cpp */; };
 		5321F63C179459A200BC1823 /* ccGLStateCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F63B179459A200BC1823 /* ccGLStateCache.cpp */; };
@@ -277,7 +278,6 @@
 		5321F848179459A700BC1823 /* cpSpatialIndex.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F847179459A700BC1823 /* cpSpatialIndex.c */; };
 		5321F84A179459A700BC1823 /* cpSweep1D.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F849179459A700BC1823 /* cpSweep1D.c */; };
 		5321F84C179459A700BC1823 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F84B179459A700BC1823 /* cpVect.c */; };
-		5321F854179459A700BC1823 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F853179459A700BC1823 /* libwebsockets.a */; };
 		5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F859179459A700BC1823 /* AppDelegate.cpp */; };
 		5335BBE517A6C01B00B02A13 /* ri.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE117A6C01B00B02A13 /* ri.plist */; };
 		5335BBE617A6C01B00B02A13 /* ri.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */; };
@@ -368,6 +368,15 @@
 		5383A8DC17D1177700EE4A1A /* StoryScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8DB17D1177700EE4A1A /* StoryScene.cpp */; };
 		5383A8DE17D3973B00EE4A1A /* main.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8DD17D3973B00EE4A1A /* main.mp3 */; };
 		5383A8E117D4EFCF00EE4A1A /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */; };
+		538D27AC181426F2004B51F4 /* ApiParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27AA181426F2004B51F4 /* ApiParser.cpp */; };
+		538D27C41816E757004B51F4 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BC1816E757004B51F4 /* Array.cpp */; };
+		538D27C51816E757004B51F4 /* Convert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BD1816E757004B51F4 /* Convert.cpp */; };
+		538D27C61816E757004B51F4 /* Escaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BE1816E757004B51F4 /* Escaper.cpp */; };
+		538D27C71816E757004B51F4 /* IndentCanceller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BF1816E757004B51F4 /* IndentCanceller.cpp */; };
+		538D27C81816E757004B51F4 /* Indenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27C01816E757004B51F4 /* Indenter.cpp */; };
+		538D27C91816E757004B51F4 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27C11816E757004B51F4 /* Object.cpp */; };
+		538D27CA1816E757004B51F4 /* SolidusEscaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27C21816E757004B51F4 /* SolidusEscaper.cpp */; };
+		538D27CB1816E757004B51F4 /* Value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27C31816E757004B51F4 /* Value.cpp */; };
 		53B57B1517B3FA8B0068BD92 /* S9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF217B3FA8B0068BD92 /* S9Loader.cpp */; };
 		53B57B1617B3FA8B0068BD92 /* S9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF417B3FA8B0068BD92 /* S9.cpp */; };
 		53B57B1717B3FA8B0068BD92 /* S8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B57AF617B3FA8B0068BD92 /* S8Loader.cpp */; };
@@ -1093,14 +1102,6 @@
 		5321F856179459A700BC1823 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5321F858179459A700BC1823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		5321F859179459A700BC1823 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		5331859817959F0900F46CF6 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
-		5331859917959F0900F46CF6 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		5331859A17959F0900F46CF6 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
-		5331859B17959F0900F46CF6 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
-		5331859C17959F0900F46CF6 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
-		5331859D17959F0900F46CF6 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
-		5331859E17959F0900F46CF6 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
-		5331859F17959F0900F46CF6 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 		5335BBE117A6C01B00B02A13 /* ri.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ri.plist; path = Resources/ri.plist; sourceTree = "<group>"; };
 		5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = ri.pvr.ccz; path = Resources/ri.pvr.ccz; sourceTree = "<group>"; };
 		5335BBE317A6C01B00B02A13 /* battle_ui.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = battle_ui.plist; path = Resources/battle_ui.plist; sourceTree = "<group>"; };
@@ -1224,6 +1225,27 @@
 		5383A8DD17D3973B00EE4A1A /* main.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = main.mp3; path = Resources/main.mp3; sourceTree = "<group>"; };
 		5383A8DF17D4EFCE00EE4A1A /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = Classes/GameOverScene.h; sourceTree = "<group>"; };
 		5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = Classes/GameOverScene.cpp; sourceTree = "<group>"; };
+		538D27AA181426F2004B51F4 /* ApiParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiParser.cpp; path = Classes/ApiParser.cpp; sourceTree = "<group>"; };
+		538D27AB181426F2004B51F4 /* ApiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiParser.h; path = Classes/ApiParser.h; sourceTree = "<group>"; };
+		538D27B01816E756004B51F4 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		538D27B11816E756004B51F4 /* Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convert.h; sourceTree = "<group>"; };
+		538D27B21816E756004B51F4 /* Escaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Escaper.h; sourceTree = "<group>"; };
+		538D27B31816E757004B51F4 /* Grammar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grammar.h; sourceTree = "<group>"; };
+		538D27B41816E757004B51F4 /* IndentCanceller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndentCanceller.h; sourceTree = "<group>"; };
+		538D27B51816E757004B51F4 /* Indenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indenter.h; sourceTree = "<group>"; };
+		538D27B61816E757004B51F4 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		538D27B71816E757004B51F4 /* OutputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFilter.h; sourceTree = "<group>"; };
+		538D27B81816E757004B51F4 /* SolidusEscaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SolidusEscaper.h; sourceTree = "<group>"; };
+		538D27B91816E757004B51F4 /* Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Value.h; sourceTree = "<group>"; };
+		538D27BA1816E757004B51F4 /* JsonBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonBox.h; sourceTree = "<group>"; };
+		538D27BC1816E757004B51F4 /* Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array.cpp; sourceTree = "<group>"; };
+		538D27BD1816E757004B51F4 /* Convert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Convert.cpp; sourceTree = "<group>"; };
+		538D27BE1816E757004B51F4 /* Escaper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Escaper.cpp; sourceTree = "<group>"; };
+		538D27BF1816E757004B51F4 /* IndentCanceller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndentCanceller.cpp; sourceTree = "<group>"; };
+		538D27C01816E757004B51F4 /* Indenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Indenter.cpp; sourceTree = "<group>"; };
+		538D27C11816E757004B51F4 /* Object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		538D27C21816E757004B51F4 /* SolidusEscaper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SolidusEscaper.cpp; sourceTree = "<group>"; };
+		538D27C31816E757004B51F4 /* Value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Value.cpp; sourceTree = "<group>"; };
 		53B57AF117B3FA8B0068BD92 /* S9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S9Loader.h; path = Classes/S9Loader.h; sourceTree = "<group>"; };
 		53B57AF217B3FA8B0068BD92 /* S9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = S9Loader.cpp; path = Classes/S9Loader.cpp; sourceTree = "<group>"; };
 		53B57AF317B3FA8B0068BD92 /* S9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = S9.h; path = Classes/S9.h; sourceTree = "<group>"; };
@@ -1429,6 +1451,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				530DD5AB1811B75B00A6F87B /* libwebsockets.a in Frameworks */,
+				530DD5AA1811B72A00A6F87B /* libwebp.a in Frameworks */,
+				530DD5A91811B65D00A6F87B /* libcurl.a in Frameworks */,
 				5321F4B71794599E00BC1823 /* QuartzCore.framework in Frameworks */,
 				5321F4B91794599E00BC1823 /* OpenGLES.framework in Frameworks */,
 				5321F4BB1794599E00BC1823 /* OpenAL.framework in Frameworks */,
@@ -1437,9 +1462,6 @@
 				5321F4C11794599E00BC1823 /* UIKit.framework in Frameworks */,
 				5321F4C31794599E00BC1823 /* Foundation.framework in Frameworks */,
 				5321F4C51794599E00BC1823 /* CoreGraphics.framework in Frameworks */,
-				5321F62C179459A200BC1823 /* libcurl.a in Frameworks */,
-				5321F62E179459A200BC1823 /* libwebp.a in Frameworks */,
-				5321F854179459A700BC1823 /* libwebsockets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1551,7 +1573,7 @@
 		5321F4E81794599F00BC1823 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				5331859517959F0900F46CF6 /* jsoncpp */,
+				538D27AD1816E756004B51F4 /* jsonbox */,
 				5321F4E91794599F00BC1823 /* cocos2dx */,
 				5321F6D9179459A400BC1823 /* CocosDenshion */,
 				5321F6F1179459A400BC1823 /* extensions */,
@@ -2701,38 +2723,6 @@
 			name = default;
 			sourceTree = "<group>";
 		};
-		5331859517959F0900F46CF6 /* jsoncpp */ = {
-			isa = PBXGroup;
-			children = (
-				5331859617959F0900F46CF6 /* include */,
-			);
-			name = jsoncpp;
-			path = libs/jsoncpp;
-			sourceTree = "<group>";
-		};
-		5331859617959F0900F46CF6 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				5331859717959F0900F46CF6 /* json */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		5331859717959F0900F46CF6 /* json */ = {
-			isa = PBXGroup;
-			children = (
-				5331859817959F0900F46CF6 /* autolink.h */,
-				5331859917959F0900F46CF6 /* config.h */,
-				5331859A17959F0900F46CF6 /* features.h */,
-				5331859B17959F0900F46CF6 /* forwards.h */,
-				5331859C17959F0900F46CF6 /* json.h */,
-				5331859D17959F0900F46CF6 /* reader.h */,
-				5331859E17959F0900F46CF6 /* value.h */,
-				5331859F17959F0900F46CF6 /* writer.h */,
-			);
-			path = json;
-			sourceTree = "<group>";
-		};
 		533185A017959F1500F46CF6 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -2871,6 +2861,8 @@
 				535E8D6F17BBD2B000C2A145 /* Soldier.h */,
 				535E8D7117BBD2C700C2A145 /* Enemy.cpp */,
 				535E8D7217BBD2C700C2A145 /* Enemy.h */,
+				538D27AA181426F2004B51F4 /* ApiParser.cpp */,
+				538D27AB181426F2004B51F4 /* ApiParser.h */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -3073,6 +3065,57 @@
 				53B57B1417B3FA8B0068BD92 /* S1.cpp */,
 			);
 			name = miao;
+			sourceTree = "<group>";
+		};
+		538D27AD1816E756004B51F4 /* jsonbox */ = {
+			isa = PBXGroup;
+			children = (
+				538D27AE1816E756004B51F4 /* include */,
+				538D27BB1816E757004B51F4 /* src */,
+			);
+			name = jsonbox;
+			path = libs/jsonbox;
+			sourceTree = "<group>";
+		};
+		538D27AE1816E756004B51F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				538D27AF1816E756004B51F4 /* JsonBox */,
+				538D27BA1816E757004B51F4 /* JsonBox.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		538D27AF1816E756004B51F4 /* JsonBox */ = {
+			isa = PBXGroup;
+			children = (
+				538D27B01816E756004B51F4 /* Array.h */,
+				538D27B11816E756004B51F4 /* Convert.h */,
+				538D27B21816E756004B51F4 /* Escaper.h */,
+				538D27B31816E757004B51F4 /* Grammar.h */,
+				538D27B41816E757004B51F4 /* IndentCanceller.h */,
+				538D27B51816E757004B51F4 /* Indenter.h */,
+				538D27B61816E757004B51F4 /* Object.h */,
+				538D27B71816E757004B51F4 /* OutputFilter.h */,
+				538D27B81816E757004B51F4 /* SolidusEscaper.h */,
+				538D27B91816E757004B51F4 /* Value.h */,
+			);
+			path = JsonBox;
+			sourceTree = "<group>";
+		};
+		538D27BB1816E757004B51F4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				538D27BC1816E757004B51F4 /* Array.cpp */,
+				538D27BD1816E757004B51F4 /* Convert.cpp */,
+				538D27BE1816E757004B51F4 /* Escaper.cpp */,
+				538D27BF1816E757004B51F4 /* IndentCanceller.cpp */,
+				538D27C01816E757004B51F4 /* Indenter.cpp */,
+				538D27C11816E757004B51F4 /* Object.cpp */,
+				538D27C21816E757004B51F4 /* SolidusEscaper.cpp */,
+				538D27C31816E757004B51F4 /* Value.cpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		53EC1FA517A2EA2D00156252 /* pvr */ = {
@@ -3321,6 +3364,7 @@
 				5321F543179459A000BC1823 /* CCObject.cpp in Sources */,
 				5321F546179459A000BC1823 /* CCSet.cpp in Sources */,
 				5321F549179459A000BC1823 /* CCString.cpp in Sources */,
+				538D27CB1816E757004B51F4 /* Value.cpp in Sources */,
 				5321F54C179459A000BC1823 /* CCZone.cpp in Sources */,
 				5321F54F179459A000BC1823 /* cocos2d.cpp in Sources */,
 				5321F552179459A000BC1823 /* CCDrawingPrimitives.cpp in Sources */,
@@ -3393,6 +3437,7 @@
 				5321F669179459A300BC1823 /* base64.cpp in Sources */,
 				5321F66C179459A300BC1823 /* CCNotificationCenter.cpp in Sources */,
 				5321F66F179459A300BC1823 /* CCPointExtension.cpp in Sources */,
+				538D27C61816E757004B51F4 /* Escaper.cpp in Sources */,
 				5321F672179459A300BC1823 /* CCProfiling.cpp in Sources */,
 				5321F675179459A300BC1823 /* ccUTF8.cpp in Sources */,
 				5321F678179459A300BC1823 /* ccUtils.cpp in Sources */,
@@ -3400,6 +3445,7 @@
 				5321F67F179459A300BC1823 /* CCComponent.cpp in Sources */,
 				5321F682179459A300BC1823 /* CCComponentContainer.cpp in Sources */,
 				5321F686179459A300BC1823 /* ccCArray.cpp in Sources */,
+				538D27C91816E757004B51F4 /* Object.cpp in Sources */,
 				5321F68C179459A300BC1823 /* TGAlib.cpp in Sources */,
 				5321F690179459A300BC1823 /* tinyxml2.cpp in Sources */,
 				5321F693179459A300BC1823 /* TransformUtils.cpp in Sources */,
@@ -3410,6 +3456,7 @@
 				5321F6A6179459A300BC1823 /* CCIMEDispatcher.cpp in Sources */,
 				5321F6A9179459A300BC1823 /* CCTextFieldTTF.cpp in Sources */,
 				5321F6AD179459A300BC1823 /* CCTexture2D.cpp in Sources */,
+				538D27C71816E757004B51F4 /* IndentCanceller.cpp in Sources */,
 				5321F6B0179459A300BC1823 /* CCTextureAtlas.cpp in Sources */,
 				5321F6B3179459A300BC1823 /* CCTextureCache.cpp in Sources */,
 				5321F6B6179459A400BC1823 /* CCTextureETC.cpp in Sources */,
@@ -3444,6 +3491,7 @@
 				5321F71E179459A400BC1823 /* CCLayerColorLoader.cpp in Sources */,
 				5321F721179459A400BC1823 /* CCLayerGradientLoader.cpp in Sources */,
 				5321F724179459A400BC1823 /* CCLayerLoader.cpp in Sources */,
+				538D27AC181426F2004B51F4 /* ApiParser.cpp in Sources */,
 				5321F727179459A400BC1823 /* CCMenuItemImageLoader.cpp in Sources */,
 				5321F72A179459A500BC1823 /* CCMenuItemLoader.cpp in Sources */,
 				5321F72E179459A500BC1823 /* CCNode+CCBRelativePositioning.cpp in Sources */,
@@ -3531,6 +3579,7 @@
 				5321F840179459A600BC1823 /* cpSpaceComponent.c in Sources */,
 				5321F842179459A600BC1823 /* cpSpaceHash.c in Sources */,
 				5321F844179459A600BC1823 /* cpSpaceQuery.c in Sources */,
+				538D27C81816E757004B51F4 /* Indenter.cpp in Sources */,
 				5321F846179459A600BC1823 /* cpSpaceStep.c in Sources */,
 				5321F848179459A700BC1823 /* cpSpatialIndex.c in Sources */,
 				5321F84A179459A700BC1823 /* cpSweep1D.c in Sources */,
@@ -3562,6 +3611,7 @@
 				53B57B2417B3FA8B0068BD92 /* S2.cpp in Sources */,
 				53B57B2517B3FA8B0068BD92 /* S1Loader.cpp in Sources */,
 				53B57B2617B3FA8B0068BD92 /* S1.cpp in Sources */,
+				538D27CA1816E757004B51F4 /* SolidusEscaper.cpp in Sources */,
 				53B57B2B17B3FAA50068BD92 /* LevelLoader.cpp in Sources */,
 				53B57B2C17B3FAA50068BD92 /* Level.cpp in Sources */,
 				534B43BE17B61E07001DF7B0 /* MiaoLoader.cpp in Sources */,
@@ -3581,6 +3631,7 @@
 				534B441017B63EF2001DF7B0 /* RS4Loader.cpp in Sources */,
 				534B441117B63EF2001DF7B0 /* RS4.cpp in Sources */,
 				534B441217B63EF2001DF7B0 /* RS3Loader.cpp in Sources */,
+				538D27C51816E757004B51F4 /* Convert.cpp in Sources */,
 				534B441317B63EF2001DF7B0 /* RS3.cpp in Sources */,
 				534B441417B63EF2001DF7B0 /* RS2Loader.cpp in Sources */,
 				534B441517B63EF2001DF7B0 /* RS2.cpp in Sources */,
@@ -3604,6 +3655,7 @@
 				53DECC8717E4BAFB00A1C1BC /* EquipLoader.cpp in Sources */,
 				53DECC8C17E4D90700A1C1BC /* Army.cpp in Sources */,
 				53DECC8D17E4D90700A1C1BC /* ArmyLoader.cpp in Sources */,
+				538D27C41816E757004B51F4 /* Array.cpp in Sources */,
 				53DECC9217E4DC2800A1C1BC /* Others.cpp in Sources */,
 				53DECC9317E4DC2800A1C1BC /* OthersLoader.cpp in Sources */,
 				53DECC9A17E4DFA100A1C1BC /* Event.cpp in Sources */,
@@ -3666,9 +3718,10 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
-					"\"$(PROJECT_NAME)/libs/jsoncpp/include",
+					"\"$(PROJECT_NAME)/libs/jsoncpp/include/json",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
 				PROVISIONING_PROFILE = "D93EF56D-8313-402E-93F5-0C89956A6371";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D93EF56D-8313-402E-93F5-0C89956A6371";
 				SDKROOT = iphoneos;
@@ -3699,10 +3752,11 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
-					"\"$(PROJECT_NAME)/libs/jsoncpp/include",
+					"\"$(PROJECT_NAME)/libs/jsoncpp/include/json",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
 				PROVISIONING_PROFILE = "D93EF56D-8313-402E-93F5-0C89956A6371";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D93EF56D-8313-402E-93F5-0C89956A6371";
 				SDKROOT = iphoneos;
@@ -3719,12 +3773,26 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = miwu/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_NAME)/libs/cocos2dx/kazmath/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx\"",
+					"\"$(PROJECT_NAME)/libs/CocosDenshion/include\"",
+					"\"$(PROJECT_NAME)/libs/extensions\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+					"\"$(PROJECT_NAME)/libs/jsonbox/include \"",
+				);
 				INFOPLIST_FILE = miwu/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\"",
-					"\"$(SRCROOT)/miwu/libs/libwebsockets/ios/lib\"",
+					"\\\\\\\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/miwu/libs/libwebsockets/ios/lib\\\\\\\"",
+					"/Users/jishankai/dev/jsoncpp-src-0.5.0/libs/linux-gcc-4.2.1",
+					/Users/jishankai/Projects/miwu/miwu/libs/cocos2dx/platform/third_party/ios/libraries,
+					/Users/jishankai/Projects/miwu/miwu/libs/libwebsockets/ios/lib,
+					/Users/jishankai/Projects/miwu/miwu/libs/libjson,
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -3746,12 +3814,26 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = miwu/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(PROJECT_NAME)/libs/cocos2dx/kazmath/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx\"",
+					"\"$(PROJECT_NAME)/libs/CocosDenshion/include\"",
+					"\"$(PROJECT_NAME)/libs/extensions\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/include\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
+					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
+					"\"$(PROJECT_NAME)/libs/jsonbox/include \"",
+				);
 				INFOPLIST_FILE = miwu/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\"",
-					"\"$(SRCROOT)/miwu/libs/libwebsockets/ios/lib\"",
+					"\\\\\\\"$(SRCROOT)/miwu/libs/cocos2dx/platform/third_party/ios/libraries\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/miwu/libs/libwebsockets/ios/lib\\\\\\\"",
+					"/Users/jishankai/dev/jsoncpp-src-0.5.0/libs/linux-gcc-4.2.1",
+					/Users/jishankai/Projects/miwu/miwu/libs/cocos2dx/platform/third_party/ios/libraries,
+					/Users/jishankai/Projects/miwu/miwu/libs/libwebsockets/ios/lib,
+					/Users/jishankai/Projects/miwu/miwu/libs/libjson,
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",

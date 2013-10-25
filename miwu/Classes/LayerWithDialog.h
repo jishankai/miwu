@@ -11,8 +11,9 @@
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
+#include "ApiParser.h"
 
-class LayerWithDialog : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
+class LayerWithDialog : public ApiParser, public cocos2d::extension::CCBMemberVariableAssigner
 {
 private:
     
