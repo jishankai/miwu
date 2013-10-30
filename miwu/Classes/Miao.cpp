@@ -29,6 +29,11 @@ bool Miao::init()
     return true;
 }
 
+void Miao::drawCollisionLine()
+{
+    
+}
+
 bool Miao::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, const char *pMemberVariableName, cocos2d::CCNode *pNode)
 {
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "miaoSprite", CCSprite*, this->miaoSprite);

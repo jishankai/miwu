@@ -8,11 +8,6 @@
 
 #include "S3.h"
 
-#define kCJStartSpeed 45
-#define kCJHP 100
-#define kCJATK 20
-#define kCJDEF 10
-
 USING_NS_CC;
 USING_NS_CC_EXT;
 
@@ -22,11 +17,12 @@ bool S3::init()
     Soldier::init();
     effectSoundFileName = "s3_a1.wav";
     
-    xSpeed = kCJStartSpeed;
-    hp = kCJHP;
-    maxHp = kCJHP;
-    atk = kCJATK;
-    def = kCJDEF;
+    xSpeed = kCJ_S3_StartSpeed;
+    defaultSpeed = kCJ_S3_StartSpeed;
+    hp = kCJ_S3_BASE_HP*(1 + 5*(getLv() - 1)/100);
+    maxHp = hp;
+    atk = kCJ_S3_BASE_ATK*(1 + 5*(getLv() - 1)/100);
+    def = kCJ_S3_DEF;
     
     return true;
 }
@@ -34,4 +30,9 @@ bool S3::init()
 float S3::radius()
 {
     return 25.0f;
+}
+
+float S3::getLv()
+{
+    return 1.0f;
 }

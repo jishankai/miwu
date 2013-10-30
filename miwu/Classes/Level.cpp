@@ -106,6 +106,7 @@ void Level::update(float delta)
     pBackground->update(delta);
     
     randTime += delta;
+    
     if (randTime >= 5 and boss->getHp()>0) {
         randTime = 0;
         CCNode* enemy;
@@ -182,7 +183,6 @@ void Level::update(float delta)
                 if (!soldier->getIsCollision() and ccpDistance(sld->getPosition(), soldier->getPosition()) < sld->radius() + soldier->radius()) {
                     soldier->handleCollisionWith(sld);
                     sld->handleCollisionWith(soldier);
-                    
                     soldier->setIsCollision(true);
                 }
             }
@@ -192,7 +192,8 @@ void Level::update(float delta)
         CCARRAY_FOREACH(_enimies, et)
         {
             GameObject* enemy = dynamic_cast<GameObject*>(et);
-            if (!soldier->getIsCollision() and !soldier->getIsCollision() and ccpDistance(enemy->getPosition(), soldier->getPosition()) < enemy->radius() + soldier->radius()) {
+            if (enemy->getPosition().x - soldier->getPosition().x < soldier->radius())
+            {
                 soldier->setIsCollision(true);
                 soldier->handleCollisionWith(enemy);
                 break;
@@ -208,7 +209,7 @@ void Level::update(float delta)
             soldier->setIsCollision(true);
         }
         
-        if (!soldier->getIsCollision() and soldier->getXSpeed()==0) {
+        if (!soldier->getIsCollision()) {
             soldier->resetSpeed();
         } else {
             soldier->setIsCollision(false);
@@ -224,10 +225,11 @@ void Level::update(float delta)
         CCARRAY_FOREACH(_soldiers, ct)
         {
             GameObject* sld = dynamic_cast<GameObject*>(ct);
-            if (!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and ccpDistance(sld->getPosition(), enemy->getPosition()) < sld->radius() + enemy->radius()) {
+            //!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and
+            if (enemy->getPosition().x - sld->getPosition().x < enemy->radius()) {
                 enemy->handleCollisionWith(sld);
-                
                 enemy->setIsCollision(true);
+               // enemy->setIsCollision(true);
                 break;
             } 
             if (sld->getIsScheduledForRemove()) {

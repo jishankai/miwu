@@ -13,17 +13,21 @@
 #include "cocos-ext.h"
 
 #include "GameObject.h"
+#include "DrawLineLayer.h"
 
 class Enemy : public GameObject
 {
 public:
-    const char* effectSoundFileName;
     virtual bool init();
+    virtual void drawCollisionLine();
     virtual void onEnter();
     virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual void resetSpeed();
     virtual bool isMaxHp();
+
+private:
+    DrawLineLayer *drawLineLayer;
 };
 
 

@@ -15,14 +15,17 @@ class GameObject : public cocos2d::CCNode
 {
 public:
     cocos2d::CCSprite* bloodBar;
+    const char* effectSoundFileName;
     CC_SYNTHESIZE(bool, isScheduledForRemove, IsScheduledForRemove);
     CC_SYNTHESIZE(float, atk, Atk);
     CC_SYNTHESIZE(float, def, Def);
     CC_SYNTHESIZE(float, hp, Hp);
     CC_SYNTHESIZE(float, maxHp, MaxHp);
     CC_SYNTHESIZE(float, xSpeed, XSpeed);
+    CC_SYNTHESIZE(float, defaultSpeed, DefaultSpeed);
     CC_SYNTHESIZE(bool, isCollision, IsCollision);
     
+    virtual void drawCollisionLine() = 0;
     virtual float radius() = 0;
     virtual void update(float delta) = 0;
     virtual void handleCollisionWith(GameObject* gameObject) = 0;
