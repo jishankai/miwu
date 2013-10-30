@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RS1::handleCollisionWith(GameObject*):RS1.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "animationManager-&gt;getRunningSequenceName() != &quot;attack&quot;">
+            </PersistentString>
+            <PersistentString
+               value = "animationManager-&gt;getRunningSequenceName()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Level::update(float):Level.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "randTime">
+            </PersistentString>
+            <PersistentString
+               value = "enemy-&gt;getXSpeed()">
+            </PersistentString>
+            <PersistentString
+               value = "enemy-&gt;getChildByTag(0)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCLabelBMFont::setString(char const*):CCLabelBMFont.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "ApiParser::requestApi(char const*):ApiParser.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Menu::pressedS1(cocos2d::CCObject*):Menu.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "winSize.width">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Miao::onEnter():Miao.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "S9::init():S9.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Menu::pressedRight(cocos2d::CCObject*):Menu.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "AppDelegate::applicationDidFinishLaunching():AppDelegate.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;][&quot;result&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "S9::handleCollisionWith(GameObject*):S9.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Menu::onEnter():Menu.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "this-&gt;getChildByTag(3)">
+            </PersistentString>
+            <PersistentString
+               value = "miaoBloodBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StoryScene::type(cocos2d::CCNode*, cocos2d::CCLabelBMFont*):StoryScene.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "i">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Level::onEnter():Level.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "cocos2d::CCNode::addChild(cocos2d::CCNode*, int, int):CCNode.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "MouseMenu::update(float):MouseMenu.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "Soldier::handleCollisionWith(GameObject*):Soldier.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "gameObect-&gt;getTag()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Menu::pressedS9(cocos2d::CCObject*):Menu.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "s9-&gt;getContentSize()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Menu::update(float):Menu.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "redRect">
+            </PersistentString>
+            <PersistentString
+               value = "_soldiers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ApiParser::onHttpRequestCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*):ApiParser.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;data&quot;][&quot;result&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

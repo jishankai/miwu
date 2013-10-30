@@ -1544,7 +1544,11 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				4591FD95181BA2A50063C3F8 /* static_data.plist */,
+=======
+				533190A2181BAAF8005F0F4B /* static */,
+>>>>>>> Stashed changes
 =======
 				533190A2181BAAF8005F0F4B /* static */,
 >>>>>>> Stashed changes
@@ -2904,6 +2908,7 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				4512E0BE181E9EC000C69749 /* DrawLineLayer.cpp */,
 				4512E0BF181E9EC000C69749 /* DrawLineLayer.h */,
 				4591FD92181BA23F0063C3F8 /* PrintingLabel.cpp */,
@@ -2913,6 +2918,8 @@
 				4591FD8C181BA20E0063C3F8 /* StaticData.cpp */,
 				4591FD8D181BA20E0063C3F8 /* StaticData.h */,
 =======
+=======
+>>>>>>> Stashed changes
 				5331909D181BAA83005F0F4B /* PrintingLabel.cpp */,
 				5331909E181BAA83005F0F4B /* PrintingLabel.h */,
 				53319093181BA9AE005F0F4B /* OpenUDID.h */,
@@ -2921,6 +2928,9 @@
 				53319096181BAA47005F0F4B /* Toolkit.cpp */,
 				53319097181BAA47005F0F4B /* Toolkit.h */,
 				5331909B181BAA63005F0F4B /* StaticData.h */,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			);
 			name = extensions;
@@ -3341,7 +3351,11 @@
 				53DECC4817E464DD00A1C1BC /* home_equipment.png in Resources */,
 				53DECC4917E464DD00A1C1BC /* home_event.png in Resources */,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				4591FD96181BA2A50063C3F8 /* static_data.plist in Resources */,
+=======
+				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
+>>>>>>> Stashed changes
 =======
 				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
 >>>>>>> Stashed changes
@@ -3500,7 +3514,11 @@
 				5321F65F179459A300BC1823 /* CCSpriteBatchNode.cpp in Sources */,
 				5321F662179459A300BC1823 /* CCSpriteFrame.cpp in Sources */,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 				4591FD91181BA22E0063C3F8 /* Toolkit.cpp in Sources */,
+=======
+				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
+>>>>>>> Stashed changes
 =======
 				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
 >>>>>>> Stashed changes
