@@ -1543,19 +1543,7 @@
 		5321F4C71794599E00BC1823 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				4591FD95181BA2A50063C3F8 /* static_data.plist */,
-=======
 				533190A2181BAAF8005F0F4B /* static */,
->>>>>>> Stashed changes
-=======
-				533190A2181BAAF8005F0F4B /* static */,
->>>>>>> Stashed changes
-=======
-				533190A2181BAAF8005F0F4B /* static */,
->>>>>>> Stashed changes
 				53C2555217F49427000AE6E8 /* base.png */,
 				53C2555317F49427000AE6E8 /* cn_background.png */,
 				53DECC1F17E464BC00A1C1BC /* load.png */,
@@ -2911,9 +2899,6 @@
 		533185A717959F9E00F46CF6 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 				4512E0BE181E9EC000C69749 /* DrawLineLayer.cpp */,
 				4512E0BF181E9EC000C69749 /* DrawLineLayer.h */,
 				4591FD92181BA23F0063C3F8 /* PrintingLabel.cpp */,
@@ -2922,26 +2907,8 @@
 				4591FD90181BA22E0063C3F8 /* Toolkit.h */,
 				4591FD8C181BA20E0063C3F8 /* StaticData.cpp */,
 				4591FD8D181BA20E0063C3F8 /* StaticData.h */,
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-				5331909D181BAA83005F0F4B /* PrintingLabel.cpp */,
-				5331909E181BAA83005F0F4B /* PrintingLabel.h */,
 				53319093181BA9AE005F0F4B /* OpenUDID.h */,
 				53319094181BA9AE005F0F4B /* OpenUDID.m */,
-				5331909A181BAA63005F0F4B /* StaticData.cpp */,
-				53319096181BAA47005F0F4B /* Toolkit.cpp */,
-				53319097181BAA47005F0F4B /* Toolkit.h */,
-				5331909B181BAA63005F0F4B /* StaticData.h */,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -3360,19 +3327,7 @@
 				53DECC4717E464DD00A1C1BC /* home_equipment_dialog.png in Resources */,
 				53DECC4817E464DD00A1C1BC /* home_equipment.png in Resources */,
 				53DECC4917E464DD00A1C1BC /* home_event.png in Resources */,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				4591FD96181BA2A50063C3F8 /* static_data.plist in Resources */,
-=======
 				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
->>>>>>> Stashed changes
-=======
-				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
->>>>>>> Stashed changes
-=======
-				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
->>>>>>> Stashed changes
 				53DECC4A17E464DD00A1C1BC /* home_gacha_dialog.png in Resources */,
 				53DECC4B17E464DD00A1C1BC /* home_gacha.png in Resources */,
 				53DECC4C17E464DD00A1C1BC /* home_invite.png in Resources */,
@@ -3527,19 +3482,7 @@
 				5321F65C179459A300BC1823 /* CCSprite.cpp in Sources */,
 				5321F65F179459A300BC1823 /* CCSpriteBatchNode.cpp in Sources */,
 				5321F662179459A300BC1823 /* CCSpriteFrame.cpp in Sources */,
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-				4591FD91181BA22E0063C3F8 /* Toolkit.cpp in Sources */,
-=======
 				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
->>>>>>> Stashed changes
-=======
-				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
->>>>>>> Stashed changes
-=======
-				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
->>>>>>> Stashed changes
 				5321F665179459A300BC1823 /* CCSpriteFrameCache.cpp in Sources */,
 				5321F669179459A300BC1823 /* base64.cpp in Sources */,
 				5321F66C179459A300BC1823 /* CCNotificationCenter.cpp in Sources */,
