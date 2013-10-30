@@ -11,14 +11,15 @@
 
 #include "cocos2d.h"
 #include "cocos-ext.h"
-#include "spine/Json.h"
+#include "JsonBox.h"
 
 class ApiParser : public cocos2d::CCLayer
 {
 public:
-    const char* url;
-    void requestApi();
+    JsonBox::Value json;
+    void requestApi(const char* url);
     void onHttpRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
+    
 };
 
 #endif /* defined(__miwu__ApiParser__) */

@@ -21,8 +21,9 @@ USING_NS_CC_EXT;
 
 void Process::onEnter()
 {
-    this->url = "http://localhost/~jishankai/miwu/index.php?r=user/loginApi";
-    this->requestApi();
+    //this->url = "http://localhost/~jishankai/miwu/index.php?r=user/loginApi";
+    //this->requestApi();
+    
     LayerWithDialog::onEnter();
     
     this->setTouchEnabled(true);

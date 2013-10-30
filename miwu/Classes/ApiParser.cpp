@@ -7,12 +7,11 @@
 //
 
 #include "ApiParser.h"
-#include "JsonBox.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-void ApiParser::requestApi()
+void ApiParser::requestApi(const char* url)
 {
     cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
     request->setUrl(url);
@@ -51,6 +50,5 @@ void ApiParser::onHttpRequestCompleted(CCHttpClient *sender, CCHttpResponse *res
     // dump data
     std::vector<char> *buffer = response->getResponseData();
     const std::string jsonStr(buffer->begin(),buffer->end());
-    JsonBox::Value json;
     json.loadFromString(jsonStr);
 }

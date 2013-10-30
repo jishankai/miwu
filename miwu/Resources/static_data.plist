@@ -44,7 +44,6 @@
 	<string>很久很久以前，这是一片被邪恶控制的大陆</string>
 	<key>story_0_total</key>
 	<string>19</string>
-
 	<key>story_10</key>
 	<string>邪</string>
 	<key>story_11</key>
@@ -91,7 +90,6 @@
 	<string>邪恶领主与他的九个爪牙们烧杀抢掠，无恶不作。</string>
 	<key>story_1_total</key>
 	<string>22</string>
-
 	<key>story_222</key>
 	<string>光</string>
 	<key>story_223</key>
@@ -128,7 +126,6 @@
 	<string>光是听到他们的名字，便叫人不寒而栗。。。</string>
 	<key>story_2_total</key>
 	<string>39</string>
-
 	<key>story_30</key>
 	<string>奇</string>
 	<key>story_31</key>
@@ -191,7 +188,6 @@
 	<string>奇迹发生了！某一天当他醒来，竟然统统变成了手无缚肌的萌物。。。</string>
 	<key>story_3_total</key>
 	<string>30</string>
-
 	<key>story_40</key>
 	<string>为</string>
 	<key>story_41</key>
@@ -232,7 +228,6 @@
 	<string>为了夺回令人胆寒的尊严，邪恶领主，喵！</string>
 	<key>story_4_total</key>
 	<string>19</string>
-
 	<key>story_519</key>
 	<string>将</string>
 	<key>story_520</key>
@@ -271,7 +266,6 @@
 	<string>将带领他的喵喵们战胜正义，进军地球！</string>
 	<key>story_5_total</key>
 	<string>37</string>
-
 	<key>story_2</key>
 	<string>邪恶领主与他的9个爪牙们烧杀抢掠，无恶不作。光是听到他们\n的名字，便令人不寒而栗...</string>
 	<key>story_3</key>
@@ -282,5 +276,7 @@
 	<string>storyBMPFont.fnt</string>
 	<key>story_printing_delay</key>
 	<string>0.5</string>
+	<key>server</key>
+	<string>http://127.0.0.1/~jishankai/miwu/index.php?r=</string>
 </dict>
 </plist>

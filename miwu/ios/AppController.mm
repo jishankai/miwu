@@ -13,6 +13,8 @@
 
 #import "RootViewController.h"
 
+#import "OpenUDID.h"
+
 @implementation AppController
 
 @synthesize window;
@@ -58,11 +60,42 @@ static AppDelegate s_sharedApplication;
     [window makeKeyAndVisible];
 
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
-
+    
+    // Let the device know we want to receive push notifications
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    // openudid
+    NSString* openUDID = [OpenUDID value];
+    [[NSUserDefaults standardUserDefaults] setObject:openUDID forKey:@"openUDID"];
+    // app version
+    NSString * appVersionString = [[NSBundle mainBundle]
+                                   objectForInfoDictionaryKey:@"CFBundleVersion"];
+    [[NSUserDefaults standardUserDefaults] setObject:appVersionString forKey:@"appVersion"];
+    
+    // ios version
+    NSString *osType = [[UIDevice currentDevice] systemVersion];
+    [[NSUserDefaults standardUserDefaults] setObject:osType forKey:@"osType"];
+    // device
+    NSString *deviceType = [UIDevice currentDevice].model;
+    [[NSUserDefaults standardUserDefaults] setObject:deviceType forKey:@"deviceType"];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     cocos2d::CCApplication::sharedApplication()->run();
     return YES;
 }
 
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+    [[NSUserDefaults standardUserDefaults] setObject:deviceToken forKey:@"deviceToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+	NSLog(@"My token is: %@", deviceToken);
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
