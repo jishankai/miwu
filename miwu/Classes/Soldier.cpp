@@ -8,30 +8,28 @@
 
 #include "Soldier.h"
 #include "SimpleAudioEngine.h"
-
-#define kCJStartSpeed 60
-#define kCJHP 200
-#define kCJATK 10
-#define kCJDEF 10
+#include "StaticData.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
 bool Soldier::init()
 {
-    isS6 = false;
-    isS9 = false;
+    //isS6 = false;
+    //isS9 = false;
     
-    xSpeed = kCJStartSpeed;
-    hp = kCJHP;
-    atk = kCJATK;
-    def = kCJDEF;
+    isScheduledForRemove = false;
     isCollision = false;
     
     bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
     bloodBar->setScaleX(0.3);
     bloodBar->setScaleY(0.5);
-    bloodBar->setAnchorPoint(ccp(0.5, 0));    
+    bloodBar->setAnchorPoint(ccp(0.5, 0));
+    
+    if (STATIC_DATA_INT("debug") == 1)
+    {
+        drawCollisionLine();
+    }
     return true;
 }
 
@@ -43,6 +41,14 @@ void Soldier::onEnter()
     this->addChild(bloodBar);
 }
 
+void Soldier::drawCollisionLine()
+{
+    CCPoint start = ccp(this->getContentSize().width/2, 0);
+    CCPoint end = ccp(this->getContentSize().width/2 + this->radius(), 0);
+    drawLineLayer = DrawLineLayer::create(start, end);
+    this->addChild(drawLineLayer);
+}
+
 void Soldier::update(float delta)
 {}
 
@@ -52,7 +58,7 @@ void Soldier::update(float delta, float width)
     CCPoint oldPosition = this->getPosition();
     
     if (oldPosition.x<width) {
-        float xNew = oldPosition.x + xSpeed*delta;
+        float xNew = oldPosition.x + xSpeed*delta/3;
         this->setPosition(ccp(xNew, oldPosition.y));
     }
 }
@@ -66,9 +72,9 @@ void Soldier::handleCollisionWith(GameObject* gameObject)
     bloodBar->setScaleX(0.3f*hp/maxHp);
     
     if (gameObject != NULL) {
-        if (gameObject->getTag()>=200) {
-            if (ccpDistance(this->getPosition(), gameObject->getPosition())<=this->radius()) {
-                xSpeed = 0;
+        if (gameObject->getTag() >= 200) {
+           // if (ccpDistance(this->getPosition(), gameObject->getPosition())<=this->radius()) {
+            xSpeed = 0;
             
             //this->setPositionX(this->getPositionX()-10);
             
@@ -88,7 +94,7 @@ void Soldier::handleCollisionWith(GameObject* gameObject)
                     //}
                     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
                 }
-            }
+            //}
             }
         } else {
             if (isS6) {
@@ -112,7 +118,7 @@ void Soldier::handleCollisionWith(GameObject* gameObject)
 
 void Soldier::resetSpeed()
 {
-    xSpeed = kCJStartSpeed;
+    xSpeed = defaultSpeed;
     CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
     animationManager->runAnimationsForSequenceNamed("walk");
 }
@@ -120,4 +126,9 @@ void Soldier::resetSpeed()
 bool Soldier::isMaxHp()
 {
     return hp==maxHp;
+}
+
+float Soldier::getLv()
+{
+    return 1.0f;
 }

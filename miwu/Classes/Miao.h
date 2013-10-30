@@ -24,7 +24,7 @@ private:
     bool init();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Miao, create);
-    
+    virtual void drawCollisionLine();
     virtual bool onAssignCCBMemberVariable(CCObject* pTarget, const char* pMemberVariableName, CCNode* pNode);
     virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);

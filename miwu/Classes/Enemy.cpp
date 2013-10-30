@@ -8,6 +8,7 @@
 
 #include "Enemy.h"
 #include "SimpleAudioEngine.h"
+#include "StaticData.h"
 
 #define kCJStartSpeed 20
 #define kCJHP 200
@@ -31,7 +32,19 @@ bool Enemy::init()
     bloodBar->setScaleY(0.5);
     bloodBar->setAnchorPoint(ccp(0.5, 0));
     
+    if (STATIC_DATA_INT("debug") == 1)
+    {
+        drawCollisionLine();
+    }
     return true;
+}
+
+void Enemy::drawCollisionLine()
+{
+    CCPoint start = ccp(this->getContentSize().width/2, 0);
+    CCPoint end = ccp(this->getContentSize().width/2 - this->radius(), 0);
+    drawLineLayer = DrawLineLayer::create(start, end);
+    this->addChild(drawLineLayer);
 }
 
 void Enemy::onEnter()
@@ -64,9 +77,7 @@ void Enemy::handleCollisionWith(GameObject* gameObject)
     
     if (gameObject != NULL) {
         if (gameObject->getTag()<200) {
-            if (ccpDistance(this->getPosition(), gameObject->getPosition())<=this->radius()) {
             xSpeed = 0;
-            
             if (this->hp>0) {
                 CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
             
@@ -75,7 +86,6 @@ void Enemy::handleCollisionWith(GameObject* gameObject)
                     animationManager->runAnimationsForSequenceNamed("attack");
                     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
                 }
-            }
             }
         }
         

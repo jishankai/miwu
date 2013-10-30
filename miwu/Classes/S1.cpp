@@ -8,11 +8,6 @@
 
 #include "S1.h"
 
-#define kCJStartSpeed 30
-#define kCJHP 100
-#define kCJATK 10
-#define kCJDEF 10
-
 USING_NS_CC;
 USING_NS_CC_EXT;
 
@@ -22,11 +17,12 @@ bool S1::init()
     Soldier::init();
     effectSoundFileName = "s1_a.wav";
     
-    xSpeed = kCJStartSpeed;
-    hp = kCJHP;
-    maxHp = kCJHP;
-    atk = kCJATK;
-    def = kCJDEF;
+    xSpeed = kCJ_S1_StartSpeed;
+    defaultSpeed = kCJ_S1_StartSpeed;
+    hp = kCJ_S1_BASE_HP*(1 + 5*(getLv() - 1)/100);
+    maxHp = hp;
+    atk = kCJ_S1_BASE_ATK*(1 + 5*(getLv() - 1)/100);
+    def = kCJ_S1_DEF;
     
     return true;
 }
@@ -34,4 +30,9 @@ bool S1::init()
 float S1::radius()
 {
     return 25.0f;
+}
+
+float S1::getLv()
+{
+    return 1.0f;
 }

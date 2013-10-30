@@ -14,14 +14,18 @@
 #include "cocos2d.h"
 #include "cocos-ext.h"
 
+#include "DrawLineLayer.h"
+
 class RBoss : public GameObject
 {
 
-private:    
+private:
+    DrawLineLayer *drawLineLayer;
     bool init();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(RBoss, create);
     
+    virtual void drawCollisionLine();
     virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual float radius();

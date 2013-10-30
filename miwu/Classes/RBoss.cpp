@@ -37,6 +37,14 @@ void RBoss::update(float delta)
     this->setPosition(ccp(xNew, oldPosition.y));
 }
 
+void RBoss::drawCollisionLine()
+{
+    CCPoint start = ccp(this->getContentSize().width/2, 0);
+    CCPoint end = ccp(this->getContentSize().width/2 - this->radius(), 0);
+    drawLineLayer = DrawLineLayer::create(start, end);
+    this->addChild(drawLineLayer);
+}
+
 void RBoss::handleCollisionWith(GameObject* gameObject)
 {
     if (this->hp<0) {
