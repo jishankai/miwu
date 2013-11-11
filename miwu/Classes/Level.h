@@ -14,6 +14,9 @@
 
 #include "Miao.h"
 #include "RBoss.h"
+#include "Soldier.h"
+#include "Enemy.h"
+
 
 class Level : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
 {
@@ -40,6 +43,8 @@ public:
 
     
     void update(float delta);
+    void removeSoldier(Soldier* soldier);
+    void removeEnemy(Enemy* enemy);
 };
 
 #endif /* defined(__miwu__Level__) */

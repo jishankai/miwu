@@ -22,7 +22,8 @@ bool S3::init()
     hp = kCJ_S3_BASE_HP*(1 + 5*(getLv() - 1)/100);
     maxHp = hp;
     atk = kCJ_S3_BASE_ATK*(1 + 5*(getLv() - 1)/100);
-    def = kCJ_S3_DEF;
+    actionRange = kCJ_S3_ACTION_RANGE;
+//    atkDelay = kCJ_S3_ATK_DELAY;
     
     return true;
 }

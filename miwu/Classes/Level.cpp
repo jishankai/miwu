@@ -17,7 +17,6 @@
 #include "GameOverScene.h"
 #include "MainMenuScene.h"
 
-#include "Soldier.h"
 
 #include "RS1Loader.h"
 #include "RS2Loader.h"
@@ -174,114 +173,88 @@ void Level::update(float delta)
     {
         Soldier* soldier = dynamic_cast<Soldier*>(st);
         soldier->update(delta, 960);
-        
-        if (soldier->isS6) {
-            CCObject* ct = NULL;
-            CCARRAY_FOREACH(_soldiers, ct)
-            {
-                GameObject* sld = dynamic_cast<GameObject*>(ct);
-                if (!soldier->getIsCollision() and ccpDistance(sld->getPosition(), soldier->getPosition()) < sld->radius() + soldier->radius()) {
-                    soldier->handleCollisionWith(sld);
-                    sld->handleCollisionWith(soldier);
-                    soldier->setIsCollision(true);
-                }
-            }
-        }
-    
+        soldier->resetCurActionCount();
+        soldier->setIsCollision(false);
         CCObject* et = NULL;
         CCARRAY_FOREACH(_enimies, et)
         {
             GameObject* enemy = dynamic_cast<GameObject*>(et);
-            if (enemy->getPosition().x - soldier->getPosition().x < soldier->radius())
-            {
-                soldier->setIsCollision(true);
-                soldier->handleCollisionWith(enemy);
-                break;
-            }
-            
+            soldier->handleCollisionWith(enemy);
         }
         
         // handle collision with boss
-        if (!soldier->getIsScheduledForRemove() and !soldier->getIsCollision() and ccpDistance(boss->getPosition(), soldier->getPosition()) < boss->radius() + soldier->radius()) {
-            boss->handleCollisionWith(soldier);
-            soldier->handleCollisionWith(boss);
-            
-            soldier->setIsCollision(true);
-        }
-        
-        if (!soldier->getIsCollision()) {
+        soldier->handleCollisionWith(boss);
+        if (!soldier->getIsCollision())
+        {
             soldier->resetSpeed();
-        } else {
-            soldier->setIsCollision(false);
         }
     }
+    
     CCObject* et = NULL;
     CCARRAY_FOREACH(_enimies, et)
     {
         GameObject* enemy = dynamic_cast<GameObject*>(et);
         enemy->update(delta);
-        
+        enemy->resetCurActionCount();
+        enemy->setIsCollision(false);
         CCObject* ct = NULL;
         CCARRAY_FOREACH(_soldiers, ct)
         {
             GameObject* sld = dynamic_cast<GameObject*>(ct);
             //!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and
-            if (enemy->getPosition().x - sld->getPosition().x < enemy->radius()) {
-                enemy->handleCollisionWith(sld);
-                enemy->setIsCollision(true);
-               // enemy->setIsCollision(true);
-                break;
-            } 
-            if (sld->getIsScheduledForRemove()) {
-                //sld->getBloodBar()->setVisible(false);
-                /*
-                CCActionInterval*  action = CCFadeOut::create(1.0f);
-                sld->runAction(action);
-                 */
-                boss->setHp(boss->getHp()-10);
-                this->removeChild(sld);
-                _soldiers->removeObject(sld);
-            }
+//            if (enemy->getPosition().x - sld->getPosition().x < enemy->radius())
+//            {
+            enemy->handleCollisionWith(sld);
+//                enemy->setIsCollision(true);
+//               // enemy->setIsCollision(true);
+//                break;
+//            } 
+//            if (sld->getIsScheduledForRemove()) {
+//                //sld->getBloodBar()->setVisible(false);
+//                /*
+//                CCActionInterval*  action = CCFadeOut::create(1.0f);
+//                sld->runAction(action);
+//                 */
+//                boss->setHp(boss->getHp()-10);
+//                this->removeChild(sld);
+//                _soldiers->removeObject(sld);
+//            }
             
         }
         
-        // handle collision with miao
-        if (!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and ccpDistance(miao->getPosition(), enemy->getPosition()) < miao->radius() + enemy->radius()) {
-            miao->handleCollisionWith(enemy);
-            enemy->handleCollisionWith(miao);
-            
-            enemy->setIsCollision(true);
-        }
-        if (miao->getIsScheduledForRemove()) {
-            CCLOG("Game Over");
-            CCScene* pScene = GameOverScene::scene();
-            CCDirector::sharedDirector()->replaceScene(pScene);
-            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
-        } else if (boss->getIsScheduledForRemove()) {
-            CCLOG("Game Win");
-            CCNode* pauseNode = PauseLoader::load();
-            Pause* pause = dynamic_cast<Pause*>(pauseNode);
-            pause->setAnchorPoint(CCPointZero);
-            pause->setPosition(CCPointZero);
-            pause->win->setVisible(true);
-            this->addChild(pause);
-            /*
-            CCScene* pScene = MainMenuScene::scene();
-            CCDirector::sharedDirector()->replaceScene(pScene);
-             */
-            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
-        }
-        if (!enemy->getIsCollision() and enemy->getXSpeed()==0) {
+        enemy->handleCollisionWith(miao);
+        if (!enemy->getIsCollision())
+        {
             enemy->resetSpeed();
-        } else {
-            enemy->setIsCollision(false);
         }
-        if (enemy->getIsScheduledForRemove()) {
-            //enemy->getBloodBar()->setVisible(false);
-            this->removeChild(enemy);
-            _enimies->removeObject(enemy);
-        }
+        // handle collision with miao
+//        if (!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and ccpDistance(miao->getPosition(), enemy->getPosition()) < miao->radius() + enemy->radius()) {
+//            miao->handleCollisionWith(enemy);
+//            enemy->handleCollisionWith(miao);
+//            
+//            enemy->setIsCollision(true);
+//        }
+//        if (miao->getIsScheduledForRemove()) {
+//            CCLOG("Game Over");
+//            CCScene* pScene = GameOverScene::scene();
+//            CCDirector::sharedDirector()->replaceScene(pScene);
+//            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+//        } else if (boss->getIsScheduledForRemove()) {
+//            CCLOG("Game Win");
+//            CCNode* pauseNode = PauseLoader::load();
+//            Pause* pause = dynamic_cast<Pause*>(pauseNode);
+//            pause->setAnchorPoint(CCPointZero);
+//            pause->setPosition(CCPointZero);
+//            pause->win->setVisible(true);
+//            this->addChild(pause);
+//            /*
+//            CCScene* pScene = MainMenuScene::scene();
+//            CCDirector::sharedDirector()->replaceScene(pScene);
+//             */
+//            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+//        }
     }
+    
     
         /*
     // Iterate through all objects in the level layer
@@ -338,6 +311,26 @@ void Level::update(float delta)
         gameObject = dynamic_cast<GameObject*>(gameObjectsToRemove->objectAtIndex(i));
         this->removeChild(gameObject, true);
     }*/
+}
+
+void Level::removeSoldier(Soldier *soldier)
+{
+    if (this->getChildByTag(soldier->getTag()))
+    {
+        this->removeChild(soldier);
+    }
+    
+    _soldiers->removeObject(soldier);
+}
+
+void Level::removeEnemy(Enemy* enemy)
+{
+    if (this->getChildByTag(enemy->getTag()))
+    {
+        this->removeChild(enemy);
+    }
+    
+    _enimies->removeObject(enemy);
 }
 
 /*

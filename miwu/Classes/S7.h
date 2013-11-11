@@ -17,7 +17,8 @@
 #define kCJ_S7_BASE_HP 150
 #define kCJ_S7_BASE_ATK 60
 #define kCJ_S7_StartSpeed 42
-#define kCJ_S7_DEF 100
+#define kCJ_S7_ACTION_RANGE 1
+#define kCJ_S7_ATK_DELAY 2
 
 class S7 : public Soldier
 {

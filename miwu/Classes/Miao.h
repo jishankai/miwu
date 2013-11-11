@@ -22,6 +22,7 @@ private:
     cocos2d::CCSprite* circleSprite;
     
     bool init();
+    void onEnter();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Miao, create);
     virtual void drawCollisionLine();
@@ -31,6 +32,8 @@ public:
     virtual float radius();
     virtual void resetSpeed();
     virtual bool isMaxHp();
+    virtual void deadHandler();
+    virtual void atkHandler(float atk);
 };
 
 #endif /* defined(__miwu__Miao__) */

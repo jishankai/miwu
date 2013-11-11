@@ -25,7 +25,6 @@ bool RS8::init()
     hp = kCJHP;
     maxHp = kCJHP;
     atk = kCJATK;
-    def = kCJDEF;
     
     return true;
 }

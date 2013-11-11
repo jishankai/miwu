@@ -22,7 +22,8 @@ bool S8::init()
     hp = kCJ_S8_BASE_HP*(1 + 5*(getLv() - 1)/100);
     maxHp = hp;
     atk = kCJ_S8_BASE_ATK*(1 + 5*(getLv() - 1)/100);
-    def = kCJ_S8_DEF;
+    actionRange = kCJ_S8_ACTION_RANGE;
+//    atkDelay = kCJ_S8_ATK_DELAY;
     
     return true;
 }

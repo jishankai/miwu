@@ -17,7 +17,8 @@
 #define kCJ_S9_BASE_HP 400
 #define kCJ_S9_BASE_ATK 50
 #define kCJ_S9_StartSpeed 48
-#define kCJ_S9_DEF 100
+#define kCJ_S9_ACTION_RANGE 1
+#define kCJ_S9_ATK_DELAY 1
 
 class S9 : public Soldier
 {
