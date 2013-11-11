@@ -17,7 +17,8 @@
 #define kCJ_S8_BASE_HP 120
 #define kCJ_S8_BASE_ATK 20
 #define kCJ_S8_StartSpeed 42
-#define kCJ_S8_DEF 100
+#define kCJ_S8_ACTION_RANGE 1
+#define kCJ_S8_ATK_DELAY 0.5
 
 class S8 : public Soldier
 {

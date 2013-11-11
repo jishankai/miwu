@@ -9,6 +9,7 @@
 #include "Soldier.h"
 #include "SimpleAudioEngine.h"
 #include "StaticData.h"
+#include "Level.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -18,8 +19,10 @@ bool Soldier::init()
     //isS6 = false;
     //isS9 = false;
     
-    isScheduledForRemove = false;
+//    isScheduledForRemove = false;
     isCollision = false;
+    curActionCount = 0;
+//    delayCount = 0;
     
     bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
     bloodBar->setScaleX(0.3);
@@ -65,24 +68,42 @@ void Soldier::update(float delta, float width)
 
 void Soldier::handleCollisionWith(GameObject* gameObject)
 {
-    if (this->hp<=0) {
-        this->isScheduledForRemove = true;
-    }
+//    if (this->hp<=0) {
+//        this->isScheduledForRemove = true;
+//    }
+//    
+//    bloodBar->setScaleX(0.3f*hp/maxHp);
     
-    bloodBar->setScaleX(0.3f*hp/maxHp);
-    
-    if (gameObject != NULL) {
-        if (gameObject->getTag() >= 200) {
+    if (gameObject != NULL)
+    {
+        if (gameObject->getTag() >= 200)
+        {
            // if (ccpDistance(this->getPosition(), gameObject->getPosition())<=this->radius()) {
-            xSpeed = 0;
+            if (stopAction())
+            {
+                return;
+            }
+            if (checkIsCollision(gameObject))
+            {
+                isCollision = true;
+                stop();
+                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
+                if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "attack1") != false)
+                {
+                    animationManager->runAnimationsForSequenceNamed("attack1");
+                    CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
+                }
+                gameObject->atkHandler(atk);
+                curActionCount++;
+            }
             
             //this->setPositionX(this->getPositionX()-10);
             
-            if (hp>0) {
+//            if (hp>0) {
                 //bloodBar->setVisible(true);
-                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack1")!=false) {
-                    gameObject->setHp(gameObject->getHp()-this->getAtk());
+                
+//                 {
+//                    gameObject->setHp(gameObject->getHp()-this->getAtk());
                     //if (isS9) {
                         /*
                         if (strcmp(animationManager->getRunningSequenceName(), "attack2")!=false) {
@@ -90,27 +111,27 @@ void Soldier::handleCollisionWith(GameObject* gameObject)
                         }
                          */
                     //} else {
-                        animationManager->runAnimationsForSequenceNamed("attack1");
+                     
                     //}
-                    CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-                }
+                    
+//                }
             //}
-            }
-        } else {
-            if (isS6) {
-                if (!gameObject->isMaxHp()) {
-                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack1")!=false) {
-                    animationManager->runAnimationsForSequenceNamed("attack1");
-                }
-                }
-            } else if (!this->isMaxHp()) {
-                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(gameObject->getUserObject());
-                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack1")!=false) {
-                    float newHp = this->getMaxHp()>(this->getHp()+gameObject->getAtk()) ? this->getHp()+gameObject->getAtk() : this->getMaxHp();
-                    this->setHp(newHp);
-                }
-            }
+//            }
+//        } else {
+//            if (isS6) {
+//                if (!gameObject->isMaxHp()) {
+//                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
+//                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack1")!=false) {
+//                    animationManager->runAnimationsForSequenceNamed("attack1");
+//                }
+//                }
+//            } else if (!this->isMaxHp()) {
+//                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(gameObject->getUserObject());
+//                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack1")!=false) {
+//                    float newHp = this->getMaxHp()>(this->getHp()+gameObject->getAtk()) ? this->getHp()+gameObject->getAtk() : this->getMaxHp();
+//                    this->setHp(newHp);
+//                }
+//            }
         }
         
     }
@@ -120,15 +141,24 @@ void Soldier::resetSpeed()
 {
     xSpeed = defaultSpeed;
     CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-    animationManager->runAnimationsForSequenceNamed("walk");
+    if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "walk") != false)
+    {
+        animationManager->runAnimationsForSequenceNamed("walk");
+    }
 }
 
 bool Soldier::isMaxHp()
 {
-    return hp==maxHp;
+    return hp == maxHp;
 }
 
 float Soldier::getLv()
 {
     return 1.0f;
+}
+
+void Soldier::deadHandler()
+{
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    level->removeSoldier(this);
 }

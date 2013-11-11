@@ -18,8 +18,6 @@
 class Soldier : public GameObject
 {  
 public:
-    bool isS9;
-    bool isS6;
     virtual bool init();
     virtual void drawCollisionLine();
     virtual void onEnter();
@@ -29,6 +27,7 @@ public:
     virtual void resetSpeed();
     virtual bool isMaxHp();
     virtual float getLv();
+    virtual void deadHandler();
 private:
     DrawLineLayer *drawLineLayer;
     

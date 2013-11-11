@@ -15,15 +15,14 @@ USING_NS_CC_EXT;
 bool S6::init()
 {
     Soldier::init();
-    effectSoundFileName = "s6_a1.wav";
-    isS6 = true;
-    
+    effectSoundFileName = "s6_a1.wav";    
     xSpeed = kCJ_S6_StartSpeed;
     defaultSpeed = kCJ_S6_StartSpeed;
     hp = kCJ_S6_BASE_HP*(1 + 5*(getLv() - 1)/100);
     maxHp = hp;
     atk = kCJ_S6_BASE_ATK*(1 + 5*(getLv() - 1)/100);
-    def = kCJ_S6_DEF;
+    actionRange = kCJ_S6_ACTION_RANGE;
+//    atkDelay = kCJ_S6_ATK_DELAY;
     
     return true;
 }

@@ -9,6 +9,7 @@
 #include "Enemy.h"
 #include "SimpleAudioEngine.h"
 #include "StaticData.h"
+#include "Level.h"
 
 #define kCJStartSpeed 20
 #define kCJHP 200
@@ -24,8 +25,8 @@ bool Enemy::init()
     xSpeed = kCJStartSpeed;
     hp = kCJHP;
     atk = kCJATK;
-    def = kCJDEF;
     isCollision = false;
+    actionRange = 1;
     
     bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
     bloodBar->setScaleX(0.3);
@@ -69,23 +70,33 @@ void Enemy::update(float delta)
 
 void Enemy::handleCollisionWith(GameObject* gameObject)
 {
-    if (this->hp<=0) {
-        this->isScheduledForRemove = true;
-    }
-    
-    bloodBar->setScaleX(0.3f*hp/maxHp);
-    
-    if (gameObject != NULL) {
-        if (gameObject->getTag()<200) {
-            xSpeed = 0;
-            if (this->hp>0) {
+//    if (this->hp<=0) {
+//        this->isScheduledForRemove = true;
+//    }
+//    
+//    bloodBar->setScaleX(0.3f*hp/maxHp);
+//    
+    if (gameObject != NULL)
+    {
+        if (gameObject->getTag() < 200)
+        {
+            if (stopAction())
+            {
+                return;
+            }
+            if (checkIsCollision(gameObject))
+            {
+                isCollision = true;
+                stop();
                 CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-            
-                if (animationManager->getRunningSequenceName()==NULL or strcmp(animationManager->getRunningSequenceName(), "attack")!=false) {
-                    gameObject->setHp(gameObject->getHp()-this->getAtk());
+                
+                if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "attack") != false)
+                {
                     animationManager->runAnimationsForSequenceNamed("attack");
                     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
                 }
+                gameObject->atkHandler(atk);
+                curActionCount++;
             }
         }
         
@@ -96,10 +107,19 @@ void Enemy::resetSpeed()
 {
     xSpeed = kCJStartSpeed;
     CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-    animationManager->runAnimationsForSequenceNamed("walk");
+    if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "walk") != false)
+    {
+        animationManager->runAnimationsForSequenceNamed("walk");
+    }
 }
 
 bool Enemy::isMaxHp()
 {
     return hp==maxHp;
+}
+
+void Enemy::deadHandler()
+{
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    level->removeEnemy(this);
 }

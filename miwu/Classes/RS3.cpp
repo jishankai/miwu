@@ -25,7 +25,6 @@ bool RS3::init()
     hp = kCJHP;
     maxHp = kCJHP;
     atk = kCJATK;
-    def = kCJDEF;
     
     return true;
 }

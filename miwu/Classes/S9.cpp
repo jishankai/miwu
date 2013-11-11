@@ -16,14 +16,14 @@ bool S9::init()
 {
     Soldier::init();
     effectSoundFileName = "s9_a1.wav";
-    isS9 = true;
     
     xSpeed = kCJ_S9_StartSpeed;
     defaultSpeed = kCJ_S9_StartSpeed;
     hp = kCJ_S9_BASE_HP*(1 + 5*(getLv() - 1)/100);
     maxHp = hp;
     atk = kCJ_S9_BASE_ATK*(1 + 5*(getLv() - 1)/100);
-    def = kCJ_S9_DEF;
+    actionRange = kCJ_S9_ACTION_RANGE;
+//    atkDelay = kCJ_S9_ATK_DELAY;
     
     return true;
 }

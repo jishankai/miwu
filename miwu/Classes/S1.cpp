@@ -22,7 +22,8 @@ bool S1::init()
     hp = kCJ_S1_BASE_HP*(1 + 5*(getLv() - 1)/100);
     maxHp = hp;
     atk = kCJ_S1_BASE_ATK*(1 + 5*(getLv() - 1)/100);
-    def = kCJ_S1_DEF;
+    actionRange = kCJ_S1_ACTION_RANGE;
+//    atkDelay = kCJ_S1_ATK_DELAY;
     
     return true;
 }

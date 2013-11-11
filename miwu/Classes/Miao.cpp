@@ -7,6 +7,8 @@
 //
 
 #include "Miao.h"
+#include "GameOverScene.h"
+#include "SimpleAudioEngine.h"
 
 #define kCJStartSpeed 0
 #define kCJHP 200
@@ -23,10 +25,23 @@ bool Miao::init()
     hp = kCJHP;
     maxHp = kCJHP;
     atk = kCJATK;
-    def = kCJDEF;
     isCollision = false;
     
+//    bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
+//    bloodBar->setScaleX(0.3);
+//    bloodBar->setScaleY(0.5);
+//    bloodBar->setAnchorPoint(ccp(0.5, 0));
+    
     return true;
+}
+
+void Miao::onEnter()
+{
+    GameObject::onEnter();
+//    bloodBar->setPosition(ccp(0, this->getChildByTag(0)->getContentSize().height));
+//    //bloodBar->setVisible(false);
+//    this->addChild(bloodBar);
+    
 }
 
 void Miao::drawCollisionLine()
@@ -54,18 +69,18 @@ void Miao::update(float delta)
 
 void Miao::handleCollisionWith(GameObject* gameObject)
 {
-    if (this->hp<0) {
-        this->isScheduledForRemove = true;
-    }
-    
-    if (this->hp>=0 and gameObject != NULL) {
-        if (gameObject->getTag()>200) {
-            //xSpeed = 0;
-            //gameObject->setHp(gameObject->getHp()-this->getAtk());
-            //bloodBar->setPercentage(hp*100/maxHp);
-        }
-        
-    }
+//    if (this->hp<0) {
+//        this->isScheduledForRemove = true;
+//    }
+//    
+//    if (this->hp>=0 and gameObject != NULL) {
+//        if (gameObject->getTag()>200) {
+//            //xSpeed = 0;
+//            //gameObject->setHp(gameObject->getHp()-this->getAtk());
+//            //bloodBar->setPercentage(hp*100/maxHp);
+//        }
+//        
+//    }
 }
 
 float Miao::radius()
@@ -82,3 +97,23 @@ bool Miao::isMaxHp()
 {
     return hp==maxHp;
 }
+
+void Miao::deadHandler()
+{
+    CCLOG("Game Over");
+    CCScene* pScene = GameOverScene::scene();
+    CCDirector::sharedDirector()->replaceScene(pScene);
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+}
+
+void Miao::atkHandler(float atk)
+{
+    hp -= atk;
+    if (hp <= 0)
+    {
+        deadHandler();
+    }
+}
+
+
+

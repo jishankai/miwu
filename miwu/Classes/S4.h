@@ -17,7 +17,8 @@
 #define kCJ_S4_BASE_HP 400
 #define kCJ_S4_BASE_ATK 20
 #define kCJ_S4_StartSpeed 42
-#define kCJ_S4_DEF 100
+#define kCJ_S4_ACTION_RANGE 1
+#define kCJ_S4_ATK_DELAY 2
 
 class S4 : public Soldier
 {

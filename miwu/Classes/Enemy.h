@@ -25,6 +25,7 @@ public:
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual void resetSpeed();
     virtual bool isMaxHp();
+    virtual void deadHandler();
 
 private:
     DrawLineLayer *drawLineLayer;

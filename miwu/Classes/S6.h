@@ -17,7 +17,8 @@
 #define kCJ_S6_BASE_HP 180
 #define kCJ_S6_BASE_ATK 20
 #define kCJ_S6_StartSpeed 60
-#define kCJ_S6_DEF 100
+#define kCJ_S6_ACTION_RANGE 1
+#define kCJ_S6_ATK_DELAY 1
 
 class S6 : public Soldier
 {

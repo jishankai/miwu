@@ -7,6 +7,8 @@
 //
 
 #include "RBoss.h"
+#include "Pause.h"
+#include "PauseLoader.h"
 
 #define kCJStartSpeed 0.5
 #define kCJHP 200
@@ -23,9 +25,22 @@ bool RBoss::init()
     hp = kCJHP;
     maxHp = kCJHP;
     atk = kCJATK;
-    def = kCJDEF;
+    
+//    bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
+//    bloodBar->setScaleX(0.3);
+//    bloodBar->setScaleY(0.5);
+//    bloodBar->setAnchorPoint(ccp(0.5, 0));
     
     return true;
+}
+
+void RBoss::onEnter()
+{
+    GameObject::onEnter();
+//    bloodBar->setPosition(ccp(0, this->getChildByTag(0)->getContentSize().height));
+//    //bloodBar->setVisible(false);
+//    this->addChild(bloodBar);
+    
 }
 
 void RBoss::update(float delta)
@@ -47,18 +62,18 @@ void RBoss::drawCollisionLine()
 
 void RBoss::handleCollisionWith(GameObject* gameObject)
 {
-    if (this->hp<0) {
-        this->isScheduledForRemove = true;
-    }
-    
-    if (this->hp>=0 and gameObject != NULL) {
-        if (gameObject->getTag()<200) {
-            //xSpeed = 0;
-            //gameObject->setHp(gameObject->getHp()-this->getAtk());
-            //bloodBar->setPercentage(hp*100/maxHp);
-        }
-        
-    }
+//    if (this->hp<0) {
+//        this->isScheduledForRemove = true;
+//    }
+//    
+//    if (this->hp>=0 and gameObject != NULL) {
+//        if (gameObject->getTag()<200) {
+//            //xSpeed = 0;
+//            //gameObject->setHp(gameObject->getHp()-this->getAtk());
+//            //bloodBar->setPercentage(hp*100/maxHp);
+//        }
+//        
+//    }
 }
 
 float RBoss::radius()
@@ -73,5 +88,33 @@ void RBoss::resetSpeed()
 
 bool RBoss::isMaxHp()
 {
-    return hp==maxHp;
+    return hp == maxHp;
 }
+
+void RBoss::deadHandler()
+{
+    CCLOG("Game Win");
+    CCNode* pauseNode = PauseLoader::load();
+    Pause* pause = dynamic_cast<Pause*>(pauseNode);
+    pause->setAnchorPoint(CCPointZero);
+    pause->setPosition(CCPointZero);
+    pause->win->setVisible(true);
+    this->addChild(pause);
+    //            /*
+    //            CCScene* pScene = MainMenuScene::scene();
+    //            CCDirector::sharedDirector()->replaceScene(pScene);
+    //             */
+    //            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+}
+
+void RBoss::atkHandler(float atk)
+{
+    hp -= atk;
+    if (hp <= 0)
+    {
+        deadHandler();
+    }
+}
+
+
+
