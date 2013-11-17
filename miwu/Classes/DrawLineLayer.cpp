@@ -35,16 +35,16 @@ bool DrawLineLayer::init(CCPoint &start, CCPoint &end)
 
 void DrawLineLayer::draw()
 {
-    glEnable(GL_LINE_LOOP);
-    glLineWidth(4.0f);
-    ccDrawColor4B(255, 0, 0, 255);
-    ccDrawLine(start, end);
+//    glEnable(GL_LINE_LOOP);
+//    glLineWidth(4.0f);
+//    ccDrawColor4B(255, 0, 0, 255);
+//    ccDrawLine(start, end);
     
     ccPointSize(4.0f);
     ccDrawColor4B(0, 255, 0, 255);
     ccDrawPoint(start);
     
-    ccPointSize(4.0f);
-    ccDrawColor4B(0, 0, 255, 255);
-    ccDrawPoint(end);
+//    ccPointSize(4.0f);
+//    ccDrawColor4B(0, 0, 255, 255);
+//    ccDrawPoint(end);
 }

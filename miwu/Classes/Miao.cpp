@@ -18,6 +18,7 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 
+#include "Level.h"
 
 bool Miao::init()
 {
@@ -101,9 +102,8 @@ bool Miao::isMaxHp()
 void Miao::deadHandler()
 {
     CCLOG("Game Over");
-    CCScene* pScene = GameOverScene::scene();
-    CCDirector::sharedDirector()->replaceScene(pScene);
-    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    level->loseHandler();
 }
 
 void Miao::atkHandler(float atk)

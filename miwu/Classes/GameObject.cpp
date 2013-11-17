@@ -26,6 +26,10 @@ void GameObject::atkHandler(float atk)
         deadHandler();
 //        bloodBar->setVisible(false);
     }
+    else if (hp >= maxHp)
+    {
+        return;
+    }
     else
     {
         bloodBar->setScaleX(0.3f*hp/maxHp);

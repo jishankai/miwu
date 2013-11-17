@@ -12,6 +12,7 @@
 #include "PauseLoader.h"
 #include "MainMenuScene.h"
 #include "SimpleAudioEngine.h"
+#include "NormalGameScene.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -47,6 +48,7 @@ bool Pause::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
         CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("main.mp3", true);
         CCScene* pMainMenuScene = MainMenuScene::scene();
         CCDirector::sharedDirector()->replaceScene(pMainMenuScene);
+        CCDirector::sharedDirector()->resume();
         CCLOG("Remove");
     } else if (pGameTextureRect->containsPoint(location)) {
         this->removeFromParentAndCleanup(true);
@@ -54,7 +56,11 @@ bool Pause::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
         CocosDenshion::SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
         CCLOG("Resume");
     } else if (pRestartTextureRect->containsPoint(location)) {
-        this->dialog->setVisible(true);
+//        this->dialog->setVisible(true);
+        CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+        CCScene* pGameScene = NormalGameScene::scene();
+        CCDirector::sharedDirector()->replaceScene(pGameScene);
+        CCDirector::sharedDirector()->resume();
         CCLOG("Restart");
     } else if (this->dialog->isVisible()) {
         this->dialog->setVisible(false);

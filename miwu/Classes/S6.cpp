@@ -7,6 +7,8 @@
 //
 
 #include "S6.h"
+#include "Level.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -35,4 +37,42 @@ float S6::radius()
 float S6::getLv()
 {
     return 1.0f;
+}
+
+void S6::handleCollisionWith(GameObject* gameObject)
+{
+    if (stopAction())
+    {
+        return;
+    }
+    
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    CCObject* st = NULL;
+    CCARRAY_FOREACH(level->_soldiers, st)
+    {
+        gameObject = dynamic_cast<GameObject*>(st);
+        if (st != this and checkIsCollision(gameObject) and gameObject->isMaxHp() == false)
+        {
+            healHandler(gameObject);
+        }
+    }
+    if (!this->isMaxHp() && !stopAction())
+    {
+        healHandler(this);
+    }
+}
+
+
+void S6::healHandler(GameObject* gameObject)
+{
+    isCollision = true;
+    stop();
+    CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
+    if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "attack1") != false)
+    {
+        animationManager->runAnimationsForSequenceNamed("attack1");
+        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
+        gameObject->atkHandler(-atk);
+    }
+    curActionCount++;
 }
