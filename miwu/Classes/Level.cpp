@@ -33,6 +33,7 @@
 #include "PauseLoader.h"
 
 #include "SimpleAudioEngine.h"
+#include "Menu.h"
 
 #define kCJScrollFilterFactor 0.1
 #define kCJS1TargetOffset 156
@@ -181,6 +182,7 @@ void Level::update(float delta)
             GameObject* enemy = dynamic_cast<GameObject*>(et);
             soldier->handleCollisionWith(enemy);
         }
+        soldier->handleCollisionWith(NULL);
         
         // handle collision with boss
         soldier->handleCollisionWith(boss);
@@ -333,6 +335,19 @@ void Level::removeEnemy(Enemy* enemy)
     _enimies->removeObject(enemy);
 }
 
+void Level::winHandler()
+{
+    GameScene* gameScene = GameScene::sharedScene();
+    dynamic_cast<Menu*>(gameScene->menu)->winHandler();
+}
+
+void Level::loseHandler()
+{
+    CCScene* pScene = GameOverScene::scene();
+    CCDirector::sharedDirector()->replaceScene(pScene);
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+    CCDirector::sharedDirector()->pause();
+}
 /*
 void Level::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
 {

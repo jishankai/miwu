@@ -30,6 +30,8 @@ public:
     
     virtual float radius();
     virtual float getLv();
+    virtual void handleCollisionWith(GameObject* gameObject);
+    void healHandler(GameObject* gameObject);
 };
 
 #endif /* defined(__miwu__S6__) */

@@ -45,6 +45,8 @@ public:
     void update(float delta);
     void removeSoldier(Soldier* soldier);
     void removeEnemy(Enemy* enemy);
+    void winHandler();
+    void loseHandler(); 
 };
 
 #endif /* defined(__miwu__Level__) */

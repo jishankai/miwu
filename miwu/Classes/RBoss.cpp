@@ -7,8 +7,7 @@
 //
 
 #include "RBoss.h"
-#include "Pause.h"
-#include "PauseLoader.h"
+#include "Level.h"
 
 #define kCJStartSpeed 0.5
 #define kCJHP 200
@@ -17,6 +16,7 @@
 
 USING_NS_CC;
 USING_NS_CC_EXT;
+
 
 
 bool RBoss::init()
@@ -94,12 +94,8 @@ bool RBoss::isMaxHp()
 void RBoss::deadHandler()
 {
     CCLOG("Game Win");
-    CCNode* pauseNode = PauseLoader::load();
-    Pause* pause = dynamic_cast<Pause*>(pauseNode);
-    pause->setAnchorPoint(CCPointZero);
-    pause->setPosition(CCPointZero);
-    pause->win->setVisible(true);
-    this->addChild(pause);
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    level->winHandler();
     //            /*
     //            CCScene* pScene = MainMenuScene::scene();
     //            CCDirector::sharedDirector()->replaceScene(pScene);

@@ -131,6 +131,18 @@ void Menu::pressedPause(cocos2d::CCObject *pSender)
     }
 }
 
+void Menu::winHandler()
+{
+    CCNode* pauseNode = PauseLoader::load();
+    Pause* pause = dynamic_cast<Pause*>(pauseNode);
+    pause->setAnchorPoint(CCPointZero);
+    pause->setPosition(CCPointZero);
+    pause->win->setVisible(true);
+    this->addChild(pause);
+    CCDirector::sharedDirector()->pause();
+    CocosDenshion::SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+}
+
 void Menu::spriteMoveFinished(CCNode* sender)
 {
 	CCSprite *sprite = (CCSprite *)sender;
@@ -203,22 +215,27 @@ void Menu::pressedS3(cocos2d::CCObject *pSender)
     
     CCObject* et = NULL;
     float nearestDist = 960;
+    float enemyX = 0;
     GameObject* pNearestEnemy = NULL;
     CCARRAY_FOREACH(level->_enimies, et)
     {
         GameObject* pEnemy = dynamic_cast<GameObject*>(et);
         if(nearestDist>pEnemy->getPositionX()) {
-            nearestDist = pEnemy->getPositionX();
-            pNearestEnemy = pEnemy;
+            enemyX = pEnemy->getPositionX() - 0.8*pEnemy->getXSpeed();
+            if (enemyX < nearestDist)
+            {
+                pNearestEnemy = pEnemy;
+                nearestDist = enemyX;
+            }
         }
     }
-    if (nearestDist==960) {
-        if (et!=NULL) {
+    if (nearestDist == 960) {
+        if (et != NULL) {
             pNearestEnemy = dynamic_cast<GameObject*>(et);
         }
     }
     if (pNearestEnemy!=NULL) {
-        CCFiniteTimeAction* actionMove = CCMoveTo::create( 1.0f, ccp(960-pNearestEnemy->getPositionX(), pNearestEnemy->getPositionY()) );
+        CCFiniteTimeAction* actionMove = CCMoveTo::create(0.8f, ccp(pNearestEnemy->getPositionX() - 0.8*pNearestEnemy->getXSpeed(), pNearestEnemy->getPositionY()));
         s3->runAction(actionMove);
     }
     }
