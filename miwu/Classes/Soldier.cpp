@@ -87,13 +87,21 @@ void Soldier::handleCollisionWith(GameObject* gameObject)
             {
                 isCollision = true;
                 stop();
-                CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
-                if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "attack1") != false)
+                if (normalSkillTrigger())
                 {
-                    animationManager->runAnimationsForSequenceNamed("attack1");
-                    CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-                    gameObject->atkHandler(atk);
+                    normalSkillHandler(gameObject);
                 }
+                
+                if (haloSkillTrigger())
+                {
+                    haloSkillHandler(gameObject);
+                }
+                
+                if (normalAtkTrigger())
+                {
+                    normalAtkHandler(gameObject);
+                }
+                
                 curActionCount++;
             }
             
@@ -162,3 +170,64 @@ void Soldier::deadHandler()
     Level* level = dynamic_cast<Level*>(this->getParent());
     level->removeSoldier(this);
 }
+
+bool Soldier::normalSkillTrigger()
+{
+    float randValue = CCRANDOM_0_1()*100;
+    normalSkillTriggerResult = randValue >= 0 && randValue < normalSkillRate;
+    return normalSkillTriggerResult;
+}
+
+void Soldier::normalSkillHandler(GameObject* gameObject)
+{
+    
+}
+
+bool Soldier::haloSkillTrigger()
+{
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    if (level == NULL)
+    {
+        return false;
+    }
+    
+    Miao* miao = level->miao;
+    if (miao == NULL)
+    {
+        return false;
+    }
+    
+    float distance = abs(miao->getPositionY() - this->getPositionY());
+    if (miao->getHaloRadius() < distance)
+    {
+        return false;
+    }
+    
+    float randValue = CCRANDOM_0_1()*100;
+    haloSkillTriggerResult = randValue >= 0 && randValue < haloSkillRate;
+    return haloSkillTriggerResult;
+}
+
+void Soldier::haloSkillHandler(GameObject* gameObject)
+{
+    
+}
+
+bool Soldier::normalAtkTrigger()
+{
+    return false;
+}
+
+void  Soldier::normalAtkHandler(GameObject* gameObject)
+{
+    CCBAnimationManager* animationManager = dynamic_cast<CCBAnimationManager*>(this->getUserObject());
+    if (animationManager->getRunningSequenceName() == NULL or strcmp(animationManager->getRunningSequenceName(), "attack1") != false)
+    {
+        animationManager->runAnimationsForSequenceNamed("attack1");
+        CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
+        gameObject->atkHandler(atk);
+    }
+}
+
+
+

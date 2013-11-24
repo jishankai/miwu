@@ -115,5 +115,8 @@ void Miao::atkHandler(float atk)
     }
 }
 
-
+float Miao::getHaloRadius()
+{
+    return 100;
+}
 

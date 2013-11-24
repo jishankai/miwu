@@ -20,6 +20,9 @@
 #define kCJ_S9_ACTION_RANGE 1
 #define kCJ_S9_ATK_DELAY 1
 
+#define kCJ_S9_NORMAL_SKILL_RATE 100
+#define kCJ_S9_HALO_SKILL_RATE 10
+
 class S9 : public Soldier
 {
 

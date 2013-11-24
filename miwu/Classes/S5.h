@@ -20,6 +20,9 @@
 #define kCJ_S5_ACTION_RANGE 3
 #define kCJ_S5_ATK_DELAY 1
 
+#define kCJ_S5_NORMAL_SKILL_RATE 20
+#define kCJ_S5_HALO_SKILL_RATE 100
+
 class S5 : public Soldier
 {
 

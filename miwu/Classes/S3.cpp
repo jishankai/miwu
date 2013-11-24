@@ -25,6 +25,9 @@ bool S3::init()
     actionRange = kCJ_S3_ACTION_RANGE;
 //    atkDelay = kCJ_S3_ATK_DELAY;
     
+    normalSkillRate = kCJ_S3_NORMAL_SKILL_RATE;
+    haloSkillRate = kCJ_S3_HALO_SKILL_RATE;
+    
     return true;
 }
 

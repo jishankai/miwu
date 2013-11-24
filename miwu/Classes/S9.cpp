@@ -23,6 +23,9 @@ bool S9::init()
     maxHp = hp;
     atk = kCJ_S9_BASE_ATK*(1 + 5*(getLv() - 1)/100);
     actionRange = kCJ_S9_ACTION_RANGE;
+    
+    normalSkillRate = kCJ_S9_NORMAL_SKILL_RATE;
+    haloSkillRate = kCJ_S9_HALO_SKILL_RATE;
 //    atkDelay = kCJ_S9_ATK_DELAY;
     
     return true;

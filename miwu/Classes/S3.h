@@ -19,6 +19,8 @@
 #define kCJ_S3_StartSpeed 90
 #define kCJ_S3_ACTION_RANGE 1
 #define kCJ_S3_ATK_DELAY 0.5
+#define kCJ_S3_NORMAL_SKILL_RATE 100
+#define kCJ_S3_HALO_SKILL_RATE 50
 
 class S3 : public Soldier
 {

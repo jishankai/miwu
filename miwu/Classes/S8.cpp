@@ -23,6 +23,9 @@ bool S8::init()
     maxHp = hp;
     atk = kCJ_S8_BASE_ATK*(1 + 5*(getLv() - 1)/100);
     actionRange = kCJ_S8_ACTION_RANGE;
+    
+    normalSkillRate = kCJ_S8_NORMAL_SKILL_RATE;
+    haloSkillRate = kCJ_S8_HALO_SKILL_RATE;
 //    atkDelay = kCJ_S8_ATK_DELAY;
     
     return true;

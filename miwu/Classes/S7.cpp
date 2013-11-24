@@ -23,6 +23,9 @@ bool S7::init()
     maxHp = hp;
     atk = kCJ_S7_BASE_ATK*(1 + 5*(getLv() - 1)/100);
     actionRange = kCJ_S7_ACTION_RANGE;
+    
+    normalSkillRate = kCJ_S7_NORMAL_SKILL_RATE;
+    haloSkillRate = kCJ_S7_HALO_SKILL_RATE;
 //    atkDelay = kCJ_S7_ATK_DELAY;
     
     return true;

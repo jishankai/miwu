@@ -30,6 +30,7 @@ public:
     virtual void update(float delta);
     virtual void handleCollisionWith(GameObject* gameObject);
     virtual float radius();
+    float getHaloRadius();
     virtual void resetSpeed();
     virtual bool isMaxHp();
     virtual void deadHandler();
