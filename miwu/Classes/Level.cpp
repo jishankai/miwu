@@ -106,7 +106,7 @@ void Level::update(float delta)
     pBackground->update(delta);
     
     randTime += delta;
-    
+    //5
     if (randTime >= 5 and boss->getHp()>0) {
         randTime = 0;
         CCNode* enemy;
@@ -322,7 +322,8 @@ void Level::removeSoldier(Soldier *soldier)
         this->removeChild(soldier);
     }
     
-    _soldiers->removeObject(soldier);
+    _soldiers->removeObject(soldier, true);
+    soldier = NULL;
 }
 
 void Level::removeEnemy(Enemy* enemy)
@@ -332,7 +333,8 @@ void Level::removeEnemy(Enemy* enemy)
         this->removeChild(enemy);
     }
     
-    _enimies->removeObject(enemy);
+    _enimies->removeObject(enemy, true);
+    enemy = NULL;
 }
 
 void Level::winHandler()

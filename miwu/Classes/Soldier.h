@@ -28,9 +28,19 @@ public:
     virtual bool isMaxHp();
     virtual float getLv();
     virtual void deadHandler();
+    virtual bool normalSkillTrigger();
+    virtual void normalSkillHandler(GameObject* gameObject);
+    virtual bool haloSkillTrigger();
+    virtual void haloSkillHandler(GameObject* gameObjetc);
+    virtual bool normalAtkTrigger();
+    void normalAtkHandler(GameObject* gameObject);
+    int normalSkillRate;
+    int haloSkillRate;
+    bool normalSkillTriggerResult;
+    bool haloSkillTriggerResult;
+    
 private:
     DrawLineLayer *drawLineLayer;
-    
 };
 
 #endif /* defined(__miwu__Soldier__) */

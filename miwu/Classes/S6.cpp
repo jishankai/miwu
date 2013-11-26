@@ -24,6 +24,9 @@ bool S6::init()
     maxHp = hp;
     atk = kCJ_S6_BASE_ATK*(1 + 5*(getLv() - 1)/100);
     actionRange = kCJ_S6_ACTION_RANGE;
+    
+    normalSkillRate = kCJ_S6_NORMAL_SKILL_RATE;
+    haloSkillRate = kCJ_S6_HALO_SKILL_RATE;
 //    atkDelay = kCJ_S6_ATK_DELAY;
     
     return true;

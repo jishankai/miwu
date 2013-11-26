@@ -19,6 +19,8 @@
 #define kCJ_S2_StartSpeed 48
 #define kCJ_S2_ACTION_RANGE 1
 #define kCJ_S2_ATK_DELAY 1
+#define kCJ_S2_NORMAL_SKILL_RATE -1
+#define kCJ_S2_HALO_SKILL_RATE 20
 
 class S2 : public Soldier
 {
@@ -30,6 +32,9 @@ public:
     
     virtual float radius();
     virtual float getLv();
+    virtual void haloSkillHandler(GameObject* gameObject);
+    virtual bool normalAtkTrigger();
+    void otherEnemyAtkHandler(GameObject* gameObject);
 };
 
 #endif /* defined(__miwu__S2__) */

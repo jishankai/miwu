@@ -20,6 +20,9 @@
 #define kCJ_S8_ACTION_RANGE 1
 #define kCJ_S8_ATK_DELAY 0.5
 
+#define kCJ_S8_NORMAL_SKILL_RATE 20
+#define kCJ_S8_HALO_SKILL_RATE 10
+
 class S8 : public Soldier
 {
 
