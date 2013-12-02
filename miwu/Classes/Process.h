@@ -16,9 +16,18 @@
 class Process : public LayerWithDialog
 {
 private:
-    
+    cocos2d::CCSprite* level_ri;
+    cocos2d::CCSprite* level_west;
+    cocos2d::CCSprite* level_tale;
+    cocos2d::CCSprite* level_cn;
+    cocos2d::CCSprite* level_evil;
 public:
+    static int mapType;
+    static int levelNum;
     virtual void onEnter();
+    virtual bool onAssignCCBMemberVariable(CCObject* pTarget, const char* pMemberVariableName, CCNode* pNode);
+    void initNormalGame();
+    void initMouseGame();
     
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Process, create);
     

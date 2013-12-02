@@ -9,12 +9,12 @@
 #include "AppDelegate.h"
 
 #include "cocos2d.h"
+#include "cocos-ext.h"
 #include "SimpleAudioEngine.h"
-#include "MainMenuScene.h"
-#include "StoryScene.h"
-#include "StaticData.h"
+#include "Load.h"
 
 USING_NS_CC;
+USING_NS_CC_EXT;
 using namespace CocosDenshion;
 
 typedef struct tagResource
@@ -92,41 +92,12 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("storyboard.plist");
     CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("battle_ui.plist");
-    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ri.plist");
-    
-    std::string uid = CCUserDefault::sharedUserDefault()->getStringForKey("openUDID");
-    std::string token = CCUserDefault::sharedUserDefault()->getStringForKey("deviceToken");
-    std::string ver = CCUserDefault::sharedUserDefault()->getStringForKey("appVersion");
-    std::string server = STATIC_DATA_STRING("server");
-    char url[255];
-    sprintf(url, "%suser/loginApi&uid=%s&ver=%s&token=%s", server.c_str(), uid.c_str(), ver.c_str(), token.c_str());
-    this->requestApi(url);
-    std::string sid = this->json["data"]["SID"].getString();
-    CCUserDefault::sharedUserDefault()->setStringForKey("sessionId", sid);
-
-    // create a scene. it's an autorelease object
-    CCScene* pScene;
-    if (this->json["data"]["result"].getBoolean()) {
-        pScene = MainMenuScene::scene();
-    } else {
-        std::string term = CCUserDefault::sharedUserDefault()->getStringForKey("deviceType");
-        std::string os = CCUserDefault::sharedUserDefault()->getStringForKey("osType");
-        sprintf(url, "%suser/regiserApi&name=%s&inviterCode=&term=%s&os=%s&SID=%s", server.c_str(), uid.c_str(), term.c_str(), os.c_str(), this->json["data"]["SID"].getString().c_str());
-        this->requestApi(url);
-        if (this->json["data"]["result"].getBoolean()) {
-            pScene = StoryScene::scene();
-        } else {
-            CCLOG("Register Failed!");
-        }
-    }
-    
-    sprintf(url, "%splayer/playerApi&SID=%s", server.c_str(), sid.c_str());
-    CCUserDefault::sharedUserDefault()->setIntegerForKey("combats", this->json["data"]["combats"].getInt());
-    CCUserDefault::sharedUserDefault()->setIntegerForKey("level", this->json["data"]["level"].getInt());
-    CCUserDefault::sharedUserDefault()->setIntegerForKey("stars", this->json["data"]["stars"].getInt());
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ui.plist");
+   
+    CCScene*  pScene = Load::scene();
     // run
     pDirector->runWithScene(pScene);
-
+    
     return true;
 }
 
@@ -145,3 +116,4 @@ void AppDelegate::applicationWillEnterForeground()
     SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
     SimpleAudioEngine::sharedEngine()->resumeAllEffects();
 }
+

@@ -16,7 +16,7 @@
 #include "Status.h"
 #include "GameOverScene.h"
 #include "MainMenuScene.h"
-
+#include "LevelData.h"
 
 #include "RS1Loader.h"
 #include "RS2Loader.h"
@@ -29,11 +29,58 @@
 #include "RS9Loader.h"
 #include "RS10Loader.h"
 
+#include "ES1Loader.h"
+#include "ES2Loader.h"
+#include "ES3Loader.h"
+#include "ES4Loader.h"
+#include "ES5Loader.h"
+#include "ES6Loader.h"
+#include "ES7Loader.h"
+#include "ES8Loader.h"
+#include "ES9Loader.h"
+#include "ES10Loader.h"
+
+#include "TS1Loader.h"
+#include "TS2Loader.h"
+#include "TS3Loader.h"
+#include "TS4Loader.h"
+#include "TS5Loader.h"
+#include "TS6Loader.h"
+#include "TS7Loader.h"
+#include "TS8Loader.h"
+#include "TS9Loader.h"
+#include "TS10Loader.h"
+
+#include "CS1Loader.h"
+#include "CS2Loader.h"
+#include "CS3Loader.h"
+#include "CS4Loader.h"
+#include "CS5Loader.h"
+#include "CS6Loader.h"
+#include "CS7Loader.h"
+#include "CS8Loader.h"
+#include "CS9Loader.h"
+#include "CS10Loader.h"
+
+#include "WS1Loader.h"
+#include "WS2Loader.h"
+#include "WS3Loader.h"
+#include "WS4Loader.h"
+#include "WS5Loader.h"
+#include "WS6Loader.h"
+#include "WS7Loader.h"
+#include "WS8Loader.h"
+#include "WS9Loader.h"
+#include "WS10Loader.h"
+
 #include "Pause.h"
 #include "PauseLoader.h"
+#include "Process.h"
 
 #include "SimpleAudioEngine.h"
 #include "Menu.h"
+
+//#include <sstream>
 
 #define kCJScrollFilterFactor 0.1
 #define kCJS1TargetOffset 156
@@ -53,9 +100,12 @@ void Level::onEnter()
     
     CocosDenshion::SimpleAudioEngine::sharedEngine()->preloadBackgroundMusic("");
     
+    std::ostringstream s;
+    s << Process::levelNum * Process::mapType;
+    _levelArray = LEVEL_DATA_ARRAY(s.str());
     _soldiers = new CCArray;
     _enimies = new CCArray;
-
+    
     miao = (Miao*)MiaoLoader::load();
     miao->setPosition(ccp(100,126));
     //miao->bloodBar = miaoBloodBar;
@@ -79,7 +129,7 @@ void Level::onExit()
     
     _soldiers->release();
     _enimies->release();
-
+    
     CCLayer::onExit();
 }
 
@@ -110,49 +160,302 @@ void Level::update(float delta)
     if (randTime >= 5 and boss->getHp()>0) {
         randTime = 0;
         CCNode* enemy;
-        int classType = rand()%10;
-        switch (classType) {
+
+        
+        int classType = 0;
+        bool isInLevel;
+        do {
+            if (classType==0 or classType==9) {
+                classType = rand()%10;
+            } else {
+                if (classType <= 4) {
+                    classType--;
+                } else {
+                    classType++;
+                }
+            }
+            
+            CCString *b = (CCString*)_levelArray->objectAtIndex(classType);
+            isInLevel = b->boolValue();
+        } while (!isInLevel);
+
+        switch (Process::mapType) {
             case 1:
-                enemy = RS1Loader::load();
-                enemy->setTag(201);
+                switch (classType) {
+                    case 1:
+                        enemy = RS1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = RS2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = RS3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = RS4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = RS5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = RS6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = RS7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = RS8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = RS9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = RS10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
             case 2:
-                enemy = RS2Loader::load();
-                enemy->setTag(202);
+                switch (classType) {
+                    case 1:
+                        enemy = WS1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = WS2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = WS3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = WS4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = WS5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = WS6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = WS7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = WS8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = WS9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = WS10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
             case 3:
-                enemy = RS3Loader::load();
-                enemy->setTag(203);
+                switch (classType) {
+                    case 1:
+                        enemy = TS1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = TS2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = TS3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = TS4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = TS5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = TS6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = TS7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = TS8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = TS9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = TS10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
             case 4:
-                enemy = RS4Loader::load();
-                enemy->setTag(204);
+                switch (classType) {
+                    case 1:
+                        enemy = CS1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = CS2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = CS3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = CS4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = CS5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = CS6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = CS7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = CS8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = CS9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = CS10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
             case 5:
-                enemy = RS5Loader::load();
-                enemy->setTag(205);
+                switch (classType) {
+                    case 1:
+                        enemy = ES1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = ES2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = ES3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = ES4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = ES5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = ES6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = ES7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = ES8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = ES9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = ES10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
-            case 6:
-                enemy = RS6Loader::load();
-                enemy->setTag(206);
-                break;
-            case 7:
-                enemy = RS7Loader::load();
-                enemy->setTag(207);
-                break;
-            case 8:
-                enemy = RS8Loader::load();
-                enemy->setTag(208);
-                break;
-            case 9:
-                enemy = RS9Loader::load();
-                enemy->setTag(209);
-                break;
-            case 0:
-                enemy = RS10Loader::load();
-                enemy->setTag(210);
-                break;
+                
             default:
+                switch (classType) {
+                    case 1:
+                        enemy = RS1Loader::load();
+                        enemy->setTag(201);
+                        break;
+                    case 2:
+                        enemy = RS2Loader::load();
+                        enemy->setTag(202);
+                        break;
+                    case 3:
+                        enemy = RS3Loader::load();
+                        enemy->setTag(203);
+                        break;
+                    case 4:
+                        enemy = RS4Loader::load();
+                        enemy->setTag(204);
+                        break;
+                    case 5:
+                        enemy = RS5Loader::load();
+                        enemy->setTag(205);
+                        break;
+                    case 6:
+                        enemy = RS6Loader::load();
+                        enemy->setTag(206);
+                        break;
+                    case 7:
+                        enemy = RS7Loader::load();
+                        enemy->setTag(207);
+                        break;
+                    case 8:
+                        enemy = RS8Loader::load();
+                        enemy->setTag(208);
+                        break;
+                    case 9:
+                        enemy = RS9Loader::load();
+                        enemy->setTag(209);
+                        break;
+                    case 0:
+                        enemy = RS10Loader::load();
+                        enemy->setTag(210);
+                        break;
+                    default:
+                        break;
+                }
                 break;
         }
         
@@ -204,23 +507,23 @@ void Level::update(float delta)
         {
             GameObject* sld = dynamic_cast<GameObject*>(ct);
             //!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and
-//            if (enemy->getPosition().x - sld->getPosition().x < enemy->radius())
-//            {
+            //            if (enemy->getPosition().x - sld->getPosition().x < enemy->radius())
+            //            {
             enemy->handleCollisionWith(sld);
-//                enemy->setIsCollision(true);
-//               // enemy->setIsCollision(true);
-//                break;
-//            } 
-//            if (sld->getIsScheduledForRemove()) {
-//                //sld->getBloodBar()->setVisible(false);
-//                /*
-//                CCActionInterval*  action = CCFadeOut::create(1.0f);
-//                sld->runAction(action);
-//                 */
-//                boss->setHp(boss->getHp()-10);
-//                this->removeChild(sld);
-//                _soldiers->removeObject(sld);
-//            }
+            //                enemy->setIsCollision(true);
+            //               // enemy->setIsCollision(true);
+            //                break;
+            //            }
+            //            if (sld->getIsScheduledForRemove()) {
+            //                //sld->getBloodBar()->setVisible(false);
+            //                /*
+            //                CCActionInterval*  action = CCFadeOut::create(1.0f);
+            //                sld->runAction(action);
+            //                 */
+            //                boss->setHp(boss->getHp()-10);
+            //                this->removeChild(sld);
+            //                _soldiers->removeObject(sld);
+            //            }
             
         }
         
@@ -230,89 +533,89 @@ void Level::update(float delta)
             enemy->resetSpeed();
         }
         // handle collision with miao
-//        if (!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and ccpDistance(miao->getPosition(), enemy->getPosition()) < miao->radius() + enemy->radius()) {
-//            miao->handleCollisionWith(enemy);
-//            enemy->handleCollisionWith(miao);
-//            
-//            enemy->setIsCollision(true);
-//        }
-//        if (miao->getIsScheduledForRemove()) {
-//            CCLOG("Game Over");
-//            CCScene* pScene = GameOverScene::scene();
-//            CCDirector::sharedDirector()->replaceScene(pScene);
-//            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
-//        } else if (boss->getIsScheduledForRemove()) {
-//            CCLOG("Game Win");
-//            CCNode* pauseNode = PauseLoader::load();
-//            Pause* pause = dynamic_cast<Pause*>(pauseNode);
-//            pause->setAnchorPoint(CCPointZero);
-//            pause->setPosition(CCPointZero);
-//            pause->win->setVisible(true);
-//            this->addChild(pause);
-//            /*
-//            CCScene* pScene = MainMenuScene::scene();
-//            CCDirector::sharedDirector()->replaceScene(pScene);
-//             */
-//            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
-//        }
+        //        if (!enemy->getIsScheduledForRemove() and !enemy->getIsCollision() and ccpDistance(miao->getPosition(), enemy->getPosition()) < miao->radius() + enemy->radius()) {
+        //            miao->handleCollisionWith(enemy);
+        //            enemy->handleCollisionWith(miao);
+        //
+        //            enemy->setIsCollision(true);
+        //        }
+        //        if (miao->getIsScheduledForRemove()) {
+        //            CCLOG("Game Over");
+        //            CCScene* pScene = GameOverScene::scene();
+        //            CCDirector::sharedDirector()->replaceScene(pScene);
+        //            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+        //        } else if (boss->getIsScheduledForRemove()) {
+        //            CCLOG("Game Win");
+        //            CCNode* pauseNode = PauseLoader::load();
+        //            Pause* pause = dynamic_cast<Pause*>(pauseNode);
+        //            pause->setAnchorPoint(CCPointZero);
+        //            pause->setPosition(CCPointZero);
+        //            pause->win->setVisible(true);
+        //            this->addChild(pause);
+        //            /*
+        //            CCScene* pScene = MainMenuScene::scene();
+        //            CCDirector::sharedDirector()->replaceScene(pScene);
+        //             */
+        //            CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
+        //        }
     }
     
     
-        /*
-    // Iterate through all objects in the level layer
-    CCObject* child = NULL;
-    CCARRAY_FOREACH(this->m_pChildren, child)
-    {
-        GameObject* gameObject = dynamic_cast<GameObject*>(child);
-        // Check if the child is a game object
-        if (gameObject != NULL)
-        {
-            
-            // Update all game objects
-            gameObject->update(float delta);
-            
-            // Check for collisions with dragon
-            if (gameObject == zombie)
-            {
-                S8* bear = dynamic_cast<S8*>(this->getChildByTag(101));
-                if (bear!=NULL && ccpDistance(gameObject->getPosition(), bear->getPosition()) < gameObject->radius() + bear->radius())
-                {
-                    // Notify the game objects that they have collided
-                    gameObject->handleCollisionWith(bear);
-                    rabit->handleCollisionWith(gameObject);
-                }
-                
-                if (ccpDistance(gameObject->getPosition(), rabit->getPosition()) < gameObject->radius() + rabit->radius())
-                {
-                    // Notify the game objects that they have collided
-                    gameObject->handleCollisionWith(rabit);
-                    rabit->handleCollisionWith(gameObject);
-                }
-            }
-        }
-    }
-    
-    // Check for objects to remove
-    CCArray* gameObjectsToRemove = CCArray::create();
-    CCARRAY_FOREACH(this->m_pChildren, child)
-    {
-        GameObject* gameObject = dynamic_cast<GameObject*>(child);
-        if (gameObject != NULL)
-        {
-            
-            if (gameObject->getIsScheduledForRemove())
-            {
-                gameObjectsToRemove->addObject(gameObject); 
-            }
-        }
-    }
-    
-    GameObject* gameObject = NULL;
-    for(int i = 0; i < gameObjectsToRemove->count(); i++)
-    {
-        gameObject = dynamic_cast<GameObject*>(gameObjectsToRemove->objectAtIndex(i));
-        this->removeChild(gameObject, true);
-    }*/
+    /*
+     // Iterate through all objects in the level layer
+     CCObject* child = NULL;
+     CCARRAY_FOREACH(this->m_pChildren, child)
+     {
+     GameObject* gameObject = dynamic_cast<GameObject*>(child);
+     // Check if the child is a game object
+     if (gameObject != NULL)
+     {
+     
+     // Update all game objects
+     gameObject->update(float delta);
+     
+     // Check for collisions with dragon
+     if (gameObject == zombie)
+     {
+     S8* bear = dynamic_cast<S8*>(this->getChildByTag(101));
+     if (bear!=NULL && ccpDistance(gameObject->getPosition(), bear->getPosition()) < gameObject->radius() + bear->radius())
+     {
+     // Notify the game objects that they have collided
+     gameObject->handleCollisionWith(bear);
+     rabit->handleCollisionWith(gameObject);
+     }
+     
+     if (ccpDistance(gameObject->getPosition(), rabit->getPosition()) < gameObject->radius() + rabit->radius())
+     {
+     // Notify the game objects that they have collided
+     gameObject->handleCollisionWith(rabit);
+     rabit->handleCollisionWith(gameObject);
+     }
+     }
+     }
+     }
+     
+     // Check for objects to remove
+     CCArray* gameObjectsToRemove = CCArray::create();
+     CCARRAY_FOREACH(this->m_pChildren, child)
+     {
+     GameObject* gameObject = dynamic_cast<GameObject*>(child);
+     if (gameObject != NULL)
+     {
+     
+     if (gameObject->getIsScheduledForRemove())
+     {
+     gameObjectsToRemove->addObject(gameObject);
+     }
+     }
+     }
+     
+     GameObject* gameObject = NULL;
+     for(int i = 0; i < gameObjectsToRemove->count(); i++)
+     {
+     gameObject = dynamic_cast<GameObject*>(gameObjectsToRemove->objectAtIndex(i));
+     this->removeChild(gameObject, true);
+     }*/
 }
 
 void Level::removeSoldier(Soldier *soldier)
@@ -351,27 +654,27 @@ void Level::loseHandler()
     CCDirector::sharedDirector()->pause();
 }
 /*
-void Level::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
-{
-    CCTouch* touch = (CCTouch*)pTouches->anyObject();
-    CCPoint touchLocation = touch->getLocationInView();
-    
-    //cocos2d::CCNode* rabit = S1Loader::load();
-    //rabit->setPosition(ccp(touchLocation.x, touchLocation.y));
-    //this->addChild(rabit);
-    cocos2d::CCNode* bear = S8Loader::load();
-    bear->setPosition(ccp(touchLocation.x, touchLocation.y));
-    bear->setTag(101);
-    this->addChild(bear);
-
-    //dragon->setXTarget(touchLocation.x);
-}
-
-void Level::ccTouchesMoved(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
-{
-    CCTouch* touch = (CCTouch*)pTouches->anyObject();
-    CCPoint touchLocation = touch->getLocationInView();
-    
-    //dragon->setXTarget(touchLocation.x);
-}
-*/
+ void Level::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
+ {
+ CCTouch* touch = (CCTouch*)pTouches->anyObject();
+ CCPoint touchLocation = touch->getLocationInView();
+ 
+ //cocos2d::CCNode* rabit = S1Loader::load();
+ //rabit->setPosition(ccp(touchLocation.x, touchLocation.y));
+ //this->addChild(rabit);
+ cocos2d::CCNode* bear = S8Loader::load();
+ bear->setPosition(ccp(touchLocation.x, touchLocation.y));
+ bear->setTag(101);
+ this->addChild(bear);
+ 
+ //dragon->setXTarget(touchLocation.x);
+ }
+ 
+ void Level::ccTouchesMoved(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
+ {
+ CCTouch* touch = (CCTouch*)pTouches->anyObject();
+ CCPoint touchLocation = touch->getLocationInView();
+ 
+ //dragon->setXTarget(touchLocation.x);
+ }
+ */

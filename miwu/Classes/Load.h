@@ -13,16 +13,30 @@
 #include "cocos-ext.h"
 #include "LayerWithDialog.h"
 
-class Load : public LayerWithDialog
+struct CQPlayer {
+    int playerId;
+    std::string playerName;
+    int combats;
+    int stars;
+    int level;
+};
+
+class Load : public cocos2d::CCLayer
 {
 private:
     
 public:
+    static std::string sharedSessionId;
+    static struct CQPlayer sharedPlayer;
+    static cocos2d::CCNode* sharedInstance;
+    static cocos2d::CCScene* scene();
     virtual void onEnter();
     
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Load, create);
     
-    virtual bool ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent);
+    void onLoginRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
+    void onRegisterRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
+    void onPlayerRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
 };
 
 #endif /* defined(__miwu__Load__) */

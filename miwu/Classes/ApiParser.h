@@ -17,8 +17,8 @@ class ApiParser : public cocos2d::CCLayer
 {
 public:
     JsonBox::Value json;
-    void requestApi(const char* url);
-    void onHttpRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
+    virtual void requestApi(const char* url);
+    virtual void onHttpRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response);
     
 };
 

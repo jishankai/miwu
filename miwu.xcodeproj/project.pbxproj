@@ -7,14 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4512E0C0181E9EC000C69749 /* DrawLineLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4512E0BE181E9EC000C69749 /* DrawLineLayer.cpp */; };
 		4591FD89181B9FF70063C3F8 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F853179459A700BC1823 /* libwebsockets.a */; };
 		4591FD8A181BA00C0063C3F8 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62B179459A200BC1823 /* libcurl.a */; };
 		4591FD8B181BA0160063C3F8 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F62D179459A200BC1823 /* libwebp.a */; };
-		4591FD8E181BA20E0063C3F8 /* StaticData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4591FD8C181BA20E0063C3F8 /* StaticData.cpp */; };
-		4591FD91181BA22E0063C3F8 /* Toolkit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4591FD8F181BA22E0063C3F8 /* Toolkit.cpp */; };
-		4591FD94181BA23F0063C3F8 /* PrintingLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4591FD92181BA23F0063C3F8 /* PrintingLabel.cpp */; };
-		4591FD96181BA2A50063C3F8 /* static_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4591FD95181BA2A50063C3F8 /* static_data.plist */; };
 		5321F4B71794599E00BC1823 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4B61794599E00BC1823 /* QuartzCore.framework */; };
 		5321F4B91794599E00BC1823 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4B81794599E00BC1823 /* OpenGLES.framework */; };
 		5321F4BB1794599E00BC1823 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5321F4BA1794599E00BC1823 /* OpenAL.framework */; };
@@ -284,10 +279,27 @@
 		5321F84A179459A700BC1823 /* cpSweep1D.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F849179459A700BC1823 /* cpSweep1D.c */; };
 		5321F84C179459A700BC1823 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 5321F84B179459A700BC1823 /* cpVect.c */; };
 		5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5321F859179459A700BC1823 /* AppDelegate.cpp */; };
+		5328C3011843BF6B00472D1B /* RBoss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C2FD1843BF6B00472D1B /* RBoss2.cpp */; };
+		5328C3021843BF6B00472D1B /* RBoss2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C2FF1843BF6B00472D1B /* RBoss2Loader.cpp */; };
+		5328C3071843BF8200472D1B /* CBoss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3031843BF8200472D1B /* CBoss2.cpp */; };
+		5328C3081843BF8200472D1B /* CBoss2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3051843BF8200472D1B /* CBoss2Loader.cpp */; };
+		5328C30D1843BF9F00472D1B /* WBoss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3091843BF9F00472D1B /* WBoss2.cpp */; };
+		5328C30E1843BF9F00472D1B /* WBoss2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C30B1843BF9F00472D1B /* WBoss2Loader.cpp */; };
+		5328C3131843BFBE00472D1B /* TBoss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C30F1843BFBE00472D1B /* TBoss2.cpp */; };
+		5328C3141843BFBE00472D1B /* TBoss2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3111843BFBE00472D1B /* TBoss2Loader.cpp */; };
+		5328C3191843BFE400472D1B /* EBoss2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3151843BFE400472D1B /* EBoss2.cpp */; };
+		5328C31A1843BFE400472D1B /* EBoss2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5328C3171843BFE400472D1B /* EBoss2Loader.cpp */; };
+		5328C3241843C07D00472D1B /* CBoss.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C31B1843C07D00472D1B /* CBoss.ccbi */; };
+		5328C3251843C07D00472D1B /* CBoss2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C31C1843C07D00472D1B /* CBoss2.ccbi */; };
+		5328C3261843C07D00472D1B /* EBoss.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C31D1843C07D00472D1B /* EBoss.ccbi */; };
+		5328C3271843C07D00472D1B /* EBoss2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C31E1843C07D00472D1B /* EBoss2.ccbi */; };
+		5328C3281843C07D00472D1B /* RBoss2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C31F1843C07D00472D1B /* RBoss2.ccbi */; };
+		5328C3291843C07D00472D1B /* TBoss.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C3201843C07D00472D1B /* TBoss.ccbi */; };
+		5328C32A1843C07D00472D1B /* TBoss2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C3211843C07D00472D1B /* TBoss2.ccbi */; };
+		5328C32B1843C07D00472D1B /* WBoss.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C3221843C07D00472D1B /* WBoss.ccbi */; };
+		5328C32C1843C07D00472D1B /* WBoss2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 5328C3231843C07D00472D1B /* WBoss2.ccbi */; };
+		5328C32E1844E85400472D1B /* level_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5328C32D1844E85400472D1B /* level_data.plist */; };
 		53319095181BA9AE005F0F4B /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 53319094181BA9AE005F0F4B /* OpenUDID.m */; };
-		53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53319096181BAA47005F0F4B /* Toolkit.cpp */; };
-		5331909C181BAA63005F0F4B /* StaticData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331909A181BAA63005F0F4B /* StaticData.cpp */; };
-		5331909F181BAA83005F0F4B /* PrintingLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5331909D181BAA83005F0F4B /* PrintingLabel.cpp */; };
 		533190A1181BAAEF005F0F4B /* static_data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 533190A0181BAAEF005F0F4B /* static_data.plist */; };
 		5335BBE517A6C01B00B02A13 /* ri.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE117A6C01B00B02A13 /* ri.plist */; };
 		5335BBE617A6C01B00B02A13 /* ri.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */; };
@@ -356,6 +368,7 @@
 		534B441717B63EF2001DF7B0 /* RS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B43FF17B63EF2001DF7B0 /* RS1.cpp */; };
 		534B441817B63EF2001DF7B0 /* RBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B440117B63EF2001DF7B0 /* RBossLoader.cpp */; };
 		534B441917B63EF2001DF7B0 /* RBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 534B440317B63EF2001DF7B0 /* RBoss.cpp */; };
+		535CB0A91847B30B00E7A6E8 /* LevelData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535CB0A71847B30B00E7A6E8 /* LevelData.cpp */; };
 		535E8D7017BBD2B000C2A145 /* Soldier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535E8D6E17BBD2B000C2A145 /* Soldier.cpp */; };
 		535E8D7317BBD2C700C2A145 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535E8D7117BBD2C700C2A145 /* Enemy.cpp */; };
 		5383A8B917CE576C00EE4A1A /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8B817CE576C00EE4A1A /* background.mp3 */; };
@@ -378,7 +391,10 @@
 		5383A8DC17D1177700EE4A1A /* StoryScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8DB17D1177700EE4A1A /* StoryScene.cpp */; };
 		5383A8DE17D3973B00EE4A1A /* main.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5383A8DD17D3973B00EE4A1A /* main.mp3 */; };
 		5383A8E117D4EFCF00EE4A1A /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */; };
-		538D27AC181426F2004B51F4 /* ApiParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27AA181426F2004B51F4 /* ApiParser.cpp */; };
+		5383C3111821675F00333D2C /* DrawLineLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383C3091821675F00333D2C /* DrawLineLayer.cpp */; };
+		5383C31E18216C9000333D2C /* PrintingLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383C31818216C9000333D2C /* PrintingLabel.cpp */; };
+		5383C31F18216C9000333D2C /* StaticData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383C31A18216C9000333D2C /* StaticData.cpp */; };
+		5383C32018216C9000333D2C /* Toolkit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5383C31C18216C9000333D2C /* Toolkit.cpp */; };
 		538D27C41816E757004B51F4 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BC1816E757004B51F4 /* Array.cpp */; };
 		538D27C51816E757004B51F4 /* Convert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BD1816E757004B51F4 /* Convert.cpp */; };
 		538D27C61816E757004B51F4 /* Escaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 538D27BE1816E757004B51F4 /* Escaper.cpp */; };
@@ -519,20 +535,152 @@
 		53DECCDB17E50CB800A1C1BC /* AccountLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD017E50C8400A1C1BC /* AccountLoader.cpp */; };
 		53DECCDC17E50CB800A1C1BC /* Invite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD217E50C9700A1C1BC /* Invite.cpp */; };
 		53DECCDD17E50CB800A1C1BC /* InviteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECCD417E50CA700A1C1BC /* InviteLoader.cpp */; };
+		53EE3B891838BCEE009F6B4E /* EBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B851838BCEE009F6B4E /* EBoss.cpp */; };
+		53EE3B8A1838BCEE009F6B4E /* EBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B871838BCEE009F6B4E /* EBossLoader.cpp */; };
+		53EE3BB31838BD1E009F6B4E /* ES1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B8B1838BD1D009F6B4E /* ES1.cpp */; };
+		53EE3BB41838BD1E009F6B4E /* ES1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B8D1838BD1D009F6B4E /* ES1Loader.cpp */; };
+		53EE3BB51838BD1E009F6B4E /* ES2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B8F1838BD1D009F6B4E /* ES2.cpp */; };
+		53EE3BB61838BD1E009F6B4E /* ES2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B911838BD1D009F6B4E /* ES2Loader.cpp */; };
+		53EE3BB71838BD1E009F6B4E /* ES3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B931838BD1D009F6B4E /* ES3.cpp */; };
+		53EE3BB81838BD1E009F6B4E /* ES3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B951838BD1D009F6B4E /* ES3Loader.cpp */; };
+		53EE3BB91838BD1E009F6B4E /* ES4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B971838BD1D009F6B4E /* ES4.cpp */; };
+		53EE3BBA1838BD1E009F6B4E /* ES4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B991838BD1D009F6B4E /* ES4Loader.cpp */; };
+		53EE3BBB1838BD1E009F6B4E /* ES5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B9B1838BD1D009F6B4E /* ES5.cpp */; };
+		53EE3BBC1838BD1E009F6B4E /* ES5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B9D1838BD1D009F6B4E /* ES5Loader.cpp */; };
+		53EE3BBD1838BD1E009F6B4E /* ES6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3B9F1838BD1D009F6B4E /* ES6.cpp */; };
+		53EE3BBE1838BD1E009F6B4E /* ES6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BA11838BD1D009F6B4E /* ES6Loader.cpp */; };
+		53EE3BBF1838BD1E009F6B4E /* ES7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BA31838BD1D009F6B4E /* ES7.cpp */; };
+		53EE3BC01838BD1E009F6B4E /* ES7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BA51838BD1D009F6B4E /* ES7Loader.cpp */; };
+		53EE3BC11838BD1E009F6B4E /* ES8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BA71838BD1D009F6B4E /* ES8.cpp */; };
+		53EE3BC21838BD1E009F6B4E /* ES8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BA91838BD1E009F6B4E /* ES8Loader.cpp */; };
+		53EE3BC31838BD1E009F6B4E /* ES9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BAB1838BD1E009F6B4E /* ES9.cpp */; };
+		53EE3BC41838BD1E009F6B4E /* ES9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BAD1838BD1E009F6B4E /* ES9Loader.cpp */; };
+		53EE3BC51838BD1E009F6B4E /* ES10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BAF1838BD1E009F6B4E /* ES10.cpp */; };
+		53EE3BC61838BD1E009F6B4E /* ES10Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BB11838BD1E009F6B4E /* ES10Loader.cpp */; };
+		53EE3BEF1838BDB0009F6B4E /* TS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BC71838BDB0009F6B4E /* TS1.cpp */; };
+		53EE3BF01838BDB0009F6B4E /* TS1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BC91838BDB0009F6B4E /* TS1Loader.cpp */; };
+		53EE3BF11838BDB0009F6B4E /* TS2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BCB1838BDB0009F6B4E /* TS2.cpp */; };
+		53EE3BF21838BDB0009F6B4E /* TS2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BCD1838BDB0009F6B4E /* TS2Loader.cpp */; };
+		53EE3BF31838BDB0009F6B4E /* TS3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BCF1838BDB0009F6B4E /* TS3.cpp */; };
+		53EE3BF41838BDB0009F6B4E /* TS3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BD11838BDB0009F6B4E /* TS3Loader.cpp */; };
+		53EE3BF51838BDB0009F6B4E /* TS4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BD31838BDB0009F6B4E /* TS4.cpp */; };
+		53EE3BF61838BDB0009F6B4E /* TS4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BD51838BDB0009F6B4E /* TS4Loader.cpp */; };
+		53EE3BF71838BDB0009F6B4E /* TS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BD71838BDB0009F6B4E /* TS5.cpp */; };
+		53EE3BF81838BDB0009F6B4E /* TS5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BD91838BDB0009F6B4E /* TS5Loader.cpp */; };
+		53EE3BF91838BDB0009F6B4E /* TS6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BDB1838BDB0009F6B4E /* TS6.cpp */; };
+		53EE3BFA1838BDB0009F6B4E /* TS6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BDD1838BDB0009F6B4E /* TS6Loader.cpp */; };
+		53EE3BFB1838BDB0009F6B4E /* TS7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BDF1838BDB0009F6B4E /* TS7.cpp */; };
+		53EE3BFC1838BDB0009F6B4E /* TS7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BE11838BDB0009F6B4E /* TS7Loader.cpp */; };
+		53EE3BFD1838BDB0009F6B4E /* TS8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BE31838BDB0009F6B4E /* TS8.cpp */; };
+		53EE3BFE1838BDB0009F6B4E /* TS8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BE51838BDB0009F6B4E /* TS8Loader.cpp */; };
+		53EE3BFF1838BDB0009F6B4E /* TS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BE71838BDB0009F6B4E /* TS9.cpp */; };
+		53EE3C001838BDB0009F6B4E /* TS9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BE91838BDB0009F6B4E /* TS9Loader.cpp */; };
+		53EE3C011838BDB0009F6B4E /* TS10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BEB1838BDB0009F6B4E /* TS10.cpp */; };
+		53EE3C021838BDB0009F6B4E /* TS10Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3BED1838BDB0009F6B4E /* TS10Loader.cpp */; };
+		53EE3C071838BDDE009F6B4E /* TBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C031838BDDE009F6B4E /* TBoss.cpp */; };
+		53EE3C081838BDDE009F6B4E /* TBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C051838BDDE009F6B4E /* TBossLoader.cpp */; };
+		53EE3C351838BE01009F6B4E /* WBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C091838BE01009F6B4E /* WBoss.cpp */; };
+		53EE3C361838BE01009F6B4E /* WBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C0B1838BE01009F6B4E /* WBossLoader.cpp */; };
+		53EE3C371838BE01009F6B4E /* WS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C0D1838BE01009F6B4E /* WS1.cpp */; };
+		53EE3C381838BE01009F6B4E /* WS1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C0F1838BE01009F6B4E /* WS1Loader.cpp */; };
+		53EE3C391838BE01009F6B4E /* WS2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C111838BE01009F6B4E /* WS2.cpp */; };
+		53EE3C3A1838BE01009F6B4E /* WS2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C131838BE01009F6B4E /* WS2Loader.cpp */; };
+		53EE3C3B1838BE01009F6B4E /* WS3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C151838BE01009F6B4E /* WS3.cpp */; };
+		53EE3C3C1838BE01009F6B4E /* WS3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C171838BE01009F6B4E /* WS3Loader.cpp */; };
+		53EE3C3D1838BE01009F6B4E /* WS4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C191838BE01009F6B4E /* WS4.cpp */; };
+		53EE3C3E1838BE01009F6B4E /* WS4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C1B1838BE01009F6B4E /* WS4Loader.cpp */; };
+		53EE3C3F1838BE01009F6B4E /* WS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C1D1838BE01009F6B4E /* WS5.cpp */; };
+		53EE3C401838BE01009F6B4E /* WS5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C1F1838BE01009F6B4E /* WS5Loader.cpp */; };
+		53EE3C411838BE01009F6B4E /* WS6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C211838BE01009F6B4E /* WS6.cpp */; };
+		53EE3C421838BE01009F6B4E /* WS6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C231838BE01009F6B4E /* WS6Loader.cpp */; };
+		53EE3C431838BE01009F6B4E /* WS7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C251838BE01009F6B4E /* WS7.cpp */; };
+		53EE3C441838BE01009F6B4E /* WS7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C271838BE01009F6B4E /* WS7Loader.cpp */; };
+		53EE3C451838BE01009F6B4E /* WS8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C291838BE01009F6B4E /* WS8.cpp */; };
+		53EE3C461838BE01009F6B4E /* WS8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C2B1838BE01009F6B4E /* WS8Loader.cpp */; };
+		53EE3C471838BE01009F6B4E /* WS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C2D1838BE01009F6B4E /* WS9.cpp */; };
+		53EE3C481838BE01009F6B4E /* WS9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C2F1838BE01009F6B4E /* WS9Loader.cpp */; };
+		53EE3C491838BE01009F6B4E /* WS10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C311838BE01009F6B4E /* WS10.cpp */; };
+		53EE3C4A1838BE01009F6B4E /* WS10Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C331838BE01009F6B4E /* WS10Loader.cpp */; };
+		53EE3C771838BE33009F6B4E /* CBoss.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C4B1838BE33009F6B4E /* CBoss.cpp */; };
+		53EE3C781838BE33009F6B4E /* CBossLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C4D1838BE33009F6B4E /* CBossLoader.cpp */; };
+		53EE3C791838BE33009F6B4E /* CS1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C4F1838BE33009F6B4E /* CS1.cpp */; };
+		53EE3C7A1838BE33009F6B4E /* CS1Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C511838BE33009F6B4E /* CS1Loader.cpp */; };
+		53EE3C7B1838BE33009F6B4E /* CS2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C531838BE33009F6B4E /* CS2.cpp */; };
+		53EE3C7C1838BE33009F6B4E /* CS2Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C551838BE33009F6B4E /* CS2Loader.cpp */; };
+		53EE3C7D1838BE33009F6B4E /* CS3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C571838BE33009F6B4E /* CS3.cpp */; };
+		53EE3C7E1838BE33009F6B4E /* CS3Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C591838BE33009F6B4E /* CS3Loader.cpp */; };
+		53EE3C7F1838BE33009F6B4E /* CS4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C5B1838BE33009F6B4E /* CS4.cpp */; };
+		53EE3C801838BE33009F6B4E /* CS4Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C5D1838BE33009F6B4E /* CS4Loader.cpp */; };
+		53EE3C811838BE33009F6B4E /* CS5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C5F1838BE33009F6B4E /* CS5.cpp */; };
+		53EE3C821838BE33009F6B4E /* CS5Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C611838BE33009F6B4E /* CS5Loader.cpp */; };
+		53EE3C831838BE33009F6B4E /* CS6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C631838BE33009F6B4E /* CS6.cpp */; };
+		53EE3C841838BE33009F6B4E /* CS6Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C651838BE33009F6B4E /* CS6Loader.cpp */; };
+		53EE3C851838BE33009F6B4E /* CS7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C671838BE33009F6B4E /* CS7.cpp */; };
+		53EE3C861838BE33009F6B4E /* CS7Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C691838BE33009F6B4E /* CS7Loader.cpp */; };
+		53EE3C871838BE33009F6B4E /* CS8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C6B1838BE33009F6B4E /* CS8.cpp */; };
+		53EE3C881838BE33009F6B4E /* CS8Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C6D1838BE33009F6B4E /* CS8Loader.cpp */; };
+		53EE3C891838BE33009F6B4E /* CS9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C6F1838BE33009F6B4E /* CS9.cpp */; };
+		53EE3C8A1838BE33009F6B4E /* CS9Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C711838BE33009F6B4E /* CS9Loader.cpp */; };
+		53EE3C8B1838BE33009F6B4E /* CS10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C731838BE33009F6B4E /* CS10.cpp */; };
+		53EE3C8C1838BE33009F6B4E /* CS10Loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53EE3C751838BE33009F6B4E /* CS10Loader.cpp */; };
+		53EE3C941839292C009F6B4E /* cn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C8D1839292C009F6B4E /* cn.plist */; };
+		53EE3C951839292C009F6B4E /* evil.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C8E1839292C009F6B4E /* evil.plist */; };
+		53EE3C961839292C009F6B4E /* evil.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C8F1839292C009F6B4E /* evil.pvr.ccz */; };
+		53EE3C971839292C009F6B4E /* tale.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C901839292C009F6B4E /* tale.plist */; };
+		53EE3C981839292C009F6B4E /* tale.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C911839292C009F6B4E /* tale.pvr.ccz */; };
+		53EE3C991839292C009F6B4E /* west.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C921839292C009F6B4E /* west.plist */; };
+		53EE3C9A1839292C009F6B4E /* west.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C931839292C009F6B4E /* west.pvr.ccz */; };
+		53EE3C9C183929E7009F6B4E /* cn.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C9B183929E7009F6B4E /* cn.pvr.ccz */; };
+		53EE3CA7183D216E009F6B4E /* CS1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C9D183D216E009F6B4E /* CS1.ccbi */; };
+		53EE3CA8183D216E009F6B4E /* CS2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C9E183D216E009F6B4E /* CS2.ccbi */; };
+		53EE3CA9183D216E009F6B4E /* CS3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3C9F183D216E009F6B4E /* CS3.ccbi */; };
+		53EE3CAA183D216E009F6B4E /* CS4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA0183D216E009F6B4E /* CS4.ccbi */; };
+		53EE3CAB183D216E009F6B4E /* CS5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA1183D216E009F6B4E /* CS5.ccbi */; };
+		53EE3CAC183D216E009F6B4E /* CS6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA2183D216E009F6B4E /* CS6.ccbi */; };
+		53EE3CAD183D216E009F6B4E /* CS7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA3183D216E009F6B4E /* CS7.ccbi */; };
+		53EE3CAE183D216E009F6B4E /* CS8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA4183D216E009F6B4E /* CS8.ccbi */; };
+		53EE3CAF183D216E009F6B4E /* CS9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA5183D216E009F6B4E /* CS9.ccbi */; };
+		53EE3CB0183D216E009F6B4E /* CS10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CA6183D216E009F6B4E /* CS10.ccbi */; };
+		53EE3CBB183D2187009F6B4E /* ES1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB1183D2187009F6B4E /* ES1.ccbi */; };
+		53EE3CBC183D2187009F6B4E /* ES2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB2183D2187009F6B4E /* ES2.ccbi */; };
+		53EE3CBD183D2187009F6B4E /* ES3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB3183D2187009F6B4E /* ES3.ccbi */; };
+		53EE3CBE183D2187009F6B4E /* ES4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB4183D2187009F6B4E /* ES4.ccbi */; };
+		53EE3CBF183D2187009F6B4E /* ES5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB5183D2187009F6B4E /* ES5.ccbi */; };
+		53EE3CC0183D2187009F6B4E /* ES6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB6183D2187009F6B4E /* ES6.ccbi */; };
+		53EE3CC1183D2187009F6B4E /* ES7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB7183D2187009F6B4E /* ES7.ccbi */; };
+		53EE3CC2183D2187009F6B4E /* ES8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB8183D2187009F6B4E /* ES8.ccbi */; };
+		53EE3CC3183D2187009F6B4E /* ES9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CB9183D2187009F6B4E /* ES9.ccbi */; };
+		53EE3CC4183D2187009F6B4E /* ES10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CBA183D2187009F6B4E /* ES10.ccbi */; };
+		53EE3CCF183D21A4009F6B4E /* TS1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CC5183D21A4009F6B4E /* TS1.ccbi */; };
+		53EE3CD0183D21A4009F6B4E /* TS2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CC6183D21A4009F6B4E /* TS2.ccbi */; };
+		53EE3CD1183D21A4009F6B4E /* TS3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CC7183D21A4009F6B4E /* TS3.ccbi */; };
+		53EE3CD2183D21A4009F6B4E /* TS4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CC8183D21A4009F6B4E /* TS4.ccbi */; };
+		53EE3CD3183D21A4009F6B4E /* TS5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CC9183D21A4009F6B4E /* TS5.ccbi */; };
+		53EE3CD4183D21A4009F6B4E /* TS6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CCA183D21A4009F6B4E /* TS6.ccbi */; };
+		53EE3CD5183D21A4009F6B4E /* TS7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CCB183D21A4009F6B4E /* TS7.ccbi */; };
+		53EE3CD6183D21A4009F6B4E /* TS8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CCC183D21A4009F6B4E /* TS8.ccbi */; };
+		53EE3CD7183D21A4009F6B4E /* TS9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CCD183D21A4009F6B4E /* TS9.ccbi */; };
+		53EE3CD8183D21A4009F6B4E /* TS10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CCE183D21A4009F6B4E /* TS10.ccbi */; };
+		53EE3CE3183D21B8009F6B4E /* WS1.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CD9183D21B8009F6B4E /* WS1.ccbi */; };
+		53EE3CE4183D21B8009F6B4E /* WS2.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDA183D21B8009F6B4E /* WS2.ccbi */; };
+		53EE3CE5183D21B8009F6B4E /* WS3.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDB183D21B8009F6B4E /* WS3.ccbi */; };
+		53EE3CE6183D21B8009F6B4E /* WS4.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDC183D21B8009F6B4E /* WS4.ccbi */; };
+		53EE3CE7183D21B8009F6B4E /* WS5.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDD183D21B8009F6B4E /* WS5.ccbi */; };
+		53EE3CE8183D21B8009F6B4E /* WS6.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDE183D21B8009F6B4E /* WS6.ccbi */; };
+		53EE3CE9183D21B8009F6B4E /* WS7.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CDF183D21B8009F6B4E /* WS7.ccbi */; };
+		53EE3CEA183D21B8009F6B4E /* WS8.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CE0183D21B8009F6B4E /* WS8.ccbi */; };
+		53EE3CEB183D21B8009F6B4E /* WS9.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CE1183D21B8009F6B4E /* WS9.ccbi */; };
+		53EE3CEC183D21B8009F6B4E /* WS10.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CE2183D21B8009F6B4E /* WS10.ccbi */; };
+		53EE3CF2183D223A009F6B4E /* CBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CED183D223A009F6B4E /* CBackground.ccbi */; };
+		53EE3CF3183D223A009F6B4E /* EBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CEE183D223A009F6B4E /* EBackground.ccbi */; };
+		53EE3CF4183D223A009F6B4E /* RBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CEF183D223A009F6B4E /* RBackground.ccbi */; };
+		53EE3CF5183D223A009F6B4E /* TBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CF0183D223A009F6B4E /* TBackground.ccbi */; };
+		53EE3CF6183D223A009F6B4E /* WBackground.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53EE3CF1183D223A009F6B4E /* WBackground.ccbi */; };
 		53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4F96179D945600962274 /* MainMenuScene.cpp */; };
 		53FE4FAC179D946300962274 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53FE4FA8179D946300962274 /* GameObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4512E0BE181E9EC000C69749 /* DrawLineLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DrawLineLayer.cpp; path = Classes/DrawLineLayer.cpp; sourceTree = "<group>"; };
-		4512E0BF181E9EC000C69749 /* DrawLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawLineLayer.h; path = Classes/DrawLineLayer.h; sourceTree = "<group>"; };
-		4591FD8C181BA20E0063C3F8 /* StaticData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StaticData.cpp; path = Classes/StaticData.cpp; sourceTree = "<group>"; };
-		4591FD8D181BA20E0063C3F8 /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticData.h; path = Classes/StaticData.h; sourceTree = "<group>"; };
-		4591FD8F181BA22E0063C3F8 /* Toolkit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Toolkit.cpp; path = Classes/Toolkit.cpp; sourceTree = "<group>"; };
-		4591FD90181BA22E0063C3F8 /* Toolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Toolkit.h; path = Classes/Toolkit.h; sourceTree = "<group>"; };
-		4591FD92181BA23F0063C3F8 /* PrintingLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PrintingLabel.cpp; path = Classes/PrintingLabel.cpp; sourceTree = "<group>"; };
-		4591FD93181BA23F0063C3F8 /* PrintingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrintingLabel.h; path = Classes/PrintingLabel.h; sourceTree = "<group>"; };
-		4591FD95181BA2A50063C3F8 /* static_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = static_data.plist; path = Resources/static_data.plist; sourceTree = "<group>"; };
 		5321F4B31794599E00BC1823 /* miwu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miwu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5321F4B61794599E00BC1823 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5321F4B81794599E00BC1823 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1121,14 +1269,38 @@
 		5321F856179459A700BC1823 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		5321F858179459A700BC1823 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		5321F859179459A700BC1823 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		5328C2FD1843BF6B00472D1B /* RBoss2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBoss2.cpp; path = Classes/RBoss2.cpp; sourceTree = "<group>"; };
+		5328C2FE1843BF6B00472D1B /* RBoss2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBoss2.h; path = Classes/RBoss2.h; sourceTree = "<group>"; };
+		5328C2FF1843BF6B00472D1B /* RBoss2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBoss2Loader.cpp; path = Classes/RBoss2Loader.cpp; sourceTree = "<group>"; };
+		5328C3001843BF6B00472D1B /* RBoss2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBoss2Loader.h; path = Classes/RBoss2Loader.h; sourceTree = "<group>"; };
+		5328C3031843BF8200472D1B /* CBoss2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBoss2.cpp; path = Classes/CBoss2.cpp; sourceTree = "<group>"; };
+		5328C3041843BF8200472D1B /* CBoss2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBoss2.h; path = Classes/CBoss2.h; sourceTree = "<group>"; };
+		5328C3051843BF8200472D1B /* CBoss2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBoss2Loader.cpp; path = Classes/CBoss2Loader.cpp; sourceTree = "<group>"; };
+		5328C3061843BF8200472D1B /* CBoss2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBoss2Loader.h; path = Classes/CBoss2Loader.h; sourceTree = "<group>"; };
+		5328C3091843BF9F00472D1B /* WBoss2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WBoss2.cpp; path = Classes/WBoss2.cpp; sourceTree = "<group>"; };
+		5328C30A1843BF9F00472D1B /* WBoss2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBoss2.h; path = Classes/WBoss2.h; sourceTree = "<group>"; };
+		5328C30B1843BF9F00472D1B /* WBoss2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WBoss2Loader.cpp; path = Classes/WBoss2Loader.cpp; sourceTree = "<group>"; };
+		5328C30C1843BF9F00472D1B /* WBoss2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBoss2Loader.h; path = Classes/WBoss2Loader.h; sourceTree = "<group>"; };
+		5328C30F1843BFBE00472D1B /* TBoss2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TBoss2.cpp; path = Classes/TBoss2.cpp; sourceTree = "<group>"; };
+		5328C3101843BFBE00472D1B /* TBoss2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBoss2.h; path = Classes/TBoss2.h; sourceTree = "<group>"; };
+		5328C3111843BFBE00472D1B /* TBoss2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TBoss2Loader.cpp; path = Classes/TBoss2Loader.cpp; sourceTree = "<group>"; };
+		5328C3121843BFBE00472D1B /* TBoss2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBoss2Loader.h; path = Classes/TBoss2Loader.h; sourceTree = "<group>"; };
+		5328C3151843BFE400472D1B /* EBoss2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EBoss2.cpp; path = Classes/EBoss2.cpp; sourceTree = "<group>"; };
+		5328C3161843BFE400472D1B /* EBoss2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBoss2.h; path = Classes/EBoss2.h; sourceTree = "<group>"; };
+		5328C3171843BFE400472D1B /* EBoss2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EBoss2Loader.cpp; path = Classes/EBoss2Loader.cpp; sourceTree = "<group>"; };
+		5328C3181843BFE400472D1B /* EBoss2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBoss2Loader.h; path = Classes/EBoss2Loader.h; sourceTree = "<group>"; };
+		5328C31B1843C07D00472D1B /* CBoss.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CBoss.ccbi; path = Resources/CBoss.ccbi; sourceTree = "<group>"; };
+		5328C31C1843C07D00472D1B /* CBoss2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CBoss2.ccbi; path = Resources/CBoss2.ccbi; sourceTree = "<group>"; };
+		5328C31D1843C07D00472D1B /* EBoss.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = EBoss.ccbi; path = Resources/EBoss.ccbi; sourceTree = "<group>"; };
+		5328C31E1843C07D00472D1B /* EBoss2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = EBoss2.ccbi; path = Resources/EBoss2.ccbi; sourceTree = "<group>"; };
+		5328C31F1843C07D00472D1B /* RBoss2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RBoss2.ccbi; path = Resources/RBoss2.ccbi; sourceTree = "<group>"; };
+		5328C3201843C07D00472D1B /* TBoss.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TBoss.ccbi; path = Resources/TBoss.ccbi; sourceTree = "<group>"; };
+		5328C3211843C07D00472D1B /* TBoss2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TBoss2.ccbi; path = Resources/TBoss2.ccbi; sourceTree = "<group>"; };
+		5328C3221843C07D00472D1B /* WBoss.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WBoss.ccbi; path = Resources/WBoss.ccbi; sourceTree = "<group>"; };
+		5328C3231843C07D00472D1B /* WBoss2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WBoss2.ccbi; path = Resources/WBoss2.ccbi; sourceTree = "<group>"; };
+		5328C32D1844E85400472D1B /* level_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = level_data.plist; path = Resources/level_data.plist; sourceTree = "<group>"; };
 		53319093181BA9AE005F0F4B /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenUDID.h; path = Classes/OpenUDID.h; sourceTree = "<group>"; };
 		53319094181BA9AE005F0F4B /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenUDID.m; path = Classes/OpenUDID.m; sourceTree = "<group>"; };
-		53319096181BAA47005F0F4B /* Toolkit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Toolkit.cpp; path = Classes/Toolkit.cpp; sourceTree = "<group>"; };
-		53319097181BAA47005F0F4B /* Toolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Toolkit.h; path = Classes/Toolkit.h; sourceTree = "<group>"; };
-		5331909A181BAA63005F0F4B /* StaticData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StaticData.cpp; path = Classes/StaticData.cpp; sourceTree = "<group>"; };
-		5331909B181BAA63005F0F4B /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticData.h; path = Classes/StaticData.h; sourceTree = "<group>"; };
-		5331909D181BAA83005F0F4B /* PrintingLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PrintingLabel.cpp; path = Classes/PrintingLabel.cpp; sourceTree = "<group>"; };
-		5331909E181BAA83005F0F4B /* PrintingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrintingLabel.h; path = Classes/PrintingLabel.h; sourceTree = "<group>"; };
 		533190A0181BAAEF005F0F4B /* static_data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = static_data.plist; path = Resources/static_data.plist; sourceTree = "<group>"; };
 		5335BBE117A6C01B00B02A13 /* ri.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ri.plist; path = Resources/ri.plist; sourceTree = "<group>"; };
 		5335BBE217A6C01B00B02A13 /* ri.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = ri.pvr.ccz; path = Resources/ri.pvr.ccz; sourceTree = "<group>"; };
@@ -1227,6 +1399,8 @@
 		534B440117B63EF2001DF7B0 /* RBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBossLoader.cpp; path = Classes/RBossLoader.cpp; sourceTree = "<group>"; };
 		534B440217B63EF2001DF7B0 /* RBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBoss.h; path = Classes/RBoss.h; sourceTree = "<group>"; };
 		534B440317B63EF2001DF7B0 /* RBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RBoss.cpp; path = Classes/RBoss.cpp; sourceTree = "<group>"; };
+		535CB0A71847B30B00E7A6E8 /* LevelData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LevelData.cpp; path = Classes/LevelData.cpp; sourceTree = "<group>"; };
+		535CB0A81847B30B00E7A6E8 /* LevelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelData.h; path = Classes/LevelData.h; sourceTree = "<group>"; };
 		535E8D6E17BBD2B000C2A145 /* Soldier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Soldier.cpp; path = Classes/Soldier.cpp; sourceTree = "<group>"; };
 		535E8D6F17BBD2B000C2A145 /* Soldier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Soldier.h; path = Classes/Soldier.h; sourceTree = "<group>"; };
 		535E8D7117BBD2C700C2A145 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
@@ -1253,8 +1427,14 @@
 		5383A8DD17D3973B00EE4A1A /* main.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = main.mp3; path = Resources/main.mp3; sourceTree = "<group>"; };
 		5383A8DF17D4EFCE00EE4A1A /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameOverScene.h; path = Classes/GameOverScene.h; sourceTree = "<group>"; };
 		5383A8E017D4EFCF00EE4A1A /* GameOverScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameOverScene.cpp; path = Classes/GameOverScene.cpp; sourceTree = "<group>"; };
-		538D27AA181426F2004B51F4 /* ApiParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ApiParser.cpp; path = Classes/ApiParser.cpp; sourceTree = "<group>"; };
-		538D27AB181426F2004B51F4 /* ApiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApiParser.h; path = Classes/ApiParser.h; sourceTree = "<group>"; };
+		5383C3091821675F00333D2C /* DrawLineLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DrawLineLayer.cpp; path = Classes/DrawLineLayer.cpp; sourceTree = "<group>"; };
+		5383C30A1821675F00333D2C /* DrawLineLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawLineLayer.h; path = Classes/DrawLineLayer.h; sourceTree = "<group>"; };
+		5383C31818216C9000333D2C /* PrintingLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PrintingLabel.cpp; path = Classes/PrintingLabel.cpp; sourceTree = "<group>"; };
+		5383C31918216C9000333D2C /* PrintingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrintingLabel.h; path = Classes/PrintingLabel.h; sourceTree = "<group>"; };
+		5383C31A18216C9000333D2C /* StaticData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StaticData.cpp; path = Classes/StaticData.cpp; sourceTree = "<group>"; };
+		5383C31B18216C9000333D2C /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticData.h; path = Classes/StaticData.h; sourceTree = "<group>"; };
+		5383C31C18216C9000333D2C /* Toolkit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Toolkit.cpp; path = Classes/Toolkit.cpp; sourceTree = "<group>"; };
+		5383C31D18216C9000333D2C /* Toolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Toolkit.h; path = Classes/Toolkit.h; sourceTree = "<group>"; };
 		538D27B01816E756004B51F4 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
 		538D27B11816E756004B51F4 /* Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Convert.h; sourceTree = "<group>"; };
 		538D27B21816E756004B51F4 /* Escaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Escaper.h; sourceTree = "<group>"; };
@@ -1468,6 +1648,235 @@
 		53DECCD317E50C9E00A1C1BC /* Invite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Invite.h; path = Classes/Invite.h; sourceTree = "<group>"; };
 		53DECCD417E50CA700A1C1BC /* InviteLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = InviteLoader.cpp; path = Classes/InviteLoader.cpp; sourceTree = "<group>"; };
 		53DECCD517E50CB000A1C1BC /* InviteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InviteLoader.h; path = Classes/InviteLoader.h; sourceTree = "<group>"; };
+		53EE3B851838BCEE009F6B4E /* EBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EBoss.cpp; path = Classes/EBoss.cpp; sourceTree = "<group>"; };
+		53EE3B861838BCEE009F6B4E /* EBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBoss.h; path = Classes/EBoss.h; sourceTree = "<group>"; };
+		53EE3B871838BCEE009F6B4E /* EBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EBossLoader.cpp; path = Classes/EBossLoader.cpp; sourceTree = "<group>"; };
+		53EE3B881838BCEE009F6B4E /* EBossLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBossLoader.h; path = Classes/EBossLoader.h; sourceTree = "<group>"; };
+		53EE3B8B1838BD1D009F6B4E /* ES1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES1.cpp; path = Classes/ES1.cpp; sourceTree = "<group>"; };
+		53EE3B8C1838BD1D009F6B4E /* ES1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES1.h; path = Classes/ES1.h; sourceTree = "<group>"; };
+		53EE3B8D1838BD1D009F6B4E /* ES1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES1Loader.cpp; path = Classes/ES1Loader.cpp; sourceTree = "<group>"; };
+		53EE3B8E1838BD1D009F6B4E /* ES1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES1Loader.h; path = Classes/ES1Loader.h; sourceTree = "<group>"; };
+		53EE3B8F1838BD1D009F6B4E /* ES2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES2.cpp; path = Classes/ES2.cpp; sourceTree = "<group>"; };
+		53EE3B901838BD1D009F6B4E /* ES2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES2.h; path = Classes/ES2.h; sourceTree = "<group>"; };
+		53EE3B911838BD1D009F6B4E /* ES2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES2Loader.cpp; path = Classes/ES2Loader.cpp; sourceTree = "<group>"; };
+		53EE3B921838BD1D009F6B4E /* ES2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES2Loader.h; path = Classes/ES2Loader.h; sourceTree = "<group>"; };
+		53EE3B931838BD1D009F6B4E /* ES3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES3.cpp; path = Classes/ES3.cpp; sourceTree = "<group>"; };
+		53EE3B941838BD1D009F6B4E /* ES3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES3.h; path = Classes/ES3.h; sourceTree = "<group>"; };
+		53EE3B951838BD1D009F6B4E /* ES3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES3Loader.cpp; path = Classes/ES3Loader.cpp; sourceTree = "<group>"; };
+		53EE3B961838BD1D009F6B4E /* ES3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES3Loader.h; path = Classes/ES3Loader.h; sourceTree = "<group>"; };
+		53EE3B971838BD1D009F6B4E /* ES4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES4.cpp; path = Classes/ES4.cpp; sourceTree = "<group>"; };
+		53EE3B981838BD1D009F6B4E /* ES4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES4.h; path = Classes/ES4.h; sourceTree = "<group>"; };
+		53EE3B991838BD1D009F6B4E /* ES4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES4Loader.cpp; path = Classes/ES4Loader.cpp; sourceTree = "<group>"; };
+		53EE3B9A1838BD1D009F6B4E /* ES4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES4Loader.h; path = Classes/ES4Loader.h; sourceTree = "<group>"; };
+		53EE3B9B1838BD1D009F6B4E /* ES5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES5.cpp; path = Classes/ES5.cpp; sourceTree = "<group>"; };
+		53EE3B9C1838BD1D009F6B4E /* ES5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES5.h; path = Classes/ES5.h; sourceTree = "<group>"; };
+		53EE3B9D1838BD1D009F6B4E /* ES5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES5Loader.cpp; path = Classes/ES5Loader.cpp; sourceTree = "<group>"; };
+		53EE3B9E1838BD1D009F6B4E /* ES5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES5Loader.h; path = Classes/ES5Loader.h; sourceTree = "<group>"; };
+		53EE3B9F1838BD1D009F6B4E /* ES6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES6.cpp; path = Classes/ES6.cpp; sourceTree = "<group>"; };
+		53EE3BA01838BD1D009F6B4E /* ES6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES6.h; path = Classes/ES6.h; sourceTree = "<group>"; };
+		53EE3BA11838BD1D009F6B4E /* ES6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES6Loader.cpp; path = Classes/ES6Loader.cpp; sourceTree = "<group>"; };
+		53EE3BA21838BD1D009F6B4E /* ES6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES6Loader.h; path = Classes/ES6Loader.h; sourceTree = "<group>"; };
+		53EE3BA31838BD1D009F6B4E /* ES7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES7.cpp; path = Classes/ES7.cpp; sourceTree = "<group>"; };
+		53EE3BA41838BD1D009F6B4E /* ES7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES7.h; path = Classes/ES7.h; sourceTree = "<group>"; };
+		53EE3BA51838BD1D009F6B4E /* ES7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES7Loader.cpp; path = Classes/ES7Loader.cpp; sourceTree = "<group>"; };
+		53EE3BA61838BD1D009F6B4E /* ES7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES7Loader.h; path = Classes/ES7Loader.h; sourceTree = "<group>"; };
+		53EE3BA71838BD1D009F6B4E /* ES8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES8.cpp; path = Classes/ES8.cpp; sourceTree = "<group>"; };
+		53EE3BA81838BD1E009F6B4E /* ES8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES8.h; path = Classes/ES8.h; sourceTree = "<group>"; };
+		53EE3BA91838BD1E009F6B4E /* ES8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES8Loader.cpp; path = Classes/ES8Loader.cpp; sourceTree = "<group>"; };
+		53EE3BAA1838BD1E009F6B4E /* ES8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES8Loader.h; path = Classes/ES8Loader.h; sourceTree = "<group>"; };
+		53EE3BAB1838BD1E009F6B4E /* ES9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES9.cpp; path = Classes/ES9.cpp; sourceTree = "<group>"; };
+		53EE3BAC1838BD1E009F6B4E /* ES9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES9.h; path = Classes/ES9.h; sourceTree = "<group>"; };
+		53EE3BAD1838BD1E009F6B4E /* ES9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES9Loader.cpp; path = Classes/ES9Loader.cpp; sourceTree = "<group>"; };
+		53EE3BAE1838BD1E009F6B4E /* ES9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES9Loader.h; path = Classes/ES9Loader.h; sourceTree = "<group>"; };
+		53EE3BAF1838BD1E009F6B4E /* ES10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES10.cpp; path = Classes/ES10.cpp; sourceTree = "<group>"; };
+		53EE3BB01838BD1E009F6B4E /* ES10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES10.h; path = Classes/ES10.h; sourceTree = "<group>"; };
+		53EE3BB11838BD1E009F6B4E /* ES10Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ES10Loader.cpp; path = Classes/ES10Loader.cpp; sourceTree = "<group>"; };
+		53EE3BB21838BD1E009F6B4E /* ES10Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ES10Loader.h; path = Classes/ES10Loader.h; sourceTree = "<group>"; };
+		53EE3BC71838BDB0009F6B4E /* TS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS1.cpp; path = Classes/TS1.cpp; sourceTree = "<group>"; };
+		53EE3BC81838BDB0009F6B4E /* TS1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS1.h; path = Classes/TS1.h; sourceTree = "<group>"; };
+		53EE3BC91838BDB0009F6B4E /* TS1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS1Loader.cpp; path = Classes/TS1Loader.cpp; sourceTree = "<group>"; };
+		53EE3BCA1838BDB0009F6B4E /* TS1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS1Loader.h; path = Classes/TS1Loader.h; sourceTree = "<group>"; };
+		53EE3BCB1838BDB0009F6B4E /* TS2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS2.cpp; path = Classes/TS2.cpp; sourceTree = "<group>"; };
+		53EE3BCC1838BDB0009F6B4E /* TS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS2.h; path = Classes/TS2.h; sourceTree = "<group>"; };
+		53EE3BCD1838BDB0009F6B4E /* TS2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS2Loader.cpp; path = Classes/TS2Loader.cpp; sourceTree = "<group>"; };
+		53EE3BCE1838BDB0009F6B4E /* TS2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS2Loader.h; path = Classes/TS2Loader.h; sourceTree = "<group>"; };
+		53EE3BCF1838BDB0009F6B4E /* TS3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS3.cpp; path = Classes/TS3.cpp; sourceTree = "<group>"; };
+		53EE3BD01838BDB0009F6B4E /* TS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS3.h; path = Classes/TS3.h; sourceTree = "<group>"; };
+		53EE3BD11838BDB0009F6B4E /* TS3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS3Loader.cpp; path = Classes/TS3Loader.cpp; sourceTree = "<group>"; };
+		53EE3BD21838BDB0009F6B4E /* TS3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS3Loader.h; path = Classes/TS3Loader.h; sourceTree = "<group>"; };
+		53EE3BD31838BDB0009F6B4E /* TS4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS4.cpp; path = Classes/TS4.cpp; sourceTree = "<group>"; };
+		53EE3BD41838BDB0009F6B4E /* TS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS4.h; path = Classes/TS4.h; sourceTree = "<group>"; };
+		53EE3BD51838BDB0009F6B4E /* TS4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS4Loader.cpp; path = Classes/TS4Loader.cpp; sourceTree = "<group>"; };
+		53EE3BD61838BDB0009F6B4E /* TS4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS4Loader.h; path = Classes/TS4Loader.h; sourceTree = "<group>"; };
+		53EE3BD71838BDB0009F6B4E /* TS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS5.cpp; path = Classes/TS5.cpp; sourceTree = "<group>"; };
+		53EE3BD81838BDB0009F6B4E /* TS5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS5.h; path = Classes/TS5.h; sourceTree = "<group>"; };
+		53EE3BD91838BDB0009F6B4E /* TS5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS5Loader.cpp; path = Classes/TS5Loader.cpp; sourceTree = "<group>"; };
+		53EE3BDA1838BDB0009F6B4E /* TS5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS5Loader.h; path = Classes/TS5Loader.h; sourceTree = "<group>"; };
+		53EE3BDB1838BDB0009F6B4E /* TS6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS6.cpp; path = Classes/TS6.cpp; sourceTree = "<group>"; };
+		53EE3BDC1838BDB0009F6B4E /* TS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS6.h; path = Classes/TS6.h; sourceTree = "<group>"; };
+		53EE3BDD1838BDB0009F6B4E /* TS6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS6Loader.cpp; path = Classes/TS6Loader.cpp; sourceTree = "<group>"; };
+		53EE3BDE1838BDB0009F6B4E /* TS6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS6Loader.h; path = Classes/TS6Loader.h; sourceTree = "<group>"; };
+		53EE3BDF1838BDB0009F6B4E /* TS7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS7.cpp; path = Classes/TS7.cpp; sourceTree = "<group>"; };
+		53EE3BE01838BDB0009F6B4E /* TS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS7.h; path = Classes/TS7.h; sourceTree = "<group>"; };
+		53EE3BE11838BDB0009F6B4E /* TS7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS7Loader.cpp; path = Classes/TS7Loader.cpp; sourceTree = "<group>"; };
+		53EE3BE21838BDB0009F6B4E /* TS7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS7Loader.h; path = Classes/TS7Loader.h; sourceTree = "<group>"; };
+		53EE3BE31838BDB0009F6B4E /* TS8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS8.cpp; path = Classes/TS8.cpp; sourceTree = "<group>"; };
+		53EE3BE41838BDB0009F6B4E /* TS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS8.h; path = Classes/TS8.h; sourceTree = "<group>"; };
+		53EE3BE51838BDB0009F6B4E /* TS8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS8Loader.cpp; path = Classes/TS8Loader.cpp; sourceTree = "<group>"; };
+		53EE3BE61838BDB0009F6B4E /* TS8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS8Loader.h; path = Classes/TS8Loader.h; sourceTree = "<group>"; };
+		53EE3BE71838BDB0009F6B4E /* TS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS9.cpp; path = Classes/TS9.cpp; sourceTree = "<group>"; };
+		53EE3BE81838BDB0009F6B4E /* TS9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS9.h; path = Classes/TS9.h; sourceTree = "<group>"; };
+		53EE3BE91838BDB0009F6B4E /* TS9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS9Loader.cpp; path = Classes/TS9Loader.cpp; sourceTree = "<group>"; };
+		53EE3BEA1838BDB0009F6B4E /* TS9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS9Loader.h; path = Classes/TS9Loader.h; sourceTree = "<group>"; };
+		53EE3BEB1838BDB0009F6B4E /* TS10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS10.cpp; path = Classes/TS10.cpp; sourceTree = "<group>"; };
+		53EE3BEC1838BDB0009F6B4E /* TS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS10.h; path = Classes/TS10.h; sourceTree = "<group>"; };
+		53EE3BED1838BDB0009F6B4E /* TS10Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TS10Loader.cpp; path = Classes/TS10Loader.cpp; sourceTree = "<group>"; };
+		53EE3BEE1838BDB0009F6B4E /* TS10Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TS10Loader.h; path = Classes/TS10Loader.h; sourceTree = "<group>"; };
+		53EE3C031838BDDE009F6B4E /* TBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TBoss.cpp; path = Classes/TBoss.cpp; sourceTree = "<group>"; };
+		53EE3C041838BDDE009F6B4E /* TBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBoss.h; path = Classes/TBoss.h; sourceTree = "<group>"; };
+		53EE3C051838BDDE009F6B4E /* TBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TBossLoader.cpp; path = Classes/TBossLoader.cpp; sourceTree = "<group>"; };
+		53EE3C061838BDDE009F6B4E /* TBossLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBossLoader.h; path = Classes/TBossLoader.h; sourceTree = "<group>"; };
+		53EE3C091838BE01009F6B4E /* WBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WBoss.cpp; path = Classes/WBoss.cpp; sourceTree = "<group>"; };
+		53EE3C0A1838BE01009F6B4E /* WBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBoss.h; path = Classes/WBoss.h; sourceTree = "<group>"; };
+		53EE3C0B1838BE01009F6B4E /* WBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WBossLoader.cpp; path = Classes/WBossLoader.cpp; sourceTree = "<group>"; };
+		53EE3C0C1838BE01009F6B4E /* WBossLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBossLoader.h; path = Classes/WBossLoader.h; sourceTree = "<group>"; };
+		53EE3C0D1838BE01009F6B4E /* WS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS1.cpp; path = Classes/WS1.cpp; sourceTree = "<group>"; };
+		53EE3C0E1838BE01009F6B4E /* WS1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS1.h; path = Classes/WS1.h; sourceTree = "<group>"; };
+		53EE3C0F1838BE01009F6B4E /* WS1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS1Loader.cpp; path = Classes/WS1Loader.cpp; sourceTree = "<group>"; };
+		53EE3C101838BE01009F6B4E /* WS1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS1Loader.h; path = Classes/WS1Loader.h; sourceTree = "<group>"; };
+		53EE3C111838BE01009F6B4E /* WS2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS2.cpp; path = Classes/WS2.cpp; sourceTree = "<group>"; };
+		53EE3C121838BE01009F6B4E /* WS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS2.h; path = Classes/WS2.h; sourceTree = "<group>"; };
+		53EE3C131838BE01009F6B4E /* WS2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS2Loader.cpp; path = Classes/WS2Loader.cpp; sourceTree = "<group>"; };
+		53EE3C141838BE01009F6B4E /* WS2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS2Loader.h; path = Classes/WS2Loader.h; sourceTree = "<group>"; };
+		53EE3C151838BE01009F6B4E /* WS3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS3.cpp; path = Classes/WS3.cpp; sourceTree = "<group>"; };
+		53EE3C161838BE01009F6B4E /* WS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS3.h; path = Classes/WS3.h; sourceTree = "<group>"; };
+		53EE3C171838BE01009F6B4E /* WS3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS3Loader.cpp; path = Classes/WS3Loader.cpp; sourceTree = "<group>"; };
+		53EE3C181838BE01009F6B4E /* WS3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS3Loader.h; path = Classes/WS3Loader.h; sourceTree = "<group>"; };
+		53EE3C191838BE01009F6B4E /* WS4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS4.cpp; path = Classes/WS4.cpp; sourceTree = "<group>"; };
+		53EE3C1A1838BE01009F6B4E /* WS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS4.h; path = Classes/WS4.h; sourceTree = "<group>"; };
+		53EE3C1B1838BE01009F6B4E /* WS4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS4Loader.cpp; path = Classes/WS4Loader.cpp; sourceTree = "<group>"; };
+		53EE3C1C1838BE01009F6B4E /* WS4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS4Loader.h; path = Classes/WS4Loader.h; sourceTree = "<group>"; };
+		53EE3C1D1838BE01009F6B4E /* WS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS5.cpp; path = Classes/WS5.cpp; sourceTree = "<group>"; };
+		53EE3C1E1838BE01009F6B4E /* WS5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS5.h; path = Classes/WS5.h; sourceTree = "<group>"; };
+		53EE3C1F1838BE01009F6B4E /* WS5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS5Loader.cpp; path = Classes/WS5Loader.cpp; sourceTree = "<group>"; };
+		53EE3C201838BE01009F6B4E /* WS5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS5Loader.h; path = Classes/WS5Loader.h; sourceTree = "<group>"; };
+		53EE3C211838BE01009F6B4E /* WS6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS6.cpp; path = Classes/WS6.cpp; sourceTree = "<group>"; };
+		53EE3C221838BE01009F6B4E /* WS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS6.h; path = Classes/WS6.h; sourceTree = "<group>"; };
+		53EE3C231838BE01009F6B4E /* WS6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS6Loader.cpp; path = Classes/WS6Loader.cpp; sourceTree = "<group>"; };
+		53EE3C241838BE01009F6B4E /* WS6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS6Loader.h; path = Classes/WS6Loader.h; sourceTree = "<group>"; };
+		53EE3C251838BE01009F6B4E /* WS7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS7.cpp; path = Classes/WS7.cpp; sourceTree = "<group>"; };
+		53EE3C261838BE01009F6B4E /* WS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS7.h; path = Classes/WS7.h; sourceTree = "<group>"; };
+		53EE3C271838BE01009F6B4E /* WS7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS7Loader.cpp; path = Classes/WS7Loader.cpp; sourceTree = "<group>"; };
+		53EE3C281838BE01009F6B4E /* WS7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS7Loader.h; path = Classes/WS7Loader.h; sourceTree = "<group>"; };
+		53EE3C291838BE01009F6B4E /* WS8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS8.cpp; path = Classes/WS8.cpp; sourceTree = "<group>"; };
+		53EE3C2A1838BE01009F6B4E /* WS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS8.h; path = Classes/WS8.h; sourceTree = "<group>"; };
+		53EE3C2B1838BE01009F6B4E /* WS8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS8Loader.cpp; path = Classes/WS8Loader.cpp; sourceTree = "<group>"; };
+		53EE3C2C1838BE01009F6B4E /* WS8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS8Loader.h; path = Classes/WS8Loader.h; sourceTree = "<group>"; };
+		53EE3C2D1838BE01009F6B4E /* WS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS9.cpp; path = Classes/WS9.cpp; sourceTree = "<group>"; };
+		53EE3C2E1838BE01009F6B4E /* WS9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS9.h; path = Classes/WS9.h; sourceTree = "<group>"; };
+		53EE3C2F1838BE01009F6B4E /* WS9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS9Loader.cpp; path = Classes/WS9Loader.cpp; sourceTree = "<group>"; };
+		53EE3C301838BE01009F6B4E /* WS9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS9Loader.h; path = Classes/WS9Loader.h; sourceTree = "<group>"; };
+		53EE3C311838BE01009F6B4E /* WS10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS10.cpp; path = Classes/WS10.cpp; sourceTree = "<group>"; };
+		53EE3C321838BE01009F6B4E /* WS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS10.h; path = Classes/WS10.h; sourceTree = "<group>"; };
+		53EE3C331838BE01009F6B4E /* WS10Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WS10Loader.cpp; path = Classes/WS10Loader.cpp; sourceTree = "<group>"; };
+		53EE3C341838BE01009F6B4E /* WS10Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WS10Loader.h; path = Classes/WS10Loader.h; sourceTree = "<group>"; };
+		53EE3C4B1838BE33009F6B4E /* CBoss.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBoss.cpp; path = Classes/CBoss.cpp; sourceTree = "<group>"; };
+		53EE3C4C1838BE33009F6B4E /* CBoss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBoss.h; path = Classes/CBoss.h; sourceTree = "<group>"; };
+		53EE3C4D1838BE33009F6B4E /* CBossLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CBossLoader.cpp; path = Classes/CBossLoader.cpp; sourceTree = "<group>"; };
+		53EE3C4E1838BE33009F6B4E /* CBossLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CBossLoader.h; path = Classes/CBossLoader.h; sourceTree = "<group>"; };
+		53EE3C4F1838BE33009F6B4E /* CS1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS1.cpp; path = Classes/CS1.cpp; sourceTree = "<group>"; };
+		53EE3C501838BE33009F6B4E /* CS1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS1.h; path = Classes/CS1.h; sourceTree = "<group>"; };
+		53EE3C511838BE33009F6B4E /* CS1Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS1Loader.cpp; path = Classes/CS1Loader.cpp; sourceTree = "<group>"; };
+		53EE3C521838BE33009F6B4E /* CS1Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS1Loader.h; path = Classes/CS1Loader.h; sourceTree = "<group>"; };
+		53EE3C531838BE33009F6B4E /* CS2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS2.cpp; path = Classes/CS2.cpp; sourceTree = "<group>"; };
+		53EE3C541838BE33009F6B4E /* CS2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS2.h; path = Classes/CS2.h; sourceTree = "<group>"; };
+		53EE3C551838BE33009F6B4E /* CS2Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS2Loader.cpp; path = Classes/CS2Loader.cpp; sourceTree = "<group>"; };
+		53EE3C561838BE33009F6B4E /* CS2Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS2Loader.h; path = Classes/CS2Loader.h; sourceTree = "<group>"; };
+		53EE3C571838BE33009F6B4E /* CS3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS3.cpp; path = Classes/CS3.cpp; sourceTree = "<group>"; };
+		53EE3C581838BE33009F6B4E /* CS3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS3.h; path = Classes/CS3.h; sourceTree = "<group>"; };
+		53EE3C591838BE33009F6B4E /* CS3Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS3Loader.cpp; path = Classes/CS3Loader.cpp; sourceTree = "<group>"; };
+		53EE3C5A1838BE33009F6B4E /* CS3Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS3Loader.h; path = Classes/CS3Loader.h; sourceTree = "<group>"; };
+		53EE3C5B1838BE33009F6B4E /* CS4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS4.cpp; path = Classes/CS4.cpp; sourceTree = "<group>"; };
+		53EE3C5C1838BE33009F6B4E /* CS4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS4.h; path = Classes/CS4.h; sourceTree = "<group>"; };
+		53EE3C5D1838BE33009F6B4E /* CS4Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS4Loader.cpp; path = Classes/CS4Loader.cpp; sourceTree = "<group>"; };
+		53EE3C5E1838BE33009F6B4E /* CS4Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS4Loader.h; path = Classes/CS4Loader.h; sourceTree = "<group>"; };
+		53EE3C5F1838BE33009F6B4E /* CS5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS5.cpp; path = Classes/CS5.cpp; sourceTree = "<group>"; };
+		53EE3C601838BE33009F6B4E /* CS5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS5.h; path = Classes/CS5.h; sourceTree = "<group>"; };
+		53EE3C611838BE33009F6B4E /* CS5Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS5Loader.cpp; path = Classes/CS5Loader.cpp; sourceTree = "<group>"; };
+		53EE3C621838BE33009F6B4E /* CS5Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS5Loader.h; path = Classes/CS5Loader.h; sourceTree = "<group>"; };
+		53EE3C631838BE33009F6B4E /* CS6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS6.cpp; path = Classes/CS6.cpp; sourceTree = "<group>"; };
+		53EE3C641838BE33009F6B4E /* CS6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS6.h; path = Classes/CS6.h; sourceTree = "<group>"; };
+		53EE3C651838BE33009F6B4E /* CS6Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS6Loader.cpp; path = Classes/CS6Loader.cpp; sourceTree = "<group>"; };
+		53EE3C661838BE33009F6B4E /* CS6Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS6Loader.h; path = Classes/CS6Loader.h; sourceTree = "<group>"; };
+		53EE3C671838BE33009F6B4E /* CS7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS7.cpp; path = Classes/CS7.cpp; sourceTree = "<group>"; };
+		53EE3C681838BE33009F6B4E /* CS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS7.h; path = Classes/CS7.h; sourceTree = "<group>"; };
+		53EE3C691838BE33009F6B4E /* CS7Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS7Loader.cpp; path = Classes/CS7Loader.cpp; sourceTree = "<group>"; };
+		53EE3C6A1838BE33009F6B4E /* CS7Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS7Loader.h; path = Classes/CS7Loader.h; sourceTree = "<group>"; };
+		53EE3C6B1838BE33009F6B4E /* CS8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS8.cpp; path = Classes/CS8.cpp; sourceTree = "<group>"; };
+		53EE3C6C1838BE33009F6B4E /* CS8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS8.h; path = Classes/CS8.h; sourceTree = "<group>"; };
+		53EE3C6D1838BE33009F6B4E /* CS8Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS8Loader.cpp; path = Classes/CS8Loader.cpp; sourceTree = "<group>"; };
+		53EE3C6E1838BE33009F6B4E /* CS8Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS8Loader.h; path = Classes/CS8Loader.h; sourceTree = "<group>"; };
+		53EE3C6F1838BE33009F6B4E /* CS9.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS9.cpp; path = Classes/CS9.cpp; sourceTree = "<group>"; };
+		53EE3C701838BE33009F6B4E /* CS9.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS9.h; path = Classes/CS9.h; sourceTree = "<group>"; };
+		53EE3C711838BE33009F6B4E /* CS9Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS9Loader.cpp; path = Classes/CS9Loader.cpp; sourceTree = "<group>"; };
+		53EE3C721838BE33009F6B4E /* CS9Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS9Loader.h; path = Classes/CS9Loader.h; sourceTree = "<group>"; };
+		53EE3C731838BE33009F6B4E /* CS10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS10.cpp; path = Classes/CS10.cpp; sourceTree = "<group>"; };
+		53EE3C741838BE33009F6B4E /* CS10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS10.h; path = Classes/CS10.h; sourceTree = "<group>"; };
+		53EE3C751838BE33009F6B4E /* CS10Loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CS10Loader.cpp; path = Classes/CS10Loader.cpp; sourceTree = "<group>"; };
+		53EE3C761838BE33009F6B4E /* CS10Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CS10Loader.h; path = Classes/CS10Loader.h; sourceTree = "<group>"; };
+		53EE3C8D1839292C009F6B4E /* cn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = cn.plist; path = Resources/cn.plist; sourceTree = "<group>"; };
+		53EE3C8E1839292C009F6B4E /* evil.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = evil.plist; path = Resources/evil.plist; sourceTree = "<group>"; };
+		53EE3C8F1839292C009F6B4E /* evil.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = evil.pvr.ccz; path = Resources/evil.pvr.ccz; sourceTree = "<group>"; };
+		53EE3C901839292C009F6B4E /* tale.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = tale.plist; path = Resources/tale.plist; sourceTree = "<group>"; };
+		53EE3C911839292C009F6B4E /* tale.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = tale.pvr.ccz; path = Resources/tale.pvr.ccz; sourceTree = "<group>"; };
+		53EE3C921839292C009F6B4E /* west.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = west.plist; path = Resources/west.plist; sourceTree = "<group>"; };
+		53EE3C931839292C009F6B4E /* west.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = west.pvr.ccz; path = Resources/west.pvr.ccz; sourceTree = "<group>"; };
+		53EE3C9B183929E7009F6B4E /* cn.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = cn.pvr.ccz; path = Resources/cn.pvr.ccz; sourceTree = "<group>"; };
+		53EE3C9D183D216E009F6B4E /* CS1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS1.ccbi; path = Resources/CS1.ccbi; sourceTree = "<group>"; };
+		53EE3C9E183D216E009F6B4E /* CS2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS2.ccbi; path = Resources/CS2.ccbi; sourceTree = "<group>"; };
+		53EE3C9F183D216E009F6B4E /* CS3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS3.ccbi; path = Resources/CS3.ccbi; sourceTree = "<group>"; };
+		53EE3CA0183D216E009F6B4E /* CS4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS4.ccbi; path = Resources/CS4.ccbi; sourceTree = "<group>"; };
+		53EE3CA1183D216E009F6B4E /* CS5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS5.ccbi; path = Resources/CS5.ccbi; sourceTree = "<group>"; };
+		53EE3CA2183D216E009F6B4E /* CS6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS6.ccbi; path = Resources/CS6.ccbi; sourceTree = "<group>"; };
+		53EE3CA3183D216E009F6B4E /* CS7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS7.ccbi; path = Resources/CS7.ccbi; sourceTree = "<group>"; };
+		53EE3CA4183D216E009F6B4E /* CS8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS8.ccbi; path = Resources/CS8.ccbi; sourceTree = "<group>"; };
+		53EE3CA5183D216E009F6B4E /* CS9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS9.ccbi; path = Resources/CS9.ccbi; sourceTree = "<group>"; };
+		53EE3CA6183D216E009F6B4E /* CS10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CS10.ccbi; path = Resources/CS10.ccbi; sourceTree = "<group>"; };
+		53EE3CB1183D2187009F6B4E /* ES1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES1.ccbi; path = Resources/ES1.ccbi; sourceTree = "<group>"; };
+		53EE3CB2183D2187009F6B4E /* ES2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES2.ccbi; path = Resources/ES2.ccbi; sourceTree = "<group>"; };
+		53EE3CB3183D2187009F6B4E /* ES3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES3.ccbi; path = Resources/ES3.ccbi; sourceTree = "<group>"; };
+		53EE3CB4183D2187009F6B4E /* ES4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES4.ccbi; path = Resources/ES4.ccbi; sourceTree = "<group>"; };
+		53EE3CB5183D2187009F6B4E /* ES5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES5.ccbi; path = Resources/ES5.ccbi; sourceTree = "<group>"; };
+		53EE3CB6183D2187009F6B4E /* ES6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES6.ccbi; path = Resources/ES6.ccbi; sourceTree = "<group>"; };
+		53EE3CB7183D2187009F6B4E /* ES7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES7.ccbi; path = Resources/ES7.ccbi; sourceTree = "<group>"; };
+		53EE3CB8183D2187009F6B4E /* ES8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES8.ccbi; path = Resources/ES8.ccbi; sourceTree = "<group>"; };
+		53EE3CB9183D2187009F6B4E /* ES9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES9.ccbi; path = Resources/ES9.ccbi; sourceTree = "<group>"; };
+		53EE3CBA183D2187009F6B4E /* ES10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = ES10.ccbi; path = Resources/ES10.ccbi; sourceTree = "<group>"; };
+		53EE3CC5183D21A4009F6B4E /* TS1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS1.ccbi; path = Resources/TS1.ccbi; sourceTree = "<group>"; };
+		53EE3CC6183D21A4009F6B4E /* TS2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS2.ccbi; path = Resources/TS2.ccbi; sourceTree = "<group>"; };
+		53EE3CC7183D21A4009F6B4E /* TS3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS3.ccbi; path = Resources/TS3.ccbi; sourceTree = "<group>"; };
+		53EE3CC8183D21A4009F6B4E /* TS4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS4.ccbi; path = Resources/TS4.ccbi; sourceTree = "<group>"; };
+		53EE3CC9183D21A4009F6B4E /* TS5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS5.ccbi; path = Resources/TS5.ccbi; sourceTree = "<group>"; };
+		53EE3CCA183D21A4009F6B4E /* TS6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS6.ccbi; path = Resources/TS6.ccbi; sourceTree = "<group>"; };
+		53EE3CCB183D21A4009F6B4E /* TS7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS7.ccbi; path = Resources/TS7.ccbi; sourceTree = "<group>"; };
+		53EE3CCC183D21A4009F6B4E /* TS8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS8.ccbi; path = Resources/TS8.ccbi; sourceTree = "<group>"; };
+		53EE3CCD183D21A4009F6B4E /* TS9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS9.ccbi; path = Resources/TS9.ccbi; sourceTree = "<group>"; };
+		53EE3CCE183D21A4009F6B4E /* TS10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TS10.ccbi; path = Resources/TS10.ccbi; sourceTree = "<group>"; };
+		53EE3CD9183D21B8009F6B4E /* WS1.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS1.ccbi; path = Resources/WS1.ccbi; sourceTree = "<group>"; };
+		53EE3CDA183D21B8009F6B4E /* WS2.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS2.ccbi; path = Resources/WS2.ccbi; sourceTree = "<group>"; };
+		53EE3CDB183D21B8009F6B4E /* WS3.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS3.ccbi; path = Resources/WS3.ccbi; sourceTree = "<group>"; };
+		53EE3CDC183D21B8009F6B4E /* WS4.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS4.ccbi; path = Resources/WS4.ccbi; sourceTree = "<group>"; };
+		53EE3CDD183D21B8009F6B4E /* WS5.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS5.ccbi; path = Resources/WS5.ccbi; sourceTree = "<group>"; };
+		53EE3CDE183D21B8009F6B4E /* WS6.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS6.ccbi; path = Resources/WS6.ccbi; sourceTree = "<group>"; };
+		53EE3CDF183D21B8009F6B4E /* WS7.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS7.ccbi; path = Resources/WS7.ccbi; sourceTree = "<group>"; };
+		53EE3CE0183D21B8009F6B4E /* WS8.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS8.ccbi; path = Resources/WS8.ccbi; sourceTree = "<group>"; };
+		53EE3CE1183D21B8009F6B4E /* WS9.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS9.ccbi; path = Resources/WS9.ccbi; sourceTree = "<group>"; };
+		53EE3CE2183D21B8009F6B4E /* WS10.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WS10.ccbi; path = Resources/WS10.ccbi; sourceTree = "<group>"; };
+		53EE3CED183D223A009F6B4E /* CBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = CBackground.ccbi; path = Resources/CBackground.ccbi; sourceTree = "<group>"; };
+		53EE3CEE183D223A009F6B4E /* EBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = EBackground.ccbi; path = Resources/EBackground.ccbi; sourceTree = "<group>"; };
+		53EE3CEF183D223A009F6B4E /* RBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = RBackground.ccbi; path = Resources/RBackground.ccbi; sourceTree = "<group>"; };
+		53EE3CF0183D223A009F6B4E /* TBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = TBackground.ccbi; path = Resources/TBackground.ccbi; sourceTree = "<group>"; };
+		53EE3CF1183D223A009F6B4E /* WBackground.ccbi */ = {isa = PBXFileReference; lastKnownFileType = file; name = WBackground.ccbi; path = Resources/WBackground.ccbi; sourceTree = "<group>"; };
 		53FE4F96179D945600962274 /* MainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenuScene.cpp; path = Classes/MainMenuScene.cpp; sourceTree = "<group>"; };
 		53FE4F97179D945600962274 /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuScene.h; path = Classes/MainMenuScene.h; sourceTree = "<group>"; };
 		53FE4FA8179D946300962274 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObject.cpp; path = Classes/GameObject.cpp; sourceTree = "<group>"; };
@@ -2873,6 +3282,10 @@
 		533185A217959F3300F46CF6 /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				53EE3B841838BC3D009F6B4E /* evil */,
+				53EE3B831838BC2D009F6B4E /* tale */,
+				53EE3B821838BC26009F6B4E /* west */,
+				53EE3B811838BC1C009F6B4E /* cn */,
 				534B441B17B63F18001DF7B0 /* miao */,
 				534B441A17B63EF8001DF7B0 /* ri */,
 			);
@@ -2890,8 +3303,6 @@
 				535E8D6F17BBD2B000C2A145 /* Soldier.h */,
 				535E8D7117BBD2C700C2A145 /* Enemy.cpp */,
 				535E8D7217BBD2C700C2A145 /* Enemy.h */,
-				538D27AA181426F2004B51F4 /* ApiParser.cpp */,
-				538D27AB181426F2004B51F4 /* ApiParser.h */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -2899,14 +3310,16 @@
 		533185A717959F9E00F46CF6 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4512E0BE181E9EC000C69749 /* DrawLineLayer.cpp */,
-				4512E0BF181E9EC000C69749 /* DrawLineLayer.h */,
-				4591FD92181BA23F0063C3F8 /* PrintingLabel.cpp */,
-				4591FD93181BA23F0063C3F8 /* PrintingLabel.h */,
-				4591FD8F181BA22E0063C3F8 /* Toolkit.cpp */,
-				4591FD90181BA22E0063C3F8 /* Toolkit.h */,
-				4591FD8C181BA20E0063C3F8 /* StaticData.cpp */,
-				4591FD8D181BA20E0063C3F8 /* StaticData.h */,
+				535CB0A71847B30B00E7A6E8 /* LevelData.cpp */,
+				535CB0A81847B30B00E7A6E8 /* LevelData.h */,
+				5383C31818216C9000333D2C /* PrintingLabel.cpp */,
+				5383C31918216C9000333D2C /* PrintingLabel.h */,
+				5383C31A18216C9000333D2C /* StaticData.cpp */,
+				5383C31B18216C9000333D2C /* StaticData.h */,
+				5383C31C18216C9000333D2C /* Toolkit.cpp */,
+				5383C31D18216C9000333D2C /* Toolkit.h */,
+				5383C3091821675F00333D2C /* DrawLineLayer.cpp */,
+				5383C30A1821675F00333D2C /* DrawLineLayer.h */,
 				53319093181BA9AE005F0F4B /* OpenUDID.h */,
 				53319094181BA9AE005F0F4B /* OpenUDID.m */,
 			);
@@ -2917,6 +3330,7 @@
 			isa = PBXGroup;
 			children = (
 				533190A0181BAAEF005F0F4B /* static_data.plist */,
+				5328C32D1844E85400472D1B /* level_data.plist */,
 			);
 			name = static;
 			sourceTree = "<group>";
@@ -2924,6 +3338,60 @@
 		5335BBFE17ABF6C400B02A13 /* ccb */ = {
 			isa = PBXGroup;
 			children = (
+				5328C31B1843C07D00472D1B /* CBoss.ccbi */,
+				5328C31C1843C07D00472D1B /* CBoss2.ccbi */,
+				5328C31D1843C07D00472D1B /* EBoss.ccbi */,
+				5328C31E1843C07D00472D1B /* EBoss2.ccbi */,
+				5328C31F1843C07D00472D1B /* RBoss2.ccbi */,
+				5328C3201843C07D00472D1B /* TBoss.ccbi */,
+				5328C3211843C07D00472D1B /* TBoss2.ccbi */,
+				5328C3221843C07D00472D1B /* WBoss.ccbi */,
+				5328C3231843C07D00472D1B /* WBoss2.ccbi */,
+				53EE3CED183D223A009F6B4E /* CBackground.ccbi */,
+				53EE3CEE183D223A009F6B4E /* EBackground.ccbi */,
+				53EE3CEF183D223A009F6B4E /* RBackground.ccbi */,
+				53EE3CF0183D223A009F6B4E /* TBackground.ccbi */,
+				53EE3CF1183D223A009F6B4E /* WBackground.ccbi */,
+				53EE3CC5183D21A4009F6B4E /* TS1.ccbi */,
+				53EE3CD9183D21B8009F6B4E /* WS1.ccbi */,
+				53EE3CDA183D21B8009F6B4E /* WS2.ccbi */,
+				53EE3CDB183D21B8009F6B4E /* WS3.ccbi */,
+				53EE3CDC183D21B8009F6B4E /* WS4.ccbi */,
+				53EE3CDD183D21B8009F6B4E /* WS5.ccbi */,
+				53EE3CDE183D21B8009F6B4E /* WS6.ccbi */,
+				53EE3CDF183D21B8009F6B4E /* WS7.ccbi */,
+				53EE3CE0183D21B8009F6B4E /* WS8.ccbi */,
+				53EE3CE1183D21B8009F6B4E /* WS9.ccbi */,
+				53EE3CE2183D21B8009F6B4E /* WS10.ccbi */,
+				53EE3CC6183D21A4009F6B4E /* TS2.ccbi */,
+				53EE3CC7183D21A4009F6B4E /* TS3.ccbi */,
+				53EE3CC8183D21A4009F6B4E /* TS4.ccbi */,
+				53EE3CC9183D21A4009F6B4E /* TS5.ccbi */,
+				53EE3CCA183D21A4009F6B4E /* TS6.ccbi */,
+				53EE3CCB183D21A4009F6B4E /* TS7.ccbi */,
+				53EE3CCC183D21A4009F6B4E /* TS8.ccbi */,
+				53EE3CCD183D21A4009F6B4E /* TS9.ccbi */,
+				53EE3CCE183D21A4009F6B4E /* TS10.ccbi */,
+				53EE3CB1183D2187009F6B4E /* ES1.ccbi */,
+				53EE3CB2183D2187009F6B4E /* ES2.ccbi */,
+				53EE3CB3183D2187009F6B4E /* ES3.ccbi */,
+				53EE3CB4183D2187009F6B4E /* ES4.ccbi */,
+				53EE3CB5183D2187009F6B4E /* ES5.ccbi */,
+				53EE3CB6183D2187009F6B4E /* ES6.ccbi */,
+				53EE3CB7183D2187009F6B4E /* ES7.ccbi */,
+				53EE3CB8183D2187009F6B4E /* ES8.ccbi */,
+				53EE3CB9183D2187009F6B4E /* ES9.ccbi */,
+				53EE3CBA183D2187009F6B4E /* ES10.ccbi */,
+				53EE3C9D183D216E009F6B4E /* CS1.ccbi */,
+				53EE3C9E183D216E009F6B4E /* CS2.ccbi */,
+				53EE3C9F183D216E009F6B4E /* CS3.ccbi */,
+				53EE3CA0183D216E009F6B4E /* CS4.ccbi */,
+				53EE3CA1183D216E009F6B4E /* CS5.ccbi */,
+				53EE3CA2183D216E009F6B4E /* CS6.ccbi */,
+				53EE3CA3183D216E009F6B4E /* CS7.ccbi */,
+				53EE3CA4183D216E009F6B4E /* CS8.ccbi */,
+				53EE3CA5183D216E009F6B4E /* CS9.ccbi */,
+				53EE3CA6183D216E009F6B4E /* CS10.ccbi */,
 				53C2554D17F1E07B000AE6E8 /* MouseBackground.ccbi */,
 				53C2554E17F1E07B000AE6E8 /* MouseLevel.ccbi */,
 				53DECC9417E4DD7B00A1C1BC /* Others.ccbi */,
@@ -3019,6 +3487,10 @@
 		534B441A17B63EF8001DF7B0 /* ri */ = {
 			isa = PBXGroup;
 			children = (
+				5328C2FD1843BF6B00472D1B /* RBoss2.cpp */,
+				5328C2FE1843BF6B00472D1B /* RBoss2.h */,
+				5328C2FF1843BF6B00472D1B /* RBoss2Loader.cpp */,
+				5328C3001843BF6B00472D1B /* RBoss2Loader.h */,
 				534B440017B63EF2001DF7B0 /* RBossLoader.h */,
 				534B440117B63EF2001DF7B0 /* RBossLoader.cpp */,
 				534B440217B63EF2001DF7B0 /* RBoss.h */,
@@ -3168,6 +3640,14 @@
 		53EC1FA517A2EA2D00156252 /* pvr */ = {
 			isa = PBXGroup;
 			children = (
+				53EE3C9B183929E7009F6B4E /* cn.pvr.ccz */,
+				53EE3C8D1839292C009F6B4E /* cn.plist */,
+				53EE3C8E1839292C009F6B4E /* evil.plist */,
+				53EE3C8F1839292C009F6B4E /* evil.pvr.ccz */,
+				53EE3C901839292C009F6B4E /* tale.plist */,
+				53EE3C911839292C009F6B4E /* tale.pvr.ccz */,
+				53EE3C921839292C009F6B4E /* west.plist */,
+				53EE3C931839292C009F6B4E /* west.pvr.ccz */,
 				53DECC1917E3929900A1C1BC /* ui.plist */,
 				53DECC1A17E3929A00A1C1BC /* ui.pvr.ccz */,
 				5383A8D617D1155D00EE4A1A /* storyboard.pvr.ccz */,
@@ -3178,6 +3658,226 @@
 				5335BBE417A6C01B00B02A13 /* battle_ui.pvr.ccz */,
 			);
 			name = pvr;
+			sourceTree = "<group>";
+		};
+		53EE3B811838BC1C009F6B4E /* cn */ = {
+			isa = PBXGroup;
+			children = (
+				5328C3031843BF8200472D1B /* CBoss2.cpp */,
+				5328C3041843BF8200472D1B /* CBoss2.h */,
+				5328C3051843BF8200472D1B /* CBoss2Loader.cpp */,
+				5328C3061843BF8200472D1B /* CBoss2Loader.h */,
+				53EE3C4B1838BE33009F6B4E /* CBoss.cpp */,
+				53EE3C4C1838BE33009F6B4E /* CBoss.h */,
+				53EE3C4D1838BE33009F6B4E /* CBossLoader.cpp */,
+				53EE3C4E1838BE33009F6B4E /* CBossLoader.h */,
+				53EE3C4F1838BE33009F6B4E /* CS1.cpp */,
+				53EE3C501838BE33009F6B4E /* CS1.h */,
+				53EE3C511838BE33009F6B4E /* CS1Loader.cpp */,
+				53EE3C521838BE33009F6B4E /* CS1Loader.h */,
+				53EE3C531838BE33009F6B4E /* CS2.cpp */,
+				53EE3C541838BE33009F6B4E /* CS2.h */,
+				53EE3C551838BE33009F6B4E /* CS2Loader.cpp */,
+				53EE3C561838BE33009F6B4E /* CS2Loader.h */,
+				53EE3C571838BE33009F6B4E /* CS3.cpp */,
+				53EE3C581838BE33009F6B4E /* CS3.h */,
+				53EE3C591838BE33009F6B4E /* CS3Loader.cpp */,
+				53EE3C5A1838BE33009F6B4E /* CS3Loader.h */,
+				53EE3C5B1838BE33009F6B4E /* CS4.cpp */,
+				53EE3C5C1838BE33009F6B4E /* CS4.h */,
+				53EE3C5D1838BE33009F6B4E /* CS4Loader.cpp */,
+				53EE3C5E1838BE33009F6B4E /* CS4Loader.h */,
+				53EE3C5F1838BE33009F6B4E /* CS5.cpp */,
+				53EE3C601838BE33009F6B4E /* CS5.h */,
+				53EE3C611838BE33009F6B4E /* CS5Loader.cpp */,
+				53EE3C621838BE33009F6B4E /* CS5Loader.h */,
+				53EE3C631838BE33009F6B4E /* CS6.cpp */,
+				53EE3C641838BE33009F6B4E /* CS6.h */,
+				53EE3C651838BE33009F6B4E /* CS6Loader.cpp */,
+				53EE3C661838BE33009F6B4E /* CS6Loader.h */,
+				53EE3C671838BE33009F6B4E /* CS7.cpp */,
+				53EE3C681838BE33009F6B4E /* CS7.h */,
+				53EE3C691838BE33009F6B4E /* CS7Loader.cpp */,
+				53EE3C6A1838BE33009F6B4E /* CS7Loader.h */,
+				53EE3C6B1838BE33009F6B4E /* CS8.cpp */,
+				53EE3C6C1838BE33009F6B4E /* CS8.h */,
+				53EE3C6D1838BE33009F6B4E /* CS8Loader.cpp */,
+				53EE3C6E1838BE33009F6B4E /* CS8Loader.h */,
+				53EE3C6F1838BE33009F6B4E /* CS9.cpp */,
+				53EE3C701838BE33009F6B4E /* CS9.h */,
+				53EE3C711838BE33009F6B4E /* CS9Loader.cpp */,
+				53EE3C721838BE33009F6B4E /* CS9Loader.h */,
+				53EE3C731838BE33009F6B4E /* CS10.cpp */,
+				53EE3C741838BE33009F6B4E /* CS10.h */,
+				53EE3C751838BE33009F6B4E /* CS10Loader.cpp */,
+				53EE3C761838BE33009F6B4E /* CS10Loader.h */,
+			);
+			name = cn;
+			sourceTree = "<group>";
+		};
+		53EE3B821838BC26009F6B4E /* west */ = {
+			isa = PBXGroup;
+			children = (
+				5328C3091843BF9F00472D1B /* WBoss2.cpp */,
+				5328C30A1843BF9F00472D1B /* WBoss2.h */,
+				5328C30B1843BF9F00472D1B /* WBoss2Loader.cpp */,
+				5328C30C1843BF9F00472D1B /* WBoss2Loader.h */,
+				53EE3C091838BE01009F6B4E /* WBoss.cpp */,
+				53EE3C0A1838BE01009F6B4E /* WBoss.h */,
+				53EE3C0B1838BE01009F6B4E /* WBossLoader.cpp */,
+				53EE3C0C1838BE01009F6B4E /* WBossLoader.h */,
+				53EE3C0D1838BE01009F6B4E /* WS1.cpp */,
+				53EE3C0E1838BE01009F6B4E /* WS1.h */,
+				53EE3C0F1838BE01009F6B4E /* WS1Loader.cpp */,
+				53EE3C101838BE01009F6B4E /* WS1Loader.h */,
+				53EE3C111838BE01009F6B4E /* WS2.cpp */,
+				53EE3C121838BE01009F6B4E /* WS2.h */,
+				53EE3C131838BE01009F6B4E /* WS2Loader.cpp */,
+				53EE3C141838BE01009F6B4E /* WS2Loader.h */,
+				53EE3C151838BE01009F6B4E /* WS3.cpp */,
+				53EE3C161838BE01009F6B4E /* WS3.h */,
+				53EE3C171838BE01009F6B4E /* WS3Loader.cpp */,
+				53EE3C181838BE01009F6B4E /* WS3Loader.h */,
+				53EE3C191838BE01009F6B4E /* WS4.cpp */,
+				53EE3C1A1838BE01009F6B4E /* WS4.h */,
+				53EE3C1B1838BE01009F6B4E /* WS4Loader.cpp */,
+				53EE3C1C1838BE01009F6B4E /* WS4Loader.h */,
+				53EE3C1D1838BE01009F6B4E /* WS5.cpp */,
+				53EE3C1E1838BE01009F6B4E /* WS5.h */,
+				53EE3C1F1838BE01009F6B4E /* WS5Loader.cpp */,
+				53EE3C201838BE01009F6B4E /* WS5Loader.h */,
+				53EE3C211838BE01009F6B4E /* WS6.cpp */,
+				53EE3C221838BE01009F6B4E /* WS6.h */,
+				53EE3C231838BE01009F6B4E /* WS6Loader.cpp */,
+				53EE3C241838BE01009F6B4E /* WS6Loader.h */,
+				53EE3C251838BE01009F6B4E /* WS7.cpp */,
+				53EE3C261838BE01009F6B4E /* WS7.h */,
+				53EE3C271838BE01009F6B4E /* WS7Loader.cpp */,
+				53EE3C281838BE01009F6B4E /* WS7Loader.h */,
+				53EE3C291838BE01009F6B4E /* WS8.cpp */,
+				53EE3C2A1838BE01009F6B4E /* WS8.h */,
+				53EE3C2B1838BE01009F6B4E /* WS8Loader.cpp */,
+				53EE3C2C1838BE01009F6B4E /* WS8Loader.h */,
+				53EE3C2D1838BE01009F6B4E /* WS9.cpp */,
+				53EE3C2E1838BE01009F6B4E /* WS9.h */,
+				53EE3C2F1838BE01009F6B4E /* WS9Loader.cpp */,
+				53EE3C301838BE01009F6B4E /* WS9Loader.h */,
+				53EE3C311838BE01009F6B4E /* WS10.cpp */,
+				53EE3C321838BE01009F6B4E /* WS10.h */,
+				53EE3C331838BE01009F6B4E /* WS10Loader.cpp */,
+				53EE3C341838BE01009F6B4E /* WS10Loader.h */,
+			);
+			name = west;
+			sourceTree = "<group>";
+		};
+		53EE3B831838BC2D009F6B4E /* tale */ = {
+			isa = PBXGroup;
+			children = (
+				5328C30F1843BFBE00472D1B /* TBoss2.cpp */,
+				5328C3101843BFBE00472D1B /* TBoss2.h */,
+				5328C3111843BFBE00472D1B /* TBoss2Loader.cpp */,
+				5328C3121843BFBE00472D1B /* TBoss2Loader.h */,
+				53EE3C031838BDDE009F6B4E /* TBoss.cpp */,
+				53EE3C041838BDDE009F6B4E /* TBoss.h */,
+				53EE3C051838BDDE009F6B4E /* TBossLoader.cpp */,
+				53EE3C061838BDDE009F6B4E /* TBossLoader.h */,
+				53EE3BC71838BDB0009F6B4E /* TS1.cpp */,
+				53EE3BC81838BDB0009F6B4E /* TS1.h */,
+				53EE3BC91838BDB0009F6B4E /* TS1Loader.cpp */,
+				53EE3BCA1838BDB0009F6B4E /* TS1Loader.h */,
+				53EE3BCB1838BDB0009F6B4E /* TS2.cpp */,
+				53EE3BCC1838BDB0009F6B4E /* TS2.h */,
+				53EE3BCD1838BDB0009F6B4E /* TS2Loader.cpp */,
+				53EE3BCE1838BDB0009F6B4E /* TS2Loader.h */,
+				53EE3BCF1838BDB0009F6B4E /* TS3.cpp */,
+				53EE3BD01838BDB0009F6B4E /* TS3.h */,
+				53EE3BD11838BDB0009F6B4E /* TS3Loader.cpp */,
+				53EE3BD21838BDB0009F6B4E /* TS3Loader.h */,
+				53EE3BD31838BDB0009F6B4E /* TS4.cpp */,
+				53EE3BD41838BDB0009F6B4E /* TS4.h */,
+				53EE3BD51838BDB0009F6B4E /* TS4Loader.cpp */,
+				53EE3BD61838BDB0009F6B4E /* TS4Loader.h */,
+				53EE3BD71838BDB0009F6B4E /* TS5.cpp */,
+				53EE3BD81838BDB0009F6B4E /* TS5.h */,
+				53EE3BD91838BDB0009F6B4E /* TS5Loader.cpp */,
+				53EE3BDA1838BDB0009F6B4E /* TS5Loader.h */,
+				53EE3BDB1838BDB0009F6B4E /* TS6.cpp */,
+				53EE3BDC1838BDB0009F6B4E /* TS6.h */,
+				53EE3BDD1838BDB0009F6B4E /* TS6Loader.cpp */,
+				53EE3BDE1838BDB0009F6B4E /* TS6Loader.h */,
+				53EE3BDF1838BDB0009F6B4E /* TS7.cpp */,
+				53EE3BE01838BDB0009F6B4E /* TS7.h */,
+				53EE3BE11838BDB0009F6B4E /* TS7Loader.cpp */,
+				53EE3BE21838BDB0009F6B4E /* TS7Loader.h */,
+				53EE3BE31838BDB0009F6B4E /* TS8.cpp */,
+				53EE3BE41838BDB0009F6B4E /* TS8.h */,
+				53EE3BE51838BDB0009F6B4E /* TS8Loader.cpp */,
+				53EE3BE61838BDB0009F6B4E /* TS8Loader.h */,
+				53EE3BE71838BDB0009F6B4E /* TS9.cpp */,
+				53EE3BE81838BDB0009F6B4E /* TS9.h */,
+				53EE3BE91838BDB0009F6B4E /* TS9Loader.cpp */,
+				53EE3BEA1838BDB0009F6B4E /* TS9Loader.h */,
+				53EE3BEB1838BDB0009F6B4E /* TS10.cpp */,
+				53EE3BEC1838BDB0009F6B4E /* TS10.h */,
+				53EE3BED1838BDB0009F6B4E /* TS10Loader.cpp */,
+				53EE3BEE1838BDB0009F6B4E /* TS10Loader.h */,
+			);
+			name = tale;
+			sourceTree = "<group>";
+		};
+		53EE3B841838BC3D009F6B4E /* evil */ = {
+			isa = PBXGroup;
+			children = (
+				5328C3151843BFE400472D1B /* EBoss2.cpp */,
+				5328C3161843BFE400472D1B /* EBoss2.h */,
+				5328C3171843BFE400472D1B /* EBoss2Loader.cpp */,
+				5328C3181843BFE400472D1B /* EBoss2Loader.h */,
+				53EE3B8B1838BD1D009F6B4E /* ES1.cpp */,
+				53EE3B8C1838BD1D009F6B4E /* ES1.h */,
+				53EE3B8D1838BD1D009F6B4E /* ES1Loader.cpp */,
+				53EE3B8E1838BD1D009F6B4E /* ES1Loader.h */,
+				53EE3B8F1838BD1D009F6B4E /* ES2.cpp */,
+				53EE3B901838BD1D009F6B4E /* ES2.h */,
+				53EE3B911838BD1D009F6B4E /* ES2Loader.cpp */,
+				53EE3B921838BD1D009F6B4E /* ES2Loader.h */,
+				53EE3B931838BD1D009F6B4E /* ES3.cpp */,
+				53EE3B941838BD1D009F6B4E /* ES3.h */,
+				53EE3B951838BD1D009F6B4E /* ES3Loader.cpp */,
+				53EE3B961838BD1D009F6B4E /* ES3Loader.h */,
+				53EE3B971838BD1D009F6B4E /* ES4.cpp */,
+				53EE3B981838BD1D009F6B4E /* ES4.h */,
+				53EE3B991838BD1D009F6B4E /* ES4Loader.cpp */,
+				53EE3B9A1838BD1D009F6B4E /* ES4Loader.h */,
+				53EE3B9B1838BD1D009F6B4E /* ES5.cpp */,
+				53EE3B9C1838BD1D009F6B4E /* ES5.h */,
+				53EE3B9D1838BD1D009F6B4E /* ES5Loader.cpp */,
+				53EE3B9E1838BD1D009F6B4E /* ES5Loader.h */,
+				53EE3B9F1838BD1D009F6B4E /* ES6.cpp */,
+				53EE3BA01838BD1D009F6B4E /* ES6.h */,
+				53EE3BA11838BD1D009F6B4E /* ES6Loader.cpp */,
+				53EE3BA21838BD1D009F6B4E /* ES6Loader.h */,
+				53EE3BA31838BD1D009F6B4E /* ES7.cpp */,
+				53EE3BA41838BD1D009F6B4E /* ES7.h */,
+				53EE3BA51838BD1D009F6B4E /* ES7Loader.cpp */,
+				53EE3BA61838BD1D009F6B4E /* ES7Loader.h */,
+				53EE3BA71838BD1D009F6B4E /* ES8.cpp */,
+				53EE3BA81838BD1E009F6B4E /* ES8.h */,
+				53EE3BA91838BD1E009F6B4E /* ES8Loader.cpp */,
+				53EE3BAA1838BD1E009F6B4E /* ES8Loader.h */,
+				53EE3BAB1838BD1E009F6B4E /* ES9.cpp */,
+				53EE3BAC1838BD1E009F6B4E /* ES9.h */,
+				53EE3BAD1838BD1E009F6B4E /* ES9Loader.cpp */,
+				53EE3BAE1838BD1E009F6B4E /* ES9Loader.h */,
+				53EE3BAF1838BD1E009F6B4E /* ES10.cpp */,
+				53EE3BB01838BD1E009F6B4E /* ES10.h */,
+				53EE3BB11838BD1E009F6B4E /* ES10Loader.cpp */,
+				53EE3BB21838BD1E009F6B4E /* ES10Loader.h */,
+				53EE3B851838BCEE009F6B4E /* EBoss.cpp */,
+				53EE3B861838BCEE009F6B4E /* EBoss.h */,
+				53EE3B871838BCEE009F6B4E /* EBossLoader.cpp */,
+				53EE3B881838BCEE009F6B4E /* EBossLoader.h */,
+			);
+			name = evil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3207,6 +3907,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					5321F4B21794599E00BC1823 = {
+						DevelopmentTeam = 99TSC297UM;
+					};
+				};
 			};
 			buildConfigurationList = 5321F4AE1794599E00BC1823 /* Build configuration list for PBXProject "miwu" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3237,6 +3942,7 @@
 				5321F4D11794599E00BC1823 /* Icon-72.png in Resources */,
 				5321F4D31794599E00BC1823 /* Icon-Small-50.png in Resources */,
 				5321F4D51794599E00BC1823 /* Icon-Small.png in Resources */,
+				53EE3CAC183D216E009F6B4E /* CS6.ccbi in Resources */,
 				5321F4D71794599E00BC1823 /* Icon-Small@2x.png in Resources */,
 				5321F4D91794599E00BC1823 /* Icon.png in Resources */,
 				5321F4DB1794599E00BC1823 /* Icon@2x.png in Resources */,
@@ -3244,22 +3950,37 @@
 				5321F57C179459A000BC1823 /* ChangeLog in Resources */,
 				5321F6F0179459A400BC1823 /* project.pbxproj in Resources */,
 				5335BBE517A6C01B00B02A13 /* ri.plist in Resources */,
+				53EE3CA8183D216E009F6B4E /* CS2.ccbi in Resources */,
 				5335BBE617A6C01B00B02A13 /* ri.pvr.ccz in Resources */,
 				5335BBE717A6C01B00B02A13 /* battle_ui.plist in Resources */,
 				5335BBE817A6C01B00B02A13 /* battle_ui.pvr.ccz in Resources */,
+				53EE3CAB183D216E009F6B4E /* CS5.ccbi in Resources */,
 				5335BC0217ABF70300B02A13 /* Menu.ccbi in Resources */,
 				5335BC0317ABF70300B02A13 /* GameScene.ccbi in Resources */,
+				53EE3CEB183D21B8009F6B4E /* WS9.ccbi in Resources */,
+				53EE3CE8183D21B8009F6B4E /* WS6.ccbi in Resources */,
+				5328C3271843C07D00472D1B /* EBoss2.ccbi in Resources */,
 				5335BC0417ABF70300B02A13 /* Background.ccbi in Resources */,
 				53B57B3617B3FEE20068BD92 /* S9.ccbi in Resources */,
 				53B57B3717B3FEE20068BD92 /* S8.ccbi in Resources */,
+				53EE3CBC183D2187009F6B4E /* ES2.ccbi in Resources */,
+				53EE3CE3183D21B8009F6B4E /* WS1.ccbi in Resources */,
+				53EE3C981839292C009F6B4E /* tale.pvr.ccz in Resources */,
 				53B57B3817B3FEE20068BD92 /* S7.ccbi in Resources */,
 				53B57B3917B3FEE20068BD92 /* S6.ccbi in Resources */,
 				53B57B3A17B3FEE20068BD92 /* S5.ccbi in Resources */,
+				53EE3CC1183D2187009F6B4E /* ES7.ccbi in Resources */,
 				53B57B3B17B3FEE20068BD92 /* S4.ccbi in Resources */,
+				5328C3241843C07D00472D1B /* CBoss.ccbi in Resources */,
 				53B57B3C17B3FEE20068BD92 /* S3.ccbi in Resources */,
 				53B57B3D17B3FEE20068BD92 /* S2.ccbi in Resources */,
+				53EE3CC3183D2187009F6B4E /* ES9.ccbi in Resources */,
+				53EE3CE6183D21B8009F6B4E /* WS4.ccbi in Resources */,
 				53B57B3E17B3FEE20068BD92 /* S1.ccbi in Resources */,
 				53B57B4117B3FEF00068BD92 /* MouseGameScene.ccbi in Resources */,
+				53EE3CAF183D216E009F6B4E /* CS9.ccbi in Resources */,
+				53EE3CF2183D223A009F6B4E /* CBackground.ccbi in Resources */,
+				53EE3C951839292C009F6B4E /* evil.plist in Resources */,
 				53B57B4217B3FEF00068BD92 /* Level.ccbi in Resources */,
 				534B43A617B615D8001DF7B0 /* s9_a2.wav in Resources */,
 				534B43A717B615D8001DF7B0 /* s9_a1.wav in Resources */,
@@ -3268,12 +3989,17 @@
 				534B43AA17B615D8001DF7B0 /* s8_a1.wav in Resources */,
 				534B43AB17B615D8001DF7B0 /* s7_a2_2.wav in Resources */,
 				534B43AC17B615D8001DF7B0 /* s7_a2_1.wav in Resources */,
+				53EE3CD6183D21A4009F6B4E /* TS8.ccbi in Resources */,
 				534B43AD17B615D8001DF7B0 /* s7_a1.wav in Resources */,
+				53EE3CD8183D21A4009F6B4E /* TS10.ccbi in Resources */,
 				534B43AE17B615D8001DF7B0 /* s6_a2.wav in Resources */,
+				53EE3CE5183D21B8009F6B4E /* WS3.ccbi in Resources */,
 				534B43AF17B615D8001DF7B0 /* s6_a1.wav in Resources */,
+				53EE3CBE183D2187009F6B4E /* ES4.ccbi in Resources */,
 				534B43B017B615D8001DF7B0 /* s5_a2.WAV in Resources */,
 				534B43B117B615D8001DF7B0 /* s5_a1.wav in Resources */,
 				534B43B217B615D8001DF7B0 /* s4_a2.WAV in Resources */,
+				53EE3CBF183D2187009F6B4E /* ES5.ccbi in Resources */,
 				534B43B317B615D8001DF7B0 /* s4_a1.wav in Resources */,
 				534B43B417B615D8001DF7B0 /* s3_a2.wav in Resources */,
 				534B43B517B615D8001DF7B0 /* s3_a1.wav in Resources */,
@@ -3282,6 +4008,8 @@
 				534B43C117B61F83001DF7B0 /* Miao.ccbi in Resources */,
 				534B43CD17B63BC8001DF7B0 /* RS10.ccbi in Resources */,
 				534B43CE17B63BC8001DF7B0 /* RS9.ccbi in Resources */,
+				53EE3CAA183D216E009F6B4E /* CS4.ccbi in Resources */,
+				5328C32C1843C07D00472D1B /* WBoss2.ccbi in Resources */,
 				534B43CF17B63BC8001DF7B0 /* RS8.ccbi in Resources */,
 				534B43D017B63BC8001DF7B0 /* RS7.ccbi in Resources */,
 				534B43D117B63BC8001DF7B0 /* RS6.ccbi in Resources */,
@@ -3289,51 +4017,72 @@
 				534B43D317B63BC8001DF7B0 /* RS4.ccbi in Resources */,
 				534B43D417B63BC8001DF7B0 /* RS3.ccbi in Resources */,
 				534B43D517B63BC8001DF7B0 /* RS2.ccbi in Resources */,
+				5328C3251843C07D00472D1B /* CBoss2.ccbi in Resources */,
 				534B43D617B63BC8001DF7B0 /* RS1.ccbi in Resources */,
 				534B43D717B63BC8001DF7B0 /* RBoss.ccbi in Resources */,
 				5383A8B917CE576C00EE4A1A /* background.mp3 in Resources */,
 				5383A8C417D10C3300EE4A1A /* jap_s10.wav in Resources */,
+				53EE3CE4183D21B8009F6B4E /* WS2.ccbi in Resources */,
+				53EE3C941839292C009F6B4E /* cn.plist in Resources */,
 				5383A8C517D10C3300EE4A1A /* jap_s9 .wav in Resources */,
 				5383A8C617D10C3300EE4A1A /* jap_s8.wav in Resources */,
+				53EE3CC0183D2187009F6B4E /* ES6.ccbi in Resources */,
 				5383A8C717D10C3300EE4A1A /* jap_s7.wav in Resources */,
 				5383A8C817D10C3400EE4A1A /* jap_s6.wav in Resources */,
 				5383A8C917D10C3400EE4A1A /* jap_s5.wav in Resources */,
 				5383A8CA17D10C3400EE4A1A /* jap_s4.wav in Resources */,
+				53EE3CEC183D21B8009F6B4E /* WS10.ccbi in Resources */,
 				5383A8CB17D10C3400EE4A1A /* jap_s3.wav in Resources */,
 				5383A8CC17D10C3400EE4A1A /* jap_s2.wav in Resources */,
 				5383A8CD17D10C3400EE4A1A /* jap_s1.wav in Resources */,
 				5383A8D217D10C4200EE4A1A /* boss_2(dead).wav in Resources */,
+				53EE3CBD183D2187009F6B4E /* ES3.ccbi in Resources */,
 				5383A8D317D10C4200EE4A1A /* boss_2.wav in Resources */,
+				53EE3CE9183D21B8009F6B4E /* WS7.ccbi in Resources */,
 				5383A8D417D10C4200EE4A1A /* boss_1(dead).wav in Resources */,
+				53EE3C971839292C009F6B4E /* tale.plist in Resources */,
+				53EE3CF6183D223A009F6B4E /* WBackground.ccbi in Resources */,
 				5383A8D517D10C4200EE4A1A /* boss_1.wav in Resources */,
 				5383A8D817D1155D00EE4A1A /* storyboard.pvr.ccz in Resources */,
 				5383A8D917D1155D00EE4A1A /* storyboard.plist in Resources */,
 				5383A8DE17D3973B00EE4A1A /* main.mp3 in Resources */,
 				53D2036417D8C4B900BB9875 /* Default-568h@2x.png in Resources */,
 				53DECBBD17E0AFDB00A1C1BC /* Status.ccbi in Resources */,
+				53EE3CD5183D21A4009F6B4E /* TS7.ccbi in Resources */,
+				53EE3C9A1839292C009F6B4E /* west.pvr.ccz in Resources */,
 				53DECBC517E0BD1D00A1C1BC /* MouseMenu.ccbi in Resources */,
 				53DECC1517E35E9B00A1C1BC /* MainMenuScene.ccbi in Resources */,
 				53DECC1B17E3929A00A1C1BC /* ui.plist in Resources */,
 				53DECC1C17E3929A00A1C1BC /* ui.pvr.ccz in Resources */,
 				53DECC1E17E4390500A1C1BC /* home.png in Resources */,
+				53EE3CCF183D21A4009F6B4E /* TS1.ccbi in Resources */,
 				53DECC3F17E464DD00A1C1BC /* load.png in Resources */,
 				53DECC4017E464DD00A1C1BC /* others.png in Resources */,
 				53DECC4117E464DD00A1C1BC /* reward.png in Resources */,
 				53DECC4217E464DD00A1C1BC /* setting.png in Resources */,
+				53EE3CEA183D21B8009F6B4E /* WS8.ccbi in Resources */,
 				53DECC4317E464DD00A1C1BC /* home_account.png in Resources */,
 				53DECC4417E464DD00A1C1BC /* home_army_dialog.png in Resources */,
 				53DECC4517E464DD00A1C1BC /* home_army.png in Resources */,
+				53EE3CAD183D216E009F6B4E /* CS7.ccbi in Resources */,
 				53DECC4617E464DD00A1C1BC /* home_equipment_dialog_2.png in Resources */,
 				53DECC4717E464DD00A1C1BC /* home_equipment_dialog.png in Resources */,
 				53DECC4817E464DD00A1C1BC /* home_equipment.png in Resources */,
+				53EE3C9C183929E7009F6B4E /* cn.pvr.ccz in Resources */,
+				53EE3CAE183D216E009F6B4E /* CS8.ccbi in Resources */,
 				53DECC4917E464DD00A1C1BC /* home_event.png in Resources */,
 				533190A1181BAAEF005F0F4B /* static_data.plist in Resources */,
+				53EE3CD0183D21A4009F6B4E /* TS2.ccbi in Resources */,
 				53DECC4A17E464DD00A1C1BC /* home_gacha_dialog.png in Resources */,
 				53DECC4B17E464DD00A1C1BC /* home_gacha.png in Resources */,
+				53EE3C961839292C009F6B4E /* evil.pvr.ccz in Resources */,
 				53DECC4C17E464DD00A1C1BC /* home_invite.png in Resources */,
 				53DECC4D17E464DD00A1C1BC /* home_level.png in Resources */,
+				53EE3CBB183D2187009F6B4E /* ES1.ccbi in Resources */,
+				53EE3CF4183D223A009F6B4E /* RBackground.ccbi in Resources */,
 				53DECC4E17E464DD00A1C1BC /* home_medal.png in Resources */,
 				53DECC4F17E464DD00A1C1BC /* home_share_dialog.png in Resources */,
+				53EE3CA9183D216E009F6B4E /* CS3.ccbi in Resources */,
 				53DECC5017E464DD00A1C1BC /* home_share.png in Resources */,
 				53DECC5117E464DD00A1C1BC /* battle_dialog.png in Resources */,
 				53DECC5217E464DD00A1C1BC /* battle_levelup.png in Resources */,
@@ -3342,33 +4091,52 @@
 				53DECC5517E464DD00A1C1BC /* battle_pause_lose.png in Resources */,
 				53DECC5617E464DD00A1C1BC /* battle_pause_win.png in Resources */,
 				53DECC5717E464DD00A1C1BC /* battle_pause.png in Resources */,
+				53EE3C991839292C009F6B4E /* west.plist in Resources */,
+				53EE3CF3183D223A009F6B4E /* EBackground.ccbi in Resources */,
 				53DECC5817E464DD00A1C1BC /* battle_shop_dialog.png in Resources */,
+				53EE3CD3183D21A4009F6B4E /* TS5.ccbi in Resources */,
+				5328C32B1843C07D00472D1B /* WBoss.ccbi in Resources */,
 				53DECC5917E464DD00A1C1BC /* battle_shop_menu_coin.png in Resources */,
 				53DECC5A17E464DD00A1C1BC /* battle_shop_menu_ring.png in Resources */,
 				53DECC5B17E464DD00A1C1BC /* battle_shop_menu_treasure.png in Resources */,
+				53EE3CE7183D21B8009F6B4E /* WS5.ccbi in Resources */,
 				53DECC5C17E464DD00A1C1BC /* battle_shop_menu_vip.png in Resources */,
 				53DECC5D17E464DD00A1C1BC /* battle_shop.png in Resources */,
 				53DECC5E17E464DD00A1C1BC /* castle.png in Resources */,
 				53DECC6217E4AB9B00A1C1BC /* Ability.ccbi in Resources */,
 				53DECC6317E4AB9B00A1C1BC /* Account.ccbi in Resources */,
 				53DECC6417E4AB9B00A1C1BC /* Army.ccbi in Resources */,
+				53EE3CF5183D223A009F6B4E /* TBackground.ccbi in Resources */,
+				53EE3CD7183D21A4009F6B4E /* TS9.ccbi in Resources */,
+				53EE3CD4183D21A4009F6B4E /* TS6.ccbi in Resources */,
+				5328C32A1843C07D00472D1B /* TBoss2.ccbi in Resources */,
+				53EE3CA7183D216E009F6B4E /* CS1.ccbi in Resources */,
 				53DECC7217E4ABDE00A1C1BC /* Equip.ccbi in Resources */,
+				53EE3CB0183D216E009F6B4E /* CS10.ccbi in Resources */,
+				53EE3CD2183D21A4009F6B4E /* TS4.ccbi in Resources */,
 				53DECC7317E4ABDE00A1C1BC /* Event.ccbi in Resources */,
 				53DECC7417E4ABDE00A1C1BC /* Gacha.ccbi in Resources */,
 				53DECC7517E4ABDE00A1C1BC /* Invite.ccbi in Resources */,
+				5328C3281843C07D00472D1B /* RBoss2.ccbi in Resources */,
 				53DECC7617E4ABDE00A1C1BC /* Load.ccbi in Resources */,
 				53DECC7717E4ABDE00A1C1BC /* Medal.ccbi in Resources */,
 				53DECC7817E4ABDE00A1C1BC /* Pause.ccbi in Resources */,
 				53DECC7917E4ABDE00A1C1BC /* Reward.ccbi in Resources */,
+				5328C32E1844E85400472D1B /* level_data.plist in Resources */,
 				53DECC7A17E4ABDE00A1C1BC /* Setting.ccbi in Resources */,
 				53DECC7B17E4ABDE00A1C1BC /* Share.ccbi in Resources */,
+				53EE3CC2183D2187009F6B4E /* ES8.ccbi in Resources */,
 				53DECC7C17E4ABDE00A1C1BC /* Shop.ccbi in Resources */,
 				53DECC7E17E4ABDE00A1C1BC /* Process.ccbi in Resources */,
 				53DECC9517E4DD7B00A1C1BC /* Others.ccbi in Resources */,
+				5328C3291843C07D00472D1B /* TBoss.ccbi in Resources */,
+				53EE3CC4183D2187009F6B4E /* ES10.ccbi in Resources */,
 				53C2554F17F1E07B000AE6E8 /* MouseBackground.ccbi in Resources */,
 				53C2555017F1E07B000AE6E8 /* MouseLevel.ccbi in Resources */,
+				53EE3CD1183D21A4009F6B4E /* TS3.ccbi in Resources */,
 				53C2555417F49427000AE6E8 /* base.png in Resources */,
 				53C2555517F49427000AE6E8 /* cn_background.png in Resources */,
+				5328C3261843C07D00472D1B /* EBoss.ccbi in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3389,10 +4157,13 @@
 				5321F4F81794599F00BC1823 /* CCActionGrid.cpp in Sources */,
 				5321F4FB1794599F00BC1823 /* CCActionGrid3D.cpp in Sources */,
 				5321F4FE1794599F00BC1823 /* CCActionInstant.cpp in Sources */,
+				53EE3BB41838BD1E009F6B4E /* ES1Loader.cpp in Sources */,
+				53EE3C7E1838BE33009F6B4E /* CS3Loader.cpp in Sources */,
 				5321F5011794599F00BC1823 /* CCActionInterval.cpp in Sources */,
 				5321F5041794599F00BC1823 /* CCActionManager.cpp in Sources */,
 				5321F5071794599F00BC1823 /* CCActionPageTurn3D.cpp in Sources */,
 				5321F50A1794599F00BC1823 /* CCActionProgressTimer.cpp in Sources */,
+				53EE3BF81838BDB0009F6B4E /* TS5Loader.cpp in Sources */,
 				5321F50D1794599F00BC1823 /* CCActionTiledGrid.cpp in Sources */,
 				5321F5101794599F00BC1823 /* CCActionTween.cpp in Sources */,
 				5321F5141794599F00BC1823 /* CCAtlasNode.cpp in Sources */,
@@ -3405,8 +4176,10 @@
 				5321F52A179459A000BC1823 /* CCAffineTransform.cpp in Sources */,
 				5321F52D179459A000BC1823 /* CCArray.cpp in Sources */,
 				5321F530179459A000BC1823 /* CCAutoreleasePool.cpp in Sources */,
+				53EE3C491838BE01009F6B4E /* WS10.cpp in Sources */,
 				5321F534179459A000BC1823 /* CCDataVisitor.cpp in Sources */,
 				5321F537179459A000BC1823 /* CCDictionary.cpp in Sources */,
+				53EE3C8B1838BE33009F6B4E /* CS10.cpp in Sources */,
 				5321F53C179459A000BC1823 /* CCGeometry.cpp in Sources */,
 				5321F540179459A000BC1823 /* CCNS.cpp in Sources */,
 				5321F543179459A000BC1823 /* CCObject.cpp in Sources */,
@@ -3417,6 +4190,7 @@
 				5321F54F179459A000BC1823 /* cocos2d.cpp in Sources */,
 				5321F552179459A000BC1823 /* CCDrawingPrimitives.cpp in Sources */,
 				5321F555179459A000BC1823 /* CCDrawNode.cpp in Sources */,
+				53EE3C481838BE01009F6B4E /* WS9Loader.cpp in Sources */,
 				5321F559179459A000BC1823 /* CCGrabber.cpp in Sources */,
 				5321F55C179459A000BC1823 /* CCGrid.cpp in Sources */,
 				5321F57A179459A000BC1823 /* aabb.c in Sources */,
@@ -3433,67 +4207,92 @@
 				5321F594179459A100BC1823 /* vec3.c in Sources */,
 				5321F596179459A100BC1823 /* vec4.c in Sources */,
 				5321F599179459A100BC1823 /* CCKeypadDelegate.cpp in Sources */,
+				53EE3C411838BE01009F6B4E /* WS6.cpp in Sources */,
 				5321F59C179459A100BC1823 /* CCKeypadDispatcher.cpp in Sources */,
 				5321F5A0179459A100BC1823 /* CCLabelAtlas.cpp in Sources */,
 				5321F5A3179459A100BC1823 /* CCLabelBMFont.cpp in Sources */,
 				5321F5A6179459A100BC1823 /* CCLabelTTF.cpp in Sources */,
+				53EE3C3C1838BE01009F6B4E /* WS3Loader.cpp in Sources */,
+				53EE3C021838BDB0009F6B4E /* TS10Loader.cpp in Sources */,
 				5321F5AA179459A100BC1823 /* CCLayer.cpp in Sources */,
 				5321F5AD179459A100BC1823 /* CCScene.cpp in Sources */,
 				5321F5B0179459A100BC1823 /* CCTransition.cpp in Sources */,
 				5321F5B3179459A100BC1823 /* CCTransitionPageTurn.cpp in Sources */,
 				5321F5B6179459A100BC1823 /* CCTransitionProgress.cpp in Sources */,
+				53EE3BFA1838BDB0009F6B4E /* TS6Loader.cpp in Sources */,
 				5321F5BA179459A100BC1823 /* CCMenu.cpp in Sources */,
+				53EE3BC01838BD1E009F6B4E /* ES7Loader.cpp in Sources */,
 				5321F5BD179459A100BC1823 /* CCMenuItem.cpp in Sources */,
 				5321F5C1179459A100BC1823 /* CCClippingNode.cpp in Sources */,
+				53EE3B8A1838BCEE009F6B4E /* EBossLoader.cpp in Sources */,
 				5321F5C4179459A100BC1823 /* CCMotionStreak.cpp in Sources */,
 				5321F5C7179459A100BC1823 /* CCProgressTimer.cpp in Sources */,
 				5321F5CA179459A100BC1823 /* CCRenderTexture.cpp in Sources */,
+				5328C3191843BFE400472D1B /* EBoss2.cpp in Sources */,
+				53EE3C7A1838BE33009F6B4E /* CS1Loader.cpp in Sources */,
 				5321F5CE179459A100BC1823 /* CCParticleBatchNode.cpp in Sources */,
 				5321F5D1179459A100BC1823 /* CCParticleExamples.cpp in Sources */,
 				5321F5D4179459A100BC1823 /* CCParticleSystem.cpp in Sources */,
 				5321F5D7179459A100BC1823 /* CCParticleSystemQuad.cpp in Sources */,
+				53EE3C7C1838BE33009F6B4E /* CS2Loader.cpp in Sources */,
 				5321F5E0179459A100BC1823 /* CCEGLViewProtocol.cpp in Sources */,
 				5321F5E3179459A100BC1823 /* CCFileUtils.cpp in Sources */,
+				53EE3C7B1838BE33009F6B4E /* CS2.cpp in Sources */,
 				5321F5E7179459A100BC1823 /* CCImageCommonWebp.cpp in Sources */,
 				5321F5EB179459A100BC1823 /* CCSAXParser.cpp in Sources */,
 				5321F5F1179459A100BC1823 /* AccelerometerDelegateWrapper.mm in Sources */,
+				53EE3BF11838BDB0009F6B4E /* TS2.cpp in Sources */,
 				5321F5F4179459A100BC1823 /* CCAccelerometer.mm in Sources */,
 				5321F5F7179459A100BC1823 /* CCApplication.mm in Sources */,
 				5321F5F9179459A100BC1823 /* CCCommon.mm in Sources */,
 				5321F5FB179459A100BC1823 /* CCDevice.mm in Sources */,
+				53EE3BF41838BDB0009F6B4E /* TS3Loader.cpp in Sources */,
+				53EE3BBE1838BD1E009F6B4E /* ES6Loader.cpp in Sources */,
 				5321F5FE179459A100BC1823 /* CCDirectorCaller.mm in Sources */,
 				5321F601179459A100BC1823 /* CCEGLView.mm in Sources */,
+				53EE3BB31838BD1E009F6B4E /* ES1.cpp in Sources */,
+				5328C30E1843BF9F00472D1B /* WBoss2Loader.cpp in Sources */,
+				53EE3C781838BE33009F6B4E /* CBossLoader.cpp in Sources */,
+				53EE3C821838BE33009F6B4E /* CS5Loader.cpp in Sources */,
 				5321F604179459A100BC1823 /* CCES2Renderer.m in Sources */,
 				5321F608179459A100BC1823 /* CCFileUtilsIOS.mm in Sources */,
 				5321F60B179459A100BC1823 /* CCImage.mm in Sources */,
-				5331909C181BAA63005F0F4B /* StaticData.cpp in Sources */,
+				53EE3C3D1838BE01009F6B4E /* WS4.cpp in Sources */,
 				5321F60D179459A100BC1823 /* CCLock.cpp in Sources */,
 				5321F612179459A200BC1823 /* CCThread.mm in Sources */,
 				5321F615179459A200BC1823 /* EAGLView.mm in Sources */,
+				53EE3C471838BE01009F6B4E /* WS9.cpp in Sources */,
 				5321F61A179459A200BC1823 /* AccelerometerSimulation.m in Sources */,
 				5321F61C179459A200BC1823 /* platform.cpp in Sources */,
 				5321F635179459A200BC1823 /* CCScriptSupport.cpp in Sources */,
 				5321F639179459A200BC1823 /* CCGLProgram.cpp in Sources */,
 				5321F63C179459A200BC1823 /* ccGLStateCache.cpp in Sources */,
+				53EE3C401838BE01009F6B4E /* WS5Loader.cpp in Sources */,
 				5321F64E179459A300BC1823 /* CCShaderCache.cpp in Sources */,
 				5321F652179459A300BC1823 /* ccShaders.cpp in Sources */,
+				53EE3C4A1838BE01009F6B4E /* WS10Loader.cpp in Sources */,
 				5321F656179459A300BC1823 /* CCAnimation.cpp in Sources */,
 				5321F659179459A300BC1823 /* CCAnimationCache.cpp in Sources */,
 				5321F65C179459A300BC1823 /* CCSprite.cpp in Sources */,
 				5321F65F179459A300BC1823 /* CCSpriteBatchNode.cpp in Sources */,
+				53EE3BC41838BD1E009F6B4E /* ES9Loader.cpp in Sources */,
 				5321F662179459A300BC1823 /* CCSpriteFrame.cpp in Sources */,
-				53319098181BAA47005F0F4B /* Toolkit.cpp in Sources */,
 				5321F665179459A300BC1823 /* CCSpriteFrameCache.cpp in Sources */,
 				5321F669179459A300BC1823 /* base64.cpp in Sources */,
 				5321F66C179459A300BC1823 /* CCNotificationCenter.cpp in Sources */,
 				5321F66F179459A300BC1823 /* CCPointExtension.cpp in Sources */,
+				53EE3C7D1838BE33009F6B4E /* CS3.cpp in Sources */,
 				538D27C61816E757004B51F4 /* Escaper.cpp in Sources */,
 				5321F672179459A300BC1823 /* CCProfiling.cpp in Sources */,
 				5321F675179459A300BC1823 /* ccUTF8.cpp in Sources */,
 				5321F678179459A300BC1823 /* ccUtils.cpp in Sources */,
+				53EE3BC21838BD1E009F6B4E /* ES8Loader.cpp in Sources */,
 				5321F67B179459A300BC1823 /* CCVertex.cpp in Sources */,
+				5328C3071843BF8200472D1B /* CBoss2.cpp in Sources */,
+				53EE3BBD1838BD1E009F6B4E /* ES6.cpp in Sources */,
 				5321F67F179459A300BC1823 /* CCComponent.cpp in Sources */,
 				5321F682179459A300BC1823 /* CCComponentContainer.cpp in Sources */,
+				53EE3C851838BE33009F6B4E /* CS7.cpp in Sources */,
 				5321F686179459A300BC1823 /* ccCArray.cpp in Sources */,
 				538D27C91816E757004B51F4 /* Object.cpp in Sources */,
 				5321F68C179459A300BC1823 /* TGAlib.cpp in Sources */,
@@ -3502,8 +4301,10 @@
 				5321F698179459A300BC1823 /* CCUserDefault.mm in Sources */,
 				5321F69B179459A300BC1823 /* ioapi.cpp in Sources */,
 				5321F69E179459A300BC1823 /* unzip.cpp in Sources */,
+				53EE3BF51838BDB0009F6B4E /* TS4.cpp in Sources */,
 				5321F6A1179459A300BC1823 /* ZipUtils.cpp in Sources */,
 				5321F6A6179459A300BC1823 /* CCIMEDispatcher.cpp in Sources */,
+				53EE3C3E1838BE01009F6B4E /* WS4Loader.cpp in Sources */,
 				5321F6A9179459A300BC1823 /* CCTextFieldTTF.cpp in Sources */,
 				5321F6AD179459A300BC1823 /* CCTexture2D.cpp in Sources */,
 				538D27C71816E757004B51F4 /* IndentCanceller.cpp in Sources */,
@@ -3516,6 +4317,7 @@
 				5321F6C3179459A400BC1823 /* CCTMXLayer.cpp in Sources */,
 				5321F6C6179459A400BC1823 /* CCTMXObjectGroup.cpp in Sources */,
 				5321F6C9179459A400BC1823 /* CCTMXTiledMap.cpp in Sources */,
+				53EE3BF31838BDB0009F6B4E /* TS3.cpp in Sources */,
 				5321F6CC179459A400BC1823 /* CCTMXXMLParser.cpp in Sources */,
 				5321F6D0179459A400BC1823 /* CCTouch.cpp in Sources */,
 				5321F6D4179459A400BC1823 /* CCTouchDispatcher.cpp in Sources */,
@@ -3523,9 +4325,11 @@
 				5321F6E0179459A400BC1823 /* CDAudioManager.m in Sources */,
 				5321F6E4179459A400BC1823 /* CDOpenALSupport.m in Sources */,
 				5321F6E7179459A400BC1823 /* CocosDenshion.m in Sources */,
+				53EE3BFE1838BDB0009F6B4E /* TS8Loader.cpp in Sources */,
 				5321F6E9179459A400BC1823 /* SimpleAudioEngine.mm in Sources */,
 				5321F6EC179459A400BC1823 /* SimpleAudioEngine_objc.m in Sources */,
 				5321F6F4179459A400BC1823 /* AssetsManager.cpp in Sources */,
+				53EE3BFD1838BDB0009F6B4E /* TS8.cpp in Sources */,
 				5321F6F8179459A400BC1823 /* CCBAnimationManager.cpp in Sources */,
 				5321F6FB179459A400BC1823 /* CCBFileLoader.cpp in Sources */,
 				5321F6FE179459A400BC1823 /* CCBKeyframe.cpp in Sources */,
@@ -3534,19 +4338,24 @@
 				5321F709179459A400BC1823 /* CCBSequenceProperty.cpp in Sources */,
 				5321F70C179459A400BC1823 /* CCBValue.cpp in Sources */,
 				5321F70F179459A400BC1823 /* CCControlButtonLoader.cpp in Sources */,
+				53EE3BF01838BDB0009F6B4E /* TS1Loader.cpp in Sources */,
 				5321F712179459A400BC1823 /* CCControlLoader.cpp in Sources */,
 				5321F715179459A400BC1823 /* CCData.cpp in Sources */,
 				5321F718179459A400BC1823 /* CCLabelBMFontLoader.cpp in Sources */,
+				53EE3BFC1838BDB0009F6B4E /* TS7Loader.cpp in Sources */,
 				5321F71B179459A400BC1823 /* CCLabelTTFLoader.cpp in Sources */,
+				53EE3C351838BE01009F6B4E /* WBoss.cpp in Sources */,
 				5321F71E179459A400BC1823 /* CCLayerColorLoader.cpp in Sources */,
 				5321F721179459A400BC1823 /* CCLayerGradientLoader.cpp in Sources */,
 				5321F724179459A400BC1823 /* CCLayerLoader.cpp in Sources */,
-				538D27AC181426F2004B51F4 /* ApiParser.cpp in Sources */,
 				5321F727179459A400BC1823 /* CCMenuItemImageLoader.cpp in Sources */,
 				5321F72A179459A500BC1823 /* CCMenuItemLoader.cpp in Sources */,
+				53EE3C431838BE01009F6B4E /* WS7.cpp in Sources */,
 				5321F72E179459A500BC1823 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				5321F731179459A500BC1823 /* CCNodeLoader.cpp in Sources */,
 				5321F734179459A500BC1823 /* CCNodeLoaderLibrary.cpp in Sources */,
+				53EE3C421838BE01009F6B4E /* WS6Loader.cpp in Sources */,
+				5328C3081843BF8200472D1B /* CBoss2Loader.cpp in Sources */,
 				5321F738179459A500BC1823 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				5321F73B179459A500BC1823 /* CCScale9SpriteLoader.cpp in Sources */,
 				5321F73E179459A500BC1823 /* CCScrollViewLoader.cpp in Sources */,
@@ -3557,33 +4366,50 @@
 				5321F74F179459A500BC1823 /* CCInputDelegate.cpp in Sources */,
 				5321F755179459A500BC1823 /* CCControl.cpp in Sources */,
 				5321F758179459A500BC1823 /* CCControlButton.cpp in Sources */,
+				53EE3C3B1838BE01009F6B4E /* WS3.cpp in Sources */,
 				5321F75B179459A500BC1823 /* CCControlColourPicker.cpp in Sources */,
 				5321F75F179459A500BC1823 /* CCControlHuePicker.cpp in Sources */,
 				5321F762179459A500BC1823 /* CCControlPotentiometer.cpp in Sources */,
 				5321F765179459A500BC1823 /* CCControlSaturationBrightnessPicker.cpp in Sources */,
 				5321F768179459A500BC1823 /* CCControlSlider.cpp in Sources */,
 				5321F76B179459A500BC1823 /* CCControlStepper.cpp in Sources */,
-				4591FD94181BA23F0063C3F8 /* PrintingLabel.cpp in Sources */,
+				53EE3C881838BE33009F6B4E /* CS8Loader.cpp in Sources */,
+				53EE3C361838BE01009F6B4E /* WBossLoader.cpp in Sources */,
+				53EE3C451838BE01009F6B4E /* WS8.cpp in Sources */,
 				5321F76E179459A500BC1823 /* CCControlSwitch.cpp in Sources */,
+				5383C31E18216C9000333D2C /* PrintingLabel.cpp in Sources */,
 				5321F771179459A500BC1823 /* CCControlUtils.cpp in Sources */,
 				5321F774179459A500BC1823 /* CCInvocation.cpp in Sources */,
 				5321F777179459A500BC1823 /* CCScale9Sprite.cpp in Sources */,
 				5321F77B179459A500BC1823 /* CCEditBox.cpp in Sources */,
+				53EE3BB51838BD1E009F6B4E /* ES2.cpp in Sources */,
 				5321F780179459A500BC1823 /* CCEditBoxImplIOS.mm in Sources */,
+				5383C31F18216C9000333D2C /* StaticData.cpp in Sources */,
 				5321F783179459A500BC1823 /* CCEditBoxImplMac.mm in Sources */,
+				53EE3C011838BDB0009F6B4E /* TS10.cpp in Sources */,
+				53EE3B891838BCEE009F6B4E /* EBoss.cpp in Sources */,
 				5321F785179459A500BC1823 /* CCEditBoxImplNone.cpp in Sources */,
+				53EE3C771838BE33009F6B4E /* CBoss.cpp in Sources */,
 				5321F787179459A500BC1823 /* CCEditBoxImplTizen.cpp in Sources */,
+				53EE3C791838BE33009F6B4E /* CS1.cpp in Sources */,
 				5321F78A179459A500BC1823 /* CCEditBoxImplWin.cpp in Sources */,
 				5321F78E179459A500BC1823 /* CCScrollView.cpp in Sources */,
 				5321F791179459A500BC1823 /* CCSorting.cpp in Sources */,
+				53EE3C891838BE33009F6B4E /* CS9.cpp in Sources */,
 				5321F794179459A500BC1823 /* CCTableView.cpp in Sources */,
 				5321F797179459A500BC1823 /* CCTableViewCell.cpp in Sources */,
 				5321F79B179459A500BC1823 /* LocalStorage.cpp in Sources */,
+				53EE3C081838BDDE009F6B4E /* TBossLoader.cpp in Sources */,
+				53EE3C001838BDB0009F6B4E /* TS9Loader.cpp in Sources */,
 				5321F79E179459A500BC1823 /* LocalStorageAndroid.cpp in Sources */,
+				53EE3BF21838BDB0009F6B4E /* TS2Loader.cpp in Sources */,
 				5321F7A1179459A500BC1823 /* HttpClient.cpp in Sources */,
 				5321F7A6179459A600BC1823 /* WebSocket.cpp in Sources */,
+				53EE3C391838BE01009F6B4E /* WS2.cpp in Sources */,
 				5321F7AA179459A600BC1823 /* CCPhysicsDebugNode.cpp in Sources */,
+				53EE3C811838BE33009F6B4E /* CS5.cpp in Sources */,
 				5321F7AD179459A600BC1823 /* CCPhysicsSprite.cpp in Sources */,
+				53EE3BF61838BDB0009F6B4E /* TS4Loader.cpp in Sources */,
 				5321F7B1179459A600BC1823 /* Animation.cpp in Sources */,
 				5321F7B4179459A600BC1823 /* AnimationState.cpp in Sources */,
 				5321F7B7179459A600BC1823 /* AnimationStateData.cpp in Sources */,
@@ -3593,17 +4419,21 @@
 				5321F7C3179459A600BC1823 /* AttachmentLoader.cpp in Sources */,
 				5321F7C6179459A600BC1823 /* Bone.cpp in Sources */,
 				5321F7C9179459A600BC1823 /* BoneData.cpp in Sources */,
+				53EE3BFF1838BDB0009F6B4E /* TS9.cpp in Sources */,
 				5321F7CC179459A600BC1823 /* CCSkeleton.cpp in Sources */,
+				53EE3BB81838BD1E009F6B4E /* ES3Loader.cpp in Sources */,
 				5321F7CF179459A600BC1823 /* CCSkeletonAnimation.cpp in Sources */,
+				53EE3C461838BE01009F6B4E /* WS8Loader.cpp in Sources */,
 				5321F7D2179459A600BC1823 /* extension.cpp in Sources */,
 				5321F7D5179459A600BC1823 /* Json.cpp in Sources */,
 				5321F7D8179459A600BC1823 /* RegionAttachment.cpp in Sources */,
 				5321F7DB179459A600BC1823 /* Skeleton.cpp in Sources */,
+				53EE3BFB1838BDB0009F6B4E /* TS7.cpp in Sources */,
 				5321F7DE179459A600BC1823 /* SkeletonData.cpp in Sources */,
 				5321F7E1179459A600BC1823 /* SkeletonJson.cpp in Sources */,
+				53EE3BBA1838BD1E009F6B4E /* ES4Loader.cpp in Sources */,
 				5321F7E4179459A600BC1823 /* Skin.cpp in Sources */,
 				5321F7E7179459A600BC1823 /* Slot.cpp in Sources */,
-				4591FD8E181BA20E0063C3F8 /* StaticData.cpp in Sources */,
 				5321F7EA179459A600BC1823 /* SlotData.cpp in Sources */,
 				5321F7ED179459A600BC1823 /* spine-cocos2dx.cpp in Sources */,
 				5321F812179459A600BC1823 /* chipmunk.c in Sources */,
@@ -3612,71 +4442,92 @@
 				5321F818179459A600BC1823 /* cpDampedRotarySpring.c in Sources */,
 				5321F81A179459A600BC1823 /* cpDampedSpring.c in Sources */,
 				5321F81C179459A600BC1823 /* cpGearJoint.c in Sources */,
+				53EE3C071838BDDE009F6B4E /* TBoss.cpp in Sources */,
 				5321F81E179459A600BC1823 /* cpGrooveJoint.c in Sources */,
+				53EE3C381838BE01009F6B4E /* WS1Loader.cpp in Sources */,
 				5321F820179459A600BC1823 /* cpPinJoint.c in Sources */,
+				53EE3C801838BE33009F6B4E /* CS4Loader.cpp in Sources */,
 				5321F822179459A600BC1823 /* cpPivotJoint.c in Sources */,
+				5383C32018216C9000333D2C /* Toolkit.cpp in Sources */,
 				5321F824179459A600BC1823 /* cpRatchetJoint.c in Sources */,
 				5321F826179459A600BC1823 /* cpRotaryLimitJoint.c in Sources */,
 				5321F828179459A600BC1823 /* cpSimpleMotor.c in Sources */,
+				53EE3C8A1838BE33009F6B4E /* CS9Loader.cpp in Sources */,
 				5321F82A179459A600BC1823 /* cpSlideJoint.c in Sources */,
+				5328C31A1843BFE400472D1B /* EBoss2Loader.cpp in Sources */,
 				5321F82C179459A600BC1823 /* cpArbiter.c in Sources */,
 				5321F82E179459A600BC1823 /* cpArray.c in Sources */,
+				53EE3C371838BE01009F6B4E /* WS1.cpp in Sources */,
 				5321F830179459A600BC1823 /* cpBB.c in Sources */,
 				5321F832179459A600BC1823 /* cpBBTree.c in Sources */,
 				5321F834179459A600BC1823 /* cpBody.c in Sources */,
 				5321F836179459A600BC1823 /* cpCollision.c in Sources */,
+				53EE3BBC1838BD1E009F6B4E /* ES5Loader.cpp in Sources */,
 				5321F838179459A600BC1823 /* cpHashSet.c in Sources */,
 				5321F83A179459A600BC1823 /* cpPolyShape.c in Sources */,
 				5321F83C179459A600BC1823 /* cpShape.c in Sources */,
 				5321F83E179459A600BC1823 /* cpSpace.c in Sources */,
 				5321F840179459A600BC1823 /* cpSpaceComponent.c in Sources */,
 				5321F842179459A600BC1823 /* cpSpaceHash.c in Sources */,
+				53EE3BF71838BDB0009F6B4E /* TS5.cpp in Sources */,
 				5321F844179459A600BC1823 /* cpSpaceQuery.c in Sources */,
 				538D27C81816E757004B51F4 /* Indenter.cpp in Sources */,
 				5321F846179459A600BC1823 /* cpSpaceStep.c in Sources */,
 				5321F848179459A700BC1823 /* cpSpatialIndex.c in Sources */,
 				5321F84A179459A700BC1823 /* cpSweep1D.c in Sources */,
+				53EE3C8C1838BE33009F6B4E /* CS10Loader.cpp in Sources */,
 				5321F84C179459A700BC1823 /* cpVect.c in Sources */,
 				5321F85A179459A700BC1823 /* AppDelegate.cpp in Sources */,
 				53FE4FA0179D945600962274 /* MainMenuScene.cpp in Sources */,
 				53FE4FAC179D946300962274 /* GameObject.cpp in Sources */,
 				5335BBED17A8168200B02A13 /* GameScene.cpp in Sources */,
 				5335BBF017A81A0200B02A13 /* Background.cpp in Sources */,
+				53EE3BEF1838BDB0009F6B4E /* TS1.cpp in Sources */,
+				53EE3BC11838BD1E009F6B4E /* ES8.cpp in Sources */,
 				5335BBF317A81A0C00B02A13 /* Menu.cpp in Sources */,
 				5335BBF717ABF3C100B02A13 /* GameSceneLoader.cpp in Sources */,
 				5335BBFA17ABF3DD00B02A13 /* MenuLoader.cpp in Sources */,
+				53EE3C3A1838BE01009F6B4E /* WS2Loader.cpp in Sources */,
 				5335BBFD17ABF3ED00B02A13 /* BackgroundLoader.cpp in Sources */,
 				53B57B1517B3FA8B0068BD92 /* S9Loader.cpp in Sources */,
 				53B57B1617B3FA8B0068BD92 /* S9.cpp in Sources */,
 				53B57B1717B3FA8B0068BD92 /* S8Loader.cpp in Sources */,
+				53EE3BB71838BD1E009F6B4E /* ES3.cpp in Sources */,
 				53B57B1817B3FA8B0068BD92 /* S8.cpp in Sources */,
+				5328C3011843BF6B00472D1B /* RBoss2.cpp in Sources */,
+				53EE3BB91838BD1E009F6B4E /* ES4.cpp in Sources */,
 				53B57B1917B3FA8B0068BD92 /* S7Loader.cpp in Sources */,
 				53B57B1A17B3FA8B0068BD92 /* S7.cpp in Sources */,
 				53B57B1B17B3FA8B0068BD92 /* S6Loader.cpp in Sources */,
 				53B57B1C17B3FA8B0068BD92 /* S6.cpp in Sources */,
 				53B57B1D17B3FA8B0068BD92 /* S5Loader.cpp in Sources */,
-				5331909F181BAA83005F0F4B /* PrintingLabel.cpp in Sources */,
+				5328C30D1843BF9F00472D1B /* WBoss2.cpp in Sources */,
 				53B57B1E17B3FA8B0068BD92 /* S5.cpp in Sources */,
+				53EE3BF91838BDB0009F6B4E /* TS6.cpp in Sources */,
 				53B57B1F17B3FA8B0068BD92 /* S4Loader.cpp in Sources */,
+				53EE3BBB1838BD1E009F6B4E /* ES5.cpp in Sources */,
 				53B57B2017B3FA8B0068BD92 /* S4.cpp in Sources */,
+				53EE3C841838BE33009F6B4E /* CS6Loader.cpp in Sources */,
 				53B57B2117B3FA8B0068BD92 /* S3Loader.cpp in Sources */,
 				53B57B2217B3FA8B0068BD92 /* S3.cpp in Sources */,
 				53B57B2317B3FA8B0068BD92 /* S2Loader.cpp in Sources */,
-				4512E0C0181E9EC000C69749 /* DrawLineLayer.cpp in Sources */,
 				53B57B2417B3FA8B0068BD92 /* S2.cpp in Sources */,
 				53B57B2517B3FA8B0068BD92 /* S1Loader.cpp in Sources */,
 				53B57B2617B3FA8B0068BD92 /* S1.cpp in Sources */,
 				538D27CA1816E757004B51F4 /* SolidusEscaper.cpp in Sources */,
+				53EE3C871838BE33009F6B4E /* CS8.cpp in Sources */,
 				53B57B2B17B3FAA50068BD92 /* LevelLoader.cpp in Sources */,
 				53B57B2C17B3FAA50068BD92 /* Level.cpp in Sources */,
 				534B43BE17B61E07001DF7B0 /* MiaoLoader.cpp in Sources */,
 				534B43BF17B61E07001DF7B0 /* Miao.cpp in Sources */,
 				534B440417B63EF2001DF7B0 /* RS10Loader.cpp in Sources */,
 				534B440517B63EF2001DF7B0 /* RS10.cpp in Sources */,
+				53EE3C3F1838BE01009F6B4E /* WS5.cpp in Sources */,
 				534B440617B63EF2001DF7B0 /* RS9Loader.cpp in Sources */,
 				534B440717B63EF2001DF7B0 /* RS9.cpp in Sources */,
 				534B440817B63EF2001DF7B0 /* RS8Loader.cpp in Sources */,
 				534B440917B63EF2001DF7B0 /* RS8.cpp in Sources */,
+				53EE3BB61838BD1E009F6B4E /* ES2Loader.cpp in Sources */,
 				534B440A17B63EF2001DF7B0 /* RS7Loader.cpp in Sources */,
 				534B440B17B63EF2001DF7B0 /* RS7.cpp in Sources */,
 				534B440C17B63EF2001DF7B0 /* RS6Loader.cpp in Sources */,
@@ -3688,6 +4539,9 @@
 				534B441217B63EF2001DF7B0 /* RS3Loader.cpp in Sources */,
 				538D27C51816E757004B51F4 /* Convert.cpp in Sources */,
 				534B441317B63EF2001DF7B0 /* RS3.cpp in Sources */,
+				53EE3C441838BE01009F6B4E /* WS7Loader.cpp in Sources */,
+				53EE3BC61838BD1E009F6B4E /* ES10Loader.cpp in Sources */,
+				535CB0A91847B30B00E7A6E8 /* LevelData.cpp in Sources */,
 				534B441417B63EF2001DF7B0 /* RS2Loader.cpp in Sources */,
 				534B441517B63EF2001DF7B0 /* RS2.cpp in Sources */,
 				534B441617B63EF2001DF7B0 /* RS1Loader.cpp in Sources */,
@@ -3699,15 +4553,21 @@
 				5383A8DC17D1177700EE4A1A /* StoryScene.cpp in Sources */,
 				5383A8E117D4EFCF00EE4A1A /* GameOverScene.cpp in Sources */,
 				53DECBBA17DE3C0A00A1C1BC /* StatusLoader.cpp in Sources */,
+				53EE3BC51838BD1E009F6B4E /* ES10.cpp in Sources */,
 				53DECBBB17DE3C0A00A1C1BC /* Status.cpp in Sources */,
 				53DECBC317E0BCAA00A1C1BC /* MouseGameScene.cpp in Sources */,
+				5328C3141843BFBE00472D1B /* TBoss2Loader.cpp in Sources */,
 				53DECBCA17E0BDE100A1C1BC /* MouseMenuLoader.cpp in Sources */,
 				53DECBCB17E0BDE100A1C1BC /* MouseMenu.cpp in Sources */,
+				53EE3C7F1838BE33009F6B4E /* CS4.cpp in Sources */,
 				53DECBD117E2032000A1C1BC /* NormalGameScene.cpp in Sources */,
+				5328C3131843BFBE00472D1B /* TBoss2.cpp in Sources */,
 				53DECC1817E35EC500A1C1BC /* MainMenuSceneLoader.cpp in Sources */,
 				53DECC8117E4BA9900A1C1BC /* LayerWithDialog.cpp in Sources */,
+				53EE3BBF1838BD1E009F6B4E /* ES7.cpp in Sources */,
 				53DECC8617E4BAFB00A1C1BC /* Equip.cpp in Sources */,
 				53DECC8717E4BAFB00A1C1BC /* EquipLoader.cpp in Sources */,
+				53EE3C861838BE33009F6B4E /* CS7Loader.cpp in Sources */,
 				53DECC8C17E4D90700A1C1BC /* Army.cpp in Sources */,
 				53DECC8D17E4D90700A1C1BC /* ArmyLoader.cpp in Sources */,
 				538D27C41816E757004B51F4 /* Array.cpp in Sources */,
@@ -3715,9 +4575,12 @@
 				53DECC9317E4DC2800A1C1BC /* OthersLoader.cpp in Sources */,
 				53DECC9A17E4DFA100A1C1BC /* Event.cpp in Sources */,
 				53DECC9B17E4DFA100A1C1BC /* EventLoader.cpp in Sources */,
+				5383C3111821675F00333D2C /* DrawLineLayer.cpp in Sources */,
+				53EE3BC31838BD1E009F6B4E /* ES9.cpp in Sources */,
 				53DECCA017E4E12F00A1C1BC /* Reward.cpp in Sources */,
 				53DECCA117E4E12F00A1C1BC /* RewardLoader.cpp in Sources */,
 				53DECCA617E4E39C00A1C1BC /* Share.cpp in Sources */,
+				53EE3C831838BE33009F6B4E /* CS6.cpp in Sources */,
 				53DECCA717E4E39C00A1C1BC /* ShareLoader.cpp in Sources */,
 				53DECCAC17E4EB6500A1C1BC /* Ability.cpp in Sources */,
 				53DECCAD17E4EB6500A1C1BC /* AbilityLoader.cpp in Sources */,
@@ -3729,6 +4592,7 @@
 				53DECCBF17E5005800A1C1BC /* ShopLoader.cpp in Sources */,
 				53DECCC417E505D200A1C1BC /* Pause.cpp in Sources */,
 				53DECCC517E505D200A1C1BC /* PauseLoader.cpp in Sources */,
+				5328C3021843BF6B00472D1B /* RBoss2Loader.cpp in Sources */,
 				53DECCD617E50CB700A1C1BC /* Gacha.cpp in Sources */,
 				53DECCD717E50CB800A1C1BC /* GachaLoader.cpp in Sources */,
 				53DECCD817E50CB800A1C1BC /* Load.cpp in Sources */,
@@ -3823,6 +4687,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3858,6 +4724,8 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos6.1;
 				USER_HEADER_SEARCH_PATHS = "\"miwu/libs/Chipmunk/include/chipmunk\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3867,6 +4735,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = miwu/Prefix.pch;
@@ -3901,6 +4771,8 @@
 					"-websockets",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos6.1;
 				USER_HEADER_SEARCH_PATHS = "\"miwu/libs/Chipmunk/include/chipmunk\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

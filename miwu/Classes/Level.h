@@ -21,6 +21,7 @@
 class Level : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
 {
 private:
+    cocos2d::CCArray *_levelArray;
     
 public:
     Miao* miao;

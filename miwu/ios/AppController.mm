@@ -60,7 +60,7 @@ static AppDelegate s_sharedApplication;
     [window makeKeyAndVisible];
 
     [[UIApplication sharedApplication] setStatusBarHidden: YES];
-    
+    /*
     // Let the device know we want to receive push notifications
 	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:
      (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
@@ -80,11 +80,12 @@ static AppDelegate s_sharedApplication;
     [[NSUserDefaults standardUserDefaults] setObject:deviceType forKey:@"deviceType"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
+     */
     
     cocos2d::CCApplication::sharedApplication()->run();
     return YES;
 }
-
+/*
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
     [[NSUserDefaults standardUserDefaults] setObject:deviceToken forKey:@"deviceToken"];
@@ -96,6 +97,7 @@ static AppDelegate s_sharedApplication;
 {
 	NSLog(@"Failed to get token, error: %@", error);
 }
+ */
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
