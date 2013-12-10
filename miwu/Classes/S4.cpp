@@ -40,3 +40,13 @@ float S4::getLv()
 {
     return 1.0f;
 }
+
+bool S4::hurtToOther(float atk)
+{
+    return false;
+}
+
+bool S4::bearHurt()
+{
+    return normalSkillTrigger();
+}

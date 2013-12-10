@@ -225,9 +225,39 @@ void  Soldier::normalAtkHandler(GameObject* gameObject)
     {
         animationManager->runAnimationsForSequenceNamed("attack1");
         CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-        gameObject->atkHandler(atk);
+        gameObject->atkHandler(atk, this);
     }
 }
 
+bool Soldier::bearHurt()
+{
+    return false;
+}
 
+bool Soldier::hurtToOther(float atk)
+{
+    Level* level = dynamic_cast<Level*>(this->getParent());
+    if (level == NULL)
+    {
+        return false;
+    }
+    
+    CCArray* soldiers = level->_soldiers;
+    CCObject* et = NULL;
+    CCARRAY_FOREACH(soldiers, et)
+    {
+        Soldier* soldier = dynamic_cast<Soldier*>(et);
+        if (soldier == NULL)
+        {
+            continue;
+        }
+        
+        if (soldier->bearHurt())
+        {
+            soldier->atkHandler(atk, NULL);
+            return true;
+        }
+    }
+    return false;
+}
 

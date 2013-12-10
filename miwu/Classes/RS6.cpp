@@ -34,3 +34,8 @@ float RS6::radius()
 {
     return 25.0f;
 }
+
+void RS6::reboundedHeartedHandler()
+{
+    this->atkHandler(0.1*maxHp, NULL);
+}

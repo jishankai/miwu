@@ -27,6 +27,8 @@ class S4 : public Soldier
 
 private:    
     bool init();
+    virtual bool hurtToOther(float atk);
+    virtual bool bearHurt();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(S4, create);
     

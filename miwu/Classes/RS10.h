@@ -19,10 +19,12 @@ class RS10 : public Enemy
 
 private:
     bool init();
+    void reboundedHeartedHandler();
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(RS10, create);
    
     virtual float radius();
+    
 };
 
 #endif /* defined(__miwu__RS10__) */

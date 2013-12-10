@@ -34,6 +34,9 @@ public:
     virtual void haloSkillHandler(GameObject* gameObjetc);
     virtual bool normalAtkTrigger();
     void normalAtkHandler(GameObject* gameObject);
+    virtual bool hurtToOther(float atk);
+    virtual bool bearHurt();
+    
     int normalSkillRate;
     int haloSkillRate;
     bool normalSkillTriggerResult;

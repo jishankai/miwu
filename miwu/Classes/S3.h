@@ -32,6 +32,7 @@ public:
     
     virtual float radius();
     virtual float getLv();
+    virtual void reboundHeartHandler(GameObject* gameObject);
 };
 
 

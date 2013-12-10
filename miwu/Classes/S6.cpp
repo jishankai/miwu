@@ -75,7 +75,7 @@ void S6::healHandler(GameObject* gameObject)
     {
         animationManager->runAnimationsForSequenceNamed("attack1");
         CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-        gameObject->atkHandler(-atk);
+        gameObject->atkHandler(-atk, this);
     }
     curActionCount++;
 }

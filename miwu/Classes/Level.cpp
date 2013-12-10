@@ -631,13 +631,11 @@ void Level::removeSoldier(Soldier *soldier)
 
 void Level::removeEnemy(Enemy* enemy)
 {
+    _enimies->removeObject(enemy, true);
     if (this->getChildByTag(enemy->getTag()))
     {
         this->removeChild(enemy);
     }
-    
-    _enimies->removeObject(enemy, true);
-    enemy = NULL;
 }
 
 void Level::winHandler()

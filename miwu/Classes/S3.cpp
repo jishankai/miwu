@@ -40,3 +40,18 @@ float S3::getLv()
 {
     return 1.0f;
 }
+
+void S3::reboundHeartHandler(GameObject* gameObject)
+{
+    if (gameObject == NULL)
+    {
+        return;
+    }
+    
+    if (haloSkillTrigger())
+    {
+        gameObject->reboundedHeartedHandler();
+    }
+}
+
+
