@@ -54,6 +54,6 @@ void S1::haloSkillHandler(GameObject* gameObject)
     {
         animationManager->runAnimationsForSequenceNamed("attack2");
         CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-        gameObject->atkHandler(2*atk);
+        gameObject->atkHandler(2*atk, this);
     }
 }

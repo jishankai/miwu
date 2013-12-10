@@ -18,8 +18,23 @@ bool GameObject::checkIsCollision(GameObject *gameObject)
     return false;
 }
 
-void GameObject::atkHandler(float atk)
+void GameObject::reboundHeartHandler(GameObject* gameObject)
 {
+    
+}
+
+bool GameObject::hurtToOther(float atk)
+{
+    return false;
+}
+
+void GameObject::atkHandler(float atk, GameObject* gameObject)
+{
+    reboundHeartHandler(gameObject);
+    if (hurtToOther(atk))
+    {
+        return;
+    }
     hp -= atk;
     if (hp <= 0)
     {
@@ -32,6 +47,10 @@ void GameObject::atkHandler(float atk)
     }
     else
     {
+        if (bloodBar == NULL)
+        {
+            return;
+        }
         bloodBar->setScaleX(0.3f*hp/maxHp);
     }
 }
@@ -49,6 +68,11 @@ bool GameObject::stopAction()
 void GameObject::stop()
 {
     xSpeed = 0;
+}
+
+void GameObject::reboundedHeartedHandler()
+{
+    
 }
 
 

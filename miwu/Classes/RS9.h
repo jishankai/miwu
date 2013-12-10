@@ -19,6 +19,7 @@ class RS9 : public Enemy
     
 private:
     bool init();
+    
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(RS9, create);
     

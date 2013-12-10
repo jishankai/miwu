@@ -19,6 +19,8 @@ class RS2 : public Enemy
     
 private:
     bool init();
+    void reboundedHeartedHandler();
+    
 public:
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(RS2, create);
     

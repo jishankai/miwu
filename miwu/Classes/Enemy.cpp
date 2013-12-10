@@ -94,7 +94,7 @@ void Enemy::handleCollisionWith(GameObject* gameObject)
                 {
                     animationManager->runAnimationsForSequenceNamed("attack");
                     CocosDenshion::SimpleAudioEngine::sharedEngine()->playEffect(effectSoundFileName);
-                    gameObject->atkHandler(atk);
+                    gameObject->atkHandler(atk, this);
                 }
                 curActionCount++;
             }

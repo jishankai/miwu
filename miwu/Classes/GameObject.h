@@ -32,7 +32,10 @@ public:
     bool stopAction();
     void stop();
     
-    virtual void atkHandler(float atk);
+    virtual void atkHandler(float atk, GameObject* gameObject);
+    virtual void reboundHeartHandler(GameObject* gameObject);
+    virtual void reboundedHeartedHandler();
+    virtual bool hurtToOther(float atk);
     virtual void deadHandler() = 0;
     virtual void drawCollisionLine() = 0;
     virtual float radius() = 0;

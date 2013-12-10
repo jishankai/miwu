@@ -72,7 +72,7 @@ void S2::otherEnemyAtkHandler(GameObject* gameObject)
         }
         if (enemy != gameObject)
         {
-            enemy->atkHandler(atk);
+            enemy->atkHandler(atk, this);
         }
     }
 }
