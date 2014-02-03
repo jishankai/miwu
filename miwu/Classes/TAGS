@@ -1,0 +1,2717 @@
+
+Ability.h,54
+#define __miwu__Ability__10,99
+class Ability 16,200
+
+AbilityLoader.h,67
+#define __miwu__AbilityLoader__10,111
+class AbilityLoader 17,211
+
+Account.h,54
+#define __miwu__Account__10,99
+class Account 16,200
+
+AccountLoader.h,67
+#define __miwu__AccountLoader__10,111
+class AccountLoader 17,211
+
+ApiParser.h,107
+#define __miwu__ApiParser__10,105
+class ApiParser 16,200
+    JsonBox::Value json;ApiParser::json19,252
+
+ApiReader.h,58
+#define __miwu__ApiReader__10,103
+class ApiReader15,177
+
+AppDelegate.h,128
+#define  _APP_DELEGATE_H_10,167
+class  AppDelegate 19,363
+    bool isResponseFinished AppDelegate::isResponseFinished22,426
+
+Army.h,48
+#define __miwu__Army__10,93
+class Army 16,191
+
+ArmyLoader.h,61
+#define __miwu__ArmyLoader__10,105
+class ArmyLoader 17,199
+
+Background.h,178
+#define __miwu__Background__10,105
+class Background 15,180
+    cocos2d::CCNode* level;Background::level18,288
+    cocos2d::CCLayer* levelLayer;Background::levelLayer22,371
+
+BackgroundLoader.h,73
+#define __miwu__BackgroundLoader__10,117
+class BackgroundLoader 17,223
+
+CBoss2.h,115
+#define __miwu__CBoss2__10,98
+class CBoss2 19,222
+    DrawLineLayer *drawLineLayer;CBoss2::drawLineLayer23,267
+
+CBoss2Loader.h,65
+#define __miwu__CBoss2Loader__10,109
+class CBoss2Loader 17,207
+
+CBoss.h,112
+#define __miwu__CBoss__10,96
+class CBoss 19,219
+    DrawLineLayer *drawLineLayer;CBoss::drawLineLayer23,263
+
+CBossLoader.h,63
+#define __miwu__CBossLoader__10,107
+class CBossLoader 17,203
+
+CS10.h,48
+#define __miwu__CS10__10,94
+class CS10 17,183
+
+CS10Loader.h,61
+#define __miwu__CS10Loader__10,105
+class CS10Loader 17,199
+
+CS1.h,46
+#define __miwu__CS1__10,92
+class CS1 17,180
+
+CS1Loader.h,59
+#define __miwu__CS1Loader__10,103
+class CS1Loader 17,195
+
+CS2.h,46
+#define __miwu__CS2__10,92
+class CS2 17,180
+
+CS2Loader.h,59
+#define __miwu__CS2Loader__10,103
+class CS2Loader 17,195
+
+CS3.h,46
+#define __miwu__CS3__10,92
+class CS3 17,180
+
+CS3Loader.h,59
+#define __miwu__CS3Loader__10,103
+class CS3Loader 17,195
+
+CS4.h,46
+#define __miwu__CS4__10,92
+class CS4 17,180
+
+CS4Loader.h,59
+#define __miwu__CS4Loader__10,103
+class CS4Loader 17,195
+
+CS5.h,46
+#define __miwu__CS5__10,92
+class CS5 17,180
+
+CS5Loader.h,59
+#define __miwu__CS5Loader__10,103
+class CS5Loader 17,195
+
+CS6.h,46
+#define __miwu__CS6__10,92
+class CS6 17,180
+
+CS6Loader.h,59
+#define __miwu__CS6Loader__10,103
+class CS6Loader 17,195
+
+CS7.h,46
+#define __miwu__CS7__10,92
+class CS7 17,180
+
+CS7Loader.h,59
+#define __miwu__CS7Loader__10,103
+class CS7Loader 17,195
+
+CS8.h,46
+#define __miwu__CS8__10,92
+class CS8 17,180
+
+CS8Loader.h,59
+#define __miwu__CS8Loader__10,103
+class CS8Loader 17,195
+
+CS9.h,46
+#define __miwu__CS9__10,92
+class CS9 17,180
+
+CS9Loader.h,59
+#define __miwu__CS9Loader__10,103
+class CS9Loader 17,195
+
+DrawLineLayer.h,183
+#define __miwu__DrawLineLayer__10,106
+class DrawLineLayer 15,181
+        cocos2d::CCPoint start;DrawLineLayer::start23,441
+        cocos2d::CCPoint end;DrawLineLayer::end24,473
+
+EBoss2.h,115
+#define __miwu__EBoss2__10,98
+class EBoss2 19,222
+    DrawLineLayer *drawLineLayer;EBoss2::drawLineLayer23,267
+
+EBoss2Loader.h,65
+#define __miwu__EBoss2Loader__10,109
+class EBoss2Loader 17,207
+
+EBoss.h,112
+#define __miwu__EBoss__10,96
+class EBoss 19,219
+    DrawLineLayer *drawLineLayer;EBoss::drawLineLayer23,263
+
+EBossLoader.h,63
+#define __miwu__EBossLoader__10,107
+class EBossLoader 17,203
+
+Enemy.h,112
+#define __miwu__Enemy__10,96
+class Enemy 18,218
+    DrawLineLayer *drawLineLayer;Enemy::drawLineLayer31,552
+
+Equip.h,50
+#define __miwu__Equip__10,95
+class Equip 16,194
+
+EquipLoader.h,63
+#define __miwu__EquipLoader__10,107
+class EquipLoader 17,203
+
+ES10.h,48
+#define __miwu__ES10__10,94
+class ES10 17,183
+
+ES10Loader.h,61
+#define __miwu__ES10Loader__10,105
+class ES10Loader 17,199
+
+ES1.h,46
+#define __miwu__ES1__10,92
+class ES1 17,180
+
+ES1Loader.h,59
+#define __miwu__ES1Loader__10,103
+class ES1Loader 17,195
+
+ES2.h,46
+#define __miwu__ES2__10,92
+class ES2 17,180
+
+ES2Loader.h,59
+#define __miwu__ES2Loader__10,103
+class ES2Loader 17,195
+
+ES3.h,46
+#define __miwu__ES3__10,92
+class ES3 17,180
+
+ES3Loader.h,59
+#define __miwu__ES3Loader__10,103
+class ES3Loader 17,195
+
+ES4.h,46
+#define __miwu__ES4__10,92
+class ES4 17,180
+
+ES4Loader.h,59
+#define __miwu__ES4Loader__10,103
+class ES4Loader 17,195
+
+ES5.h,46
+#define __miwu__ES5__10,92
+class ES5 17,180
+
+ES5Loader.h,59
+#define __miwu__ES5Loader__10,103
+class ES5Loader 17,195
+
+ES6.h,46
+#define __miwu__ES6__10,92
+class ES6 17,180
+
+ES6Loader.h,59
+#define __miwu__ES6Loader__10,103
+class ES6Loader 17,195
+
+ES7.h,46
+#define __miwu__ES7__10,92
+class ES7 17,180
+
+ES7Loader.h,59
+#define __miwu__ES7Loader__10,103
+class ES7Loader 17,195
+
+ES8.h,46
+#define __miwu__ES8__10,92
+class ES8 17,180
+
+ES8Loader.h,59
+#define __miwu__ES8Loader__10,103
+class ES8Loader 17,195
+
+ES9.h,46
+#define __miwu__ES9__10,92
+class ES9 17,180
+
+ES9Loader.h,59
+#define __miwu__ES9Loader__10,103
+class ES9Loader 17,195
+
+Event.h,50
+#define __miwu__Event__10,95
+class Event 16,194
+
+EventLoader.h,63
+#define __miwu__EventLoader__10,107
+class EventLoader 17,203
+
+Gacha.h,50
+#define __miwu__Gacha__10,95
+class Gacha 16,194
+
+GachaLoader.h,63
+#define __miwu__GachaLoader__10,107
+class GachaLoader 17,203
+
+GameObject.h,198
+#define __miwu__GameObject__10,106
+class GameObject 14,158
+    cocos2d::CCSprite* bloodBar;GameObject::bloodBar17,210
+    const char* effectSoundFileName;GameObject::effectSoundFileName18,243
+
+GameOverScene.h,67
+#define __miwu__GameOverScene__10,109
+class GameOverScene 15,187
+
+GameScene.h,495
+#define __miwu__GameScene__10,101
+class GameScene 15,175
+    cocos2d::CCNode* background;GameScene::background20,295
+    cocos2d::CCNode* menu;GameScene::menu21,328
+    cocos2d::CCNode* status;GameScene::status22,355
+    cocos2d::CCLayer* backgroundLayer;GameScene::backgroundLayer23,384
+    cocos2d::CCLayer* statusLayer;GameScene::statusLayer24,423
+    cocos2d::CCLayer* menuLayer;GameScene::menuLayer25,458
+    static GameScene* sharedInstance;GameScene::sharedInstance27,496
+
+GameSceneLoader.h,71
+#define __miwu__GameSceneLoader__10,113
+class GameSceneLoader 17,217
+
+HelloWorldScene.h,59
+#define __HELLOWORLD_SCENE_H__2,31
+class HelloWorld 6,85
+
+Invite.h,52
+#define __miwu__Invite__10,97
+class Invite 16,197
+
+InviteLoader.h,65
+#define __miwu__InviteLoader__10,109
+class InviteLoader 17,207
+
+LayerWithDialog.h,133
+#define __miwu__LayerWithDialog__10,115
+class LayerWithDialog 15,195
+    cocos2d::CCSprite* dialog;LayerWithDialog::dialog20,321
+
+LevelData.h,393
+#define __MIWU__LevelData__11,111
+#define LEVEL_DATA_STRING(14,164
+#define LEVEL_DATA_INT(15,245
+#define LEVEL_DATA_FLOAT(16,320
+#define LEVEL_DATA_BOOLEAN(17,399
+#define LEVEL_DATA_POINT(18,482
+#define LEVEL_DATA_RECT(19,561
+#define LEVEL_DATA_SIZE(20,638
+#define LEVEL_DATA_ARRAY(21,715
+class LevelData 23,796
+    cocos2d::CCDictionary* _dictionary;LevelData::_dictionary52,1611
+
+Level.h,334
+#define __miwu__Level__10,93
+class Level 21,242
+    cocos2d::CCArray *_levelArray;Level::_levelArray24,345
+    Miao* miao;Level::miao27,393
+    RBoss* boss;Level::boss28,409
+    float randTime Level::randTime29,426
+    cocos2d::CCArray *_soldiers;Level::_soldiers30,450
+	cocos2d::CCArray *_enimies;Level::_enimies31,483
+
+LevelLoader.h,63
+#define __miwu__LevelLoader__10,105
+class LevelLoader 17,201
+
+Load.h,479
+#define __miwu__Load__10,93
+struct CQPlayer 16,191
+    int playerId;17,209
+    std::string playerName;CQPlayer::playerName18,227
+    int combats;CQPlayer::combats19,255
+    int stars;CQPlayer::stars20,272
+    int level;CQPlayer::level21,287
+class Load 24,306
+    static std::string sharedSessionId;Load::sharedSessionId29,367
+    static struct CQPlayer sharedPlayer;Load::sharedPlayer30,407
+    static cocos2d::CCNode* sharedInstance;Load::sharedInstance31,448
+
+LoadLoader.h,61
+#define __miwu__LoadLoader__10,105
+class LoadLoader 17,199
+
+MainMenuScene.h,146
+#define __miwu__MainMenuScene__10,109
+class MainMenuScene 15,187
+    static MainMenuScene* sharedInstance;MainMenuScene::sharedInstance37,759
+
+MainMenuSceneLoader.h,76
+#define miwu_MainMenuSceneLoader_h10,118
+class MainMenuSceneLoader 17,227
+
+MainMenuSceneLoaderT.h,78
+#define miwu_x_MainMenuSceneLoader_h10,122
+class MainMenuSceneLoader 17,233
+
+Medal.h,50
+#define __miwu__Medal__10,95
+class Medal 16,194
+
+MedalLoader.h,63
+#define __miwu__MedalLoader__10,107
+class MedalLoader 17,203
+
+Menu.h,828
+#define __miwu__Menu__10,91
+class Menu 17,180
+    cocos2d::CCLayer* levelLayer;Menu::levelLayer20,330
+    cocos2d::CCLayer* backgroundLayer;Menu::backgroundLayer21,364
+    Level* level;Menu::level22,403
+    cocos2d::CCSprite* redRect;Menu::redRect23,421
+    cocos2d::CCSprite* blueRect;Menu::blueRect24,453
+    cocos2d::CCLabelTTF* foodValue;Menu::foodValue25,486
+    cocos2d::CCLabelTTF* manaValue;Menu::manaValue26,522
+    cocos2d::CCProgressTimer* redProcessBar;Menu::redProcessBar27,558
+    cocos2d::CCProgressTimer* blueProcessBar;Menu::blueProcessBar28,603
+    cocos2d::CCSprite* leftArrow;Menu::leftArrow29,649
+    cocos2d::CCSprite* rightArrow;Menu::rightArrow30,683
+    cocos2d::CCSprite* pauseSprite;Menu::pauseSprite31,718
+    float food;Menu::food33,759
+    float mana;Menu::mana34,775
+
+MenuLoader.h,61
+#define __miwu__MenuLoader__10,103
+class MenuLoader 17,197
+
+Miao.h,170
+#define __miwu__Miao__10,94
+class Miao 17,188
+    cocos2d::CCSprite* miaoSprite;Miao::miaoSprite21,231
+    cocos2d::CCSprite* circleSprite;Miao::circleSprite22,266
+
+MiaoLoader.h,61
+#define __miwu__MiaoLoader__10,105
+class MiaoLoader 17,199
+
+MouseBackground.h,198
+#define __miwu__MouseBackground__10,115
+class MouseBackground 15,195
+    cocos2d::CCNode* level;MouseBackground::level18,308
+    cocos2d::CCLayer* levelLayer;MouseBackground::levelLayer22,391
+
+MouseBackgroundLoader.h,83
+#define __miwu__MouseBackgroundLoader__10,127
+class MouseBackgroundLoader 17,243
+
+MouseGameScene.h,69
+#define __miwu__MouseGameScene__10,111
+class MouseGameScene 14,169
+
+MouseLevel.h,362
+#define __miwu__MouseLevel__10,103
+class MouseLevel 18,216
+    Miao* miao;MouseLevel::miao23,337
+    RBoss* boss;MouseLevel::boss24,353
+    float randTime MouseLevel::randTime25,370
+    cocos2d::CCSprite* base;MouseLevel::base26,394
+    cocos2d::CCArray *_soldiers;MouseLevel::_soldiers27,423
+	cocos2d::CCArray *_enimies;MouseLevel::_enimies28,456
+
+MouseLevelLoader.h,73
+#define __miwu__MouseLevelLoader__10,115
+class MouseLevelLoader 17,221
+
+MouseMenu.h,527
+#define __miwu__MouseMenu__10,101
+class MouseMenu 17,200
+    cocos2d::CCLayer* levelLayer;MouseMenu::levelLayer20,307
+    cocos2d::CCLayer* backgroundLayer;MouseMenu::backgroundLayer21,341
+    MouseLevel* level;MouseMenu::level22,380
+    float randTime MouseMenu::randTime24,420
+    cocos2d::CCArray *_buttons;MouseMenu::_buttons25,444
+    int buttonCount MouseMenu::buttonCount26,476
+    cocos2d::CCSprite* pauseSprite;MouseMenu::pauseSprite27,501
+    cocos2d::CCSprite* miaoRound;MouseMenu::miaoRound28,537
+
+MouseMenuLoader.h,71
+#define __miwu__MouseMenuLoader__10,113
+class MouseMenuLoader 17,217
+
+NormalGameScene.h,71
+#define __miwu__NormalGameScene__10,113
+class NormalGameScene 14,172
+
+OpenUDID.h,148
+#define kOpenUDIDErrorNone 55,1535
+#define kOpenUDIDErrorOptedOut 56,1573
+#define kOpenUDIDErrorCompromised 57,1611
+@interface OpenUDID 59,1650
+
+Others.h,52
+#define __miwu__Others__10,97
+class Others 16,197
+
+OthersLoader.h,65
+#define __miwu__OthersLoader__10,109
+class OthersLoader 17,207
+
+Pause.h,144
+#define __miwu__Pause__10,95
+class Pause 16,194
+    cocos2d::CCSprite* win;Pause::win21,255
+    cocos2d::CCSprite* lose;Pause::lose22,283
+
+PauseLoader.h,63
+#define __miwu__PauseLoader__10,107
+class PauseLoader 17,203
+
+PrintingLabel.h,555
+#define __miwu__PrintingLabel__10,106
+class PrintingLabel 15,181
+        bool getComplete(PrintingLabel::getComplete21,444
+        std::string type;PrintingLabel::type25,564
+        const char* fnt;PrintingLabel::fnt26,590
+        int delay;PrintingLabel::delay27,615
+        int count;PrintingLabel::count28,634
+        int total;PrintingLabel::total29,653
+        cocos2d::CCLabelTTF* label;PrintingLabel::label30,672
+        bool complete;PrintingLabel::complete31,708
+        cocos2d::CCRepeat*  repeat;PrintingLabel::repeat32,731
+
+Process.h,454
+#define __miwu__Process__10,99
+class Process 16,200
+    cocos2d::CCSprite* level_ri;Process::level_ri19,250
+    cocos2d::CCSprite* level_west;Process::level_west20,283
+    cocos2d::CCSprite* level_tale;Process::level_tale21,318
+    cocos2d::CCSprite* level_cn;Process::level_cn22,353
+    cocos2d::CCSprite* level_evil;Process::level_evil23,386
+    static int mapType;Process::mapType25,429
+    static int levelNum;Process::levelNum26,453
+
+ProcessLoader.h,67
+#define __miwu__ProcessLoader__10,111
+class ProcessLoader 17,211
+
+RBoss2.h,115
+#define __miwu__RBoss2__10,98
+class RBoss2 19,222
+    DrawLineLayer *drawLineLayer;RBoss2::drawLineLayer23,267
+
+RBoss2Loader.h,65
+#define __miwu__RBoss2Loader__10,109
+class RBoss2Loader 17,207
+
+RBoss.h,112
+#define __miwu__RBoss__10,96
+class RBoss 19,219
+    DrawLineLayer *drawLineLayer;RBoss::drawLineLayer23,263
+
+RBossLoader.h,63
+#define __miwu__RBossLoader__10,107
+class RBossLoader 17,203
+
+Reward.h,52
+#define __miwu__Reward__10,97
+class Reward 16,197
+
+RewardLoader.h,65
+#define __miwu__RewardLoader__10,109
+class RewardLoader 17,207
+
+RS10.h,48
+#define __miwu__RS10__10,94
+class RS10 17,183
+
+RS10Loader.h,61
+#define __miwu__RS10Loader__10,105
+class RS10Loader 17,199
+
+RS1.h,46
+#define __miwu__RS1__10,92
+class RS1 17,180
+
+RS1Loader.h,59
+#define __miwu__RS1Loader__10,103
+class RS1Loader 17,195
+
+RS2.h,46
+#define __miwu__RS2__10,92
+class RS2 17,180
+
+RS2Loader.h,59
+#define __miwu__RS2Loader__10,103
+class RS2Loader 17,195
+
+RS3.h,46
+#define __miwu__RS3__10,92
+class RS3 17,180
+
+RS3Loader.h,59
+#define __miwu__RS3Loader__10,103
+class RS3Loader 17,195
+
+RS4.h,46
+#define __miwu__RS4__10,92
+class RS4 17,180
+
+RS4Loader.h,59
+#define __miwu__RS4Loader__10,103
+class RS4Loader 17,195
+
+RS5.h,46
+#define __miwu__RS5__10,92
+class RS5 17,180
+
+RS5Loader.h,59
+#define __miwu__RS5Loader__10,103
+class RS5Loader 17,195
+
+RS6.h,46
+#define __miwu__RS6__10,92
+class RS6 17,180
+
+RS6Loader.h,59
+#define __miwu__RS6Loader__10,103
+class RS6Loader 17,195
+
+RS7.h,46
+#define __miwu__RS7__10,92
+class RS7 17,180
+
+RS7Loader.h,59
+#define __miwu__RS7Loader__10,103
+class RS7Loader 17,195
+
+RS8.h,46
+#define __miwu__RS8__10,92
+class RS8 17,180
+
+RS8Loader.h,59
+#define __miwu__RS8Loader__10,103
+class RS8Loader 17,195
+
+RS9.h,46
+#define __miwu__RS9__10,92
+class RS9 17,180
+
+RS9Loader.h,59
+#define __miwu__RS9Loader__10,103
+class RS9Loader 17,195
+
+S1.h,290
+#define __miwu__S1__10,90
+#define kCJ_S1_BASE_HP 17,179
+#define kCJ_S1_BASE_ATK 18,206
+#define kCJ_S1_StartSpeed 19,233
+#define kCJ_S1_ACTION_RANGE 20,262
+#define kCJ_S1_ATK_DELAY 21,292
+#define kCJ_S1_NORMAL_SKILL_RATE 22,321
+#define kCJ_S1_HALO_SKILL_RATE 23,357
+class S1 25,392
+
+S1Loader.h,57
+#define __miwu__S1Loader__10,101
+class S1Loader 17,191
+
+S2.h,290
+#define __miwu__S2__10,90
+#define kCJ_S2_BASE_HP 17,179
+#define kCJ_S2_BASE_ATK 18,205
+#define kCJ_S2_StartSpeed 19,232
+#define kCJ_S2_ACTION_RANGE 20,261
+#define kCJ_S2_ATK_DELAY 21,291
+#define kCJ_S2_NORMAL_SKILL_RATE 22,318
+#define kCJ_S2_HALO_SKILL_RATE 23,354
+class S2 25,389
+
+S2Loader.h,57
+#define __miwu__S2Loader__10,101
+class S2Loader 17,191
+
+S3.h,290
+#define __miwu__S3__10,90
+#define kCJ_S3_BASE_HP 17,179
+#define kCJ_S3_BASE_ATK 18,206
+#define kCJ_S3_StartSpeed 19,233
+#define kCJ_S3_ACTION_RANGE 20,262
+#define kCJ_S3_ATK_DELAY 21,292
+#define kCJ_S3_NORMAL_SKILL_RATE 22,321
+#define kCJ_S3_HALO_SKILL_RATE 23,358
+class S3 25,393
+
+S3Loader.h,57
+#define __miwu__S3Loader__10,101
+class S3Loader 17,191
+
+S4.h,290
+#define __miwu__S4__10,90
+#define kCJ_S4_BASE_HP 17,179
+#define kCJ_S4_BASE_ATK 18,206
+#define kCJ_S4_StartSpeed 19,233
+#define kCJ_S4_ACTION_RANGE 20,262
+#define kCJ_S4_ATK_DELAY 21,292
+#define kCJ_S4_NORMAL_SKILL_RATE 22,319
+#define kCJ_S4_HALO_SKILL_RATE 23,355
+class S4 25,390
+
+S4Loader.h,57
+#define __miwu__S4Loader__10,101
+class S4Loader 17,191
+
+S5.h,290
+#define __miwu__S5__10,90
+#define kCJ_S5_BASE_HP 17,179
+#define kCJ_S5_BASE_ATK 18,206
+#define kCJ_S5_StartSpeed 19,233
+#define kCJ_S5_ACTION_RANGE 20,262
+#define kCJ_S5_ATK_DELAY 21,292
+#define kCJ_S5_NORMAL_SKILL_RATE 23,320
+#define kCJ_S5_HALO_SKILL_RATE 24,356
+class S5 26,392
+
+S5Loader.h,57
+#define __miwu__S5Loader__10,101
+class S5Loader 17,191
+
+S6.h,290
+#define __miwu__S6__10,90
+#define kCJ_S6_BASE_HP 17,179
+#define kCJ_S6_BASE_ATK 18,206
+#define kCJ_S6_StartSpeed 19,233
+#define kCJ_S6_ACTION_RANGE 20,262
+#define kCJ_S6_ATK_DELAY 21,292
+#define kCJ_S6_NORMAL_SKILL_RATE 22,319
+#define kCJ_S6_HALO_SKILL_RATE 23,356
+class S6 25,392
+
+S6Loader.h,57
+#define __miwu__S6Loader__10,101
+class S6Loader 17,191
+
+S7.h,290
+#define __miwu__S7__10,90
+#define kCJ_S7_BASE_HP 17,179
+#define kCJ_S7_BASE_ATK 18,206
+#define kCJ_S7_StartSpeed 19,233
+#define kCJ_S7_ACTION_RANGE 20,262
+#define kCJ_S7_ATK_DELAY 21,292
+#define kCJ_S7_NORMAL_SKILL_RATE 22,319
+#define kCJ_S7_HALO_SKILL_RATE 23,356
+class S7 25,392
+
+S7Loader.h,57
+#define __miwu__S7Loader__10,101
+class S7Loader 17,191
+
+S8.h,290
+#define __miwu__S8__10,90
+#define kCJ_S8_BASE_HP 17,179
+#define kCJ_S8_BASE_ATK 18,206
+#define kCJ_S8_StartSpeed 19,233
+#define kCJ_S8_ACTION_RANGE 20,262
+#define kCJ_S8_ATK_DELAY 21,292
+#define kCJ_S8_NORMAL_SKILL_RATE 23,322
+#define kCJ_S8_HALO_SKILL_RATE 24,358
+class S8 26,393
+
+S8Loader.h,57
+#define __miwu__S8Loader__10,101
+class S8Loader 17,191
+
+S9.h,290
+#define __miwu__S9__10,90
+#define kCJ_S9_BASE_HP 17,179
+#define kCJ_S9_BASE_ATK 18,206
+#define kCJ_S9_StartSpeed 19,233
+#define kCJ_S9_ACTION_RANGE 20,262
+#define kCJ_S9_ATK_DELAY 21,292
+#define kCJ_S9_NORMAL_SKILL_RATE 23,320
+#define kCJ_S9_HALO_SKILL_RATE 24,357
+class S9 26,392
+
+S9Loader.h,57
+#define __miwu__S9Loader__10,101
+class S9Loader 17,191
+
+Share.h,50
+#define __miwu__Share__10,95
+class Share 16,194
+
+ShareLoader.h,63
+#define __miwu__ShareLoader__10,107
+class ShareLoader 17,203
+
+Shop.h,197
+#define __miwu__Shop__10,93
+class Shop 16,191
+    cocos2d::CCSprite* coin;Shop::coin20,246
+    cocos2d::CCSprite* treasure;Shop::treasure21,275
+    cocos2d::CCSprite* ring;Shop::ring22,308
+
+ShopLoader.h,61
+#define __miwu__ShopLoader__10,105
+class ShopLoader 17,199
+
+Soldier.h,381
+#define __miwu__Soldier__10,100
+class Soldier 18,224
+    int normalSkillRate;Soldier::normalSkillRate40,989
+    int haloSkillRate;Soldier::haloSkillRate41,1014
+    bool normalSkillTriggerResult;Soldier::normalSkillTriggerResult42,1037
+    bool haloSkillTriggerResult;Soldier::haloSkillTriggerResult43,1072
+    DrawLineLayer *drawLineLayer;Soldier::drawLineLayer46,1119
+
+StaticData.h,370
+#define __MIWU__StaticData__11,113
+#define STATIC_DATA_STRING(14,167
+#define STATIC_DATA_INT(15,251
+#define STATIC_DATA_FLOAT(16,329
+#define STATIC_DATA_BOOLEAN(17,411
+#define STATIC_DATA_POINT(18,497
+#define STATIC_DATA_RECT(19,579
+#define STATIC_DATA_SIZE(20,659
+class StaticData 22,741
+    cocos2d::CCDictionary* _dictionary;StaticData::_dictionary50,1508
+
+Status.h,196
+#define __miwu__Status__10,95
+class Status 18,204
+    cocos2d::CCProgressTimer* bossBloodBar;Status::bossBloodBar23,279
+    cocos2d::CCProgressTimer* miaoBloodBar;Status::miaoBloodBar24,323
+
+StatusLoader.h,65
+#define __miwu__StatusLoader__10,107
+class StatusLoader 17,205
+
+StoryScene.h,578
+#define __miwu__StoryScene__10,103
+class StoryScene 16,205
+    int storyCount;StoryScene::storyCount19,258
+    int i StoryScene::i21,283
+    cocos2d::CCString* storyString;StoryScene::storyString22,298
+    cocos2d::CCSprite* story1;StoryScene::story124,339
+    cocos2d::CCSprite* story2;StoryScene::story225,370
+    cocos2d::CCSprite* story3;StoryScene::story326,401
+    cocos2d::CCSprite* story4;StoryScene::story427,432
+    PrintingLabel* firstLineLabel;StoryScene::firstLineLabel29,468
+    PrintingLabel* secondLineLabel;StoryScene::secondLineLabel30,503
+
+TBoss2.h,115
+#define __miwu__TBoss2__10,98
+class TBoss2 19,222
+    DrawLineLayer *drawLineLayer;TBoss2::drawLineLayer23,267
+
+TBoss2Loader.h,65
+#define __miwu__TBoss2Loader__10,109
+class TBoss2Loader 17,207
+
+TBoss.h,112
+#define __miwu__TBoss__10,96
+class TBoss 19,219
+    DrawLineLayer *drawLineLayer;TBoss::drawLineLayer23,263
+
+TBossLoader.h,63
+#define __miwu__TBossLoader__10,107
+class TBossLoader 17,203
+
+Toolkit.h,53
+#define __miwu__Toolkit__10,94
+class Toolkit15,163
+
+TS10.h,48
+#define __miwu__TS10__10,94
+class TS10 17,183
+
+TS10Loader.h,61
+#define __miwu__TS10Loader__10,105
+class TS10Loader 17,199
+
+TS1.h,46
+#define __miwu__TS1__10,92
+class TS1 17,180
+
+TS1Loader.h,59
+#define __miwu__TS1Loader__10,103
+class TS1Loader 17,195
+
+TS2.h,46
+#define __miwu__TS2__10,92
+class TS2 17,180
+
+TS2Loader.h,59
+#define __miwu__TS2Loader__10,103
+class TS2Loader 17,195
+
+TS3.h,46
+#define __miwu__TS3__10,92
+class TS3 17,180
+
+TS3Loader.h,59
+#define __miwu__TS3Loader__10,103
+class TS3Loader 17,195
+
+TS4.h,46
+#define __miwu__TS4__10,92
+class TS4 17,180
+
+TS4Loader.h,59
+#define __miwu__TS4Loader__10,103
+class TS4Loader 17,195
+
+TS5.h,46
+#define __miwu__TS5__10,92
+class TS5 17,180
+
+TS5Loader.h,59
+#define __miwu__TS5Loader__10,103
+class TS5Loader 17,195
+
+TS6.h,46
+#define __miwu__TS6__10,92
+class TS6 17,180
+
+TS6Loader.h,59
+#define __miwu__TS6Loader__10,103
+class TS6Loader 17,195
+
+TS7.h,46
+#define __miwu__TS7__10,92
+class TS7 17,180
+
+TS7Loader.h,59
+#define __miwu__TS7Loader__10,103
+class TS7Loader 17,195
+
+TS8.h,46
+#define __miwu__TS8__10,92
+class TS8 17,180
+
+TS8Loader.h,59
+#define __miwu__TS8Loader__10,103
+class TS8Loader 17,195
+
+TS9.h,46
+#define __miwu__TS9__10,92
+class TS9 17,180
+
+TS9Loader.h,59
+#define __miwu__TS9Loader__10,103
+class TS9Loader 17,195
+
+UpdateLayer.h,268
+#define __miwu__UpdateLayer__10,107
+class UpdateLayer 15,187
+    cocos2d::CCLabelTTF *pProgressLabel;UpdateLayer::pProgressLabel30,635
+    std::string pathToSave;UpdateLayer::pathToSave31,676
+    bool isUpdateItemClicked;UpdateLayer::isUpdateItemClicked32,704
+
+WBoss2.h,115
+#define __miwu__WBoss2__10,98
+class WBoss2 19,222
+    DrawLineLayer *drawLineLayer;WBoss2::drawLineLayer23,267
+
+WBoss2Loader.h,65
+#define __miwu__WBoss2Loader__10,109
+class WBoss2Loader 17,207
+
+WBoss.h,112
+#define __miwu__WBoss__10,96
+class WBoss 19,219
+    DrawLineLayer *drawLineLayer;WBoss::drawLineLayer23,263
+
+WBossLoader.h,63
+#define __miwu__WBossLoader__10,107
+class WBossLoader 17,203
+
+WS10.h,48
+#define __miwu__WS10__10,94
+class WS10 17,183
+
+WS10Loader.h,61
+#define __miwu__WS10Loader__10,105
+class WS10Loader 17,199
+
+WS1.h,46
+#define __miwu__WS1__10,92
+class WS1 17,180
+
+WS1Loader.h,59
+#define __miwu__WS1Loader__10,103
+class WS1Loader 17,195
+
+WS2.h,46
+#define __miwu__WS2__10,92
+class WS2 17,180
+
+WS2Loader.h,59
+#define __miwu__WS2Loader__10,103
+class WS2Loader 17,195
+
+WS3.h,46
+#define __miwu__WS3__10,92
+class WS3 17,180
+
+WS3Loader.h,59
+#define __miwu__WS3Loader__10,103
+class WS3Loader 17,195
+
+WS4.h,46
+#define __miwu__WS4__10,92
+class WS4 17,180
+
+WS4Loader.h,59
+#define __miwu__WS4Loader__10,103
+class WS4Loader 17,195
+
+WS5.h,46
+#define __miwu__WS5__10,92
+class WS5 17,180
+
+WS5Loader.h,59
+#define __miwu__WS5Loader__10,103
+class WS5Loader 17,195
+
+WS6.h,46
+#define __miwu__WS6__10,92
+class WS6 17,180
+
+WS6Loader.h,59
+#define __miwu__WS6Loader__10,103
+class WS6Loader 17,195
+
+WS7.h,46
+#define __miwu__WS7__10,92
+class WS7 17,180
+
+WS7Loader.h,59
+#define __miwu__WS7Loader__10,103
+class WS7Loader 17,195
+
+WS8.h,46
+#define __miwu__WS8__10,92
+class WS8 17,180
+
+WS8Loader.h,59
+#define __miwu__WS8Loader__10,103
+class WS8Loader 17,195
+
+WS9.h,46
+#define __miwu__WS9__10,92
+class WS9 17,180
+
+WS9Loader.h,59
+#define __miwu__WS9Loader__10,103
+class WS9Loader 17,195
+
+Zombie.h,52
+#define __Miwu__Zombie__10,98
+class Zombie 17,189
+
+ZombieLoader.h,65
+#define __Miwu__ZombieLoader__10,109
+class ZombieLoader 17,207
+
+Ability.cpp,109
+USING_NS_CC;14,146
+USING_NS_CC_EXT;15,159
+void Ability::onEnter(17,177
+bool Ability::ccTouchBegan(24,276
+
+AbilityLoader.cpp,80
+USING_NS_CC;13,135
+USING_NS_CC_EXT;14,148
+CCNode* AbilityLoader::load(16,166
+
+Account.cpp,109
+USING_NS_CC;14,146
+USING_NS_CC_EXT;15,159
+void Account::onEnter(17,177
+bool Account::ccTouchBegan(24,276
+
+AccountLoader.cpp,80
+USING_NS_CC;11,109
+USING_NS_CC_EXT;12,122
+CCNode* AccountLoader::load(14,140
+
+ApiParser.cpp,79
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+void ApiParser::requestApi(14,134
+
+ApiReader.cpp,149
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+bool ApiReader::init(15,182
+bool ApiReader::read(20,227
+void ApiReader::onHttpRequestCompleted(33,637
+
+AppDelegate.cpp,682
+USING_NS_CC;16,263
+USING_NS_CC_EXT;17,276
+typedef struct tagResource20,325
+    CCSize sizeInPixel;tagResource::sizeInPixel22,354
+    CCSize sizeDesign;tagResource::sizeDesign23,378
+    char directory[tagResource::directory24,401
+} Resource;25,426
+static Resource resPhone 27,439
+static Resource resPhoneRetina 28,536
+static Resource resPhone5Retina 29,642
+static Resource resTable 30,750
+static Resource resTableRetina 31,847
+AppDelegate::AppDelegate(33,953
+AppDelegate::~AppDelegate(38,986
+bool AppDelegate::applicationDidFinishLaunching(42,1019
+void AppDelegate::applicationDidEnterBackground(105,3191
+void AppDelegate::applicationWillEnterForeground(113,3479
+
+Army.cpp,103
+USING_NS_CC;14,137
+USING_NS_CC_EXT;15,150
+void Army::onEnter(17,168
+bool Army::ccTouchBegan(24,264
+
+ArmyLoader.cpp,77
+USING_NS_CC;13,129
+USING_NS_CC_EXT;14,142
+CCNode* ArmyLoader::load(16,160
+
+Background.cpp,293
+USING_NS_CC;15,180
+USING_NS_CC_EXT;16,193
+void Background::onEnter(18,211
+bool Background::onAssignCCBCustomProperty(30,413
+bool Background::onAssignCCBMemberVariable(35,581
+void Background::ccTouchesMoved(42,822
+void Background::ccTouchesEnded(56,1591
+void Background::update(68,1996
+
+BackgroundLoader.cpp,83
+USING_NS_CC;14,162
+USING_NS_CC_EXT;15,175
+CCNode* BackgroundLoader::load(17,193
+
+CBoss2.cpp,467
+#define kCJStartSpeed 12,115
+#define kCJHP 13,141
+#define kCJATK 14,159
+#define kCJDEF 15,177
+USING_NS_CC;17,196
+USING_NS_CC_EXT;18,209
+bool CBoss2::init(22,229
+void CBoss2::onEnter(37,542
+void CBoss2::update(46,757
+void CBoss2::drawCollisionLine(55,973
+void CBoss2::handleCollisionWith(63,1236
+float CBoss2::radius(79,1657
+void CBoss2::resetSpeed(84,1703
+bool CBoss2::isMaxHp(89,1762
+void CBoss2::deadHandler(94,1814
+void CBoss2::atkHandler(106,2222
+
+CBoss2Loader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* CBoss2Loader::load(14,136
+
+CBoss.cpp,457
+#define kCJStartSpeed 13,138
+#define kCJHP 14,164
+#define kCJATK 15,182
+#define kCJDEF 16,200
+USING_NS_CC;18,219
+USING_NS_CC_EXT;19,232
+bool CBoss::init(22,251
+void CBoss::onEnter(37,563
+void CBoss::update(46,777
+void CBoss::drawCollisionLine(55,992
+void CBoss::handleCollisionWith(63,1254
+float CBoss::radius(79,1674
+void CBoss::resetSpeed(84,1719
+bool CBoss::isMaxHp(89,1777
+void CBoss::deadHandler(94,1828
+void CBoss::atkHandler(110,2385
+
+CBossLoader.cpp,78
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+CCNode* CBossLoader::load(14,134
+
+CS10.cpp,192
+#define kCJStartSpeed 11,92
+#define kCJHP 12,117
+#define kCJATK 13,135
+#define kCJDEF 14,153
+USING_NS_CC;16,172
+USING_NS_CC_EXT;17,185
+bool CS10::init(20,204
+float CS10::radius(33,391
+
+CS10Loader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* CS10Loader::load(14,132
+
+CS1.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS1::init(20,202
+float CS1::radius(33,387
+
+CS1Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS1Loader::load(14,130
+
+CS2.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS2::init(20,202
+float CS2::radius(33,387
+
+CS2Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS2Loader::load(14,130
+
+CS3.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool CS3::init(20,201
+float CS3::radius(33,386
+
+CS3Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS3Loader::load(14,130
+
+CS4.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS4::init(20,202
+float CS4::radius(33,387
+
+CS4Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS4Loader::load(14,130
+
+CS5.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS5::init(20,202
+float CS5::radius(33,387
+
+CS5Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS5Loader::load(14,130
+
+CS6.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS6::init(20,202
+float CS6::radius(33,387
+
+CS6Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS6Loader::load(14,130
+
+CS7.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool CS7::init(20,202
+float CS7::radius(33,387
+
+CS7Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS7Loader::load(14,130
+
+CS8.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool CS8::init(20,201
+float CS8::radius(33,386
+
+CS8Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS8Loader::load(14,130
+
+CS9.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool CS9::init(20,201
+float CS9::radius(33,386
+
+CS9Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* CS9Loader::load(14,130
+
+DrawLineLayer.cpp,131
+USING_NS_CC;11,104
+DrawLineLayer* DrawLineLayer::create(13,118
+bool DrawLineLayer::init(29,486
+void DrawLineLayer::draw(36,609
+
+EBoss2.cpp,467
+#define kCJStartSpeed 12,115
+#define kCJHP 13,141
+#define kCJATK 14,159
+#define kCJDEF 15,177
+USING_NS_CC;17,196
+USING_NS_CC_EXT;18,209
+bool EBoss2::init(22,229
+void EBoss2::onEnter(37,542
+void EBoss2::update(46,757
+void EBoss2::drawCollisionLine(55,973
+void EBoss2::handleCollisionWith(63,1236
+float EBoss2::radius(79,1657
+void EBoss2::resetSpeed(84,1703
+bool EBoss2::isMaxHp(89,1762
+void EBoss2::deadHandler(94,1814
+void EBoss2::atkHandler(106,2222
+
+EBoss2Loader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* EBoss2Loader::load(14,136
+
+EBoss.cpp,457
+#define kCJStartSpeed 13,138
+#define kCJHP 14,164
+#define kCJATK 15,182
+#define kCJDEF 16,200
+USING_NS_CC;18,219
+USING_NS_CC_EXT;19,232
+bool EBoss::init(22,251
+void EBoss::onEnter(37,563
+void EBoss::update(46,777
+void EBoss::drawCollisionLine(55,992
+void EBoss::handleCollisionWith(63,1254
+float EBoss::radius(79,1674
+void EBoss::resetSpeed(84,1719
+bool EBoss::isMaxHp(89,1777
+void EBoss::deadHandler(94,1828
+void EBoss::atkHandler(110,2385
+
+EBossLoader.cpp,78
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+CCNode* EBossLoader::load(14,134
+
+Enemy.cpp,399
+#define kCJStartSpeed 14,168
+#define kCJHP 15,193
+#define kCJATK 16,211
+#define kCJDEF 17,229
+USING_NS_CC;19,248
+USING_NS_CC_EXT;20,261
+bool Enemy::init(23,280
+void Enemy::drawCollisionLine(43,691
+void Enemy::onEnter(51,953
+void Enemy::update(60,1169
+void Enemy::handleCollisionWith(71,1425
+void Enemy::resetSpeed(106,2533
+bool Enemy::isMaxHp(116,2902
+void Enemy::deadHandler(121,2951
+
+Equip.cpp,105
+USING_NS_CC;14,140
+USING_NS_CC_EXT;15,153
+void Equip::onEnter(17,171
+bool Equip::ccTouchBegan(24,268
+
+EquipLoader.cpp,78
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* EquipLoader::load(14,136
+
+ES10.cpp,192
+#define kCJStartSpeed 11,92
+#define kCJHP 12,117
+#define kCJATK 13,135
+#define kCJDEF 14,153
+USING_NS_CC;16,172
+USING_NS_CC_EXT;17,185
+bool ES10::init(20,204
+float ES10::radius(33,391
+
+ES10Loader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* ES10Loader::load(14,132
+
+ES1.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES1::init(20,202
+float ES1::radius(33,387
+
+ES1Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES1Loader::load(14,130
+
+ES2.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES2::init(20,202
+float ES2::radius(33,387
+
+ES2Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES2Loader::load(14,130
+
+ES3.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool ES3::init(20,201
+float ES3::radius(33,386
+
+ES3Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES3Loader::load(14,130
+
+ES4.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES4::init(20,202
+float ES4::radius(33,387
+
+ES4Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES4Loader::load(14,130
+
+ES5.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES5::init(20,202
+float ES5::radius(33,387
+
+ES5Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES5Loader::load(14,130
+
+ES6.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES6::init(20,202
+float ES6::radius(33,387
+
+ES6Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES6Loader::load(14,130
+
+ES7.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool ES7::init(20,202
+float ES7::radius(33,387
+
+ES7Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES7Loader::load(14,130
+
+ES8.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool ES8::init(20,201
+float ES8::radius(33,386
+
+ES8Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES8Loader::load(14,130
+
+ES9.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool ES9::init(20,201
+float ES9::radius(33,386
+
+ES9Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* ES9Loader::load(14,130
+
+Event.cpp,105
+USING_NS_CC;14,140
+USING_NS_CC_EXT;15,153
+void Event::onEnter(17,171
+bool Event::ccTouchBegan(24,268
+
+EventLoader.cpp,78
+USING_NS_CC;13,131
+USING_NS_CC_EXT;14,144
+CCNode* EventLoader::load(16,162
+
+Gacha.cpp,105
+USING_NS_CC;14,140
+USING_NS_CC_EXT;15,153
+void Gacha::onEnter(17,171
+bool Gacha::ccTouchBegan(24,268
+
+GachaLoader.cpp,78
+USING_NS_CC;13,131
+USING_NS_CC_EXT;14,144
+CCNode* GachaLoader::load(16,162
+
+GameObject.cpp,322
+bool GameObject::checkIsCollision(11,104
+void GameObject::reboundHeartHandler(21,323
+bool GameObject::hurtToOther(26,394
+void GameObject::atkHandler(31,457
+void GameObject::resetCurActionCount(58,911
+bool GameObject::stopAction(63,979
+void GameObject::stop(68,1056
+void GameObject::reboundedHeartedHandler(73,1101
+
+GameOverScene.cpp,156
+USING_NS_CC;16,180
+USING_NS_CC_EXT;17,193
+CCScene* GameOverScene::scene(19,211
+bool GameOverScene::init(30,401
+void GameOverScene::pressedPlay(67,1638
+
+GameScene.cpp,348
+USING_NS_CC;15,183
+USING_NS_CC_EXT;16,196
+GameScene* GameScene::sharedInstance 18,214
+GameScene* GameScene::sharedScene(20,260
+void GameScene::onEnter(37,519
+bool GameScene::onAssignCCBCustomProperty(42,574
+bool GameScene::onAssignCCBMemberVariable(47,741
+void GameScene::handleGameOver(57,1161
+void GameScene::handleLevelComplete(62,1271
+
+GameSceneLoader.cpp,85
+USING_NS_CC;13,137
+USING_NS_CC_EXT;14,150
+GameScene* GameSceneLoader::load(16,168
+
+HelloWorldScene.cpp,108
+CCScene* HelloWorld::scene(7,118
+bool HelloWorld::init(23,482
+void HelloWorld::menuCloseCallback(77,2273
+
+Invite.cpp,107
+USING_NS_CC;14,143
+USING_NS_CC_EXT;15,156
+void Invite::onEnter(17,174
+bool Invite::ccTouchBegan(24,272
+
+InviteLoader.cpp,79
+USING_NS_CC;13,133
+USING_NS_CC_EXT;14,146
+CCNode* InviteLoader::load(16,164
+
+LayerWithDialog.cpp,252
+USING_NS_CC;13,135
+USING_NS_CC_EXT;14,148
+void LayerWithDialog::onEnter(16,166
+bool LayerWithDialog::onAssignCCBCustomProperty(23,265
+bool LayerWithDialog::onAssignCCBMemberVariable(28,438
+void LayerWithDialog::registerWithTouchDispatcher(34,676
+
+Level.cpp,444
+#define kCJScrollFilterFactor 85,1607
+#define kCJS1TargetOffset 86,1641
+USING_NS_CC;88,1672
+USING_NS_CC_EXT;89,1685
+void Level::onEnter(91,1703
+void Level::onExit(125,2688
+bool Level::onAssignCCBCustomProperty(136,2871
+bool Level::onAssignCCBMemberVariable(141,3034
+void Level::update(146,3180
+void Level::removeSoldier(621,20623
+void Level::removeEnemy(632,20837
+void Level::winHandler(641,21013
+void Level::loseHandler(647,21152
+
+LevelData.cpp,614
+USING_NS_CC;11,108
+#define LEVEL_DATA_PATH 14,146
+static LevelData* _sharedLevelData 16,192
+LevelData* LevelData::sharedLevelData(17,236
+LevelData::LevelData(25,435
+LevelData::~LevelData(29,504
+bool LevelData::init(33,575
+const char* LevelData::stringFromKey(39,740
+int LevelData::intFromKey(43,853
+float LevelData::floatFromKey(47,953
+bool LevelData::booleanFromKey(51,1059
+cocos2d::CCPoint LevelData::pointFromKey(55,1165
+cocos2d::CCRect LevelData::rectFromKey(59,1301
+cocos2d::CCSize LevelData::sizeFromKey(63,1434
+cocos2d::CCArray* LevelData::arrayFromKey(67,1567
+void LevelData::purge(71,1691
+
+LevelLoader.cpp,78
+USING_NS_CC;14,156
+USING_NS_CC_EXT;15,169
+CCNode* LevelLoader::load(17,187
+
+Load.cpp,360
+USING_NS_CC;19,264
+USING_NS_CC_EXT;20,277
+std::string Load::sharedSessionId 22,295
+struct CQPlayer Load::sharedPlayer 23,335
+CCNode* Load::sharedInstance 24,376
+CCScene* Load::scene(26,414
+void Load::onEnter(36,588
+void Load::onLoginRequestCompleted(61,1636
+void Load::onRegisterRequestCompleted(130,4551
+void Load::onPlayerRequestCompleted(177,6166
+
+LoadLoader.cpp,77
+USING_NS_CC;13,129
+USING_NS_CC_EXT;14,142
+CCNode* LoadLoader::load(16,160
+
+MainMenuScene.cpp,563
+USING_NS_CC;28,496
+USING_NS_CC_EXT;29,509
+MainMenuScene* MainMenuScene::sharedInstance 31,527
+MainMenuScene* MainMenuScene::sharedScene(33,581
+CCScene* MainMenuScene::scene(38,657
+bool MainMenuScene::init(57,1017
+void MainMenuScene::onEnter(113,3418
+bool MainMenuScene::onAssignCCBCustomProperty(126,3702
+bool MainMenuScene::onAssignCCBMemberVariable(131,3873
+void MainMenuScene::pressedPlay(151,5029
+void MainMenuScene::pressedPlayMouseGame(157,5206
+void MainMenuScene::registerWithTouchDispatcher(163,5391
+bool MainMenuScene::ccTouchBegan(168,5538
+
+MainMenuSceneLoader.cpp,93
+USING_NS_CC;12,122
+USING_NS_CC_EXT;13,135
+MainMenuScene* MainMenuSceneLoader::load(15,153
+
+Medal.cpp,105
+USING_NS_CC;14,140
+USING_NS_CC_EXT;15,153
+void Medal::onEnter(17,171
+bool Medal::ccTouchBegan(24,268
+
+MedalLoader.cpp,78
+USING_NS_CC;13,131
+USING_NS_CC_EXT;14,144
+CCNode* MedalLoader::load(16,162
+
+Menu.cpp,874
+USING_NS_CC;30,448
+USING_NS_CC_EXT;31,461
+#define kCJMiaoSpeed 33,479
+bool Menu::init(35,504
+void Menu::onEnter(41,553
+SEL_MenuHandler Menu::onResolveCCBCCMenuItemSelector(81,2013
+SEL_CCControlHandler Menu::onResolveCCBCCControlSelector(97,2944
+bool Menu::onAssignCCBCustomProperty(102,3078
+bool Menu::onAssignCCBMemberVariable(107,3240
+void Menu::pressedPause(118,3820
+void Menu::winHandler(134,4378
+void Menu::spriteMoveFinished(146,4763
+void Menu::pressedS1(152,4888
+void Menu::pressedS2(174,5632
+void Menu::pressedS3(196,6373
+void Menu::pressedS4(244,7991
+void Menu::pressedS5(266,8731
+void Menu::pressedS6(288,9475
+void Menu::pressedS7(309,10222
+void Menu::pressedS8(330,10971
+void Menu::pressedS9(351,11720
+void Menu::update(372,12467
+void Menu::ccTouchesBegan(385,12863
+void Menu::ccTouchesMoved(419,15139
+void Menu::ccTouchesEnded(444,16634
+
+MenuLoader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* MenuLoader::load(14,132
+
+Miao.cpp,530
+#define kCJStartSpeed 13,150
+#define kCJHP 14,174
+#define kCJATK 15,192
+#define kCJDEF 16,210
+USING_NS_CC;18,229
+USING_NS_CC_EXT;19,242
+bool Miao::init(23,280
+void Miao::onEnter(39,616
+void Miao::drawCollisionLine(48,829
+bool Miao::onAssignCCBMemberVariable(53,870
+void Miao::update(61,1196
+void Miao::handleCollisionWith(71,1468
+float Miao::radius(87,1887
+void Miao::resetSpeed(92,1931
+bool Miao::isMaxHp(97,1988
+void Miao::deadHandler(102,2036
+void Miao::atkHandler(109,2176
+float Miao::getHaloRadius(118,2281
+
+MiaoLoader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* MiaoLoader::load(14,132
+
+MouseBackground.cpp,194
+USING_NS_CC;15,200
+USING_NS_CC_EXT;16,213
+void MouseBackground::onEnter(18,231
+bool MouseBackground::onAssignCCBCustomProperty(30,443
+bool MouseBackground::onAssignCCBMemberVariable(35,616
+
+MouseBackgroundLoader.cpp,88
+USING_NS_CC;13,151
+USING_NS_CC_EXT;14,164
+CCNode* MouseBackgroundLoader::load(16,182
+
+MouseGameScene.cpp,83
+USING_NS_CC;15,228
+USING_NS_CC_EXT;16,241
+CCScene* MouseGameScene::scene(18,259
+
+MouseLevel.cpp,319
+#define kCJScrollFilterFactor 38,627
+#define kCJS1TargetOffset 39,661
+USING_NS_CC;41,692
+USING_NS_CC_EXT;42,705
+void MouseLevel::onEnter(44,723
+void MouseLevel::onExit(76,1598
+bool MouseLevel::onAssignCCBCustomProperty(87,1782
+bool MouseLevel::onAssignCCBMemberVariable(92,1950
+void MouseLevel::update(98,2175
+
+MouseLevelLoader.cpp,83
+USING_NS_CC;14,166
+USING_NS_CC_EXT;15,179
+CCNode* MouseLevelLoader::load(17,197
+
+MouseMenu.cpp,460
+USING_NS_CC;28,437
+USING_NS_CC_EXT;29,450
+#define kCJMiaoSpeed 31,468
+bool MouseMenu::init(33,493
+bool MouseMenu::onAssignCCBCustomProperty(39,547
+bool MouseMenu::onAssignCCBMemberVariable(44,714
+void MouseMenu::onEnter(52,1041
+void MouseMenu::onExit(72,1592
+void MouseMenu::pressedPause(82,1753
+void MouseMenu::update(98,2316
+void MouseMenu::ccTouchesBegan(169,4901
+void MouseMenu::ccTouchesMoved(240,7922
+void MouseMenu::ccTouchesEnded(244,7992
+
+MouseMenuLoader.cpp,82
+USING_NS_CC;11,111
+USING_NS_CC_EXT;12,124
+CCNode* MouseMenuLoader::load(14,142
+
+NormalGameScene.cpp,84
+USING_NS_CC;15,220
+USING_NS_CC_EXT;16,233
+CCScene* NormalGameScene::scene(18,251
+
+Others.cpp,107
+USING_NS_CC;14,143
+USING_NS_CC_EXT;15,156
+void Others::onEnter(17,174
+bool Others::ccTouchBegan(24,272
+
+OthersLoader.cpp,79
+USING_NS_CC;13,133
+USING_NS_CC_EXT;14,146
+CCNode* OthersLoader::load(16,164
+
+Pause.cpp,151
+USING_NS_CC;17,227
+USING_NS_CC_EXT;18,240
+void Pause::onEnter(20,258
+bool Pause::onAssignCCBMemberVariable(27,355
+bool Pause::ccTouchBegan(38,743
+
+PauseLoader.cpp,78
+USING_NS_CC;13,131
+USING_NS_CC_EXT;14,144
+CCNode* PauseLoader::load(16,162
+
+PrintingLabel.cpp,352
+USING_NS_CC;14,169
+PrintingLabel* PrintingLabel::create(17,204
+bool PrintingLabel::init(33,593
+void PrintingLabel::setLabel(47,921
+void PrintingLabel::printingHandler(59,1276
+void PrintingLabel::labelUpdateHandler(70,1686
+void PrintingLabel::displayComplete(88,2145
+void PrintingLabel::setString(95,2262
+PrintingLabel::~PrintingLabel(100,2318
+
+Process.cpp,294
+USING_NS_CC;19,236
+USING_NS_CC_EXT;20,249
+int Process::mapType 22,267
+int Process::levelNum 23,293
+void Process::onEnter(25,321
+bool Process::onAssignCCBMemberVariable(35,531
+bool Process::ccTouchBegan(46,1088
+void Process::initNormalGame(190,7105
+void Process::initMouseGame(197,7334
+
+ProcessLoader.cpp,80
+USING_NS_CC;13,135
+USING_NS_CC_EXT;14,148
+CCNode* ProcessLoader::load(16,166
+
+RBoss2.cpp,467
+#define kCJStartSpeed 12,115
+#define kCJHP 13,141
+#define kCJATK 14,159
+#define kCJDEF 15,177
+USING_NS_CC;17,196
+USING_NS_CC_EXT;18,209
+bool RBoss2::init(22,229
+void RBoss2::onEnter(37,542
+void RBoss2::update(46,757
+void RBoss2::drawCollisionLine(55,973
+void RBoss2::handleCollisionWith(63,1236
+float RBoss2::radius(79,1657
+void RBoss2::resetSpeed(84,1703
+bool RBoss2::isMaxHp(89,1762
+void RBoss2::deadHandler(94,1814
+void RBoss2::atkHandler(106,2222
+
+RBoss2Loader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* RBoss2Loader::load(14,136
+
+RBoss.cpp,457
+#define kCJStartSpeed 12,113
+#define kCJHP 13,139
+#define kCJATK 14,157
+#define kCJDEF 15,175
+USING_NS_CC;17,194
+USING_NS_CC_EXT;18,207
+bool RBoss::init(22,227
+void RBoss::onEnter(37,539
+void RBoss::update(46,753
+void RBoss::drawCollisionLine(55,968
+void RBoss::handleCollisionWith(63,1230
+float RBoss::radius(79,1650
+void RBoss::resetSpeed(84,1695
+bool RBoss::isMaxHp(89,1753
+void RBoss::deadHandler(94,1804
+void RBoss::atkHandler(106,2211
+
+RBossLoader.cpp,78
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+CCNode* RBossLoader::load(14,134
+
+Reward.cpp,107
+USING_NS_CC;14,143
+USING_NS_CC_EXT;15,156
+void Reward::onEnter(17,174
+bool Reward::ccTouchBegan(24,272
+
+RewardLoader.cpp,79
+USING_NS_CC;13,133
+USING_NS_CC_EXT;14,146
+CCNode* RewardLoader::load(16,164
+
+RS10.cpp,235
+#define kCJStartSpeed 11,92
+#define kCJHP 12,117
+#define kCJATK 13,135
+#define kCJDEF 14,153
+USING_NS_CC;16,172
+USING_NS_CC_EXT;17,185
+bool RS10::init(20,204
+float RS10::radius(33,391
+void RS10::reboundedHeartedHandler(38,435
+
+RS10Loader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* RS10Loader::load(14,132
+
+RS1.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS1::init(20,202
+float RS1::radius(33,387
+void RS1::reboundedHeartedHandler(38,430
+
+RS1Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS1Loader::load(14,130
+
+RS2.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS2::init(20,202
+float RS2::radius(33,387
+void RS2::reboundedHeartedHandler(38,430
+
+RS2Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS2Loader::load(14,130
+
+RS3.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool RS3::init(20,201
+float RS3::radius(33,386
+
+RS3Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS3Loader::load(14,130
+
+RS4.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS4::init(20,202
+float RS4::radius(33,387
+void RS4::reboundedHeartedHandler(38,430
+
+RS4Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS4Loader::load(14,130
+
+RS5.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS5::init(20,202
+float RS5::radius(33,387
+void RS5::reboundedHeartedHandler(38,430
+
+RS5Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS5Loader::load(14,130
+
+RS6.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS6::init(20,202
+float RS6::radius(33,387
+void RS6::reboundedHeartedHandler(38,430
+
+RS6Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS6Loader::load(14,130
+
+RS7.cpp,232
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool RS7::init(20,202
+float RS7::radius(33,387
+void RS7::reboundedHeartedHandler(38,430
+
+RS7Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS7Loader::load(14,130
+
+RS8.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool RS8::init(20,201
+float RS8::radius(33,386
+
+RS8Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS8Loader::load(14,130
+
+RS9.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool RS9::init(20,201
+float RS9::radius(33,386
+
+RS9Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* RS9Loader::load(14,130
+
+S1.cpp,183
+USING_NS_CC;12,119
+USING_NS_CC_EXT;13,132
+bool S1::init(16,151
+float S1::radius(35,619
+float S1::getLv(40,661
+bool S1::normalAtkTrigger(45,701
+void S1::haloSkillHandler(50,778
+
+S1Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S1Loader::load(14,128
+
+S2.cpp,221
+USING_NS_CC;12,107
+USING_NS_CC_EXT;13,120
+bool S2::init(16,139
+float S2::radius(35,607
+float S2::getLv(40,653
+void S2::haloSkillHandler(45,693
+bool S2::normalAtkTrigger(51,822
+void S2::otherEnemyAtkHandler(56,899
+
+S2Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S2Loader::load(14,128
+
+S3.cpp,151
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S3::init(15,120
+float S3::radius(34,589
+float S3::getLv(39,631
+void S3::reboundHeartHandler(44,671
+
+S3Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S3Loader::load(14,128
+
+S4.cpp,169
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S4::init(15,120
+float S4::radius(34,589
+float S4::getLv(39,631
+bool S4::hurtToOther(44,671
+bool S4::bearHurt(49,726
+
+S4Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S4Loader::load(14,128
+
+S5.cpp,114
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S5::init(15,120
+float S5::radius(34,589
+float S5::getLv(39,633
+
+S5Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S5Loader::load(14,128
+
+S6.cpp,182
+USING_NS_CC;13,138
+USING_NS_CC_EXT;14,151
+bool S6::init(17,170
+float S6::radius(35,638
+float S6::getLv(40,684
+void S6::handleCollisionWith(45,724
+void S6::healHandler(69,1260
+
+S6Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S6Loader::load(14,128
+
+S7.cpp,114
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S7::init(15,120
+float S7::radius(34,589
+float S7::getLv(39,635
+
+S7Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S7Loader::load(14,128
+
+S8.cpp,114
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S8::init(15,120
+float S8::radius(34,589
+float S8::getLv(39,635
+
+S8Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S8Loader::load(14,128
+
+S9.cpp,114
+USING_NS_CC;11,88
+USING_NS_CC_EXT;12,101
+bool S9::init(15,120
+float S9::radius(34,589
+float S9::getLv(39,633
+
+S9Loader.cpp,74
+USING_NS_CC;11,97
+USING_NS_CC_EXT;12,110
+CCNode* S9Loader::load(14,128
+
+Share.cpp,105
+USING_NS_CC;14,140
+USING_NS_CC_EXT;15,153
+void Share::onEnter(17,171
+bool Share::ccTouchBegan(24,268
+
+ShareLoader.cpp,78
+USING_NS_CC;13,131
+USING_NS_CC_EXT;14,144
+CCNode* ShareLoader::load(16,162
+
+Shop.cpp,148
+USING_NS_CC;14,137
+USING_NS_CC_EXT;15,150
+void Shop::onEnter(17,168
+bool Shop::onAssignCCBMemberVariable(24,264
+bool Shop::ccTouchBegan(35,734
+
+ShopLoader.cpp,77
+USING_NS_CC;13,129
+USING_NS_CC_EXT;14,142
+CCNode* ShopLoader::load(16,160
+
+Soldier.cpp,698
+USING_NS_CC;14,172
+USING_NS_CC_EXT;15,185
+bool Soldier::init(17,203
+void Soldier::onEnter(39,660
+void Soldier::drawCollisionLine(47,865
+void Soldier::update(55,1129
+void Soldier::update(58,1167
+void Soldier::handleCollisionWith(69,1444
+void Soldier::resetSpeed(148,4271
+bool Soldier::isMaxHp(158,4641
+float Soldier::getLv(163,4694
+void Soldier::deadHandler(168,4739
+bool Soldier::normalSkillTrigger(174,4864
+void Soldier::normalSkillHandler(181,5061
+bool Soldier::haloSkillTrigger(186,5128
+void Soldier::haloSkillHandler(211,5682
+bool Soldier::normalAtkTrigger(216,5747
+void  Soldier::normalAtkHandler(221,5803
+bool Soldier::bearHurt(232,6315
+bool Soldier::hurtToOther(237,6363
+
+StaticData.cpp,582
+USING_NS_CC;11,110
+#define STATIC_DATA_PATH 14,148
+static StaticData* _sharedStaticData 16,196
+StaticData* StaticData::sharedStaticData(17,242
+StaticData::StaticData(25,449
+StaticData::~StaticData(29,522
+bool StaticData::init(33,595
+const char* StaticData::stringFromKey(39,762
+int StaticData::intFromKey(43,876
+float StaticData::floatFromKey(47,977
+bool StaticData::booleanFromKey(51,1084
+cocos2d::CCPoint StaticData::pointFromKey(55,1191
+cocos2d::CCRect StaticData::rectFromKey(59,1328
+cocos2d::CCSize StaticData::sizeFromKey(63,1462
+void StaticData::purge(67,1596
+
+Status.cpp,442
+#define kCJScrollFilterFactor 34,554
+#define kCJS1TargetOffset 35,588
+USING_NS_CC;37,619
+USING_NS_CC_EXT;38,632
+bool Status::init(40,650
+void Status::onEnter(63,1512
+void Status::onExit(73,1744
+SEL_MenuHandler Status::onResolveCCBCCMenuItemSelector(81,1872
+SEL_CCControlHandler Status::onResolveCCBCCControlSelector(90,2274
+void Status::pressedPelican(95,2410
+void Status::pressedBlood(100,2498
+void Status::pressedStone(105,2581
+
+StatusLoader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* StatusLoader::load(14,136
+
+StoryScene.cpp,268
+USING_NS_CC;15,184
+USING_NS_CC_EXT;16,197
+CCScene* StoryScene::scene(18,215
+bool StoryScene::init(29,396
+void StoryScene::ccTouchesEnded(57,1226
+void StoryScene::onTounchHandler(107,2573
+void StoryScene::changeStory(132,3405
+void StoryScene::endStory(165,4447
+
+TBoss2.cpp,467
+#define kCJStartSpeed 12,115
+#define kCJHP 13,141
+#define kCJATK 14,159
+#define kCJDEF 15,177
+USING_NS_CC;17,196
+USING_NS_CC_EXT;18,209
+bool TBoss2::init(22,229
+void TBoss2::onEnter(37,542
+void TBoss2::update(46,757
+void TBoss2::drawCollisionLine(55,973
+void TBoss2::handleCollisionWith(63,1236
+float TBoss2::radius(79,1657
+void TBoss2::resetSpeed(84,1703
+bool TBoss2::isMaxHp(89,1762
+void TBoss2::deadHandler(94,1814
+void TBoss2::atkHandler(106,2222
+
+TBoss2Loader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* TBoss2Loader::load(14,136
+
+TBoss.cpp,457
+#define kCJStartSpeed 13,138
+#define kCJHP 14,164
+#define kCJATK 15,182
+#define kCJDEF 16,200
+USING_NS_CC;18,219
+USING_NS_CC_EXT;19,232
+bool TBoss::init(22,251
+void TBoss::onEnter(37,563
+void TBoss::update(46,777
+void TBoss::drawCollisionLine(55,992
+void TBoss::handleCollisionWith(63,1254
+float TBoss::radius(79,1674
+void TBoss::resetSpeed(84,1719
+bool TBoss::isMaxHp(89,1777
+void TBoss::deadHandler(94,1828
+void TBoss::atkHandler(110,2385
+
+TBossLoader.cpp,78
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+CCNode* TBossLoader::load(14,134
+
+Toolkit.cpp,107
+std::string Toolkit::WStrToUTF8(11,92
+void Toolkit::WStrToUTF8(20,298
+void Toolkit::intTostring(55,1286
+
+TS10.cpp,192
+#define kCJStartSpeed 11,92
+#define kCJHP 12,117
+#define kCJATK 13,135
+#define kCJDEF 14,153
+USING_NS_CC;16,172
+USING_NS_CC_EXT;17,185
+bool TS10::init(20,204
+float TS10::radius(33,391
+
+TS10Loader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* TS10Loader::load(14,132
+
+TS1.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS1::init(20,202
+float TS1::radius(33,387
+
+TS1Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS1Loader::load(14,130
+
+TS2.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS2::init(20,202
+float TS2::radius(33,387
+
+TS2Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS2Loader::load(14,130
+
+TS3.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool TS3::init(20,201
+float TS3::radius(33,386
+
+TS3Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS3Loader::load(14,130
+
+TS4.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS4::init(20,202
+float TS4::radius(33,387
+
+TS4Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS4Loader::load(14,130
+
+TS5.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS5::init(20,202
+float TS5::radius(33,387
+
+TS5Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS5Loader::load(14,130
+
+TS6.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS6::init(20,202
+float TS6::radius(33,387
+
+TS6Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS6Loader::load(14,130
+
+TS7.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool TS7::init(20,202
+float TS7::radius(33,387
+
+TS7Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS7Loader::load(14,130
+
+TS8.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool TS8::init(20,201
+float TS8::radius(33,386
+
+TS8Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS8Loader::load(14,130
+
+TS9.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool TS9::init(20,201
+float TS9::radius(33,386
+
+TS9Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* TS9Loader::load(14,130
+
+UpdateLayer.cpp,352
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+UpdateLayer::UpdateLayer(15,137
+UpdateLayer::~UpdateLayer(20,181
+bool UpdateLayer::init(26,306
+AssetsManager* UpdateLayer::getAssetsManager(39,551
+void UpdateLayer::createDownloadedDir(55,1105
+void UpdateLayer::onError(63,1296
+void UpdateLayer::onProgress(76,1594
+void UpdateLayer::onSuccess(83,1762
+
+WBoss2.cpp,467
+#define kCJStartSpeed 12,115
+#define kCJHP 13,141
+#define kCJATK 14,159
+#define kCJDEF 15,177
+USING_NS_CC;17,196
+USING_NS_CC_EXT;18,209
+bool WBoss2::init(22,229
+void WBoss2::onEnter(37,542
+void WBoss2::update(46,757
+void WBoss2::drawCollisionLine(55,973
+void WBoss2::handleCollisionWith(63,1236
+float WBoss2::radius(79,1657
+void WBoss2::resetSpeed(84,1703
+bool WBoss2::isMaxHp(89,1762
+void WBoss2::deadHandler(94,1814
+void WBoss2::atkHandler(106,2222
+
+WBoss2Loader.cpp,79
+USING_NS_CC;11,105
+USING_NS_CC_EXT;12,118
+CCNode* WBoss2Loader::load(14,136
+
+WBoss.cpp,457
+#define kCJStartSpeed 13,138
+#define kCJHP 14,164
+#define kCJATK 15,182
+#define kCJDEF 16,200
+USING_NS_CC;18,219
+USING_NS_CC_EXT;19,232
+bool WBoss::init(22,251
+void WBoss::onEnter(37,563
+void WBoss::update(46,777
+void WBoss::drawCollisionLine(55,992
+void WBoss::handleCollisionWith(63,1254
+float WBoss::radius(79,1674
+void WBoss::resetSpeed(84,1719
+bool WBoss::isMaxHp(89,1777
+void WBoss::deadHandler(94,1828
+void WBoss::atkHandler(110,2385
+
+WBossLoader.cpp,78
+USING_NS_CC;11,103
+USING_NS_CC_EXT;12,116
+CCNode* WBossLoader::load(14,134
+
+WS10.cpp,192
+#define kCJStartSpeed 11,92
+#define kCJHP 12,117
+#define kCJATK 13,135
+#define kCJDEF 14,153
+USING_NS_CC;16,172
+USING_NS_CC_EXT;17,185
+bool WS10::init(20,204
+float WS10::radius(33,391
+
+WS10Loader.cpp,77
+USING_NS_CC;11,101
+USING_NS_CC_EXT;12,114
+CCNode* WS10Loader::load(14,132
+
+WS1.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS1::init(20,202
+float WS1::radius(33,387
+
+WS1Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS1Loader::load(14,130
+
+WS2.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS2::init(20,202
+float WS2::radius(33,387
+
+WS2Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS2Loader::load(14,130
+
+WS3.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool WS3::init(20,201
+float WS3::radius(33,386
+
+WS3Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS3Loader::load(14,130
+
+WS4.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS4::init(20,202
+float WS4::radius(33,387
+
+WS4Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS4Loader::load(14,130
+
+WS5.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS5::init(20,202
+float WS5::radius(33,387
+
+WS5Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS5Loader::load(14,130
+
+WS6.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS6::init(20,202
+float WS6::radius(33,387
+
+WS6Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS6Loader::load(14,130
+
+WS7.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,133
+#define kCJDEF 14,151
+USING_NS_CC;16,170
+USING_NS_CC_EXT;17,183
+bool WS7::init(20,202
+float WS7::radius(33,387
+
+WS7Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS7Loader::load(14,130
+
+WS8.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool WS8::init(20,201
+float WS8::radius(33,386
+
+WS8Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS8Loader::load(14,130
+
+WS9.cpp,190
+#define kCJStartSpeed 11,90
+#define kCJHP 12,115
+#define kCJATK 13,132
+#define kCJDEF 14,150
+USING_NS_CC;16,169
+USING_NS_CC_EXT;17,182
+bool WS9::init(20,201
+float WS9::radius(33,386
+
+WS9Loader.cpp,75
+USING_NS_CC;11,99
+USING_NS_CC_EXT;12,112
+CCNode* WS9Loader::load(14,130
+
+Zombie.cpp,326
+#define kCJStartSpeed 15,137
+#define kCJHP 16,164
+#define kCJATK 17,182
+#define kCJDEF 18,200
+USING_NS_CC;20,219
+USING_NS_CC_EXT;21,232
+bool Zombie::init(24,251
+void Zombie::update(34,378
+void Zombie::handleCollisionWith(43,594
+void Zombie::attack(59,1058
+void Zombie::sAttack(62,1084
+float Zombie::radius(65,1111

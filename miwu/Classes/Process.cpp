@@ -187,6 +187,12 @@ bool Process::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
     return true;
 }
 
+void Process::sendStartRequest()
+{
+    char url[255];
+    sprintf(url, "%sbattle/startApi");
+}
+
 void Process::initNormalGame()
 {
     CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic(true);
