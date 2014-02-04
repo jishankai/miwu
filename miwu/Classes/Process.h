@@ -16,6 +16,8 @@
 class Process : public LayerWithDialog
 {
 private:
+    bool isMouseGame = false;
+    
     cocos2d::CCSprite* level_ri;
     cocos2d::CCSprite* level_west;
     cocos2d::CCSprite* level_tale;
@@ -145,6 +147,7 @@ private:
 public:
     static int mapType;
     static int levelNum;
+   
     virtual void onEnter();
     virtual bool onAssignCCBMemberVariable(CCObject* pTarget, const char* pMemberVariableName, CCNode* pNode);
     void initNormalGame();

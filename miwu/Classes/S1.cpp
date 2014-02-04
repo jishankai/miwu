@@ -8,6 +8,7 @@
 
 #include "S1.h"
 #include "SimpleAudioEngine.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -39,7 +40,7 @@ float S1::radius()
 
 float S1::getLv()
 {
-    return 1.0f;
+    return Load::sharedPlayer.s1;
 }
 
 bool S1::normalAtkTrigger()

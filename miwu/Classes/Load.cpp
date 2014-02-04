@@ -214,6 +214,15 @@ void Load::onPlayerRequestCompleted(CCHttpClient *sender, CCHttpResponse *respon
         sharedPlayer.coin = json["data"]["coin"].getInt();
         sharedPlayer.jewel = json["data"]["jewel"].getInt();
         sharedPlayer.point = json["data"]["point"].getInt();
+        sharedPlayer.s1 = json["data"]["s1"].getInt();
+        sharedPlayer.s2 = json["data"]["s2"].getInt();
+        sharedPlayer.s3 = json["data"]["s3"].getInt();
+        sharedPlayer.s4 = json["data"]["s4"].getInt();
+        sharedPlayer.s5 = json["data"]["s5"].getInt();
+        sharedPlayer.s6 = json["data"]["s6"].getInt();
+        sharedPlayer.s7 = json["data"]["s7"].getInt();
+        sharedPlayer.s8 = json["data"]["s8"].getInt();
+        sharedPlayer.s9 = json["data"]["s9"].getInt();
         sharedPlayer.process = json["data"]["process"]["levels"].getArray();
         
         CCScene* pScene = MainMenuScene::scene();

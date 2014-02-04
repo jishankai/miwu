@@ -11,6 +11,7 @@
 #include "cocos2d.h"
 #include "ProcessLoader.h"
 #include "Load.h"
+#include "StaticData.h"
 #include "JsonBox.h"
 #include "NormalGameScene.h"
 #include "MouseGameScene.h"
@@ -904,76 +905,78 @@ bool Process::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
         }
     } else if (pLevel1Rect->containsPoint(location) and level1->isVisible()) {
         levelNum = 1;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel2Rect->containsPoint(location) and level2->isVisible()) {
         levelNum = 2;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel3Rect->containsPoint(location) and level3->isVisible()) {
         levelNum = 3;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel4Rect->containsPoint(location) and level4->isVisible()) {
         levelNum = 4;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel5Rect->containsPoint(location) and level5->isVisible()) {
         levelNum = 5;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel6Rect->containsPoint(location) and level6->isVisible()) {
         levelNum = 6;
-        initMouseGame();
+        isMouseGame = true;
+        sendStartRequest();
     } else if (pLevel7Rect->containsPoint(location) and level7->isVisible()) {
         levelNum = 7;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel8Rect->containsPoint(location) and level8->isVisible()) {
         levelNum = 8;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel9Rect->containsPoint(location) and level9->isVisible()) {
         levelNum = 9;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel10Rect->containsPoint(location) and level10->isVisible()) {
         levelNum = 10;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel11Rect->containsPoint(location) and level11->isVisible()) {
         levelNum = 11;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel12Rect->containsPoint(location) and level12->isVisible()) {
         levelNum = 12;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel13Rect->containsPoint(location) and level13->isVisible()) {
         levelNum = 13;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel14Rect->containsPoint(location) and level14->isVisible()) {
         levelNum = 14;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel15Rect->containsPoint(location) and level15->isVisible()) {
         levelNum = 15;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel16Rect->containsPoint(location) and level16->isVisible()) {
         levelNum = 16;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel17Rect->containsPoint(location) and level17->isVisible()) {
         levelNum = 17;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel18Rect->containsPoint(location) and level18->isVisible()) {
         levelNum = 18;
-        initMouseGame();
+        isMouseGame = true;
+        sendStartRequest();
     } else if (pLevel19Rect->containsPoint(location) and level19->isVisible()) {
         levelNum = 19;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel20Rect->containsPoint(location) and level20->isVisible()) {
         levelNum = 20;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel21Rect->containsPoint(location) and level21->isVisible()) {
         levelNum = 21;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel22Rect->containsPoint(location) and level22->isVisible()) {
         levelNum = 22;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel23Rect->containsPoint(location) and level23->isVisible()) {
         levelNum = 23;
-        initNormalGame();
+        sendStartRequest();
     } else if (pLevel24Rect->containsPoint(location) and level24->isVisible()) {
         levelNum = 24;
-        initNormalGame();
+        sendStartRequest();
     } 
     return true;
 }
@@ -981,7 +984,58 @@ bool Process::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
 void Process::sendStartRequest()
 {
     char url[255];
-    sprintf(url, "%sbattle/startApi");
+    std::string server = STATIC_DATA_STRING("server");
+    sprintf(url, "%sbattle/startApi&SID=%s", server.c_str(), Load::sharedSessionId.c_str());
+    cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
+    request->setUrl(url);
+    request->setRequestType(CCHttpRequest::kHttpGet);
+    request->setResponseCallback(this, httpresponse_selector(Process::onStartRequestCompleted));
+    request->setTag("Battle Start");
+    cocos2d::extension::CCHttpClient::getInstance()->send(request);
+    request->release();
+}
+
+void Process::onStartRequestCompleted(CCHttpClient *sender, CCHttpResponse *response)
+{
+    if (!response)
+    {
+        return;
+    }
+    
+    // You can get original request type from: response->request->reqType
+    if (0 != strlen(response->getHttpRequest()->getTag()))
+    {
+        CCLog("%s completed", response->getHttpRequest()->getTag());
+    }
+    
+    int statusCode = response->getResponseCode();
+    char statusString[64] = {};
+    sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+    CCLog("response code: %d", statusCode);
+    
+    if (!response->isSucceed())
+    {
+        CCLog("response failed");
+        CCLog("error buffer: %s", response->getErrorBuffer());
+        return;
+    }
+    
+    // dump data
+    std::vector<char> *buffer = response->getResponseData();
+    const std::string jsonStr(buffer->begin(),buffer->end());
+    JsonBox::Value json;
+    json.loadFromString(jsonStr);
+    
+    if (json["data"]["result"].getBoolean()) {
+
+        /* update cp value and remain time*/
+
+        if (isMouseGame) {
+            initMouseGame();
+        } else {
+            initNormalGame();
+        }
+    }
 }
 
 void Process::initNormalGame()

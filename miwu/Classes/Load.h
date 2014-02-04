@@ -23,6 +23,17 @@ struct CQPlayer {
     int coin;
     int jewel;
     int point;
+
+    int s1;
+    int s2;
+    int s3;
+    int s4;
+    int s5;
+    int s6;
+    int s7;
+    int s8;
+    int s9;
+  
     JsonBox::Array process;
 };
 
