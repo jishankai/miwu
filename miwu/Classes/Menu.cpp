@@ -25,6 +25,11 @@
 #include "MiaoLoader.h"
 #include "PauseLoader.h"
 
+#include "StaticData.h"
+#include "JsonBox.h"
+#include "Load.h"
+#include "Process.h"
+
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
@@ -141,6 +146,18 @@ void Menu::winHandler()
     this->addChild(pause);
     CCDirector::sharedDirector()->pause();
     CocosDenshion::SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+    
+    char url[255];
+    std::string server = STATIC_DATA_STRING("server");
+    int level = Process::mapType*Process::levelNum;
+    sprintf(url, "%sbattle/winApi&level=%d&stars=%d&SID=%s", server.c_str(), level, 3, Load::sharedSessionId.c_str());
+    cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
+    request->setUrl(url);
+    request->setRequestType(CCHttpRequest::kHttpGet);
+    request->setResponseCallback(this, httpresponse_selector(Menu::onBattleWinRequestCompleted));
+    request->setTag("battle win");
+    cocos2d::extension::CCHttpClient::getInstance()->send(request);
+    request->release();
 }
 
 void Menu::spriteMoveFinished(CCNode* sender)
@@ -448,6 +465,43 @@ void Menu::ccTouchesEnded(CCSet* pTouches, CCEvent* pEvent)
     if (miao->getXSpeed()!=0) {
         miao->setXSpeed(0);
         bgLayer->setXSpeed(0);
+    }
+}
+
+void Menu::onBattleWinRequestCompleted(cocos2d::extension::CCHttpClient *sender, cocos2d::extension::CCHttpResponse *response)
+{
+    if (!response)
+    {
+        return;
+    }
+    
+    // You can get original request type from: response->request->reqType
+    if (0 != strlen(response->getHttpRequest()->getTag()))
+    {
+        CCLog("%s completed", response->getHttpRequest()->getTag());
+    }
+    
+    int statusCode = response->getResponseCode();
+    char statusString[64] = {};
+    sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+    CCLog("response code: %d", statusCode);
+    
+    if (!response->isSucceed())
+    {
+        CCLog("response failed");
+        CCLog("error buffer: %s", response->getErrorBuffer());
+        return;
+    }
+    
+    // dump data
+    std::vector<char> *buffer = response->getResponseData();
+    const std::string jsonStr(buffer->begin(),buffer->end());
+    JsonBox::Value json;
+    json.loadFromString(jsonStr);
+    
+    if (json["data"]["playerId"].getInt()) {
+        Load::sharedPlayer.level = json["data"]["process"]["count"].getInt();
+        Load::sharedPlayer.process = json["data"]["process"]["levels"].getArray();
     }
 }
 

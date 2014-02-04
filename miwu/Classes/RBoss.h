@@ -21,6 +21,7 @@ class RBoss : public GameObject
 
 private:
     DrawLineLayer *drawLineLayer;
+    bool isDead;
     bool init();
     void onEnter();
 public:

@@ -30,6 +30,10 @@ private:
     cocos2d::CCSprite* shop;
     cocos2d::CCSprite* treasure;
      */
+    cocos2d::CCLabelTTF* lv;
+    cocos2d::CCLabelTTF* coin;
+    cocos2d::CCLabelTTF* jewel;
+    cocos2d::CCLabelTTF* point;
     
 public:
     static cocos2d::CCScene* scene();

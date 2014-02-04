@@ -443,6 +443,9 @@
 		53C2555417F49427000AE6E8 /* base.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C2555217F49427000AE6E8 /* base.png */; };
 		53C2555517F49427000AE6E8 /* cn_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C2555317F49427000AE6E8 /* cn_background.png */; };
 		53D2036417D8C4B900BB9875 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D2036317D8C4B900BB9875 /* Default-568h@2x.png */; };
+		53D328D2187BC386009B634A /* ui_equip.plist in Resources */ = {isa = PBXBuildFile; fileRef = 53D328D0187BC386009B634A /* ui_equip.plist */; };
+		53D328D3187BC386009B634A /* ui_equip.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 53D328D1187BC386009B634A /* ui_equip.pvr.ccz */; };
+		53D328D5187BC39F009B634A /* ui_main_txt.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D328D4187BC39F009B634A /* ui_main_txt.png */; };
 		53DECBBA17DE3C0A00A1C1BC /* StatusLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */; };
 		53DECBBB17DE3C0A00A1C1BC /* Status.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53DECBB917DE3C0800A1C1BC /* Status.cpp */; };
 		53DECBBD17E0AFDB00A1C1BC /* Status.ccbi in Resources */ = {isa = PBXBuildFile; fileRef = 53DECBBC17E0AFDB00A1C1BC /* Status.ccbi */; };
@@ -1518,6 +1521,9 @@
 		53C2555217F49427000AE6E8 /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = base.png; path = Resources/base.png; sourceTree = "<group>"; };
 		53C2555317F49427000AE6E8 /* cn_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cn_background.png; path = Resources/cn_background.png; sourceTree = "<group>"; };
 		53D2036317D8C4B900BB9875 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		53D328D0187BC386009B634A /* ui_equip.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ui_equip.plist; path = Resources/ui_equip.plist; sourceTree = "<group>"; };
+		53D328D1187BC386009B634A /* ui_equip.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; name = ui_equip.pvr.ccz; path = Resources/ui_equip.pvr.ccz; sourceTree = "<group>"; };
+		53D328D4187BC39F009B634A /* ui_main_txt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ui_main_txt.png; path = Resources/ui_main_txt.png; sourceTree = "<group>"; };
 		53DECBB617DE3C0600A1C1BC /* StatusLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusLoader.h; path = Classes/StatusLoader.h; sourceTree = "<group>"; };
 		53DECBB717DE3C0700A1C1BC /* StatusLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StatusLoader.cpp; path = Classes/StatusLoader.cpp; sourceTree = "<group>"; };
 		53DECBB817DE3C0800A1C1BC /* Status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Status.h; path = Classes/Status.h; sourceTree = "<group>"; };
@@ -1952,6 +1958,7 @@
 		5321F4C71794599E00BC1823 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				53D328D4187BC39F009B634A /* ui_main_txt.png */,
 				533190A2181BAAF8005F0F4B /* static */,
 				53C2555217F49427000AE6E8 /* base.png */,
 				53C2555317F49427000AE6E8 /* cn_background.png */,
@@ -3640,6 +3647,8 @@
 		53EC1FA517A2EA2D00156252 /* pvr */ = {
 			isa = PBXGroup;
 			children = (
+				53D328D0187BC386009B634A /* ui_equip.plist */,
+				53D328D1187BC386009B634A /* ui_equip.pvr.ccz */,
 				53EE3C9B183929E7009F6B4E /* cn.pvr.ccz */,
 				53EE3C8D1839292C009F6B4E /* cn.plist */,
 				53EE3C8E1839292C009F6B4E /* evil.plist */,
@@ -4084,6 +4093,7 @@
 				53DECC4F17E464DD00A1C1BC /* home_share_dialog.png in Resources */,
 				53EE3CA9183D216E009F6B4E /* CS3.ccbi in Resources */,
 				53DECC5017E464DD00A1C1BC /* home_share.png in Resources */,
+				53D328D2187BC386009B634A /* ui_equip.plist in Resources */,
 				53DECC5117E464DD00A1C1BC /* battle_dialog.png in Resources */,
 				53DECC5217E464DD00A1C1BC /* battle_levelup.png in Resources */,
 				53DECC5317E464DD00A1C1BC /* battle_miao_ability.png in Resources */,
@@ -4127,8 +4137,10 @@
 				53DECC7B17E4ABDE00A1C1BC /* Share.ccbi in Resources */,
 				53EE3CC2183D2187009F6B4E /* ES8.ccbi in Resources */,
 				53DECC7C17E4ABDE00A1C1BC /* Shop.ccbi in Resources */,
+				53D328D3187BC386009B634A /* ui_equip.pvr.ccz in Resources */,
 				53DECC7E17E4ABDE00A1C1BC /* Process.ccbi in Resources */,
 				53DECC9517E4DD7B00A1C1BC /* Others.ccbi in Resources */,
+				53D328D5187BC39F009B634A /* ui_main_txt.png in Resources */,
 				5328C3291843C07D00472D1B /* TBoss.ccbi in Resources */,
 				53EE3CC4183D2187009F6B4E /* ES10.ccbi in Resources */,
 				53C2554F17F1E07B000AE6E8 /* MouseBackground.ccbi in Resources */,

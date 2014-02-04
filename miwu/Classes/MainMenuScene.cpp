@@ -24,6 +24,7 @@
 #include "ShopLoader.h"
 #include "Shop.h"
 #include "GachaLoader.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -63,8 +64,8 @@ bool MainMenuScene::init()
         return false;
     }
     
-    CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
-    CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
+    //CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();
+    //CCPoint origin = CCDirector::sharedDirector()->getVisibleOrigin();
     
     /////////////////////////////
     // 2. add a menu item with "X" image, which is clicked to quit the program
@@ -119,6 +120,19 @@ void MainMenuScene::onEnter()
     gacha->setPosition(CCPointZero);
     this->addChild(gacha);
     
+    char cLv[24];
+    char cCoin[24];
+    char cJewel[24];
+    char cPoint[24];
+    sprintf(cLv, "%d", Load::sharedPlayer.level);
+    sprintf(cCoin, "%d", Load::sharedPlayer.coin);
+    sprintf(cJewel, "%d", Load::sharedPlayer.jewel);
+    sprintf(cPoint, "%d", Load::sharedPlayer.point);
+    this->lv->setString(cLv);
+    this->coin->setString(cCoin);
+    this->jewel->setString(cJewel);
+    this->point->setString(cPoint);
+    
     // Make sure touches are enabled
     this->setTouchEnabled(true);
 }
@@ -145,6 +159,11 @@ bool MainMenuScene::onAssignCCBMemberVariable(cocos2d::CCObject *pTarget, const 
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "shop", CCSprite*, this->shop);
     CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "treasure", CCSprite*, this->treasure);
     */
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "lv", CCLabelTTF*, this->lv);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "coin", CCLabelTTF*, this->coin);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "jewel", CCLabelTTF*, this->jewel);
+    CCB_MEMBERVARIABLEASSIGNER_GLUE(this, "point", CCLabelTTF*, this->point);
+    
     return false;
 }
 

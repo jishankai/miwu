@@ -276,7 +276,9 @@
 	<string>storyBMPFont.fnt</string>
 	<key>story_printing_delay</key>
 	<string>0.5</string>
-	<key>server</key>
+	<key>server__</key>
 	<string>http://127.0.0.1/~jishankai/miwu/index.php?r=</string>
+	<key>server</key>
+	<string>http://ec2-54-199-161-210.ap-northeast-1.compute.amazonaws.com/server/index.php?r=</string>
 </dict>
 </plist>

@@ -12,6 +12,7 @@
 #include "cocos2d.h"
 #include "cocos-ext.h"
 #include "LayerWithDialog.h"
+#include "JsonBox.h"
 
 struct CQPlayer {
     int playerId;
@@ -19,6 +20,10 @@ struct CQPlayer {
     int combats;
     int stars;
     int level;
+    int coin;
+    int jewel;
+    int point;
+    JsonBox::Array process;
 };
 
 class Load : public cocos2d::CCLayer

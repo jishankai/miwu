@@ -25,6 +25,7 @@ bool RBoss::init()
     hp = kCJHP;
     maxHp = kCJHP;
     atk = kCJATK;
+    isDead = false;
     
 //    bloodBar = CCSprite::createWithSpriteFrameName("blood_bar.png");
 //    bloodBar->setScaleX(0.3);
@@ -93,9 +94,13 @@ bool RBoss::isMaxHp()
 
 void RBoss::deadHandler()
 {
-    CCLOG("Game Win");
-    Level* level = dynamic_cast<Level*>(this->getParent());
-    level->winHandler();
+    if (!isDead) {
+        CCLOG("Game Win");
+        isDead = true;
+        Level* level = dynamic_cast<Level*>(this->getParent());
+        level->winHandler();
+    }
+    
     //            /*
     //            CCScene* pScene = MainMenuScene::scene();
     //            CCDirector::sharedDirector()->replaceScene(pScene);

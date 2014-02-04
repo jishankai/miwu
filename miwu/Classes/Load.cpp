@@ -51,9 +51,9 @@ void Load::onEnter()
     cocos2d::extension::CCHttpClient::getInstance()->send(request);
     request->release();
     
-    CCScene* pScene = MainMenuScene::scene();
-    CCDirector *pDirector = CCDirector::sharedDirector();
-    pDirector->replaceScene(pScene);
+    //CCScene* pScene = MainMenuScene::scene();
+    //CCDirector *pDirector = CCDirector::sharedDirector();
+    //pDirector->replaceScene(pScene);
 }
 
 
@@ -210,7 +210,11 @@ void Load::onPlayerRequestCompleted(CCHttpClient *sender, CCHttpResponse *respon
         sharedPlayer.playerName = json["data"]["playerName"].getString();
         sharedPlayer.combats = json["data"]["combats"].getInt();
         sharedPlayer.stars = json["data"]["stars"].getInt();
-        sharedPlayer.level = json["data"]["level"].getInt();
+        sharedPlayer.level = json["data"]["process"]["count"].getInt();
+        sharedPlayer.coin = json["data"]["coin"].getInt();
+        sharedPlayer.jewel = json["data"]["jewel"].getInt();
+        sharedPlayer.point = json["data"]["point"].getInt();
+        sharedPlayer.process = json["data"]["process"]["levels"].getArray();
         
         CCScene* pScene = MainMenuScene::scene();
         CCDirector *pDirector = CCDirector::sharedDirector();
