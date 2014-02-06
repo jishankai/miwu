@@ -8,6 +8,7 @@
 
 #include "S2.h"
 #include "Level.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -39,7 +40,7 @@ float S2::radius()
 
 float S2::getLv()
 {
-    return 1.0f;
+  return Load::sharedPlayer.s2;
 }
 
 void S2::haloSkillHandler(GameObject* gameObject)

@@ -7,6 +7,7 @@
 //
 
 #include "S3.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -38,7 +39,7 @@ float S3::radius()
 
 float S3::getLv()
 {
-    return 1.0f;
+  return Load::sharedPlayer.s3;
 }
 
 void S3::reboundHeartHandler(GameObject* gameObject)

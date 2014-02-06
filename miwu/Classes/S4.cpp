@@ -7,6 +7,7 @@
 //
 
 #include "S4.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -38,7 +39,7 @@ float S4::radius()
 
 float S4::getLv()
 {
-    return 1.0f;
+  return Load::sharedPlayer.s4;
 }
 
 bool S4::hurtToOther(float atk)

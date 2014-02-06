@@ -9,6 +9,7 @@
 #include "S6.h"
 #include "Level.h"
 #include "SimpleAudioEngine.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -39,7 +40,7 @@ float S6::radius()
 
 float S6::getLv()
 {
-    return 1.0f;
+  return Load::sharedPlayer.s6;
 }
 
 void S6::handleCollisionWith(GameObject* gameObject)

@@ -7,6 +7,7 @@
 //
 
 #include "S9.h"
+#include "Load.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
@@ -38,5 +39,5 @@ float S9::radius()
 
 float S9::getLv()
 {
-    return 1.0f;
+  return Load::sharedPlayer.s9;
 }
