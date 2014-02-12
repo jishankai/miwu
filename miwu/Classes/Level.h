@@ -24,6 +24,9 @@ private:
     cocos2d::CCArray *_levelArray;
     
 public:
+    // Global Values
+    static 
+
     Miao* miao;
     RBoss* boss;
     float randTime = 0;
