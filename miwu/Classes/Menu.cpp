@@ -185,28 +185,30 @@ void Menu::pressedS1(cocos2d::CCObject *pSender)
     s1->setTag(101);
     level->addChild(s1, 640-actualY);
     level->_soldiers->addObject(s1);
+    Level::s1_call++;
     }
 }
 
 void Menu::pressedS2(cocos2d::CCObject *pSender)
 {
     if(!CCDirector::sharedDirector()->isPaused()) {
-    food-=27;
+      food-=27;
  
-    CCNode* s2 = S2Loader::load();
+      CCNode* s2 = S2Loader::load();
     
-    // Determine where to spawn the target along the Y axis
-	CCSize winSize = CCDirector::sharedDirector()->getVisibleSize();
-	float minY = s2->getContentSize().height/2+120;
-	float maxY = winSize.height - 180 -  s2->getContentSize().height/2;
-	int rangeY = (int)(maxY - minY);
-	// srand( TimGetTicks() );
-	int actualY = ( rand() % rangeY ) + (int)minY;
+      // Determine where to spawn the target along the Y axis
+      CCSize winSize = CCDirector::sharedDirector()->getVisibleSize();
+      float minY = s2->getContentSize().height/2+120;
+      float maxY = winSize.height - 180 -  s2->getContentSize().height/2;
+      int rangeY = (int)(maxY - minY);
+      // srand( TimGetTicks() );
+      int actualY = ( rand() % rangeY ) + (int)minY;
     
-    s2->setPosition(ccp(s2->getContentSize().width/2, CCDirector::sharedDirector()->getVisibleOrigin().y + actualY));
-    s2->setTag(102);
-    level->addChild(s2, 640-actualY);
-    level->_soldiers->addObject(s2);
+      s2->setPosition(ccp(s2->getContentSize().width/2, CCDirector::sharedDirector()->getVisibleOrigin().y + actualY));
+      s2->setTag(102);
+      level->addChild(s2, 640-actualY);
+      level->_soldiers->addObject(s2);
+      Level::s2_call++;
     }
 }
 
@@ -229,7 +231,8 @@ void Menu::pressedS3(cocos2d::CCObject *pSender)
     s3->setTag(103);
     level->addChild(s3, 640-actualY);
     level->_soldiers->addObject(s3);
-    
+    Level::s3_call++;
+
     CCObject* et = NULL;
     float nearestDist = 960;
     float enemyX = 0;
@@ -277,6 +280,7 @@ void Menu::pressedS4(cocos2d::CCObject *pSender)
     s4->setTag(104);
     level->addChild(s4, 640-actualY);
     level->_soldiers->addObject(s4);
+    Level::s4_call++;
     }
 }
 
@@ -299,6 +303,7 @@ void Menu::pressedS5(cocos2d::CCObject *pSender)
     s5->setTag(105);
     level->addChild(s5, 640-actualY);
     level->_soldiers->addObject(s5);
+    Level::s5_call++;
     }
 }
 
@@ -320,6 +325,7 @@ void Menu::pressedS6(cocos2d::CCObject *pSender)
     s6->setTag(106);
     level->addChild(s6, 640-actualY);
     level->_soldiers->addObject(s6);
+    Level::s6_call++;
     }
 }
 
@@ -341,6 +347,7 @@ void Menu::pressedS7(cocos2d::CCObject *pSender)
     s7->setTag(107);
     level->addChild(s7, 640-actualY);
     level->_soldiers->addObject(s7);
+    Level::s7_call++;
     }
 }
 
@@ -362,6 +369,7 @@ void Menu::pressedS8(cocos2d::CCObject *pSender)
     s8->setTag(108);
     level->addChild(s8, 640-actualY);
     level->_soldiers->addObject(s8);
+    Level::s8_call++;
     }
 }
 
@@ -383,6 +391,7 @@ void Menu::pressedS9(cocos2d::CCObject *pSender)
     s9->setTag(109);
     level->addChild(s9, 640-actualY);
     level->_soldiers->addObject(s9);
+    Level::s9_call++;
     }
 }
 
