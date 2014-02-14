@@ -25,7 +25,26 @@ private:
     
 public:
     // Global Values
-    static 
+    static int solider_dead = 0;
+    static int s1_call = 0;
+    static int s2_call = 0;
+    static int s3_call = 0;
+    static int s4_call = 0;
+    static int s5_call = 0;
+    static int s6_call = 0;
+    static int s7_call = 0;
+    static int s8_call = 0;
+    static int s9_call = 0;
+    static int scepter_cure = 0;
+    static int scepter_disaster = 0;
+    static int scepter_fire = 0;
+    static int scepter_flash = 0;
+    static int scepter_food = 0;
+    static int scepter_poison = 0;
+    static int scepter_star = 0;
+    static int scepter_wind = 0;
+    static int scepter_man = 0;
+    static int scepter_woman = 0;
 
     Miao* miao;
     RBoss* boss;
