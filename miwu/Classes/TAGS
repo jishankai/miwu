@@ -29,9 +29,27 @@ AppDelegate.h,128
 class  AppDelegate 19,363
     bool isResponseFinished AppDelegate::isResponseFinished22,426
 
-Army.h,48
+Army.h,912
 #define __miwu__Army__10,93
 class Army 16,191
+    cocos2d::CCSprite* s1;Army::s119,238
+    cocos2d::CCSprite* s2;Army::s220,265
+    cocos2d::CCSprite* s3;Army::s321,292
+    cocos2d::CCSprite* s4;Army::s422,319
+    cocos2d::CCSprite* s5;Army::s523,346
+    cocos2d::CCSprite* s6;Army::s624,373
+    cocos2d::CCSprite* s7;Army::s725,400
+    cocos2d::CCSprite* s8;Army::s826,427
+    cocos2d::CCSprite* s9;Army::s927,454
+    cocos2d::CCSprite* show_s1;Army::show_s128,481
+    cocos2d::CCSprite* show_s2;Army::show_s229,513
+    cocos2d::CCSprite* show_s3;Army::show_s330,545
+    cocos2d::CCSprite* show_s4;Army::show_s431,577
+    cocos2d::CCSprite* show_s5;Army::show_s532,609
+    cocos2d::CCSprite* show_s6;Army::show_s633,641
+    cocos2d::CCSprite* show_s7;Army::show_s734,673
+    cocos2d::CCSprite* show_s8;Army::show_s835,705
+    cocos2d::CCSprite* show_s9;Army::show_s936,737
 
 ArmyLoader.h,61
 #define __miwu__ArmyLoader__10,105
@@ -174,9 +192,33 @@ Enemy.h,112
 class Enemy 18,218
     DrawLineLayer *drawLineLayer;Enemy::drawLineLayer31,552
 
-Equip.h,50
+Equip.h,1521
 #define __miwu__Equip__10,95
 class Equip 16,194
+    cocos2d::CCNode* equipList;Equip::equipList19,242
+    cocos2d::CCSprite* ring_circle;Equip::ring_circle20,274
+    cocos2d::CCSprite* ring_agi;Equip::ring_agi21,310
+    cocos2d::CCSprite* ring_exp;Equip::ring_exp22,343
+    cocos2d::CCSprite* ring_hp;Equip::ring_hp23,376
+    cocos2d::CCSprite* ring_mp;Equip::ring_mp24,408
+    cocos2d::CCSprite* ring_plant;Equip::ring_plant25,440
+    cocos2d::CCSprite* ring_pray;Equip::ring_pray26,475
+    cocos2d::CCSprite* ring_reborn;Equip::ring_reborn27,509
+    cocos2d::CCSprite* ring_save;Equip::ring_save28,545
+    cocos2d::CCSprite* ring_treasure;Equip::ring_treasure29,579
+    cocos2d::CCSprite* scepter_cure;Equip::scepter_cure30,617
+    cocos2d::CCSprite* scepter_disaster;Equip::scepter_disaster31,654
+    cocos2d::CCSprite* scepter_fire;Equip::scepter_fire32,695
+    cocos2d::CCSprite* scepter_fish;Equip::scepter_fish33,732
+    cocos2d::CCSprite* scepter_flash;Equip::scepter_flash34,769
+    cocos2d::CCSprite* scepter_food;Equip::scepter_food35,807
+    cocos2d::CCSprite* scepter_gold;Equip::scepter_gold36,844
+    cocos2d::CCSprite* scepter_man;Equip::scepter_man37,881
+    cocos2d::CCSprite* scepter_poison;Equip::scepter_poison38,917
+    cocos2d::CCSprite* scepter_star;Equip::scepter_star39,956
+    cocos2d::CCSprite* scepter_wind;Equip::scepter_wind40,993
+    cocos2d::CCSprite* scepter_woman;Equip::scepter_woman41,1030
+    int equipCount Equip::equipCount43,1073
 
 EquipLoader.h,63
 #define __miwu__EquipLoader__10,107
@@ -333,41 +375,78 @@ LevelData.h,393
 class LevelData 23,796
     cocos2d::CCDictionary* _dictionary;LevelData::_dictionary52,1611
 
-Level.h,334
+Level.h,1238
 #define __miwu__Level__10,93
 class Level 21,242
     cocos2d::CCArray *_levelArray;Level::_levelArray24,345
-    Miao* miao;Level::miao27,393
-    RBoss* boss;Level::boss28,409
-    float randTime Level::randTime29,426
-    cocos2d::CCArray *_soldiers;Level::_soldiers30,450
-	cocos2d::CCArray *_enimies;Level::_enimies31,483
+    int solider_dead Level::solider_dead28,414
+    int s1_call Level::s1_call29,440
+    int s2_call Level::s2_call30,461
+    int s3_call Level::s3_call31,482
+    int s4_call Level::s4_call32,503
+    int s5_call Level::s5_call33,524
+    int s6_call Level::s6_call34,545
+    int s7_call Level::s7_call35,566
+    int s8_call Level::s8_call36,587
+    int s9_call Level::s9_call37,608
+    int scepter_cure Level::scepter_cure38,629
+    int scepter_disaster Level::scepter_disaster39,655
+    int scepter_fire Level::scepter_fire40,685
+    int scepter_flash Level::scepter_flash41,711
+    int scepter_food Level::scepter_food42,738
+    int scepter_poison Level::scepter_poison43,764
+    int scepter_star Level::scepter_star44,792
+    int scepter_wind Level::scepter_wind45,818
+    int scepter_man Level::scepter_man46,844
+    int scepter_woman Level::scepter_woman47,869
+    Miao* miao;Level::miao49,897
+    RBoss* boss;Level::boss50,913
+    float randTime Level::randTime51,930
+    cocos2d::CCArray *_soldiers;Level::_soldiers52,954
+	cocos2d::CCArray *_enimies;Level::_enimies53,987
 
 LevelLoader.h,63
 #define __miwu__LevelLoader__10,105
 class LevelLoader 17,201
 
-Load.h,479
+Load.h,932
 #define __miwu__Load__10,93
-struct CQPlayer 16,191
-    int playerId;17,209
-    std::string playerName;CQPlayer::playerName18,227
-    int combats;CQPlayer::combats19,255
-    int stars;CQPlayer::stars20,272
-    int level;CQPlayer::level21,287
-class Load 24,306
-    static std::string sharedSessionId;Load::sharedSessionId29,367
-    static struct CQPlayer sharedPlayer;Load::sharedPlayer30,407
-    static cocos2d::CCNode* sharedInstance;Load::sharedInstance31,448
+struct CQPlayer 17,212
+    int playerId;18,230
+    std::string playerName;CQPlayer::playerName19,248
+    int combats;CQPlayer::combats20,276
+    int stars;CQPlayer::stars21,293
+    int level;CQPlayer::level22,308
+    int coin;CQPlayer::coin23,323
+    int jewel;CQPlayer::jewel24,337
+    int point;CQPlayer::point25,352
+    int s1;CQPlayer::s127,368
+    int s2;CQPlayer::s228,380
+    int s3;CQPlayer::s329,392
+    int s4;CQPlayer::s430,404
+    int s5;CQPlayer::s531,416
+    int s6;CQPlayer::s632,428
+    int s7;CQPlayer::s733,440
+    int s8;CQPlayer::s834,452
+    int s9;CQPlayer::s935,464
+    JsonBox::Array process;CQPlayer::process37,479
+class Load 40,511
+    static std::string sharedSessionId;Load::sharedSessionId45,572
+    static struct CQPlayer sharedPlayer;Load::sharedPlayer46,612
+    static cocos2d::CCNode* sharedInstance;Load::sharedInstance47,653
 
 LoadLoader.h,61
 #define __miwu__LoadLoader__10,105
 class LoadLoader 17,199
 
-MainMenuScene.h,146
+MainMenuScene.h,378
 #define __miwu__MainMenuScene__10,109
 class MainMenuScene 15,187
-    static MainMenuScene* sharedInstance;MainMenuScene::sharedInstance37,759
+    cocos2d::CCLabelTTF* lv;MainMenuScene::lv33,703
+    cocos2d::CCLabelTTF* coin;MainMenuScene::coin34,732
+    cocos2d::CCLabelTTF* jewel;MainMenuScene::jewel35,763
+    cocos2d::CCLabelTTF* point;MainMenuScene::point36,795
+    static MainMenuScene* sharedInstance;MainMenuScene::sharedInstance41,883
 
 MainMenuSceneLoader.h,76
 #define miwu_MainMenuSceneLoader_h10,118
@@ -502,16 +581,137 @@ class PrintingLabel 15,181
         bool complete;PrintingLabel::complete31,708
         cocos2d::CCRepeat*  repeat;PrintingLabel::repeat32,731
 
-Process.h,454
+Process.h,7400
 #define __miwu__Process__10,99
 class Process 16,200
-    cocos2d::CCSprite* level_ri;Process::level_ri19,250
-    cocos2d::CCSprite* level_west;Process::level_west20,283
-    cocos2d::CCSprite* level_tale;Process::level_tale21,318
-    cocos2d::CCSprite* level_cn;Process::level_cn22,353
-    cocos2d::CCSprite* level_evil;Process::level_evil23,386
-    static int mapType;Process::mapType25,429
-    static int levelNum;Process::levelNum26,453
+    bool isMouseGame Process::isMouseGame19,250
+    cocos2d::CCSprite* level_ri;Process::level_ri21,285
+    cocos2d::CCSprite* level_west;Process::level_west22,318
+    cocos2d::CCSprite* level_tale;Process::level_tale23,353
+    cocos2d::CCSprite* level_cn;Process::level_cn24,388
+    cocos2d::CCSprite* level_evil;Process::level_evil25,421
+    cocos2d::CCSprite* level1;Process::level126,456
+    cocos2d::CCSprite* level2;Process::level227,487
+    cocos2d::CCSprite* level3;Process::level328,518
+    cocos2d::CCSprite* level4;Process::level429,549
+    cocos2d::CCSprite* level5;Process::level530,580
+    cocos2d::CCSprite* level6;Process::level631,611
+    cocos2d::CCSprite* level7;Process::level732,642
+    cocos2d::CCSprite* level8;Process::level833,673
+    cocos2d::CCSprite* level9;Process::level934,704
+    cocos2d::CCSprite* level10;Process::level1035,735
+    cocos2d::CCSprite* level11;Process::level1136,767
+    cocos2d::CCSprite* level12;Process::level1237,799
+    cocos2d::CCSprite* level13;Process::level1338,831
+    cocos2d::CCSprite* level14;Process::level1439,863
+    cocos2d::CCSprite* level15;Process::level1540,895
+    cocos2d::CCSprite* level16;Process::level1641,927
+    cocos2d::CCSprite* level17;Process::level1742,959
+    cocos2d::CCSprite* level18;Process::level1843,991
+    cocos2d::CCSprite* level19;Process::level1944,1023
+    cocos2d::CCSprite* level20;Process::level2045,1055
+    cocos2d::CCSprite* level21;Process::level2146,1087
+    cocos2d::CCSprite* level22;Process::level2247,1119
+    cocos2d::CCSprite* level23;Process::level2348,1151
+    cocos2d::CCSprite* level24;Process::level2449,1183
+    cocos2d::CCSprite* level25;Process::level2550,1215
+    cocos2d::CCSprite* level26;Process::level2651,1247
+    cocos2d::CCSprite* level27;Process::level2752,1279
+    cocos2d::CCSprite* level28;Process::level2853,1311
+    cocos2d::CCSprite* level29;Process::level2954,1343
+    cocos2d::CCSprite* level30;Process::level3055,1375
+    cocos2d::CCSprite* level31;Process::level3156,1407
+    cocos2d::CCSprite* level32;Process::level3257,1439
+    cocos2d::CCSprite* level33;Process::level3358,1471
+    cocos2d::CCSprite* level34;Process::level3459,1503
+    cocos2d::CCSprite* level35;Process::level3560,1535
+    cocos2d::CCSprite* level36;Process::level3661,1567
+    cocos2d::CCSprite* level37;Process::level3762,1599
+    cocos2d::CCSprite* level38;Process::level3863,1631
+    cocos2d::CCSprite* level39;Process::level3964,1663
+    cocos2d::CCSprite* level40;Process::level4065,1695
+    cocos2d::CCSprite* level41;Process::level4166,1727
+    cocos2d::CCSprite* level42;Process::level4267,1759
+    cocos2d::CCSprite* level43;Process::level4368,1791
+    cocos2d::CCSprite* level44;Process::level4469,1823
+    cocos2d::CCSprite* level45;Process::level4570,1855
+    cocos2d::CCSprite* level46;Process::level4671,1887
+    cocos2d::CCSprite* level47;Process::level4772,1919
+    cocos2d::CCSprite* level48;Process::level4873,1951
+    cocos2d::CCSprite* level49;Process::level4974,1983
+    cocos2d::CCSprite* level50;Process::level5075,2015
+    cocos2d::CCSprite* level51;Process::level5176,2047
+    cocos2d::CCSprite* level52;Process::level5277,2079
+    cocos2d::CCSprite* level53;Process::level5378,2111
+    cocos2d::CCSprite* level54;Process::level5479,2143
+    cocos2d::CCSprite* level55;Process::level5580,2175
+    cocos2d::CCSprite* level56;Process::level5681,2207
+    cocos2d::CCSprite* level57;Process::level5782,2239
+    cocos2d::CCSprite* level58;Process::level5883,2271
+    cocos2d::CCSprite* level59;Process::level5984,2303
+    cocos2d::CCSprite* level60;Process::level6085,2335
+    cocos2d::CCSprite* level61;Process::level6186,2367
+    cocos2d::CCSprite* level62;Process::level6287,2399
+    cocos2d::CCSprite* level63;Process::level6388,2431
+    cocos2d::CCSprite* level64;Process::level6489,2463
+    cocos2d::CCSprite* level65;Process::level6590,2495
+    cocos2d::CCSprite* level66;Process::level6691,2527
+    cocos2d::CCSprite* level67;Process::level6792,2559
+    cocos2d::CCSprite* level68;Process::level6893,2591
+    cocos2d::CCSprite* level69;Process::level6994,2623
+    cocos2d::CCSprite* level70;Process::level7095,2655
+    cocos2d::CCSprite* level71;Process::level7196,2687
+    cocos2d::CCSprite* level72;Process::level7297,2719
+    cocos2d::CCSprite* level73;Process::level7398,2751
+    cocos2d::CCSprite* level74;Process::level7499,2783
+    cocos2d::CCSprite* level75;Process::level75100,2815
+    cocos2d::CCSprite* level76;Process::level76101,2847
+    cocos2d::CCSprite* level77;Process::level77102,2879
+    cocos2d::CCSprite* level78;Process::level78103,2911
+    cocos2d::CCSprite* level79;Process::level79104,2943
+    cocos2d::CCSprite* level80;Process::level80105,2975
+    cocos2d::CCSprite* level81;Process::level81106,3007
+    cocos2d::CCSprite* level82;Process::level82107,3039
+    cocos2d::CCSprite* level83;Process::level83108,3071
+    cocos2d::CCSprite* level84;Process::level84109,3103
+    cocos2d::CCSprite* level85;Process::level85110,3135
+    cocos2d::CCSprite* level86;Process::level86111,3167
+    cocos2d::CCSprite* level87;Process::level87112,3199
+    cocos2d::CCSprite* level88;Process::level88113,3231
+    cocos2d::CCSprite* level89;Process::level89114,3263
+    cocos2d::CCSprite* level90;Process::level90115,3295
+    cocos2d::CCSprite* level91;Process::level91116,3327
+    cocos2d::CCSprite* level92;Process::level92117,3359
+    cocos2d::CCSprite* level93;Process::level93118,3391
+    cocos2d::CCSprite* level94;Process::level94119,3423
+    cocos2d::CCSprite* level95;Process::level95120,3455
+    cocos2d::CCSprite* level96;Process::level96121,3487
+    cocos2d::CCSprite* level97;Process::level97122,3519
+    cocos2d::CCSprite* level98;Process::level98123,3551
+    cocos2d::CCSprite* level99;Process::level99124,3583
+    cocos2d::CCSprite* level100;Process::level100125,3615
+    cocos2d::CCSprite* level101;Process::level101126,3648
+    cocos2d::CCSprite* level102;Process::level102127,3681
+    cocos2d::CCSprite* level103;Process::level103128,3714
+    cocos2d::CCSprite* level104;Process::level104129,3747
+    cocos2d::CCSprite* level105;Process::level105130,3780
+    cocos2d::CCSprite* level106;Process::level106131,3813
+    cocos2d::CCSprite* level107;Process::level107132,3846
+    cocos2d::CCSprite* level108;Process::level108133,3879
+    cocos2d::CCSprite* level109;Process::level109134,3912
+    cocos2d::CCSprite* level110;Process::level110135,3945
+    cocos2d::CCSprite* level111;Process::level111136,3978
+    cocos2d::CCSprite* level112;Process::level112137,4011
+    cocos2d::CCSprite* level113;Process::level113138,4044
+    cocos2d::CCSprite* level114;Process::level114139,4077
+    cocos2d::CCSprite* level115;Process::level115140,4110
+    cocos2d::CCSprite* level116;Process::level116141,4143
+    cocos2d::CCSprite* level117;Process::level117142,4176
+    cocos2d::CCSprite* level118;Process::level118143,4209
+    cocos2d::CCSprite* level119;Process::level119144,4242
+    cocos2d::CCSprite* level120;Process::level120145,4275
+    static int mapType;Process::mapType148,4321
+    static int levelNum;Process::levelNum149,4345
 
 ProcessLoader.h,67
 #define __miwu__ProcessLoader__10,111
@@ -526,10 +726,11 @@ RBoss2Loader.h,65
 #define __miwu__RBoss2Loader__10,109
 class RBoss2Loader 17,207
 
-RBoss.h,112
+RBoss.h,150
 #define __miwu__RBoss__10,96
 class RBoss 19,219
     DrawLineLayer *drawLineLayer;RBoss::drawLineLayer23,263
+    bool isDead;RBoss::isDead24,297
 
 RBossLoader.h,63
 #define __miwu__RBossLoader__10,107
@@ -1089,11 +1290,13 @@ bool AppDelegate::applicationDidFinishLaunching(42,1019
 void AppDelegate::applicationDidEnterBackground(105,3191
 void AppDelegate::applicationWillEnterForeground(113,3479
 
-Army.cpp,103
+Army.cpp,182
 USING_NS_CC;14,137
 USING_NS_CC_EXT;15,150
 void Army::onEnter(17,168
-bool Army::ccTouchBegan(24,264
+bool Army::ccTouchBegan(27,333
+bool Army::onAssignCCBMemberVariable(47,936
+void Army::clearArmyShow(72,2423
 
 ArmyLoader.cpp,77
 USING_NS_CC;13,129
@@ -1379,11 +1582,14 @@ void Enemy::resetSpeed(106,2533
 bool Enemy::isMaxHp(116,2902
 void Enemy::deadHandler(121,2951
 
-Equip.cpp,105
+Equip.cpp,233
 USING_NS_CC;14,140
 USING_NS_CC_EXT;15,153
 void Equip::onEnter(17,171
-bool Equip::ccTouchBegan(24,268
+bool Equip::ccTouchBegan(26,334
+bool Equip::onAssignCCBMemberVariable(56,1359
+void Equip::clearEquipExceptRingCircle(85,3532
+void Equip::clearEquip(110,4462
 
 EquipLoader.cpp,78
 USING_NS_CC;11,105
@@ -1665,9 +1871,9 @@ struct CQPlayer Load::sharedPlayer 23,335
 CCNode* Load::sharedInstance 24,376
 CCScene* Load::scene(26,414
 void Load::onEnter(36,588
-void Load::onLoginRequestCompleted(61,1636
-void Load::onRegisterRequestCompleted(130,4551
-void Load::onPlayerRequestCompleted(177,6166
+void Load::onLoginRequestCompleted(61,1642
+void Load::onRegisterRequestCompleted(130,4557
+void Load::onPlayerRequestCompleted(177,6172
 
 LoadLoader.cpp,77
 USING_NS_CC;13,129
@@ -1675,19 +1881,19 @@ USING_NS_CC_EXT;14,142
 CCNode* LoadLoader::load(16,160
 
 MainMenuScene.cpp,563
-USING_NS_CC;28,496
-USING_NS_CC_EXT;29,509
-MainMenuScene* MainMenuScene::sharedInstance 31,527
-MainMenuScene* MainMenuScene::sharedScene(33,581
-CCScene* MainMenuScene::scene(38,657
-bool MainMenuScene::init(57,1017
-void MainMenuScene::onEnter(113,3418
-bool MainMenuScene::onAssignCCBCustomProperty(126,3702
-bool MainMenuScene::onAssignCCBMemberVariable(131,3873
-void MainMenuScene::pressedPlay(151,5029
-void MainMenuScene::pressedPlayMouseGame(157,5206
-void MainMenuScene::registerWithTouchDispatcher(163,5391
-bool MainMenuScene::ccTouchBegan(168,5538
+USING_NS_CC;29,514
+USING_NS_CC_EXT;30,527
+MainMenuScene* MainMenuScene::sharedInstance 32,545
+MainMenuScene* MainMenuScene::sharedScene(34,599
+CCScene* MainMenuScene::scene(39,675
+bool MainMenuScene::init(58,1035
+void MainMenuScene::onEnter(114,3440
+bool MainMenuScene::onAssignCCBCustomProperty(140,4152
+bool MainMenuScene::onAssignCCBMemberVariable(145,4323
+void MainMenuScene::pressedPlay(170,5788
+void MainMenuScene::pressedPlayMouseGame(176,5965
+void MainMenuScene::registerWithTouchDispatcher(182,6150
+bool MainMenuScene::ccTouchBegan(187,6297
 
 MainMenuSceneLoader.cpp,93
 USING_NS_CC;12,122
@@ -1705,32 +1911,33 @@ USING_NS_CC;13,131
 USING_NS_CC_EXT;14,144
 CCNode* MedalLoader::load(16,162
 
-Menu.cpp,874
-USING_NS_CC;30,448
-USING_NS_CC_EXT;31,461
-#define kCJMiaoSpeed 33,479
-bool Menu::init(35,504
-void Menu::onEnter(41,553
-SEL_MenuHandler Menu::onResolveCCBCCMenuItemSelector(81,2013
-SEL_CCControlHandler Menu::onResolveCCBCCControlSelector(97,2944
-bool Menu::onAssignCCBCustomProperty(102,3078
-bool Menu::onAssignCCBMemberVariable(107,3240
-void Menu::pressedPause(118,3820
-void Menu::winHandler(134,4378
-void Menu::spriteMoveFinished(146,4763
-void Menu::pressedS1(152,4888
-void Menu::pressedS2(174,5632
-void Menu::pressedS3(196,6373
-void Menu::pressedS4(244,7991
-void Menu::pressedS5(266,8731
-void Menu::pressedS6(288,9475
-void Menu::pressedS7(309,10222
-void Menu::pressedS8(330,10971
-void Menu::pressedS9(351,11720
-void Menu::update(372,12467
-void Menu::ccTouchesBegan(385,12863
-void Menu::ccTouchesMoved(419,15139
-void Menu::ccTouchesEnded(444,16634
+Menu.cpp,926
+USING_NS_CC;35,533
+USING_NS_CC_EXT;36,546
+#define kCJMiaoSpeed 38,564
+bool Menu::init(40,589
+void Menu::onEnter(46,638
+SEL_MenuHandler Menu::onResolveCCBCCMenuItemSelector(86,2098
+SEL_CCControlHandler Menu::onResolveCCBCCControlSelector(102,3029
+bool Menu::onAssignCCBCustomProperty(107,3163
+bool Menu::onAssignCCBMemberVariable(112,3325
+void Menu::pressedPause(123,3905
+void Menu::winHandler(139,4463
+void Menu::spriteMoveFinished(168,5563
+void Menu::pressedS1(174,5688
+void Menu::pressedS2(197,6453
+void Menu::pressedS3(220,7262
+void Menu::pressedS4(269,8898
+void Menu::pressedS5(292,9660
+void Menu::pressedS6(315,10426
+void Menu::pressedS7(337,11195
+void Menu::pressedS8(359,11966
+void Menu::pressedS9(381,12737
+void Menu::update(403,13506
+void Menu::ccTouchesBegan(416,13902
+void Menu::ccTouchesMoved(450,16178
+void Menu::ccTouchesEnded(475,17673
+void Menu::onBattleWinRequestCompleted(485,17974
 
 MenuLoader.cpp,77
 USING_NS_CC;11,101
@@ -1854,16 +2061,20 @@ void PrintingLabel::displayComplete(88,2145
 void PrintingLabel::setString(95,2262
 PrintingLabel::~PrintingLabel(100,2318
 
-Process.cpp,294
-USING_NS_CC;19,236
-USING_NS_CC_EXT;20,249
-int Process::mapType 22,267
-int Process::levelNum 23,293
-void Process::onEnter(25,321
-bool Process::onAssignCCBMemberVariable(35,531
-bool Process::ccTouchBegan(46,1088
-void Process::initNormalGame(190,7105
-void Process::initMouseGame(197,7334
+Process.cpp,461
+USING_NS_CC;21,298
+USING_NS_CC_EXT;22,311
+int Process::mapType 24,329
+int Process::levelNum 25,355
+void Process::onEnter(27,383
+void Process::setProcess(40,862
+void Process::setStars(654,16787
+bool Process::onAssignCCBMemberVariable(707,18508
+bool Process::ccTouchBegan(838,28689
+void Process::sendStartRequest(984,35399
+void Process::onStartRequestCompleted(998,36000
+void Process::initNormalGame(1041,37183
+void Process::initMouseGame(1048,37412
 
 ProcessLoader.cpp,80
 USING_NS_CC;13,135
@@ -1901,15 +2112,15 @@ RBoss.cpp,457
 USING_NS_CC;17,194
 USING_NS_CC_EXT;18,207
 bool RBoss::init(22,227
-void RBoss::onEnter(37,539
-void RBoss::update(46,753
-void RBoss::drawCollisionLine(55,968
-void RBoss::handleCollisionWith(63,1230
-float RBoss::radius(79,1650
-void RBoss::resetSpeed(84,1695
-bool RBoss::isMaxHp(89,1753
-void RBoss::deadHandler(94,1804
-void RBoss::atkHandler(106,2211
+void RBoss::onEnter(38,559
+void RBoss::update(47,773
+void RBoss::drawCollisionLine(56,988
+void RBoss::handleCollisionWith(64,1250
+float RBoss::radius(80,1670
+void RBoss::resetSpeed(85,1715
+bool RBoss::isMaxHp(90,1773
+void RBoss::deadHandler(95,1824
+void RBoss::atkHandler(111,2296
 
 RBossLoader.cpp,78
 USING_NS_CC;11,103
@@ -2085,13 +2296,13 @@ USING_NS_CC_EXT;12,112
 CCNode* RS9Loader::load(14,130
 
 S1.cpp,183
-USING_NS_CC;12,119
-USING_NS_CC_EXT;13,132
-bool S1::init(16,151
-float S1::radius(35,619
-float S1::getLv(40,661
-bool S1::normalAtkTrigger(45,701
-void S1::haloSkillHandler(50,778
+USING_NS_CC;13,137
+USING_NS_CC_EXT;14,150
+bool S1::init(17,169
+float S1::radius(36,637
+float S1::getLv(41,679
+bool S1::normalAtkTrigger(46,736
+void S1::haloSkillHandler(51,813
 
 S1Loader.cpp,74
 USING_NS_CC;11,97
@@ -2099,53 +2310,53 @@ USING_NS_CC_EXT;12,110
 CCNode* S1Loader::load(14,128
 
 S2.cpp,221
-USING_NS_CC;12,107
-USING_NS_CC_EXT;13,120
-bool S2::init(16,139
-float S2::radius(35,607
-float S2::getLv(40,653
-void S2::haloSkillHandler(45,693
-bool S2::normalAtkTrigger(51,822
-void S2::otherEnemyAtkHandler(56,899
+USING_NS_CC;13,125
+USING_NS_CC_EXT;14,138
+bool S2::init(17,157
+float S2::radius(36,625
+float S2::getLv(41,671
+void S2::haloSkillHandler(46,726
+bool S2::normalAtkTrigger(52,855
+void S2::otherEnemyAtkHandler(57,932
 
 S2Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S2Loader::load(14,128
 
-S3.cpp,151
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S3::init(15,120
-float S3::radius(34,589
-float S3::getLv(39,631
-void S3::reboundHeartHandler(44,671
+S3.cpp,152
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S3::init(16,138
+float S3::radius(35,607
+float S3::getLv(40,649
+void S3::reboundHeartHandler(45,704
 
 S3Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S3Loader::load(14,128
 
-S4.cpp,169
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S4::init(15,120
-float S4::radius(34,589
-float S4::getLv(39,631
-bool S4::hurtToOther(44,671
-bool S4::bearHurt(49,726
+S4.cpp,170
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S4::init(16,138
+float S4::radius(35,607
+float S4::getLv(40,649
+bool S4::hurtToOther(45,704
+bool S4::bearHurt(50,759
 
 S4Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S4Loader::load(14,128
 
-S5.cpp,114
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S5::init(15,120
-float S5::radius(34,589
-float S5::getLv(39,633
+S5.cpp,115
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S5::init(16,138
+float S5::radius(35,607
+float S5::getLv(40,651
 
 S5Loader.cpp,74
 USING_NS_CC;11,97
@@ -2153,49 +2364,49 @@ USING_NS_CC_EXT;12,110
 CCNode* S5Loader::load(14,128
 
 S6.cpp,182
-USING_NS_CC;13,138
-USING_NS_CC_EXT;14,151
-bool S6::init(17,170
-float S6::radius(35,638
-float S6::getLv(40,684
-void S6::handleCollisionWith(45,724
-void S6::healHandler(69,1260
+USING_NS_CC;14,156
+USING_NS_CC_EXT;15,169
+bool S6::init(18,188
+float S6::radius(36,656
+float S6::getLv(41,702
+void S6::handleCollisionWith(46,757
+void S6::healHandler(70,1293
 
 S6Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S6Loader::load(14,128
 
-S7.cpp,114
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S7::init(15,120
-float S7::radius(34,589
-float S7::getLv(39,635
+S7.cpp,115
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S7::init(16,138
+float S7::radius(35,607
+float S7::getLv(40,653
 
 S7Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S7Loader::load(14,128
 
-S8.cpp,114
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S8::init(15,120
-float S8::radius(34,589
-float S8::getLv(39,635
+S8.cpp,115
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S8::init(16,138
+float S8::radius(35,607
+float S8::getLv(40,653
 
 S8Loader.cpp,74
 USING_NS_CC;11,97
 USING_NS_CC_EXT;12,110
 CCNode* S8Loader::load(14,128
 
-S9.cpp,114
-USING_NS_CC;11,88
-USING_NS_CC_EXT;12,101
-bool S9::init(15,120
-float S9::radius(34,589
-float S9::getLv(39,633
+S9.cpp,115
+USING_NS_CC;12,106
+USING_NS_CC_EXT;13,119
+bool S9::init(16,138
+float S9::radius(35,607
+float S9::getLv(40,651
 
 S9Loader.cpp,74
 USING_NS_CC;11,97
