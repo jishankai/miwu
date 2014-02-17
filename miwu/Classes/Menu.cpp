@@ -147,9 +147,14 @@ void Menu::winHandler()
     CCDirector::sharedDirector()->pause();
     CocosDenshion::SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
     
+    int star=1;
     char url[255];
     std::string server = STATIC_DATA_STRING("server");
-    int level = Process::mapType*Process::levelNum;
+    int level = Process::mapType*Proces5s::levelNum;
+    switch (level) {
+    case 1:
+      if{}
+    }
     sprintf(url, "%sbattle/winApi&level=%d&stars=%d&SID=%s", server.c_str(), level, 3, Load::sharedSessionId.c_str());
     cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
     request->setUrl(url);
@@ -184,8 +189,8 @@ void Menu::pressedS1(cocos2d::CCObject *pSender)
     s1->setPosition(ccp(s1->getContentSize().width/2, CCDirector::sharedDirector()->getVisibleOrigin().y + actualY));
     s1->setTag(101);
     level->addChild(s1, 640-actualY);
-    level->_soldiers->addObject(s1);
-    Level::s1_call++;
+    level->soldiers->addObject(s1);
+    level->s1_call++;
     }
 }
 
@@ -208,7 +213,7 @@ void Menu::pressedS2(cocos2d::CCObject *pSender)
       s2->setTag(102);
       level->addChild(s2, 640-actualY);
       level->_soldiers->addObject(s2);
-      Level::s2_call++;
+      level->s2_call++;
     }
 }
 
@@ -231,7 +236,7 @@ void Menu::pressedS3(cocos2d::CCObject *pSender)
     s3->setTag(103);
     level->addChild(s3, 640-actualY);
     level->_soldiers->addObject(s3);
-    Level::s3_call++;
+    level->s3_call++;
 
     CCObject* et = NULL;
     float nearestDist = 960;
@@ -280,7 +285,7 @@ void Menu::pressedS4(cocos2d::CCObject *pSender)
     s4->setTag(104);
     level->addChild(s4, 640-actualY);
     level->_soldiers->addObject(s4);
-    Level::s4_call++;
+    level->s4_call++;
     }
 }
 
@@ -303,7 +308,7 @@ void Menu::pressedS5(cocos2d::CCObject *pSender)
     s5->setTag(105);
     level->addChild(s5, 640-actualY);
     level->_soldiers->addObject(s5);
-    Level::s5_call++;
+    level->s5_call++;
     }
 }
 
@@ -325,7 +330,7 @@ void Menu::pressedS6(cocos2d::CCObject *pSender)
     s6->setTag(106);
     level->addChild(s6, 640-actualY);
     level->_soldiers->addObject(s6);
-    Level::s6_call++;
+    level->s6_call++;
     }
 }
 
@@ -347,7 +352,7 @@ void Menu::pressedS7(cocos2d::CCObject *pSender)
     s7->setTag(107);
     level->addChild(s7, 640-actualY);
     level->_soldiers->addObject(s7);
-    Level::s7_call++;
+    level->s7_call++;
     }
 }
 
@@ -369,7 +374,7 @@ void Menu::pressedS8(cocos2d::CCObject *pSender)
     s8->setTag(108);
     level->addChild(s8, 640-actualY);
     level->_soldiers->addObject(s8);
-    Level::s8_call++;
+    level->s8_call++;
     }
 }
 
@@ -391,7 +396,7 @@ void Menu::pressedS9(cocos2d::CCObject *pSender)
     s9->setTag(109);
     level->addChild(s9, 640-actualY);
     level->_soldiers->addObject(s9);
-    Level::s9_call++;
+    level->s9_call++;
     }
 }
 
