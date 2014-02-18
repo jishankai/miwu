@@ -148,810 +148,1093 @@ void Menu::winHandler()
     CocosDenshion::SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
     
     int star=1;
-    int rewardGold=0;
+    int rewardCoin=0;
     int rewardEquipId;
     char url[255];
     std::string server = STATIC_DATA_STRING("server");
-    int level = Process::mapType*Proces5s::levelNum;
-    switch (Level) {
+    int lev = Process::mapType*Process::levelNum;
+    switch (lev) {
     case 1:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
         star++;
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       if(level->s1_call>=5){
         star++;
-        rewardEquipId=;
+        //rewardEquipId=;
       }
       break;
     case 2:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
         star++;
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       //todo
       break;
     case 3:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
         star++;
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+          rewardCoin+=20;
+      }
       break;
     case 4:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
         star++;
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+        rewardCoin+=30;
+      }
       break;
     case 5:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
         star++;
       }
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+        rewardCoin+=40;
+      }
       break;
     case 6:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->soldier_dead<=20) {
-        rewardGold=rewardGold+25+10*((level-1)/6);
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
         star++;
       }
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+        rewardCoin+=50;
+      }
       break;
     case 7:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50) {
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 8:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s2_call>=5)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s2_call>=5){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+        rewardCoin+=50;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50) {
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 9:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+        rewardCoin+=60;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50) {
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 10:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+        rewardCoin+=70;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50) {
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
         star++;
+      }
       break;
     case 11:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+        rewardCoin+=80;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 12:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s1_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s1_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=50)
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 13:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 14:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 15:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 16:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 17:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 18:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 19:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s1_call==0)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s1_call==0){
         star++;
+        rewardCoin+=120;
+      }
       break;
     case 20:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s1_call==0)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s1_call==0){
         star++;
+        rewardCoin+=130;
+      }
       break;
     case 21:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin+=140;
+      }
       break;
     case 22:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin+=150;
+      }
       break;
     case 23:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=60)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=60){
         star++;
+        rewardCoin+=160;
+      }
       break;
     case 24:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s2_call==0)
         star++;
       break;
     case 25:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s2_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s2_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+rewardCoin+=140;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6); 
+      }
       break;
     case 26:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6); 
+      }
       break;
     case 27:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 28:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 29:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 30:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=70)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=70){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 31:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 32:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s3_call>=5)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s3_call>=5){
         star++;
-      if(level->soldier_dead<=15)
+        rewardCoin+=190;
+      }
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 33:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s3_call>=5)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s3_call>=5){
         star++;
-      if(level->soldier_dead<=15)
+        rewardCoin+=200;
+      }
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 34:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s3_call>=5)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s3_call>=5){
         star++;
-      if(level->soldier_dead<=15)
+        rewardCoin+=210;
+      }
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 35:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 36:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s3_call==0)
         star++;
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 37:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 38:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s1_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s1_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+rewardCoin+=230;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 39:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s2_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s2_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+rewardCoin+=240;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 40:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 41:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 42:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=80)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=80){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 43:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s4_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s4_call>=5){
         star++;
+        rewardCoin+=260;
+      }
       break;
     case 44:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s4_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s4_call>=5){
         star++;
+rewardCoin+=270;
+      }
       break;
     case 45:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s4_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s4_call>=5){
         star++;
+rewardCoin+=280;
+      }
       break;
     case 46:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 47:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 48:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 49:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 50:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 51:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 52:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 53:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 54:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 55:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s5_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s5_call>=5){
         star++;
+rewardCoin+=320;
+      }
       break;
     case 56:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s5_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s5_call>=5){
         star++;
+rewardCoin+=330;
+      }
       break;
     case 57:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
-      if(level->s5_call>=5)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s5_call>=5){
         star++;
+rewardCoin+=340;
+      }
       break;
     case 58:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 59:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 60:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s1_call==0&&level->s2_call==0)
         star++;
       break;
     case 61:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 62:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 63:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s2_call==0&&level->s3_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s2_call==0&&level->s3_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+        rewardCoin+=380;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 64:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->s2_call==0&&level->s3_call==0)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->s2_call==0&&level->s3_call==0){
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+        rewardCoin+=390;
+      }
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 65:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 66:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 67:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s6_call>=5)
         star++;
       break;
     case 68:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s6_call>=5)
         star++;
       break;
     case 69:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s6_call>=5)
         star++;
       break;
     case 70:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s2_call==0&&level->s8_call==0)
         star++;
       break;
     case 71:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 72:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 73:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 74:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s1_call==0)
         star++;
       break;
     case 75:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 76:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 77:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 78:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s7_call>=5)
         star++;
       break;
     case 79:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s7_call>=5)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 80:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s7_call>=5)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 81:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s6_call==0)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 82:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s4_call==0)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 83:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s5_call==0)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 84:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s3_call==0&&level->s4_call==0)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 85:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 86:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s1_call==0)
         star++;
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 87:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 88:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 89:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s4_call==0)
         star++;
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 90:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       //todo
-      if(level->soldier_dead<=15)
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 91:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s2_call==0&&level->s8_call==0)
         star++;
       break;
     case 92:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s7_call==0)
         star++;
       break;
     case 93:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 94:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 95:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 96:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s5_call==0&&level->s6_call==0)
         star++;
       break;
     case 97:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call>=5)
         star++;
       break;
     case 98:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call>=5)
         star++;
       break;
     case 99:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call>=5)
         star++;
       break;
     case 100:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 101:
-      rewardGold=rewardGold+15+10*((level-1)/6);
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s1_call==0)
         star++;
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       break;
     case 102:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->hp*100/level->miao->maxHp>=85)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 103:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 104:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s4_call==0)
         star++;
       break;
     case 105:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call==0)
         star++;
       break;
     case 106:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 107:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 108:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=15)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=15){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 109:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 110:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s9_call>=5)
         star++;
       break;
     case 111:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 112:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call==0)
         star++;
       break;
     case 113:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call==0)
         star++;
       break;
     case 114:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->miao->isMaxHp())
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->miao->isMaxHp()){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 115:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s2_call==0&&level->s8_call==0)
         star++;
       break;
     case 116:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s8_call>=5)
         star++;
       break;
     case 117:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     case 118:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       if(level->s1_call==0)
         star++;
       break;
     case 119:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
-      if(level->s8_call==&&level->s9_call==0)
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
+      if(level->s8_call==0&&level->s9_call==0)
         star++;
       break;
     case 120:
-      rewardGold=rewardGold+15+10*((level-1)/6);
-      if(level->soldier_dead<=10)
+      rewardCoin=rewardCoin+15+10*((lev-1)/6);
+      if(level->soldier_dead<=10){
         star++;
+        rewardCoin=rewardCoin+25+10*((lev-1)/6);
+      }
       //todo
       break;
     }
-    sprintf(url, "%sbattle/winApi&level=%d&stars=%d&SID=%s", server.c_str(), level, 3, Load::sharedSessionId.c_str());
+    sprintf(url, "%sbattle/winApi&level=%d&stars=%d&coin=%d&SID=%s", server.c_str(), lev, star, rewardCoin, Load::sharedSessionId.c_str());
     cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
     request->setUrl(url);
     request->setRequestType(CCHttpRequest::kHttpGet);
@@ -985,7 +1268,7 @@ void Menu::pressedS1(cocos2d::CCObject *pSender)
     s1->setPosition(ccp(s1->getContentSize().width/2, CCDirector::sharedDirector()->getVisibleOrigin().y + actualY));
     s1->setTag(101);
     level->addChild(s1, 640-actualY);
-    level->soldiers->addObject(s1);
+    level->_soldiers->addObject(s1);
     level->s1_call++;
     }
 }

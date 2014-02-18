@@ -115,7 +115,7 @@ void Load::onLoginRequestCompleted(CCHttpClient *sender, CCHttpResponse *respons
         std::string uid = CCUserDefault::sharedUserDefault()->getStringForKey("openUDID");
         std::string ver = CCUserDefault::sharedUserDefault()->getStringForKey("appVersion");
         
-        sprintf(url, "%suser/registerApi&name=%s&inviterCode=&term=%s&os=%s&ver=%s&SID=%s", server.c_str(), uid.substr(0,5).c_str(), term.c_str(), os.c_str(), ver.c_str(), sharedSessionId.c_str());
+        sprintf(url, "%suser/registerApi&name=%s&SID=%s", server.c_str(), uid.substr(0,5).c_str(),sharedSessionId.c_str());
         
         cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
         request->setUrl(url);

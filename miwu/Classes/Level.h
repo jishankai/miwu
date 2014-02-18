@@ -25,7 +25,7 @@ private:
     
 public:
     // Global Values
-    int solider_dead = 0;
+    int soldier_dead = 0;
     int s1_call = 0;
     int s2_call = 0;
     int s3_call = 0;
