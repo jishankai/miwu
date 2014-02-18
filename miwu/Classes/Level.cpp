@@ -627,6 +627,8 @@ void Level::removeSoldier(Soldier *soldier)
     
     _soldiers->removeObject(soldier, true);
     soldier = NULL;
+
+    soldier_dead++;
 }
 
 void Level::removeEnemy(Enemy* enemy)
