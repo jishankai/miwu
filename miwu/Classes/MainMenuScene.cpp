@@ -128,10 +128,10 @@ void MainMenuScene::onEnter()
     sprintf(cCoin, "%d", Load::sharedPlayer.coin);
     sprintf(cJewel, "%d", Load::sharedPlayer.jewel);
     sprintf(cPoint, "%d", Load::sharedPlayer.point);
-    //this->lv->setString(cLv);
-    //this->coin->setString(cCoin);
-    //this->jewel->setString(cJewel);
-    //this->point->setString(cPoint);
+    this->lv->setString(cLv);
+    this->coin->setString(cCoin);
+    this->jewel->setString(cJewel);
+    this->point->setString(cPoint);
     
     // Make sure touches are enabled
     this->setTouchEnabled(true);
