@@ -182,43 +182,43 @@ void Level::update(float delta)
         switch (Process::mapType) {
             case 1:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = RS1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = RS2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = RS3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = RS4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = RS5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = RS6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = RS7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = RS8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = RS9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = RS10Loader::load();
                         enemy->setTag(210);
                         break;
@@ -228,43 +228,43 @@ void Level::update(float delta)
                 break;
             case 2:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = WS1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = WS2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = WS3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = WS4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = WS5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = WS6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = WS7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = WS8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = WS9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = WS10Loader::load();
                         enemy->setTag(210);
                         break;
@@ -274,43 +274,43 @@ void Level::update(float delta)
                 break;
             case 3:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = TS1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = TS2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = TS3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = TS4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = TS5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = TS6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = TS7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = TS8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = TS9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = TS10Loader::load();
                         enemy->setTag(210);
                         break;
@@ -320,43 +320,43 @@ void Level::update(float delta)
                 break;
             case 4:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = CS1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = CS2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = CS3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = CS4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = CS5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = CS6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = CS7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = CS8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = CS9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = CS10Loader::load();
                         enemy->setTag(210);
                         break;
@@ -366,43 +366,43 @@ void Level::update(float delta)
                 break;
             case 5:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = ES1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = ES2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = ES3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = ES4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = ES5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = ES6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = ES7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = ES8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = ES9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = ES10Loader::load();
                         enemy->setTag(210);
                         break;
@@ -413,43 +413,43 @@ void Level::update(float delta)
                 
             default:
                 switch (classType) {
-                    case 1:
+                    case 0:
                         enemy = RS1Loader::load();
                         enemy->setTag(201);
                         break;
-                    case 2:
+                    case 1:
                         enemy = RS2Loader::load();
                         enemy->setTag(202);
                         break;
-                    case 3:
+                    case 2:
                         enemy = RS3Loader::load();
                         enemy->setTag(203);
                         break;
-                    case 4:
+                    case 3:
                         enemy = RS4Loader::load();
                         enemy->setTag(204);
                         break;
-                    case 5:
+                    case 4:
                         enemy = RS5Loader::load();
                         enemy->setTag(205);
                         break;
-                    case 6:
+                    case 5:
                         enemy = RS6Loader::load();
                         enemy->setTag(206);
                         break;
-                    case 7:
+                    case 6:
                         enemy = RS7Loader::load();
                         enemy->setTag(207);
                         break;
-                    case 8:
+                    case 7:
                         enemy = RS8Loader::load();
                         enemy->setTag(208);
                         break;
-                    case 9:
+                    case 8:
                         enemy = RS9Loader::load();
                         enemy->setTag(209);
                         break;
-                    case 0:
+                    case 9:
                         enemy = RS10Loader::load();
                         enemy->setTag(210);
                         break;

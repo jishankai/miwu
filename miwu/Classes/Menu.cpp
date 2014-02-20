@@ -149,7 +149,7 @@ void Menu::winHandler()
     
     int star=1;
     int rewardCoin=0;
-    int rewardEquipId;
+    int rewardWeaponId=NULL;
     char url[255];
     std::string server = STATIC_DATA_STRING("server");
     int lev = Process::mapType*Process::levelNum;
@@ -162,7 +162,7 @@ void Menu::winHandler()
       }
       if(level->s1_call>=5){
         star++;
-        //rewardEquipId=;
+        rewardWeaponId=101;
       }
       break;
     case 2:
@@ -219,7 +219,10 @@ void Menu::winHandler()
       break;
     case 7:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
-      //todo
+      if(0){
+        star++;
+        rewardWeaponId=202;
+      }
       if(level->miao->getHp()*100/level->miao->getMaxHp()>=50) {
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
@@ -273,6 +276,7 @@ void Menu::winHandler()
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
       if(level->s1_call==0){
         star++;
+        rewardWeaponId=103;
       }
       if(level->miao->getHp()*100/level->miao->getMaxHp()>=50){
         star++;
@@ -388,8 +392,10 @@ void Menu::winHandler()
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
-      if(level->s2_call==0)
+      if(level->s2_call==0){
         star++;
+        rewardWeaponId=108;
+      }
       break;
     case 25:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -493,8 +499,10 @@ rewardCoin+=140;
       break;
     case 36:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
-      if(level->s3_call==0)
+      if(level->s3_call==0){
         star++;
+        rewardWeaponId=102;
+      }
       if(level->soldier_dead<=15){
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
@@ -610,6 +618,10 @@ rewardCoin+=280;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       //todo
+      if(0){
+        star++;
+        rewardWeaponId=209;
+      }
       break;
     case 49:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -714,8 +726,10 @@ rewardCoin+=340;
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
-      if(level->s1_call==0&&level->s2_call==0)
+      if(level->s1_call==0&&level->s2_call==0){
         star++;
+        rewardWeaponId=107;
+      }
       break;
     case 61:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -822,6 +836,10 @@ rewardCoin+=340;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       //todo
+      if(0){
+        star++;
+        rewardWeaponId=206;
+      }
       break;
     case 73:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -920,8 +938,10 @@ rewardCoin+=340;
       break;
     case 84:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
-      if(level->s3_call==0&&level->s4_call==0)
+      if(level->s3_call==0&&level->s4_call==0){
         star++;
+        rewardWeaponId=109;
+      }
       if(level->miao->getHp()*100/level->miao->getMaxHp()>=85){
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
@@ -1025,8 +1045,10 @@ rewardCoin+=340;
         star++;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
-      if(level->s5_call==0&&level->s6_call==0)
+      if(level->s5_call==0&&level->s6_call==0){
         star++;
+        rewardWeaponId=207;
+      }
       break;
     case 97:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -1129,6 +1151,10 @@ rewardCoin+=340;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       //todo
+      if(0){
+        star++;
+        rewardWeaponId=111;
+      }
       break;
     case 109:
       rewardCoin=rewardCoin+15+10*((lev-1)/6);
@@ -1232,9 +1258,13 @@ rewardCoin+=340;
         rewardCoin=rewardCoin+25+10*((lev-1)/6);
       }
       //todo
+      if(0){
+        star++;
+        rewardWeaponId=112;
+      }
       break;
     }
-    sprintf(url, "%sbattle/winApi&level=%d&stars=%d&coin=%d&SID=%s", server.c_str(), lev, star, rewardCoin, Load::sharedSessionId.c_str());
+    sprintf(url, "%sbattle/winapi&level=%d&stars=%d&coin=%d&weaponId=%d&SID=%s", server.c_str(), lev, star, rewardCoin, rewardWeaponId, Load::sharedSessionId.c_str());
     cocos2d::extension::CCHttpRequest* request = new cocos2d::extension::CCHttpRequest();
     request->setUrl(url);
     request->setRequestType(CCHttpRequest::kHttpGet);
