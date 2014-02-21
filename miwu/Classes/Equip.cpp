@@ -11,6 +11,10 @@
 #include "cocos2d.h"
 #include "EquipLoader.h"
 
+#include "StaticData.h"
+#include "JsonBox.h"
+#include "Load.h"
+
 USING_NS_CC;
 USING_NS_CC_EXT;
 
@@ -19,8 +23,104 @@ void Equip::onEnter()
     LayerWithDialog::onEnter();
     
     this->setTouchEnabled(true);
-    this->clearEquip();
-    this->scepter_fish->setVisible(true);
+
+    char url[255];
+    std::string server = STATIC_DATA_STRING("server");
+    sprintf(url, "%sweapons/infoApi&SID=%s", server.c_str(), Load::sharedSessionId.c_str());
+    request->setUrl(url);
+    request->setRequestType(CCHttpRequest::kHttpGet);
+    request->setResponseCallback(this, httpresponse_selector(Equip::onInfoRequestCompleted));
+    request->setTag("weapons");
+    cocos2d::extension::CCHttpClient::getInstance()->send(request);
+    request->release();
+}
+
+void Equip::onInfoRequestCompleted(CCHttpClient *sender, CCHttpResponse *response)
+{
+    if (!response)
+    {
+        return;
+    }
+    
+    // You can get original request type from: response->request->reqType
+    if (0 != strlen(response->getHttpRequest()->getTag()))
+    {
+        CCLog("%s completed", response->getHttpRequest()->getTag());
+    }
+    
+    int statusCode = response->getResponseCode();
+    char statusString[64] = {};
+    sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+    CCLog("response code: %d", statusCode);
+    
+    if (!response->isSucceed())
+    {
+        CCLog("response failed");
+        CCLog("error buffer: %s", response->getErrorBuffer());
+        return;
+    }
+    
+    // dump data
+    std::vector<char> *buffer = response->getResponseData();
+    const std::string jsonStr(buffer->begin(),buffer->end());
+    JsonBox::Value json;
+    json.loadFromString(jsonStr);
+    
+    if (json["data"]["isSuccess"].getBoolean()) {
+      this->clearEquip();
+        JsonBox::Array weapons  = json["data"]["weapons"].getArray();
+        for (i = 0; i < 9; i++) {
+          switch(atoi(arms[i]["armId"].getString().c_str())) {
+          case 1:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s1->setVisible(true);
+            }
+            break;
+          case 2:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s2->setVisible(true);
+            }
+            break;
+          case 3:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s3->setVisible(true);
+            }
+            break;
+          case 4:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s4->setVisible(true);
+            }
+            break;
+          case 5:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s5->setVisible(true);
+            }
+            break;
+          case 6:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s6->setVisible(true);
+            }
+            break;
+          case 7:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s7->setVisible(true);
+            }
+            break;
+          case 8:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s8->setVisible(true);
+            }
+            break;
+          case 9:
+            if(atoi(arms[i]["level"].getString().c_str())>0) {
+              this->show_s9->setVisible(true);
+            }
+            break;
+          }
+        }
+
+        
+    }
 }
 
 bool Equip::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
