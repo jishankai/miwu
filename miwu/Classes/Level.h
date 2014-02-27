@@ -24,7 +24,7 @@ private:
     cocos2d::CCArray *_levelArray;
     
 public:
-    // Global Values
+    int level_hp;
     int soldier_dead = 0;
     int s1_call = 0;
     int s2_call = 0;
@@ -50,8 +50,8 @@ public:
     RBoss* boss;
     float randTime = 0;
     cocos2d::CCArray *_soldiers;
-	cocos2d::CCArray *_enimies;
-
+    cocos2d::CCArray *_enimies;
+  
     CCB_STATIC_NEW_AUTORELEASE_OBJECT_WITH_INIT_METHOD(Level, create);
     
     virtual void onEnter();

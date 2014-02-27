@@ -3,6 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>1</key>
+  <dict>
+    <key>hp</key>
+    <integer>3300</integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -15,7 +19,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>2</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -28,7 +37,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>3</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -41,7 +55,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>4</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -54,7 +73,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>5</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -67,7 +91,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>6</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -80,7 +109,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>7</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -93,7 +127,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>8</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -106,7 +145,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>9</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -119,7 +163,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>10</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -132,7 +181,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>11</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -145,7 +199,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>12</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -158,7 +217,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>13</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -171,7 +235,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>14</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -184,7 +253,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>15</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -197,7 +271,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>16</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -210,7 +289,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>17</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -223,7 +307,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>18</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -236,7 +325,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>19</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -249,7 +343,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>20</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -262,7 +361,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>21</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -275,7 +379,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>22</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -288,7 +397,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>23</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -301,7 +415,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>24</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -314,7 +433,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>25</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -327,7 +451,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>26</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -340,7 +469,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>27</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -353,7 +487,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>28</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -366,7 +505,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>29</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -379,7 +523,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>30</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -392,7 +541,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>31</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -405,7 +559,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>32</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -418,7 +577,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>33</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -431,7 +595,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>34</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -444,7 +613,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>35</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -457,7 +631,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>36</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -470,7 +649,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>37</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -483,7 +667,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>38</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -496,7 +685,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>39</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -509,7 +703,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>40</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -522,7 +721,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>41</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -535,7 +739,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>42</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -548,7 +757,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>43</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -561,7 +775,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>44</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -574,7 +793,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>45</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -587,7 +811,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>46</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -600,7 +829,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>47</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -613,7 +847,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>48</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -626,7 +865,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>49</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -639,7 +883,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>50</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -652,7 +901,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>51</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -665,7 +919,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>52</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -678,7 +937,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>53</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -691,7 +955,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>54</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -704,7 +973,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>55</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -717,7 +991,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>56</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -730,7 +1009,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>57</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -743,7 +1027,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>58</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -756,7 +1045,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>59</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -769,7 +1063,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>60</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -782,7 +1081,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>61</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -795,7 +1099,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>62</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -808,7 +1117,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>63</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -821,7 +1135,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>64</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -834,7 +1153,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>65</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -847,7 +1171,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>66</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -860,7 +1189,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>67</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -873,7 +1207,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>68</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -886,7 +1225,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>69</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -899,7 +1243,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>70</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -912,7 +1261,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>71</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -925,7 +1279,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>72</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<false/>
@@ -938,7 +1297,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>73</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -951,7 +1315,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>74</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -964,7 +1333,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>75</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -977,7 +1351,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>76</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -990,7 +1369,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>77</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1003,7 +1387,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>78</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1016,7 +1405,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>79</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1029,7 +1423,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>80</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1042,7 +1441,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>81</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1055,7 +1459,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>82</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1068,7 +1477,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>83</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1081,7 +1495,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>84</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1094,7 +1513,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>85</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1107,7 +1531,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>86</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1120,7 +1549,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>87</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1133,7 +1567,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>88</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1146,7 +1585,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>89</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1159,7 +1603,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>90</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1172,7 +1621,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>91</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1185,7 +1639,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>92</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1198,7 +1657,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>93</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1211,7 +1675,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>94</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1224,7 +1693,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>95</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1237,7 +1711,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>96</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1250,7 +1729,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>97</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1263,7 +1747,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>98</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1276,7 +1765,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>99</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1289,7 +1783,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>100</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1302,7 +1801,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>101</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1315,7 +1819,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>102</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<true/>
 		<true/>
@@ -1328,7 +1837,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>103</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -1341,7 +1855,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>104</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -1354,7 +1873,12 @@
 		<false/>
 		<false/>
 	</array>
+  </dict>
 	<key>105</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<true/>
@@ -1367,7 +1891,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>106</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1380,7 +1909,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>107</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1393,7 +1927,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>108</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1406,7 +1945,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>109</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1419,7 +1963,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>110</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1432,7 +1981,12 @@
 		<true/>
 		<false/>
 	</array>
+  </dict>
 	<key>111</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1445,7 +1999,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>112</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1458,7 +2017,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>113</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1471,7 +2035,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>114</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1484,7 +2053,12 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 	<key>115</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1497,7 +2071,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>116</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1510,7 +2089,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>117</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1523,7 +2107,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>118</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1536,7 +2125,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>119</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1549,7 +2143,12 @@
 		<false/>
 		<true/>
 	</array>
+  </dict>
 	<key>120</key>
+  <dict>
+    <key>hp</key>
+    <integer></integer>
+    <key>enemies</key>
 	<array>
 		<false/>
 		<false/>
@@ -1562,5 +2161,6 @@
 		<true/>
 		<true/>
 	</array>
+  </dict>
 </dict>
 </plist>
