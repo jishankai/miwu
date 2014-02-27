@@ -19,6 +19,7 @@
 #define LEVEL_DATA_RECT(key) LevelData::sharedLevelData()->rectFromKey(key)
 #define LEVEL_DATA_SIZE(key) LevelData::sharedLevelData()->sizeFromKey(key)
 #define LEVEL_DATA_ARRAY(key) LevelData::sharedLevelData()->arrayFromKey(key)
+#define LEVEL_DATA_DICT(key) LevelData::sharedLevelData()->dictFromKey(key)
 
 class LevelData : public cocos2d::CCObject
 {
@@ -40,7 +41,8 @@ public:
     cocos2d::CCRect rectFromKey(std::string key);
     cocos2d::CCSize sizeFromKey(std::string key);
     cocos2d::CCArray* arrayFromKey(std::string key);
-    
+    cocos2d::CCDictionary* dictFromKey(std::string key);
+
     /**
      *	@brief	 内存不足时调用
      */

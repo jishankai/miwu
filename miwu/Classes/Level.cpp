@@ -102,7 +102,9 @@ void Level::onEnter()
     
     std::ostringstream s;
     s << Process::levelNum * Process::mapType;
-    _levelArray = LEVEL_DATA_ARRAY(s.str());
+    CCDictionary* _dict = LEVEL_DATA_DICT(s.str());
+    _levelArray = (CCArray*)_dict->objectForKey('enemies');
+    level_hp = _dict->valueForKey('hp')->intValue();
     _soldiers = new CCArray;
     _enimies = new CCArray;
     
@@ -111,7 +113,7 @@ void Level::onEnter()
     //miao->bloodBar = miaoBloodBar;
     this->addChild(miao, 640-126);
     //_soldiers->addObject(miao);
-    
+    x
     boss = (RBoss*)RBossLoader::load();
     boss->setPosition(ccp(860,126));
     boss->setTag(200); //tag

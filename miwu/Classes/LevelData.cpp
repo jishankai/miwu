@@ -68,6 +68,10 @@ cocos2d::CCArray* LevelData::arrayFromKey(string key)
 {
     return (cocos2d::CCArray*)_dictionary->objectForKey(key);
 }
+cocos2d::CCDictionary* LevelData::dictFromKey(string key)
+{
+  return (cocos2d::CCDictionary*)_dictionary->objectForKey(key);
+}
 void LevelData::purge()
 {
     CC_SAFE_RELEASE_NULL(_sharedLevelData);
