@@ -22,9 +22,8 @@ class Level : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVaria
 {
 private:
     cocos2d::CCArray *_levelArray;
-    
+    int _level_hp;    
 public:
-    int level_hp;
     int soldier_dead = 0;
     int s1_call = 0;
     int s2_call = 0;

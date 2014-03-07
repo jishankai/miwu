@@ -104,7 +104,7 @@ void Level::onEnter()
     s << Process::levelNum * Process::mapType;
     CCDictionary* _dict = LEVEL_DATA_DICT(s.str());
     _levelArray = (CCArray*)_dict->objectForKey('enemies');
-    level_hp = _dict->valueForKey('hp')->intValue();
+    _level_hp = _dict->valueForKey('hp')->intValue();
     _soldiers = new CCArray;
     _enimies = new CCArray;
     
@@ -113,7 +113,7 @@ void Level::onEnter()
     //miao->bloodBar = miaoBloodBar;
     this->addChild(miao, 640-126);
     //_soldiers->addObject(miao);
-    x
+    
     boss = (RBoss*)RBossLoader::load();
     boss->setPosition(ccp(860,126));
     boss->setTag(200); //tag
@@ -472,6 +472,8 @@ void Level::update(float delta)
         enemy->setPosition(ccp(960-enemy->getContentSize().width, CCDirector::sharedDirector()->getVisibleOrigin().y + actualY));
         this->addChild(enemy, 640-actualY);
         _enimies->addObject(enemy);
+
+        _level_hp-=enemy->getMaxHp();
     }
     
     CCObject* st = NULL;
