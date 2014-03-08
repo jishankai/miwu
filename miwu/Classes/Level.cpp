@@ -120,6 +120,54 @@ void Level::onEnter()
     //boss->bloodBar = bossBloodBar;
     this->addChild(boss,640-126);
     //_enimies->addObject(boss);
+
+    switch(Process::mapType) {
+    case 1:
+      if(Process::levelNum<=12) {
+        _base_hp = 500;
+        _boss_hp = 1000;
+      } else {
+        _base_hp = 625;
+        _boss_hp = 1250;
+      }
+    case 2:
+      if(Process::levelNum<=12) {
+        _base_hp = 1200;
+        _boss_hp = 2400;
+      } else {
+        _base_hp = 1500;
+        _boss_hp = 3000;
+      }
+    case 1:
+      if(Process::levelNum<=12) {
+        _base_hp = 1900;
+        _boss_hp = 3800;
+      } else {
+        _base_hp = 2375;
+        _boss_hp = 4750;
+      }
+    case 1:
+      if(Process::levelNum<=12) {
+        _base_hp = 2600;
+        _boss_hp = 5200;
+      } else {
+        _base_hp = 3250;
+        _boss_hp = 6500;
+      }
+    case 1:
+      if(Process::levelNum<=12) {
+        _base_hp = 3300;
+        _boss_hp = 6600;
+      } else {
+        _base_hp = 4125;
+        _boss_hp = 8250;
+      }
+
+    }
+
+    if (Process::levelNum%12==0) {
+      _is_boss = true;
+    }
     
     CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("background.mp3", true);
 }
@@ -159,7 +207,7 @@ void Level::update(float delta)
     
     randTime += delta;
     //5
-    if (randTime >= 5 and boss->getHp()>0) {
+    if ((_level_hp<=_level_hp*0.6 and _level_hp>_level_hp*0.5) or (_level_hp<=_level_hp*0.1 and _level_hp>0) or randTime >= 5) and boss->getHp()>0) {
         randTime = 0;
         CCNode* enemy;
 
