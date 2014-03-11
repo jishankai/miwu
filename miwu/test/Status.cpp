@@ -10,7 +10,7 @@
 
 #include "GameObject.h"
 #include "MiaoInviteer.h"
-#include "RBossInviteer.h"
+#include "BaseInviteer.h"
 #include "MouseNormalGameScene.h"
 #include "Invite.h"
 #include "GameOverScene.h"
@@ -76,7 +76,7 @@ void Status::onEnter()
     this->addChild(miao, 640-126);
     //_soldiers->addObject(miao);
     
-    boss = (RBoss*)RBossInviteer::load();
+    boss = (Base*)BaseInviteer::load();
     boss->setPosition(ccp(860,126));
     boss->setTag(200); //tag
     boss->bloodBar = bossBloodBar;

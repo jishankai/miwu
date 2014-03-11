@@ -10,13 +10,13 @@
 
 #include "GameObject.h"
 #include "MiaoLoader.h"
-#include "RBossLoader.h"
 #include "GameScene.h"
 #include "Background.h"
 #include "Status.h"
 #include "GameOverScene.h"
 #include "MainMenuScene.h"
 #include "LevelData.h"
+#include "BaseLoader.h"
 
 #include "RS1Loader.h"
 #include "RS2Loader.h"
@@ -28,6 +28,8 @@
 #include "RS8Loader.h"
 #include "RS9Loader.h"
 #include "RS10Loader.h"
+#include "RBossLoader.h"
+#include "RBoss2Loader.h"
 
 #include "ES1Loader.h"
 #include "ES2Loader.h"
@@ -39,6 +41,8 @@
 #include "ES8Loader.h"
 #include "ES9Loader.h"
 #include "ES10Loader.h"
+#include "EBossLoader.h"
+#include "EBoss2Loader.h"
 
 #include "TS1Loader.h"
 #include "TS2Loader.h"
@@ -50,6 +54,8 @@
 #include "TS8Loader.h"
 #include "TS9Loader.h"
 #include "TS10Loader.h"
+#include "TBossLoader.h"
+#include "TBoss2Loader.h"
 
 #include "CS1Loader.h"
 #include "CS2Loader.h"
@@ -61,6 +67,8 @@
 #include "CS8Loader.h"
 #include "CS9Loader.h"
 #include "CS10Loader.h"
+#include "CBossLoader.h"
+#include "CBoss2Loader.h"
 
 #include "WS1Loader.h"
 #include "WS2Loader.h"
@@ -72,6 +80,8 @@
 #include "WS8Loader.h"
 #include "WS9Loader.h"
 #include "WS10Loader.h"
+#include "WBossLoader.h"
+#include "WBoss2Loader.h"
 
 #include "Pause.h"
 #include "PauseLoader.h"
@@ -104,7 +114,7 @@ void Level::onEnter()
     s << Process::levelNum * Process::mapType;
     CCDictionary* _dict = LEVEL_DATA_DICT(s.str());
     _levelArray = (CCArray*)_dict->objectForKey('enemies');
-    _level_hp = _dict->valueForKey('hp')->intValue();
+    _level_hp = _level_max_hp = _dict->valueForKey('hp')->intValue();
     _soldiers = new CCArray;
     _enimies = new CCArray;
     
@@ -113,58 +123,65 @@ void Level::onEnter()
     //miao->bloodBar = miaoBloodBar;
     this->addChild(miao, 640-126);
     //_soldiers->addObject(miao);
-    
-    boss = (RBoss*)RBossLoader::load();
-    boss->setPosition(ccp(860,126));
-    boss->setTag(200); //tag
-    //boss->bloodBar = bossBloodBar;
-    this->addChild(boss,640-126);
-    //_enimies->addObject(boss);
 
+    base = (Base*)BaseLoader::load();
+    base->setPosition(ccp(860,126));
+    base->setTag(201);
+    this->addChild(boss,640-126);
+    //boss = (RBoss*)RBossLoader::load();
+    //boss->setPosition(ccp(860,126));
+    //boss->setTag(200); //tag
+    ////boss->bloodBar = bossBloodBar;
+    //this->addChild(boss,640-126);
+    ////_enimies->addObject(boss);
+
+    
     switch(Process::mapType) {
     case 1:
       if(Process::levelNum<=12) {
         _base_hp = 500;
-        _boss_hp = 1000;
+        _boss_hp = _boss_max_hp = 1000;
       } else {
-        _base_hp = 625;
-        _boss_hp = 1250;
+        _base_hp = _base_max_hp = 625;
+        _boss_hp = _boss_max_hp = 1250;
       }
     case 2:
       if(Process::levelNum<=12) {
-        _base_hp = 1200;
-        _boss_hp = 2400;
+        _base_hp = _base_max_hp = 1200;
+        _boss_hp = _boss_max_hp = 2400;
       } else {
-        _base_hp = 1500;
-        _boss_hp = 3000;
+        _base_hp = _base_max_hp = 1500;
+        _boss_hp = _boss_max_hp = 3000;
       }
     case 1:
       if(Process::levelNum<=12) {
-        _base_hp = 1900;
-        _boss_hp = 3800;
+        _base_hp = _base_max_hp = 1900;
+        _boss_hp = _boss_max_hp = 3800;
       } else {
-        _base_hp = 2375;
-        _boss_hp = 4750;
+        _base_hp = _base_max_hp = 2375;
+        _boss_hp = _boss_max_hp = 4750;
       }
     case 1:
       if(Process::levelNum<=12) {
-        _base_hp = 2600;
-        _boss_hp = 5200;
+        _base_hp = _base_max_hp = 2600;
+        _boss_hp = _boss_max_hp = 5200;
       } else {
-        _base_hp = 3250;
-        _boss_hp = 6500;
+        _base_hp = _base_max_hp = 3250;
+        _boss_hp = _boss_max_hp = 6500;
       }
     case 1:
       if(Process::levelNum<=12) {
-        _base_hp = 3300;
-        _boss_hp = 6600;
+        _base_hp = _base_max_hp = 3300;
+        _boss_hp = _boss_max_hp = 6600;
       } else {
-        _base_hp = 4125;
-        _boss_hp = 8250;
+        _base_hp = _base_max_hp = 4125;
+        _boss_hp = _boss_max_hp = 8250;
       }
 
     }
 
+    base->setHp(_base_hp);
+    
     if (Process::levelNum%12==0) {
       _is_boss = true;
     }
@@ -201,13 +218,54 @@ void Level::update(float delta)
     Status* pStatus = dynamic_cast<Status*>(pGameScene->status);
     if (pStatus) {
         pStatus->miaoBloodBar->setPercentage(miao->getHp()*100/miao->getMaxHp());
-        pStatus->bossBloodBar->setPercentage(boss->getHp()*100/boss->getMaxHp());
+        pStatus->bossBloodBar->setPercentage(_level_hp*100/_level_max_hp);
     }
     pBackground->update(delta);
+
+    if (_is_boss and base->getHp()<=_base_max_hp*0.1 and boss==NULL) {
+      _level_hp-=base->getHp();
+      this->removeChild(base);
+      switch(Process::mapType) {
+      case 1:
+        if (Process::levelNum==12)
+          boss = (RBoss*)RBossLoader::load();
+        else if (Process::levelNum==24)
+          boss = (RBoss2*)RBoss2Loader::load();
+        break;
+      case 2:
+        if (Process::levelNum==12)
+          boss = (WBoss*)WBossLoader::load();
+        else if (Process::levelNum==24)
+          boss = (WBoss2*)WBoss2Loader::load();
+        break;
+      case 3:
+        if (Process::levelNum==12)
+          boss = (TBoss*)TBossLoader::load();
+        else if (Process::levelNum==24)
+          boss = (TBoss2*)TBoss2Loader::load();
+        break;
+      case 4:
+        if (Process::levelNum==12)
+          boss = (CBoss*)CBossLoader::load();
+        else if (Process::levelNum==24)
+          boss = (CBoss2*)CBoss2Loader::load();
+        break;
+      case 5:
+        if (Process::levelNum==12)
+          boss = (EBoss*)EBossLoader::load();
+        else if (Process::levelNum==24)
+          boss = (EBoss2*)EBoss2Loader::load();
+        break;
+      }
+      boss->setPosition(ccp(860,126));
+      boss->setTag(200); //tag
+      boss->setHp(_boss_hp);
+      this->addChild(boss,640-126);
+    }
     
     randTime += delta;
     //5
-    if ((_level_hp<=_level_hp*0.6 and _level_hp>_level_hp*0.5) or (_level_hp<=_level_hp*0.1 and _level_hp>0) or randTime >= 5) and boss->getHp()>0) {
+    if ((_level_hp<=_level_max_hp*0.6 and _level_hp>_level_max_hp*0.5) or (_level_hp<=_level_max_hp*0.1 and _level_hp>_base_hp) or (_is_boss and base!=NULL and _level_hp>0) or (base->getHp()<=_base_max_hp*0.03 and _level_hp>base->getHp()) or randTime >= 5)) {
         randTime = 0;
         CCNode* enemy;
 
@@ -521,7 +579,8 @@ void Level::update(float delta)
         this->addChild(enemy, 640-actualY);
         _enimies->addObject(enemy);
 
-        _level_hp-=enemy->getMaxHp();
+        _level_hp = _level_hp-enemy->getMaxHp()-(_base_hp-base->getHp());
+        _base_hp = base->getHp();
     }
     
     CCObject* st = NULL;

@@ -13,7 +13,7 @@
 #include "cocos-ext.h"
 
 #include "Miao.h"
-#include "RBoss.h"
+#include "Base.h"
 
 class Status : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVariableAssigner
 {
@@ -21,7 +21,7 @@ private:
     
 public:
     Miao* miao;
-    RBoss* boss;
+    Base* boss;
     float randTime = 0;
     cocos2d::CCArray *_soldiers;
 	cocos2d::CCArray *_enimies;

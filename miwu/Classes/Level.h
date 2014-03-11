@@ -13,7 +13,17 @@
 #include "cocos-ext.h"
 
 #include "Miao.h"
+#include "Base.h"
 #include "RBoss.h"
+#include "RBoss2.h"
+#include "EBoss.h"
+#include "EBoss2.h"
+#include "TBoss.h"
+#include "TBoss2.h"
+#include "CBoss.h"
+#include "CBoss2.h"
+#include "WBoss.h"
+#include "WBoss2.h"
 #include "Soldier.h"
 #include "Enemy.h"
 
@@ -23,8 +33,11 @@ class Level : public cocos2d::CCLayer, public cocos2d::extension::CCBMemberVaria
 private:
     cocos2d::CCArray *_levelArray;
     int _level_hp;
+    int _level_max_hp;
     int _base_hp;
+    int _base_max_hp
     int _boss_hp;
+    int _boss_max_hp;
     bool _is_boss;
 public:
     int soldier_dead = 0;
@@ -49,7 +62,8 @@ public:
     int scepter_woman = 0;
 
     Miao* miao;
-    RBoss* boss;
+    Base* base;
+    GameObject* boss;
     float randTime = 0;
     cocos2d::CCArray *_soldiers;
     cocos2d::CCArray *_enimies;
