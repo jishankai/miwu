@@ -123,6 +123,66 @@ void Equip::onInfoRequestCompleted(CCHttpClient *sender, CCHttpResponse *respons
     }
 }
 
+void Equip::onEquipRequestCompleted(CCHttpClient *sender, CCHttpResponse *response)
+{
+    if (!response)
+    {
+        return;
+    }
+    
+    // You can get original request type from: response->request->reqType
+    if (0 != strlen(response->getHttpRequest()->getTag()))
+    {
+        CCLog("%s completed", response->getHttpRequest()->getTag());
+    }
+    
+    int statusCode = response->getResponseCode();
+    char statusString[64] = {};
+    sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+    CCLog("response code: %d", statusCode);
+    
+    if (!response->isSucceed())
+    {
+        CCLog("response failed");
+        CCLog("error buffer: %s", response->getErrorBuffer());
+        return;
+    }
+
+    if (json["data"]["isSuccess"].getBoolean()) {
+      return;
+    }
+}
+
+void Equip::onUnEquipRequestCompleted(CCHttpClient *sender, CCHttpResponse *response)
+{
+    if (!response)
+    {
+        return;
+    }
+    
+    // You can get original request type from: response->request->reqType
+    if (0 != strlen(response->getHttpRequest()->getTag()))
+    {
+        CCLog("%s completed", response->getHttpRequest()->getTag());
+    }
+    
+    int statusCode = response->getResponseCode();
+    char statusString[64] = {};
+    sprintf(statusString, "HTTP Status Code: %d, tag = %s", statusCode, response->getHttpRequest()->getTag());
+    CCLog("response code: %d", statusCode);
+    
+    if (!response->isSucceed())
+    {
+        CCLog("response failed");
+        CCLog("error buffer: %s", response->getErrorBuffer());
+        return;
+    }
+
+    if (json["data"]["isSuccess"].getBoolean()) {
+      return;
+    }
+}
+
 bool Equip::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
 {
     CCPoint location = pTouch->getLocation();
@@ -131,6 +191,7 @@ bool Equip::ccTouchBegan(CCTouch* pTouch, CCEvent* pEvent)
     CCRect* pGameTextureRect = new CCRect(410, 280, 64, 32);
     CCRect* pLeftTextureRect = new CCRect(0, 0, 64, 32);
     CCRect* pRightTextureRect = new CCRect(416, 0, 64, 32);
+    //CCRect* pEquipTextureRect = new CCRect(0, 0, 0, 0);
     
     if (pHomeTextureRect->containsPoint(location) or pGameTextureRect->containsPoint(location)) {
         this->removeFromParentAndCleanup(true);
