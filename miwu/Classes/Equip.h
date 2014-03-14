@@ -40,6 +40,15 @@ private:
     cocos2d::CCSprite* scepter_wind;
     cocos2d::CCSprite* scepter_woman;
     
+    int _scepter_1;
+    int _scepter_2;
+    int _scepter_3;
+    int _scepter_4;
+    int _ring_1;
+    int _ring_2;
+    int _ring_3;
+    int _ring_4;
+
     int equipCount = 0;
     
     void clearEquipExceptRingCircle();
